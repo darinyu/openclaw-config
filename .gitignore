@@ -1,0 +1,25 @@
+# Secrets & credentials
+environments/
+auth/
+secrets/
+.env
+*.key
+*.pem
+*-token*
+credentials.json
+
+# Xiaohongshu screenshots
+xhs_*.png
+
+# Node modules
+node_modules/
+
+# Temporary files
+*.tmp
+*.swp
+*.bak
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db

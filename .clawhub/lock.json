@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "skills": {
+    "google-workspace-byok": {
+      "version": "1.0.0",
+      "installedAt": 1778782620074
+    },
+    "xiaohongshu-mcp-openclaw": {
+      "version": "1.0.0",
+      "installedAt": 1778792309013
+    },
+    "xiaohongshu-search-summarizer": {
+      "version": "1.0.3",
+      "installedAt": 1778805706228
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  plugins: {
+    entries: {
+      slack: { enabled: true },
+    },
+  },
+  channels: {
+    slack: {
+      enabled: true,
+      mode: "socket",
+      appToken: { source: "env", provider: "default", id: "SLACK_APP_TOKEN" },
+      botToken: { source: "env", provider: "default", id: "SLACK_BOT_TOKEN" },
+      webhookPath: "/slack/events",
+      // respond only when mentioned in channels
+      requireMention: true,
+      groupPolicy: "open",
+      dmPolicy: "open",
+      allowFrom: ["*"],
+      userTokenReadOnly: true,
+    },
+  },
+}

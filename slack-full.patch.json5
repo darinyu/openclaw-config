@@ -1,0 +1,26 @@
+{
+  channels: {
+    slack: {
+      enabled: true,
+      mode: "socket",
+      webhookPath: "/slack/events",
+      userTokenReadOnly: true,
+
+      // stop Slack pairing/commands from rewriting Slack config
+      configWrites: false,
+
+      appToken: { source: "env", provider: "default", id: "SLACK_APP_TOKEN" },
+      botToken: { source: "env", provider: "default", id: "SLACK_BOT_TOKEN" },
+
+      groupPolicy: "open",
+      dmPolicy: "open",
+      allowFrom: ["*"],
+      requireMention: true,
+
+      channels: {
+        "C07MEFVCDHP": { enabled: true, requireMention: true },
+      },
+    },
+  },
+  plugins: { entries: { slack: { enabled: true } } },
+}

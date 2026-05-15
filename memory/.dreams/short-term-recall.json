@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "updatedAt": "2026-05-15T05:42:57.531Z",
+  "entries": {
+    "memory:memory/2026-05-15.md:1:15": {
+      "key": "memory:memory/2026-05-15.md:1:15",
+      "path": "memory/2026-05-15.md",
+      "startLine": 1,
+      "endLine": 15,
+      "source": "memory",
+      "snippet": "# 2026-05-15 ## Slack Routing Bug Fix - Darin called me out: I was replying to Slack @-mentions in WebChat instead of sending the reply back to Slack via `message` tool - **Root cause:** I was relying on \"auto-routing\" behavior that doesn't exist for Slack → WebChat messages - **Fix:** TOOLS.md already had the correct Slack routing rules. I just wasn't following them. - **Action taken:** Replied to Darin's X trending question in the #random thread where it belonged - **Lesson learned:** Slack messages ALWAYS need explicit `message` tool replies. Never assume auto-routing. ## Setup Improvements (self-audit) - AGENTS.md file on disk is the standard template — no \"Messaging\" section to fix (t",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.37163974344730377,
+      "maxScore": 0.37163974344730377,
+      "firstRecalledAt": "2026-05-15T05:42:57.531Z",
+      "lastRecalledAt": "2026-05-15T05:42:57.531Z",
+      "queryHashes": [
+        "bb6963b5c632"
+      ],
+      "recallDays": [
+        "2026-05-15"
+      ],
+      "conceptTags": [
+        "auto-routing",
+        "tools.md",
+        "self-audit",
+        "agents.md",
+        "slack",
+        "routing",
+        "bug",
+        "fix"
+      ]
+    }
+  }
+}

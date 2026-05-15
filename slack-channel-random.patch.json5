@@ -1,0 +1,14 @@
+{
+  channels: {
+    slack: {
+      groupPolicy: "open",
+      requireMention: true,
+      channels: {
+        "C07MEFVCDHP": {
+          enabled: true,
+          requireMention: true,
+        },
+      },
+    },
+  },
+}

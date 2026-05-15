@@ -1,0 +1,17 @@
+{
+  channels: {
+    slack: {
+      enabled: true,
+      mode: "socket",
+      appToken: { source: "env", provider: "default", id: "SLACK_APP_TOKEN" },
+      botToken: { source: "env", provider: "default", id: "SLACK_BOT_TOKEN" },
+      webhookPath: "/slack/events",
+      // channel behavior
+      groupPolicy: "open",
+      dmPolicy: "open",
+      allowFrom: ["*"],
+      requireMention: true,
+      userTokenReadOnly: true,
+    },
+  },
+}
