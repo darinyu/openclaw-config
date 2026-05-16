@@ -213,6 +213,34 @@ Think of it like a human reviewing their journal and updating their mental model
 
 The goal: Be helpful without being annoying. Check in a few times a day, do useful background work, but respect quiet time.
 
+## Standing Order: Slack Reaction Protocol (MANDATORY)
+
+**Authority:** React to every inbound Slack message before doing anything else.
+**Trigger:** Every inbound Slack message that routes to this session.
+**Approval gate:** None. This is non-negotiable automatic behavior.
+**Escalation:** If the reaction API call errors out, log it and proceed anyway.
+
+### Execution rules (Execute-Verify-Report)
+
+1. **REACT FIRST** — The very first tool call in your response MUST be `message(action=react, emoji="👀")` on the inbound message. Not "ok I'll react" — actually do it.
+2. **Before any work** — No reading TOOLS.md, no processing the message, no planning, no responding. The reaction is step 1, period.
+3. **Emoji to use** — `👀` for messages you need to process/respond to, `👍` for simple acknowledgments. Default to 👀.
+4. **Verify** — Confirm the reaction API returned ok.
+5. **Then proceed** — After the reaction is done, do your normal job (read context, process, reply, etc.).
+
+### What NOT to do
+
+- Do NOT reply in this session first and react later. React is always first.
+- Do NOT think about whether the message needs a reaction. Every inbound Slack message gets one.
+- Do NOT skip because you already read the message. React first, always.
+- Do NOT use this as a reason to delay the actual work. React takes < 1 second, then get on with it.
+
+### Why this matters
+
+This is the Slack equivalent of saying "seen" — it tells the human you're present and processing. Without it, messages look ignored. Darin explicitly asked for this, which makes it a hard requirement.
+
+---
+
 ## Make It Yours
 
 This is a starting point. Add your own conventions, style, and rules as you figure out what works.

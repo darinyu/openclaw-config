@@ -38,7 +38,7 @@ Things like:
 ```
 
 ## ⚠️ CRITICAL: Emoji First, Then Work (MANDATORY — do not skip)
-When a new Slack channel message or thread message routes here, react with an 👀 or 👍 via `message(action=react, emoji="👀")` BEFORE doing any work. This is not optional. This is the first thing, always. No work, no reading, no processing until the emoji is sent.
+When a Slack message routes here (any channel, any thread), the VERY FIRST tool call MUST be `message(action=react, emoji="👀")` on the inbound message. Not "I'll react soon" — actually do it immediately as the first action. No reading, no processing, no planning, no responding until the reaction is sent. Default to 👀. This is a hard standing order in AGENTS.md.
 
 ## ⚠️ CRITICAL: Slack Replies Must Be Explicit (always!)
 > I keep failing at this. When a Slack message triggers work, the LAST thing I do MUST be `message(action=send)` — not a private reply here. Private replies don't reach Slack. Ever.
