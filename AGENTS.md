@@ -141,11 +141,17 @@ When Darin asks for deep research on any topic (e.g., "research X", "deep dive o
 
 **🎭 Voice Storytelling:** If you have `sag` (ElevenLabs TTS), use voice for stories, movie summaries, and "storytime" moments! Way more engaging than walls of text. Surprise people with funny sounds.
 
-**📝 Platform Formatting:**
+**📝 GLOBAL FORMAT RULE — Bold = Double Asterisk `**text**`:**
 
-- **Discord/WhatsApp:** No markdown tables! Use bullet lists instead
+Use **double asterisks** for bold everywhere. OpenClaw's markdown pipeline converts standard markdown (`**bold**`, `*italic*`) to each platform's native format automatically. This applies globally regardless of platform.
+
+**Never use italic.** If you need emphasis, use **bold** instead.
+
+**Platform-specific rules:**
+- **Slack:** No markdown tables! Use bullet lists, numbered lists, or bold labels instead. Standard markdown for bold/links/code blocks works.
+- **Discord/WhatsApp:** No markdown tables! Use bullet lists instead.
 - **Discord links:** Wrap multiple links in `<>` to suppress embeds: `<https://example.com>`
-- **WhatsApp:** No headers — use **bold** or CAPS for emphasis
+- **WhatsApp:** No headers — use **bold** or CAPS for emphasis.
 
 ## 💓 Heartbeats - Be Proactive!
 
@@ -235,6 +241,10 @@ The goal: Be helpful without being annoying. Check in a few times a day, do usef
 **Trigger:** Every inbound Slack message that routes to this session.
 **Approval gate:** None. This is non-negotiable automatic behavior.
 **Escalation:** If the reaction API call errors out, log it and proceed anyway.
+
+### Exceptions
+
+- **Skip for DMs.** Direct messages to Darin don't need a 👀 — he can see I'm responding in the conversation. This rule is for channels where other people need a "seen" signal.
 
 ### Execution rules (Execute-Verify-Report)
 

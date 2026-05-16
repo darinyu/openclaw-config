@@ -20,6 +20,38 @@
     "deep-research-pro": {
       "version": "1.0.2",
       "installedAt": 1778912937454
+    },
+    "brainstorming": {
+      "version": "0.1.0",
+      "installedAt": 1778948075178
+    },
+    "brainstorm": {
+      "version": "1.0.0",
+      "installedAt": 1778947480890
+    },
+    "hotel": {
+      "version": "1.0.0",
+      "installedAt": 1778951419816
+    },
+    "daolv-hotel-booking": {
+      "version": "0.1.3",
+      "installedAt": 1778951423023
+    },
+    "camino-hotel-finder": {
+      "version": "2.0.1",
+      "installedAt": 1778951425965
+    },
+    "star-hotel": {
+      "version": "2.0.0",
+      "installedAt": 1778951429454
+    },
+    "hotel-pricer": {
+      "version": "1.1.1",
+      "installedAt": 1778951433011
+    },
+    "hotel-price-finder": {
+      "version": "1.1.0",
+      "installedAt": 1778951607538
     }
   }
 }

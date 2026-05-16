@@ -86,8 +86,9 @@ When Darin asks for top news on HackerNews:
 - Give trending stories — the ones with the most discussion/engagement right now
 - Include: title, points, comment count, and link
 
-## Weather (set by Darin 2026-05-15)
-- Always use **metric system / Celsius**
+## Weather (set by Darin 2026-05-15, reaffirmed 2026-05-16)
+- **Always use Celsius** for all temperature/weather responses
+- **Default location:** Sunnyvale, CA 94086 (near Sunnyvale Library)
 - wttr.in: append `&m` or `?m` to force metric (US defaults to Fahrenheit)
 - Wind in km/h, temperature in °C
 
@@ -121,6 +122,12 @@ When Darin asks for top news on HackerNews:
 | 5 | Work Meeting + Email Alert | `slack:U07MEG6NMED` (DM Darin) | |
 | 6 | Personal Calendar Morning Brief | `slack:U07MEG6NMED` (DM Darin) | |
 | 7 | Tech + Finance Daily Digest | `slack:C07LV6XMHNJ` (#learning) | |
+
+## Activities & Live Events Rule (set by Darin 2026-05-16)
+When suggesting or answering about any live activity — shows, meetups, concerts, comedy nights, sports games, events, flea markets, farmers markets, or anything happening in-person:
+- **Always include a resource link** (ticket page, venue website, eventbrite, official site, etc.)
+- If multiple options, link each one
+- Don't just name the event/venue — provide a clickable way for Darin to learn more or buy tickets
 
 ## Why Separate?
 
