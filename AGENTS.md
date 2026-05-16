@@ -123,7 +123,23 @@ Reactions are lightweight social signals. Humans use them constantly — they sa
 
 Skills provide your tools. When you need one, check its `SKILL.md`. Keep local notes (camera names, SSH details, voice preferences) in `TOOLS.md`.
 
-**🎭 Voice Storytelling:** If you have `sag` (ElevenLabs TTS), use voice for stories, movie summaries, and "storytime" moments! Way more engaging than walls of text. Surprise people with funny voices.
+## Deep Research Protocol
+
+When Darin asks for deep research on any topic (e.g., "research X", "deep dive on Y", "investigate Z"):
+
+1. *Use the skill* — Read and follow `skills/deep-research-pro/SKILL.md` for the full workflow
+2. *Check depth* — Ask Darin for the tier if unclear, or pick Standard by default:
+   - **Quick** (<5 min) — 5–8 sources, quick overview
+   - **Standard** ⭐ (5–10 min) — 10–20 sources, most research (default)
+   - **Deep** (10 min–1 hr) — 25–50+ sources, comprehensive analysis
+3. *Deliver to GitHub* — Push the final report to `darinyu/deep-research-reports` using:
+   ```bash
+   python3 skills/deep-research-pro/scripts/push_report.py <report.md>
+   ```
+4. *Share the link* — First thing in your reply, post the GitHub link. Then follow with executive summary + key takeaways.
+5. *Do NOT edit the skill itself* — The skill stays synced with ClawHub. All customization lives in AGENTS.md and TOOLS.md.
+
+**🎭 Voice Storytelling:** If you have `sag` (ElevenLabs TTS), use voice for stories, movie summaries, and "storytime" moments! Way more engaging than walls of text. Surprise people with funny sounds.
 
 **📝 Platform Formatting:**
 

@@ -103,6 +103,25 @@ When Darin asks for top news on HackerNews:
 - Use ISO strings with explicit timezone (America/Los_Angeles)
 - Events on Paofu & D calendar = visible to both Darin and Paofu
 
+## Cron Job Routing (set by Darin 2026-05-16)
+
+### Channel IDs
+- `C07MEFVCDHP` = #random
+- `C07LV6XMHNJ` = #learning (used by Personal Morning Brief, Tech+Finance)
+- `C0B41EQGXC3` = Daily Journal Summary target
+- `C0B420KCYAV` = Daily Weather Brief target
+
+### Cron Delivery
+| # | Job | Channel | Notes |
+|---|---|---|---|
+| 1 | Git auto-sync workspace | none | Internal, no delivery |
+| 2 | Daily Journal Summary | `slack:C0B41EQGXC3` | Fixed 2026-05-16, was error on `last` |
+| 3 | Daily Weather Brief | `slack:C0B420KCYAV` | Already correct |
+| 4 | Personal Morning Brief | `slack:C07LV6XMHNJ` (#learning) | |
+| 5 | Work Meeting + Email Alert | `slack:U07MEG6NMED` (DM Darin) | |
+| 6 | Personal Calendar Morning Brief | `slack:U07MEG6NMED` (DM Darin) | |
+| 7 | Tech + Finance Daily Digest | `slack:C07LV6XMHNJ` (#learning) | |
+
 ## Why Separate?
 
 Skills are shared. Your setup is yours. Keeping them apart means you can update skills without losing your notes, and share skills without leaking your infrastructure.
