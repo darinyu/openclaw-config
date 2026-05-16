@@ -12,6 +12,10 @@
     "xiaohongshu-search-summarizer": {
       "version": "1.0.3",
       "installedAt": 1778805706228
+    },
+    "flight-search": {
+      "version": "0.1.7",
+      "installedAt": 1778894507058
     }
   }
 }

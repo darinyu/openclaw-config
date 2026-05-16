@@ -37,6 +37,9 @@ Things like:
 - Default speaker: Kitchen HomePod
 ```
 
+## ⚠️ CRITICAL: Emoji First, Then Work (MANDATORY — do not skip)
+When a new Slack channel message or thread message routes here, react with an 👀 or 👍 via `message(action=react, emoji="👀")` BEFORE doing any work. This is not optional. This is the first thing, always. No work, no reading, no processing until the emoji is sent.
+
 ## ⚠️ CRITICAL: Slack Replies Must Be Explicit (always!)
 > I keep failing at this. When a Slack message triggers work, the LAST thing I do MUST be `message(action=send)` — not a private reply here. Private replies don't reach Slack. Ever.
 > **My final answer in this session is PRIVATE. To post to Slack, I MUST call the message tool.**
