@@ -10,9 +10,28 @@ credentials.json
 
 # Xiaohongshu screenshots
 xhs_*.png
+xhs-*.png
 
 # Node modules
 node_modules/
+
+# One-time bootstrap
+BOOT.md
+
+# Slack setup patches
+slack*.patch.json5
+slack*.apply.json5
+
+# Research templates
+research-template.md
+
+# Virtual environments
+venv/
+.pyvenv
+
+# Local shell configs
+.bashrc
+.profile
 
 # Temporary files
 *.tmp
