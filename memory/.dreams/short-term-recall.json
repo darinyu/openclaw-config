@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-15T05:42:57.531Z",
+  "updatedAt": "2026-05-17T07:10:25.100Z",
   "entries": {
     "memory:memory/2026-05-15.md:1:15": {
       "key": "memory:memory/2026-05-15.md:1:15",
@@ -31,6 +31,37 @@
         "routing",
         "bug",
         "fix"
+      ]
+    },
+    "memory:memory/2026-05-17.md:42:60": {
+      "key": "memory:memory/2026-05-17.md:42:60",
+      "path": "memory/2026-05-17.md",
+      "startLine": 42,
+      "endLine": 60,
+      "source": "memory",
+      "snippet": "**Remember:** Never write `_italic_` or `*italic*` in messages. Always pipe through `scripts/slack_format.sh` before any `message(action=send)` call. Write to `/tmp/slack_msg.txt` first, run the filter, then send the filtered output. ## 🔴 Lesson 2: Cron Jobs — Must Output + Bold Only Darin added two global rules for ALL cron jobs: 1. **Bold only, zero italic.** Every cron job message must use *bold* (single asterisk, filtered to **bold**). No _italic_ anywhere. All prompts updated to explicitly say this. 2. **Always output something. Never NO_REPLY silently.** If a cron job has nothing to report, it MUST post a brief status to #audit (C0B4EK31NCU). Jobs updated: - Work Meeting + Emai",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.3686727613210678,
+      "maxScore": 0.3686727613210678,
+      "firstRecalledAt": "2026-05-17T07:10:25.100Z",
+      "lastRecalledAt": "2026-05-17T07:10:25.100Z",
+      "queryHashes": [
+        "2efc133a47c6"
+      ],
+      "recallDays": [
+        "2026-05-17"
+      ],
+      "conceptTags": [
+        "scripts/slack-format.sh",
+        "tmp/slack-msg.txt",
+        "no-reply",
+        "remember",
+        "never",
+        "write",
+        "italic",
+        "messages"
       ]
     }
   }

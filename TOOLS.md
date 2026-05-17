@@ -180,20 +180,20 @@ When Darin asks for top news on HackerNews:
 - `C07LV6XMHNJ` = #learning (used by Personal Morning Brief, Tech+Finance)
 - `C0B41EQGXC3` = Daily Journal Summary target
 - `C0B420KCYAV` = Daily Weather Brief target
-- `C0B4EK31NCU` = #audit (used for cron job status/confirmation fallback)
+- `C0B4EK31NCU` = <#C0B4EK31NCU> (used for cron job status/confirmation fallback)
 
 ### Cron Delivery
 | # | Job | Channel | Notes |
 |---|---|---|---|
-| 1 | Git auto-sync workspace | `slack:C0B4EK31NCU` (#audit) | Changed 2026-05-17: now posts status to #audit |
-| 2 | Daily Journal Summary | `slack:C0B4EK31NCU` (#audit) | Changed 2026-05-17: was C0B41EQGXC3 |
+| 1 | Git auto-sync workspace | `slack:C0B4EK31NCU` (<#C0B4EK31NCU>) | Changed 2026-05-17: now posts status to <#C0B4EK31NCU> |
+| 2 | Daily Journal Summary | `slack:C0B4EK31NCU` (<#C0B4EK31NCU>) | Changed 2026-05-17: was C0B41EQGXC3 |
 | 3 | Daily Weather Brief | `slack:C0B420KCYAV` | Already correct |
 | 4 | Personal Morning Brief | `slack:C07LV6XMHNJ` (#learning) | |
 | 5 | Work Meeting + Email Alert | `slack:U07MEG6NMED` (DM Darin) | |
 | 6 | Personal Calendar Morning Brief | `slack:U07MEG6NMED` (DM Darin) | |
 | 7 | Tech + Finance Daily Digest | `slack:C07LV6XMHNJ` (#learning) | |
-| 8 | Memory Dreaming Promotion | `slack:C0B4EK31NCU` (#audit) | System-managed, delivery set to #audit |
-| 9 | Correction Retrospective | `slack:C0B4EK31NCU` (#audit) | Changed 2026-05-17: was 'last' |
+| 8 | Memory Dreaming Promotion | `slack:C0B4EK31NCU` (<#C0B4EK31NCU>) | System-managed, delivery set to <#C0B4EK31NCU> |
+| 9 | Correction Retrospective | `slack:C0B4EK31NCU` (<#C0B4EK31NCU>) | Changed 2026-05-17: was 'last' |
 
 ## Activities & Live Events Rule (set by Darin 2026-05-16)
 When suggesting or answering about any live activity — shows, meetups, concerts, comedy nights, sports games, events, flea markets, farmers markets, or anything happening in-person:
@@ -219,12 +219,12 @@ All cron job output that delivers to Slack MUST use bold over italic. No excepti
 
 ### Rule 2: Always Output — Never Complete Silently
 
-Every cron job MUST output something. If a job has nothing to report (no events, no changes, nothing urgent), it MUST post a brief status message to #audit (C0B4EK31NCU).
+Every cron job MUST output something. If a job has nothing to report (no events, no changes, nothing urgent), it MUST post a brief status message to <#C0B4EK31NCU> (C0B4EK31NCU).
 - Never use NO_REPLY as a way to silently skip.
 - Never complete silently (no output, no errors, nothing).
 - Acceptable silent exits: only for system-managed internal jobs (like Memory Dreaming Promotion) that the system itself manages.
-- **Fallback channel:** C0B4EK31NCU (#audit) — for status confirmations, "nothing to report", and silent job outputs.
-- Jobs that actively send to other channels (DM Darin, #learning, weather channel) should use message tool for those destinations, and if the final decision is "nothing to say", post to #audit instead of NO_REPLY.
+- **Fallback channel:** C0B4EK31NCU (<#C0B4EK31NCU>) — for status confirmations, "nothing to report", and silent job outputs.
+- Jobs that actively send to other channels (DM Darin, #learning, weather channel) should use message tool for those destinations, and if the final decision is "nothing to say", post to <#C0B4EK31NCU> instead of NO_REPLY.
 
 ## Why Separate?
 

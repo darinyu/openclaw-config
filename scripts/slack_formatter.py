@@ -41,9 +41,10 @@ def convert_italic_to_bold(text: str) -> str:
         )
 
         # _underscore italic_ -> **bold**
-        # Negative lookbehind/ahead prevent matching __already bold__
+        # Word boundary guards prevent matching inside words like NO_REPLY,
+        # and prevent crossing text to find a closing _
         segment = re.sub(
-            r'(?<!_)_(?!_)([^_]+?)(?<!_)_(?!_)',
+            r'(?<![\w_])_(?!_)([^_]+?)(?<!_)_(?![\w_])',
             r'**\1**',
             segment,
         )

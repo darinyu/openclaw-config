@@ -267,6 +267,58 @@ This is the Slack equivalent of saying "seen" — it tells the human you're pres
 
 ---
 
+## 🧠 Thinking Log Session ID Rule (MANDATORY)
+
+**Authority:** Whenever you do analysis, research, or any multi-step reasoning that Darin might want to trace, use think.py to log your thinking.
+
+**Steps:**
+1. Generate a session_id: `sess_YYYYMMDD_HHMMSS_<short>`
+2. Log each reasoning step with: `/data/.openclaw/shared-skills/scripts/think.py`
+3. Include context: `--channel-id`, `--thread-id` (from the inbound message)
+4. Include the session_id in your reply to Darin so he can trace back
+5. Data goes to Axiom dataset `openclaw` — he can query by session_id, topic, timestamp
+
+**Example:**
+```
+# When starting analysis
+SID=$(python3 /data/.openclaw/shared-skills/scripts/think.py new "Topic" \
+  --channel-id "$CHANNEL" --thread-id "$THREAD" --goal "...")
+
+# Each step
+python3 /data/.openclaw/shared-skills/scripts/think.py step \
+  --session-id "$SID" --channel-id "$CHANNEL" --thread-id "$THREAD" \
+  "Reasoning text"
+
+# When done
+python3 /data/.openclaw/shared-skills/scripts/think.py conclude \
+  --session-id "$SID" "Conclusion text"
+
+# Include in reply
+# "Here's my analysis (thinking trace: $SID)"
+```
+
+**Structured fields sent to Axiom:** timestamp, session_id, channel_id, thread_id, topic, step_type, content, confidence
+
+### Auto-log every conversation (set by Darin 2026-05-17)
+
+**Rule:** Every Slack conversation I process MUST be logged to Axiom via think.py.
+
+**Flow for every response:**
+
+1. **Start** — Before doing any work, generate a session_id and start a thinking log:
+   ```
+   SID=$(python3 /data/.openclaw/shared-skills/scripts/think.py new "Brief topic" \
+     --channel-id "$CHANNEL" --thread-id "$THREAD" --goal "What I'm trying to do")
+   ```
+2. **Log reasoning** — Call `think.py step` for key thought transitions, decisions, and analysis steps
+3. **Log data fetched** — Call `think.py note` for information gathered from external sources
+4. **Include in reply** — Every reply to Darin MUST include the session_id: `(thinking trace: $SID)`
+5. **Conclude** — When the thread resolves, call `think.py conclude`
+
+**No exceptions.** If the reaction API or think.py errors out, log the error and proceed, but always try.
+
+---
+
 ## Make It Yours
 
 This is a starting point. Add your own conventions, style, and rules as you figure out what works.
