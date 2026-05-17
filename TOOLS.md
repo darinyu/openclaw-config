@@ -155,6 +155,11 @@ When Darin asks for top news on HackerNews:
 - Give trending stories — the ones with the most discussion/engagement right now
 - Include: title, points, comment count, and link
 
+## Web Search (set by Darin 2026-05-17)
+- **Primary:** Use `liang-tavily-search` skill (`skills/liang-tavily-search/scripts/search.mjs`) with `TAVILY_API_KEY` env var
+- **Fallback:** If Tavily returns no credits or errors, use the built-in `web_search` tool
+- Example: `node skills/liang-tavily-search/scripts/search.mjs "query"`
+
 ## Weather (set by Darin 2026-05-15, reaffirmed 2026-05-16)
 - **Always use Celsius** for all temperature/weather responses
 - **Default location:** Sunnyvale, CA 94086 (near Sunnyvale Library)
