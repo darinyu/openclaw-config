@@ -8,6 +8,29 @@ read_when:
 
 Skills define _how_ tools work. This file is for _your_ specifics — the stuff that's unique to your setup.
 
+## MANDATORY: Slack Format Filter
+
+Before every `message(action=send)` to Slack, run the message through:
+```
+scripts/slack_format.sh
+```
+This converts ALL single-asterisk italic (`*text*`) to bold (`**text**`) — no exceptions. Only `**bold**` survives.
+
+**Rules enforced by the filter:**
+- No italic. Ever. Zero. Single asterisks get promoted to bold.
+- Bold only for section headers and key terms, not sprinkled through every sentence.
+- Sections separated by clear line breaks.
+
+**HARD PROCESS — MUST follow every time:**
+1. Write message text to `/tmp/slack_msg.txt`
+2. Run: `scripts/slack_format.sh < /tmp/slack_msg.txt` — read the output
+3. Use the FORMATTED output (with `**bold**`) as the `message` parameter
+4. Do NOT write messages directly in the `message` parameter — always write to file first
+
+**If I skip a step, the Slack message will be wrong and Darin will be rightfully angry. Don't skip.**
+- Bold only for section headers and key terms, not sprinkled through every sentence.
+- Sections separated by clear line breaks.
+
 ## What Goes Here
 
 Things like:
@@ -47,6 +70,15 @@ When a Slack message routes here (any channel, any thread), the VERY FIRST tool 
 > This includes NO_REPLY decisions — in a thread context, a bare NO_REPLY won't thread correctly. Use `message(action=send)` with the proper `threadId` even for minimal replies.
 >
 > The `visibleReplies: message_tool` setting means ONLY explicit message tool sends show up in channels. Natural session responses are invisible.
+
+## 🛑 Send Rule — Draft First, Confirm (set by Darin 2026-05-16)
+
+Never send emails or any outbound messages directly. Always:
+1. Draft the content
+2. Present the draft to Darin for approval
+3. Only send after he explicitly confirms
+
+This applies to ALL outbound sends — email, Slack messages on his behalf, etc.
 
 ## 🔔 Drive Folder Watch Rule (set by Darin 2026-05-15)
 
