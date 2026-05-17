@@ -8,35 +8,63 @@ read_when:
 
 Skills define _how_ tools work. This file is for _your_ specifics — the stuff that's unique to your setup.
 
-## MANDATORY: Slack Format Filter (GLOBAL — all output)
+## MANDATORY: Pre-Send Checklist (GLOBAL — every Slack message)
 
-This is the **single global filter** for ALL Slack output — channel messages, DMs, thread replies, cron job responses. Every `message(action=send)` call MUST go through this filter. No exceptions.
+**FAILING THIS CHECKLIST = BROKEN MESSAGE = ANGRY DARIN.**
 
+Before ANY `message(action=send)` call to Slack, run through ALL THREE checks.
+
+### ✅ Check 1: Thread Routing
+
+Identify the SOURCE message that triggered this response:
+
+| Source type | What to do |
+|---|---|
+| Direct @-mention of DDDD (standalone msg, no thread) | Reply in a **thread** under that message — use its `ts` as `threadId` |
+| Reply in an existing thread (message has a `threadId`) | Reply in the **same thread** — use the parent `threadId` |
+| General channel message (no tag, no thread) | Post directly to the channel (no threadId) |
+
+**TO find the source message's ts:** Check the inbound context. The `reply_to_id` or `message_id` in the conversation info tells you what message to thread under. The triggering message's `ts` timestamp IS the threadId.
+
+### ✅ Check 2: Zero Italic
+
+**NEVER write `_underscore_` or `*asterisk italic*` in message text.** Period.
+
+In Slack mrkdwn:
+- `*bold*` = bold (single asterisks = Slack bold)
+- `_italic_` = italic (this is what Darin hates)
+
+Just write correct Slack mrkdwn from the start:
+- Use `*bold*` for emphasis (NOT `**`, NOT `_`)
+- Never use `_` for anything except code spans
+- Never use single `*` around words you don't want bolded
+
+### ✅ Check 3: Filter as Safety Net
+
+After writing your message text to a file, run it through the italic filter:
+
+1. Write message text to `/tmp/slack_msg.txt`
+2. Run: `scripts/slack_format.sh < /tmp/slack_msg.txt` — read the output
+3. If the output differs from your input, the filter caught italic — read carefully and use the filtered version
+4. Use the FILTERED output as the `message` parameter
+
+**The filter script:**
 ```
 scripts/slack_format.sh
 ```
+Wrapper around `scripts/slack_formatter.py` — converts BOTH `*italic*` and `_italic_` to `**bold**`. Test with: `python3 scripts/slack_formatter.py < /tmp/msg.txt`.
 
-**What the filter does:**
-- Converts `*single asterisk italic*` → `**bold**`
-- Converts `_underscore italic_` → `**bold**`
-- Preserves `**existing bold**`, `` `code spans` ``, and fenced code blocks
+**SKIP REASONING:** Do not "but I didn't use italic" yourself out of this. The filter catches accidents. Run it.
 
-**Style Rules:**
-- No italic. Ever. Zero. Both `*italic*` and `_italic_` get promoted to `**bold**`.
-- Bold only for section headers and key terms, not sprinkled through every sentence.
-- Sections separated by clear line breaks.
+### 🔴 Common Failures (learned the hard way)
 
-**HARD PROCESS — MUST follow every time:**
-1. Write message text to `/tmp/slack_msg.txt`
-2. Run: `scripts/slack_format.sh < /tmp/slack_msg.txt` — read the output
-3. Use the FILTERED output (with `**bold**` only) as the `message` parameter
-4. Do NOT write messages directly in the `message` parameter — always write to file first
+| What I do | What Darin sees | Fix applied? |
+|---|---|---|
+| Write `_important_ thing` in message | *italic text* on Slack | ❌ — use `*important* thing` |
+| Send message without `threadId` when replying to Darin | New standalone message in channel instead of thread | ❌ — always find and pass the source `ts` |
+| Write directly in `message` param instead of file → filter → send | Italic slips through | ❌ — write to file first |
 
-**If I skip a step, the Slack message will be wrong and Darin will be rightfully angry. Don't skip.**
-
-**NOTE:** The filter uses `scripts/slack_formatter.py` under the hood (the old `slack_format.sh` has been replaced with a Python wrapper). Use the Python script directly for testing: `python3 scripts/slack_formatter.py < /tmp/msg.txt`.
-
-**CRITICAL: Never write `_italic_` or `*italic*` in message text** — always write emphasis as plain text or none at all. Let the filter handle everything.
+**Both failures here cost Darin time to call them out. Don't make him do that again.**
 
 ## What Goes Here
 
@@ -103,10 +131,12 @@ When a Slack message routes to this session (webchat/Control UI), ALWAYS send th
 
 How to detect: if the session's delivery context has `channel: "slack"` or the message came with Slack @-mention formatting (e.g. `<@U...>`), the origin is Slack. Reply goes to Slack only — or Slack + Control UI if convenient.
 
-**Thread rules for Slack replies:**
-- **Direct @-mention/tag** of DDDD → reply in a **thread** under that message (use the message's `ts` as `threadId`).
-- **Thread reply** (message has a threadId) → reply in the same thread.
-- **General channel message** (no tag, no thread) → post directly to the channel.
+**Thread rules for Slack replies (STRICT):**
+- **Direct @-mention/tag** of DDDD → MUST reply in a **thread** under that message. Use the source message's `ts` timestamp as `threadId` in `message(action=send)`.
+- **Thread reply** (message has a threadId/topic_id) → MUST reply in the **same thread**. Use the existing `threadId`/`topic_id` from the inbound context.
+- **General channel message** (no tag, no thread) → post directly to the channel (no threadId).
+
+**How to find the ts/threadId:** Check the inbound metadata JSON — it has `message_id` (= the Slack ts) and `reply_to_id` (= the parent message ts if this is a thread reply). Use these values.
 
 This applies to `#random` and any other Slack channels that route here.
 
@@ -150,23 +180,51 @@ When Darin asks for top news on HackerNews:
 - `C07LV6XMHNJ` = #learning (used by Personal Morning Brief, Tech+Finance)
 - `C0B41EQGXC3` = Daily Journal Summary target
 - `C0B420KCYAV` = Daily Weather Brief target
+- `C0B4EK31NCU` = #audit (used for cron job status/confirmation fallback)
 
 ### Cron Delivery
 | # | Job | Channel | Notes |
 |---|---|---|---|
-| 1 | Git auto-sync workspace | none | Internal, no delivery |
-| 2 | Daily Journal Summary | `slack:C0B41EQGXC3` | Fixed 2026-05-16, was error on `last` |
+| 1 | Git auto-sync workspace | `slack:C0B4EK31NCU` (#audit) | Changed 2026-05-17: now posts status to #audit |
+| 2 | Daily Journal Summary | `slack:C0B4EK31NCU` (#audit) | Changed 2026-05-17: was C0B41EQGXC3 |
 | 3 | Daily Weather Brief | `slack:C0B420KCYAV` | Already correct |
 | 4 | Personal Morning Brief | `slack:C07LV6XMHNJ` (#learning) | |
 | 5 | Work Meeting + Email Alert | `slack:U07MEG6NMED` (DM Darin) | |
 | 6 | Personal Calendar Morning Brief | `slack:U07MEG6NMED` (DM Darin) | |
 | 7 | Tech + Finance Daily Digest | `slack:C07LV6XMHNJ` (#learning) | |
+| 8 | Memory Dreaming Promotion | `slack:C0B4EK31NCU` (#audit) | System-managed, delivery set to #audit |
+| 9 | Correction Retrospective | `slack:C0B4EK31NCU` (#audit) | Changed 2026-05-17: was 'last' |
 
 ## Activities & Live Events Rule (set by Darin 2026-05-16)
 When suggesting or answering about any live activity — shows, meetups, concerts, comedy nights, sports games, events, flea markets, farmers markets, or anything happening in-person:
 - **Always include a resource link** (ticket page, venue website, eventbrite, official site, etc.)
 - If multiple options, link each one
 - Don't just name the event/venue — provide a clickable way for Darin to learn more or buy tickets
+
+## 💪 Cron Job Rules (set by Darin 2026-05-17)
+
+### ⚠️ Pre-Send Checklist APPLIES TO ALL CRON OUTPUT
+
+The same Pre-Send Checklist from the MANDATORY section above applies to EVERY cron job Slack message:
+1. ✅ Thread routing correct? (cron jobs are standalone messages, no threadId needed unless replying in a thread)
+2. ✅ Zero italic? (`_text_` never appears)
+3. ✅ Filter run? (pipe through `scripts/slack_format.sh`)
+
+### Rule 1: Bold Only — Zero Italic
+
+All cron job output that delivers to Slack MUST use bold over italic. No exceptions.
+- In Slack mrkdwn: bold = `*text*`, italic = `_text_` (never use).
+- Every cron job prompt MUST include formatting instructions: use *bold* for emphasis, never use italic.
+- Even one italic underscore in cron output is a bug.
+
+### Rule 2: Always Output — Never Complete Silently
+
+Every cron job MUST output something. If a job has nothing to report (no events, no changes, nothing urgent), it MUST post a brief status message to #audit (C0B4EK31NCU).
+- Never use NO_REPLY as a way to silently skip.
+- Never complete silently (no output, no errors, nothing).
+- Acceptable silent exits: only for system-managed internal jobs (like Memory Dreaming Promotion) that the system itself manages.
+- **Fallback channel:** C0B4EK31NCU (#audit) — for status confirmations, "nothing to report", and silent job outputs.
+- Jobs that actively send to other channels (DM Darin, #learning, weather channel) should use message tool for those destinations, and if the final decision is "nothing to say", post to #audit instead of NO_REPLY.
 
 ## Why Separate?
 
