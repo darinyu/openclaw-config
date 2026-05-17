@@ -190,8 +190,7 @@ When Darin asks for top news on HackerNews:
 | 3 | Daily Weather Brief | `slack:C0B420KCYAV` | Already correct |
 | 4 | Personal Morning Brief | `slack:C07LV6XMHNJ` (#learning) | |
 | 5 | Work Meeting + Email Alert | `slack:U07MEG6NMED` (DM Darin) | |
-| 6 | Personal Calendar Morning Brief | `slack:U07MEG6NMED` (DM Darin) | |
-| 7 | Tech + Finance Daily Digest | `slack:C07LV6XMHNJ` (#learning) | |
+| 6 | Tech + Finance Daily Digest | `slack:C07LV6XMHNJ` (#learning) | |
 | 8 | Memory Dreaming Promotion | `slack:C0B4EK31NCU` (<#C0B4EK31NCU>) | System-managed, delivery set to <#C0B4EK31NCU> |
 | 9 | Correction Retrospective | `slack:C0B4EK31NCU` (<#C0B4EK31NCU>) | Changed 2026-05-17: was 'last' |
 
