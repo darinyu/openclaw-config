@@ -1,0 +1,27 @@
+{
+  "name": "trading-agent",
+  "version": "1.0.0",
+  "description": "Multi-agent LLM stock trading analysis via TradingAgents MCP",
+  "author": "DDDD",
+  "openclaw": {
+    "emoji": "📈",
+    "requires": {
+      "bins": ["python3", "bash", "git"],
+      "pkgs": ["mcp"]
+    },
+    "install": [
+      {
+        "id": "setup",
+        "kind": "exec",
+        "cmd": "bash /data/.openclaw/shared-skills/scripts/trading_agent_mcp.sh install",
+        "label": "Install TradingAgents + MCP deps"
+      },
+      {
+        "id": "start",
+        "kind": "exec",
+        "cmd": "bash /data/.openclaw/shared-skills/scripts/trading_agent_mcp.sh start",
+        "label": "Start MCP server daemon"
+      }
+    ]
+  }
+}

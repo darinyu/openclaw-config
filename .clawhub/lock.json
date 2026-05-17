@@ -56,6 +56,18 @@
     "self-improvement-test": {
       "version": "1.0.0",
       "installedAt": 1779001266525
+    },
+    "liang-tavily-search": {
+      "version": "1.0.1",
+      "installedAt": 1779032203048
+    },
+    "summarize-pro": {
+      "version": "1.0.0",
+      "installedAt": 1779032213378
+    },
+    "self-improving-agent": {
+      "version": "3.0.21",
+      "installedAt": 1779032217228
     }
   }
 }

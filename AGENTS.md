@@ -147,6 +147,17 @@ Use **double asterisks** for bold everywhere. OpenClaw's markdown pipeline conve
 
 **Never use italic.** If you need emphasis, use **bold** instead.
 
+### 🔴 Underscore = ITALIC on Slack (concrete memory hook)
+
+When writing Slack messages, `_underscore italic_` renders as *italic* on Slack. Darin hates it. This has been caught multiple times.
+
+The fix is already in TOOLS.md Pre-Send Check 2, but here's the visceral hook:
+- `**bold**` = standard Markdown bold → pipeline converts to Slack `*bold*` ✓
+- `_italic_` = **italic on Slack** — Darin sees this and corrects me ✗
+- `*single*` = also italic on Slack, same problem ✗
+
+**Every time I reach for a formatting character in Slack output, I must think:** *"Am I writing `**bold**`? If not, wrong format."*
+
 **Platform-specific rules:**
 - **Slack:** No markdown tables! Use bullet lists, numbered lists, or bold labels instead. Standard markdown for bold/links/code blocks works.
 - **Discord/WhatsApp:** No markdown tables! Use bullet lists instead.

@@ -26,18 +26,19 @@ Identify the SOURCE message that triggered this response:
 
 **TO find the source message's ts:** Check the inbound context. The `reply_to_id` or `message_id` in the conversation info tells you what message to thread under. The triggering message's `ts` timestamp IS the threadId.
 
-### ✅ Check 2: Zero Italic
+### ✅ Check 2: Write `**bold**` — Never Underscore (Training Fix)
 
-**NEVER write `_underscore_` or `*asterisk italic*` in message text.** Period.
+**Root cause:** My training defaults to standard Markdown, where `_italic_` feels natural. This is wrong for Slack. The fix is to rewire the instinct.
 
-In Slack mrkdwn:
-- `*bold*` = bold (single asterisks = Slack bold)
-- `_italic_` = italic (this is what Darin hates)
+**The key insight: OpenClaw pipeline handles conversion.**
+- Write standard Markdown `**bold**` for emphasis everywhere
+- The pipeline converts `**bold**` to Slack `*bold*` automatically
+- **Never write `_italic_` or `*italic*`** — these become italic on Slack
 
-Just write correct Slack mrkdwn from the start:
-- Use `*bold*` for emphasis (NOT `**`, NOT `_`)
-- Never use `_` for anything except code spans
-- Never use single `*` around words you don't want bolded
+**Rule: When I need emphasis in a Slack message, my hand should reach for `**bold**`, not `_underscore_`.**
+- `_underscore_` = italic on Slack — NEVER USE for formatting
+- `_` is for code spans (backticks) only
+- The filter catches slips, but the goal is to write `**bold**` from the start
 
 ### ✅ Check 3: Filter as Safety Net
 
@@ -56,15 +57,44 @@ Wrapper around `scripts/slack_formatter.py` — converts BOTH `*italic*` and `_i
 
 **SKIP REASONING:** Do not "but I didn't use italic" yourself out of this. The filter catches accidents. Run it.
 
+### ✅ Check 4: Stock Analysis = TradingAgents Pipeline + GitHub Push (MANDATORY)
+
+When someone asks to analyze a stock ("analyze X", "what about Y stock"):
+
+1. **Do NOT write a manual analysis** — This bypasses the pipeline and leads to italic formatting, wrong threading, and no GitHub report.
+2. **Use the TradingAgents pipeline** — Run `analyze_stock` MCP tool or direct Python exec with `research_depth="deep"` (3 debate rounds — default).
+3. **Push every report to GitHub** — After analysis completes:
+   ```bash
+   python3 /data/.openclaw/shared-skills/scripts/push_trading_report.py <TICKER> <report.md>
+   ```
+4. **Include the GitHub link** in the final Slack message.
+5. **Send progress updates** — Acknowledge immediately, then status every ~1-2 min (deep: 8-15 min expected, updates at 1 min, 3-4 min, 6-8 min).
+
+**No manual text reports. No bypassing the pipeline. No skipping the GitHub push. Deep is default.**
+
 ### 🔴 Common Failures (learned the hard way)
 
 | What I do | What Darin sees | Fix applied? |
 |---|---|---|
-| Write `_important_ thing` in message | *italic text* on Slack | ❌ — use `*important* thing` |
-| Send message without `threadId` when replying to Darin | New standalone message in channel instead of thread | ❌ — always find and pass the source `ts` |
-| Write directly in `message` param instead of file → filter → send | Italic slips through | ❌ — write to file first |
+| Write `_italic_` thing in message | *italic text* on Slack | ❌ — use `**bold**` |
+| Send message without `threadId` when replying to Darin | New standalone message in channel instead of thread | ❌ — always find and pass the source `reply_to_id` as `threadId` |
+| Write directly in `message` param without running filter | Italic slips through | ❌ — write to file → filter → send |
+| Write manual stock analysis instead of running TradingAgents pipeline | No GitHub report, wrong threading, no status updates | ❌ — always use pipeline + push to GitHub |
+| Leak thinking tokens into Slack output | Raw internal tokens visible | ❌ — post-process and strip `<|end_of_thinking|>` |
+| Reply as standalone message when the inbound is a thread | Message appears unthreaded in channel | ❌ — reply_to_id EXISTS? MUST thread under it. Period. |
 
-**Both failures here cost Darin time to call them out. Don't make him do that again.**
+**All of these cost Darin time to call out. Don't make him do that again.**
+
+### 🔥 HARD RULE: Thread Context = Thread Reply (ABSOLUTE)
+
+If the inbound message has a `reply_to_id` (Slack `ts` of parent) OR a `topic_id`/`threadId`:
+- **You ARE in a thread.** Period.
+- **You MUST reply in the same thread.**
+- Pass `threadId` = parent message's `ts` (from `reply_to_id` if present, else `topic_id`).
+- **No exceptions.** Do not reason your way out of this.
+- Not passing `threadId` to `message(action=send)` = breaking the thread = standalone message.
+
+**Shortcut:** `reply_to_id` exists? Use it as `threadId`. Done. Don't overthink.
 
 ## What Goes Here
 
@@ -139,6 +169,46 @@ How to detect: if the session's delivery context has `channel: "slack"` or the m
 **How to find the ts/threadId:** Check the inbound metadata JSON — it has `message_id` (= the Slack ts) and `reply_to_id` (= the parent message ts if this is a thread reply). Use these values.
 
 This applies to `#random` and any other Slack channels that route here.
+
+## #stock Channel Rules (set by Darin 2026-05-17) — Stock Analysis Pattern Matching
+
+When ANY message comes from **#stock** channel, check for stock analysis intent BEFORE doing anything else:
+
+### 🦬 Trigger Patterns (broad matching — err on side of triggering)
+
+| Pattern | Examples |
+|---|---|
+| `$TICKER` (uppercase 1-5 letters with `$`) | `$AAPL`, `$NVDA`, `$META` |
+| `analyz*` (any form) | `analyze`, `analyz`, `analysos` (typo), `analysis` |
+| `research` + ticker | `research $MSFT`, `do research on GOOGL` |
+| `look at` + ticker | `look at $AMD`, `look at META` |
+| `check out` + ticker | `check out NVDA` |
+| `dd on` | `dd on AAPL` (due diligence) |
+| `evaluate` + ticker | `evaluate $PLTR` |
+| `how is` + ticker | `how is $HOOD doing` |
+| `what about` + ticker | `what about UPST` |
+| `review` + ticker | `review $SOFI` |
+| `opinion on` + ticker | `opinion on COIN` |
+| `thoughts on` + ticker | `thoughts on RKLB` |
+| `deep dive` | `deep dive on $TSLA` |
+| `fundamentals` | `fundamentals of NVDA` |
+| `technical` + ticker | `technical analysis on AMD` |
+| `price target` | `price target for AAPL` |
+| `rating` + ticker | `rating on MSFT` |
+
+**If any match → invoke TradingAgents pipeline.** Don't be clever about filtering. The MCP agent extracts the ticker.
+
+### What to do when triggered:
+1. React 👀 immediately (standard rule)
+2. Acknowledge in thread: "Running analysis on $TICKER..."
+3. Call `analyze_stock` MCP tool via mcp-agent-openclaw with `research_depth="deep"`
+4. Send progress updates every ~1-2 min
+5. Push report to GitHub: `python3 /data/.openclaw/shared-skills/scripts/push_trading_report.py <TICKER> <report.md>`
+6. Post GitHub link as final message
+
+**Do NOT write a manual text analysis.** Always use the pipeline.
+
+**Priority:** #stock pattern matching overrides other channel routing decisions.
 
 ## #learning Posting Rules (set by Darin 2026-05-14)
 
@@ -229,6 +299,24 @@ Every cron job MUST output something. If a job has nothing to report (no events,
 - Acceptable silent exits: only for system-managed internal jobs (like Memory Dreaming Promotion) that the system itself manages.
 - **Fallback channel:** C0B4EK31NCU (<#C0B4EK31NCU>) — for status confirmations, "nothing to report", and silent job outputs.
 - Jobs that actively send to other channels (DM Darin, #learning, weather channel) should use message tool for those destinations, and if the final decision is "nothing to say", post to <#C0B4EK31NCU> instead of NO_REPLY.
+
+## Report Sharing via HackMD (set by Darin 2026-05-17)
+
+When Darin wants to share a research report (deep research, trading analysis, etc.) with someone:
+
+1. **Use HackMD** (hackmd.io) — create a read-only note from the markdown content
+2. **Default note settings:** Set access to "Read-only" / "Anyone with the link can view"
+3. **Steps:**
+   - Open https://hackmd.io
+   - Create a new note
+   - Paste the full markdown content
+   - Set sharing to read-only with the link
+   - Share the URL with the intended recipient
+4. **Link storage:** Keep track of shared report URLs in memory or the relevant channel thread
+5. **⚠️ Permission caveat:** When creating notes without logging in, write permission defaults to "Everyone" (anyone with link can edit). For true read-only sharing, log in to a HackMD account, create the note, then set Write permission → "Only me" in settings.
+6. **Download URL pattern:** Use `https://hackmd.io/<noteId>/download` to get raw markdown from a shared note.
+
+---
 
 ## Why Separate?
 

@@ -1,0 +1,18 @@
+# OpenClaw MCP Server Configuration
+#
+# Install this by running:
+#   openclaw config patch --raw "$(cat ~/.openclaw/workspace/skills/trading-agent/config/openclaw.json)"
+#
+# Or paste it into your openclaw.yaml under `mcp.servers.trading-agent`.
+
+{
+  "mcp": {
+    "servers": {
+      "trading-agent": {
+        "command": "/data/.openclaw/shared-skills/scripts/trading_agent_mcp.sh",
+        "args": ["foreground"],
+        "env": {}
+      }
+    }
+  }
+}
