@@ -17,6 +17,12 @@
 - Personal calendar is for Darin's individual events
 - Work calendar is read-only; I can read but never write to it
 
+## RSC Cryopreservation Monthly Statement
+- Darin requests monthly storage statements from RSC Cryopreservation (RSCCryopreservationbilling@luminarybilling.com)
+- Thread ID: `19b231ee77bf2fff` — Subject: "Re: Request for Cryopreservation Storage Bill, Nov 5, and Transfer Billing"
+- Format: "Hi, Can you send me the statement for [Month]? Thanks!"
+- Reply in-thread via Gmail API using googleapis
+
 ## Slack Routing (critical rule, learned 2026-05-15)
 - Slack @-mentions that route to WebChat do **NOT** auto-route replies back to Slack
 - I **MUST** always use `message(action=send)` to reply in Slack

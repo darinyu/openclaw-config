@@ -8,28 +8,35 @@ read_when:
 
 Skills define _how_ tools work. This file is for _your_ specifics — the stuff that's unique to your setup.
 
-## MANDATORY: Slack Format Filter
+## MANDATORY: Slack Format Filter (GLOBAL — all output)
 
-Before every `message(action=send)` to Slack, run the message through:
+This is the **single global filter** for ALL Slack output — channel messages, DMs, thread replies, cron job responses. Every `message(action=send)` call MUST go through this filter. No exceptions.
+
 ```
 scripts/slack_format.sh
 ```
-This converts ALL single-asterisk italic (`*text*`) to bold (`**text**`) — no exceptions. Only `**bold**` survives.
 
-**Rules enforced by the filter:**
-- No italic. Ever. Zero. Single asterisks get promoted to bold.
+**What the filter does:**
+- Converts `*single asterisk italic*` → `**bold**`
+- Converts `_underscore italic_` → `**bold**`
+- Preserves `**existing bold**`, `` `code spans` ``, and fenced code blocks
+
+**Style Rules:**
+- No italic. Ever. Zero. Both `*italic*` and `_italic_` get promoted to `**bold**`.
 - Bold only for section headers and key terms, not sprinkled through every sentence.
 - Sections separated by clear line breaks.
 
 **HARD PROCESS — MUST follow every time:**
 1. Write message text to `/tmp/slack_msg.txt`
 2. Run: `scripts/slack_format.sh < /tmp/slack_msg.txt` — read the output
-3. Use the FORMATTED output (with `**bold**`) as the `message` parameter
+3. Use the FILTERED output (with `**bold**` only) as the `message` parameter
 4. Do NOT write messages directly in the `message` parameter — always write to file first
 
 **If I skip a step, the Slack message will be wrong and Darin will be rightfully angry. Don't skip.**
-- Bold only for section headers and key terms, not sprinkled through every sentence.
-- Sections separated by clear line breaks.
+
+**NOTE:** The filter uses `scripts/slack_formatter.py` under the hood (the old `slack_format.sh` has been replaced with a Python wrapper). Use the Python script directly for testing: `python3 scripts/slack_formatter.py < /tmp/msg.txt`.
+
+**CRITICAL: Never write `_italic_` or `*italic*` in message text** — always write emphasis as plain text or none at all. Let the filter handle everything.
 
 ## What Goes Here
 
@@ -101,7 +108,7 @@ How to detect: if the session's delivery context has `channel: "slack"` or the m
 - **Thread reply** (message has a threadId) → reply in the same thread.
 - **General channel message** (no tag, no thread) → post directly to the channel.
 
-This applies to \`#random\` and any other Slack channels that route here.
+This applies to `#random` and any other Slack channels that route here.
 
 ## #learning Posting Rules (set by Darin 2026-05-14)
 

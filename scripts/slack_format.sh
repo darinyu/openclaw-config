@@ -1,24 +1,17 @@
 #!/bin/bash
-# Slack Format Filter
-# Converts *italic* to **bold** for Slack messages.
-# Preserves **bold**, code spans, and list markers.
+# Slack Format Filter — global italic-to-bold enforcement.
+# Wrapper around slack_formatter.py for backward compatibility.
 #
-# Usage: echo "message" | ./slack_format.sh
-#   OR:  ./slack_format.sh < input.txt
-#   OR:  cat message.txt | ./slack_format.sh
+# Converts ALL italic to bold:
+#   *single asterisk italic*  -> **bold**
+#   _underscore italic_       -> **bold**
+#
+# Preserves code spans, code blocks, and existing **bold**.
+#
+# Usage:
+#   echo "message" | ./slack_format.sh
+#   ./slack_format.sh < input.txt
+#   cat message.txt | ./slack_format.sh
 
-perl -pe '
-  # Split on code spans to protect backtick content
-  my $out = "";
-  my @parts = split /(`[^`]*`)/, $_;
-  for my $p (@parts) {
-    if ($p =~ /^`/) {
-      $out .= $p;                # code span — untouched
-    } else {
-      # *italic* -> **bold** (single asterisk wrapping, not double)
-      1 while $p =~ s/(?<!\*)\*([^*\*]+)\*(?!\*)/**\1**/g;
-      $out .= $p;
-    }
-  }
-  $_ = $out;
-' | cat -s
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+exec python3 "$SCRIPT_DIR/slack_formatter.py" "$@"
