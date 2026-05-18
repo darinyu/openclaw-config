@@ -26,19 +26,24 @@ Identify the SOURCE message that triggered this response:
 
 **TO find the source message's ts:** Check the inbound context. The `reply_to_id` or `message_id` in the conversation info tells you what message to thread under. The triggering message's `ts` timestamp IS the threadId.
 
-### ✅ Check 2: Write `**bold**` — Never Underscore (Training Fix)
+### ✅ Check 2: Write `**bold**` — Never Underscore or *Single* (Training Fix)
 
-**Root cause:** My training defaults to standard Markdown, where `_italic_` feels natural. This is wrong for Slack. The fix is to rewire the instinct.
+**Root cause:** My training defaults to standard Markdown, where `*italic*` and `_italic_` feel natural. This is wrong for Slack. The fix is to rewire the instinct.
 
 **The key insight: OpenClaw pipeline handles conversion.**
 - Write standard Markdown `**bold**` for emphasis everywhere
 - The pipeline converts `**bold**` to Slack `*bold*` automatically
 - **Never write `_italic_` or `*italic*`** — these become italic on Slack
 
-**Rule: When I need emphasis in a Slack message, my hand should reach for `**bold**`, not `_underscore_`.**
+**⚠️ CRITICAL: No space after `**`**
+- The pipeline only converts `**text**` (no space between `**` and text) to Slack `*text*`
+- `** text**` or `** text **` (space after opening `**`) — standard Markdown does NOT parse this as bold, so the pipeline leaves `**` as literal text
+- **Rule:** `**` must be directly adjacent to the text it wraps. No trailing space.
+
+**Rule: When I need emphasis in a Slack message, my hand should reach for `**bold**`, not `_underscore_` or `*single*`.**
+- `*single asterisks*` = standard Markdown italic → pipeline converts to Slack `_italic_` (NOT bold)
 - `_underscore_` = italic on Slack — NEVER USE for formatting
-- `_` is for code spans (backticks) only
-- The filter catches slips, but the goal is to write `**bold**` from the start
+- The filter catches slips, but the goal is to write `**bold**` with NO SPACE after `**`
 
 ### ✅ Check 3: Filter as Safety Net
 
@@ -77,6 +82,8 @@ When someone asks to analyze a stock ("analyze X", "what about Y stock"):
 | What I do | What Darin sees | Fix applied? |
 |---|---|---|
 | Write `_italic_` thing in message | *italic text* on Slack | ❌ — use `**bold**` |
+| Write `*single asterisk*` thinking it's Slack bold | Pipeline treats as standard Markdown italic → converts to Slack _italic_ | ❌ — use `**bold**` for bold |
+| Write `** text**` with space after `**` | Standard Markdown doesn't parse as bold → pipeline leaves `**` literal | ❌ — `**` must touch text: `**bold text**` |
 | Send message without `threadId` when replying to Darin | New standalone message in channel instead of thread | ❌ — always find and pass the source `reply_to_id` as `threadId` |
 | Write directly in `message` param without running filter | Italic slips through | ❌ — write to file → filter → send |
 | Write manual stock analysis instead of running TradingAgents pipeline | No GitHub report, wrong threading, no status updates | ❌ — always use pipeline + push to GitHub |
