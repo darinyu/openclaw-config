@@ -259,9 +259,9 @@ The goal: Be helpful without being annoying. Check in a few times a day, do usef
 
 ### Execution rules (Execute-Verify-Report)
 
-1. **REACT FIRST** — The very first tool call in your response MUST be `message(action=react, emoji="👀")` on the inbound message. Not "ok I'll react" — actually do it.
+1. **REACT FIRST** — The very first tool call in your response MUST be `message(action=react, emoji="eyes")` on the inbound message. Not "ok I'll react" — actually do it.
 2. **Before any work** — No reading TOOLS.md, no processing the message, no planning, no responding. The reaction is step 1, period.
-3. **Emoji to use** — `👀` for messages you need to process/respond to, `👍` for simple acknowledgments. Default to 👀.
+3. **Emoji to use** — `eyes` for messages you need to process/respond to, `thumbsup` for simple acknowledgments. Default to `eyes`.
 4. **Verify** — Confirm the reaction API returned ok.
 5. **Then proceed** — After the reaction is done, do your normal job (read context, process, reply, etc.).
 

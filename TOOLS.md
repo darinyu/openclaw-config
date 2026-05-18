@@ -126,7 +126,7 @@ Things like:
 ```
 
 ## ⚠️ CRITICAL: Emoji First, Then Work (MANDATORY — do not skip)
-When a Slack message routes here (any channel, any thread), the VERY FIRST tool call MUST be `message(action=react, emoji="👀")` on the inbound message. Not "I'll react soon" — actually do it immediately as the first action. No reading, no processing, no planning, no responding until the reaction is sent. Default to 👀. This is a hard standing order in AGENTS.md.
+When a Slack message routes here (any channel, any thread), the VERY FIRST tool call MUST be `message(action=react, emoji="eyes")` on the inbound message. Not "I'll react soon" — actually do it immediately as the first action. No reading, no processing, no planning, no responding until the reaction is sent. Default to `eyes` (Slack API shortcode, NOT Unicode emoji). This is a hard standing order in AGENTS.md.
 
 ## ⚠️ CRITICAL: Slack Replies Must Be Explicit (always!)
 > I keep failing at this. When a Slack message triggers work, the LAST thing I do MUST be `message(action=send)` — not a private reply here. Private replies don't reach Slack. Ever.
@@ -198,13 +198,25 @@ When ANY message comes from **#stock** channel, check for stock analysis intent 
 
 **If any match → invoke TradingAgents pipeline.** Don't be clever about filtering. The MCP agent extracts the ticker.
 
-### What to do when triggered:
-1. React 👀 immediately (standard rule)
-2. Acknowledge in thread: "Running analysis on $TICKER..."
-3. Call `analyze_stock` MCP tool via mcp-agent-openclaw with `research_depth="deep"`
-4. Send progress updates every ~1-2 min
-5. Push report to GitHub: `python3 /data/.openclaw/shared-skills/scripts/push_trading_report.py <TICKER> <report.md>`
-6. Post GitHub link as final message
+### What to do when triggered (EXACT PROTOCOL):
+1. *React* `:eyes:` immediately (standard rule)
+2. *Acknowledge in thread* — Use `message(action=send, threadId=SOURCE_MESSAGE.ts)` with "Running analysis on $TICKER..."
+3. *Run the pipeline* — Execute: `python3 /data/.openclaw/workspace/scripts/stock_analysis.py <TICKER> deep` via exec with `yieldMs=30000` for progress
+4. *Read progress lines* — Script outputs JSON lines with `{type:"progress", phase:"...", message:"..."}`. For each, send a Slack update in the same thread
+5. *Parse final result* — Last JSON line has `{status, ticker, github_url, slack_text}`
+6. *Send final Slack message* — In the **same thread**, post the GitHub link + summary. Run the `slack_text` through `scripts/slack_format.sh` first (double-check: NO `_italic_`, all `*bold*`)
+7. *Never write a manual text analysis.* Always use the pipeline script.
+
+### 🔴 CRITICAL: Threading Rule (ABSOLUTE)
+When you call `message(action=send)` for ANY stock analysis output (ack, progress, final):
+- **threadId MUST be the source message's Slack `ts`** (from the `message_id` field in inbound metadata)
+- **NEVER** let the report create its own thread
+- The source message is Darin's request (e.g. "analyze coreweave"), NOT the response
+
+### 🔴 CRITICAL: Italic Rule (ABSOLUTE)
+- The `stock_analysis.py` script already filters italic. But ALWAYS also run output through `scripts/slack_format.sh` before sending.
+- Double-check the message for ANY `_underscore_` before sending.
+- NO exception. NO “but I checked”. Run the filter.
 
 **Do NOT write a manual text analysis.** Always use the pipeline.
 

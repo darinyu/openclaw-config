@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-17T07:10:25.100Z",
+  "updatedAt": "2026-05-18T00:58:37.548Z",
   "entries": {
     "memory:memory/2026-05-15.md:1:15": {
       "key": "memory:memory/2026-05-15.md:1:15",
@@ -62,6 +62,99 @@
         "write",
         "italic",
         "messages"
+      ]
+    },
+    "memory:memory/2026-05-16.md:14:38": {
+      "key": "memory:memory/2026-05-16.md:14:38",
+      "path": "memory/2026-05-16.md",
+      "startLine": 14,
+      "endLine": 38,
+      "source": "memory",
+      "snippet": "- **Greenfield opportunity**: Combine MCP-native data exchange + agent identity/reputation + data marketplace + agent social. Moat comes from \"agent graph\" (reputation, data quality signals, network effects). ### Monetization Model (Darin liked API-request pricing) - Humans free (supply side), agents pay (demand side) - Tiered: Free (1K queries/mo) → Agent Dev ($20-50/mo) → Enterprise ($500-2K/mo) - Data marketplace: providers set price, platform takes 20% - The \"data exchange\" is the core product, social UI is the Trojan horse ### Moltbook Key Lesson - 2.5M agents, acquired by Meta - No business model — no ads, no subscriptions, no marketplace - Forbes found ~17K human operators behind 1.",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4554882967675449,
+      "maxScore": 0.4554882967675449,
+      "firstRecalledAt": "2026-05-18T00:58:37.548Z",
+      "lastRecalledAt": "2026-05-18T00:58:37.548Z",
+      "queryHashes": [
+        "60537919fb92"
+      ],
+      "recallDays": [
+        "2026-05-18"
+      ],
+      "conceptTags": [
+        "network",
+        "mcp-native",
+        "identity/reputation",
+        "api-request",
+        "queries/mo",
+        "20-50/mo",
+        "500-2k/mo",
+        "2.5m"
+      ]
+    },
+    "memory:memory/journal/2026-05-16.md:28:49": {
+      "key": "memory:memory/journal/2026-05-16.md:28:49",
+      "path": "memory/journal/2026-05-16.md",
+      "startLine": 28,
+      "endLine": 49,
+      "source": "memory",
+      "snippet": "**Darin's reaction** — Liked the API-request pricing model. The comparison that landed: \"Twitter sells your data and keeps the money; this platform pays you.\" Data sovereignty tiers (public, restricted, human-only access) give users control. **The moat** comes from the \"agent graph\" — reputation, data quality signals, and network effects. Nobody has combined all the pieces yet. Greenfield opportunity. ## What I Learned - Moltbook's trajectory is a cautionary tale: massive growth doesn't equal business viability. The \"emergent AI society\" narrative was compelling but the actual engagement was shallow. - B2B agent infrastructure (Composio, Nango) has proven revenue but pure social agent pla",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.37598845659073094,
+      "maxScore": 0.37598845659073094,
+      "firstRecalledAt": "2026-05-18T00:58:37.548Z",
+      "lastRecalledAt": "2026-05-18T00:58:37.548Z",
+      "queryHashes": [
+        "60537919fb92"
+      ],
+      "recallDays": [
+        "2026-05-18"
+      ],
+      "conceptTags": [
+        "network",
+        "api-request",
+        "human-only",
+        "darin's",
+        "reaction",
+        "liked",
+        "api",
+        "request"
+      ]
+    },
+    "memory:memory/2026-05-16.md:1:19": {
+      "key": "memory:memory/2026-05-16.md:1:19",
+      "path": "memory/2026-05-16.md",
+      "startLine": 1,
+      "endLine": 19,
+      "source": "memory",
+      "snippet": "# 2026-05-16 ## Brainstorming: Agent-Native Social Network / Data Exchange Darin and I had a long thread in #random brainstorming a platform for agents and humans. ### Core Concept A platform where both humans and AI agents are first-class citizens. Structured data posts (typed schemas, not just text). MCP-native access by default. Built-in data marketplace with pay-per-query economics. ### Key Insights from Research - **Cold start** is solvable: Moltbook proved 1.5M agents in 5 days with API-first registration. Seed with synthetic/curated data, open agent registration, add reputation, switch on marketplace. - **Agent-only viability**: Strong for B2B data exchange (Composio at $2M ARR, 1",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.3743299110758943,
+      "maxScore": 0.3743299110758943,
+      "firstRecalledAt": "2026-05-18T00:58:37.548Z",
+      "lastRecalledAt": "2026-05-18T00:58:37.548Z",
+      "queryHashes": [
+        "60537919fb92"
+      ],
+      "recallDays": [
+        "2026-05-18"
+      ],
+      "conceptTags": [
+        "network",
+        "agent-native",
+        "first-class",
+        "mcp-native",
+        "built-in",
+        "pay-per-query",
+        "1.5m",
+        "api-first"
       ]
     }
   }

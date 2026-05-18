@@ -122,6 +122,16 @@ Reports are pushed to `darinyu/deep-research-reports/trading/<TICKER>/<date>/rep
    - `fundamentals_report`, `market_report`, `sentiment_report`, `news_report` are **strings**
    - Scan the final report for `{'` characters before pushing — they indicate a raw dict dump
 
+   **📎 Report quality: include resource links for every data point**
+   Every number in the report MUST be backed by a source link. Before writing the report:
+   1. Search the web for each key data point (revenue, earnings, margins, platform assets, P/E ratio, analyst targets, price targets, etc.)
+   2. Find the **specific source URL** (Yahoo Finance, Seeking Alpha, company earnings release, SEC filing)
+   3. Include the source link inline next to each data point using standard markdown: `[Source](url)`
+   4. If a number comes from the company's earnings release, link both the announcement and the specific data on Yahoo/WSJ
+   5. For technical indicators (SMA, RSI, MACD), link the chart or data source (TradingView, Yahoo Finance)
+   6. For analyst ratings/price targets, link the source (TipRanks, Benzinga, etc.)
+   7. **No unsourced numbers** — every metric, percentage, or dollar figure in the report must have a citation
+
 6. Push to GitHub
 7. Share the GitHub link + executive summary in the final update
 
