@@ -3,6 +3,7 @@
 # Never checks in credentials (handled by .gitignore + explicit safety checks)
 #
 # Runs as an OpenClaw cron job.
+# Output: structured JSON to stdout for cron job to parse.
 # Exits silently when there's nothing to commit.
 
 set -euo pipefail
@@ -43,10 +44,14 @@ done
 
 # ---- Check for any changes ----
 if ! git diff --quiet HEAD && git status --porcelain | grep -q .; then
-  # Something changed
-  CHANGED_FILES=$(git status --porcelain | wc -l)
-
-  echo "[git-sync] $CHANGED_FILES file(s) changed, committing..."
+  # Collect file list before staging (status --porcelain shows staged/unstaged changes)
+  FILE_LIST=$(git status --porcelain | sed 's/^.. //' | sort -u | head -20)
+  CHANGED_COUNT=$(echo "$FILE_LIST" | wc -l)
+  TRUNCATED=false
+  TOTAL_COUNT=$(git status --porcelain | sed 's/^.. //' | sort -u | wc -l)
+  if [ "$CHANGED_COUNT" -lt "$TOTAL_COUNT" ]; then
+    TRUNCATED=true
+  fi
 
   git add -A
 
@@ -58,11 +63,25 @@ if ! git diff --quiet HEAD && git status --porcelain | grep -q .; then
     -m "Auto-sync: workspace changes at $TIMESTAMP" \
     -m "$CHANGES"
 
+  # Capture commit SHA
+  COMMIT_SHA=$(git rev-parse HEAD)
+  COMMIT_SHORT=$(git rev-parse --short HEAD)
+
   # Push
   echo "[git-sync] Pushing to origin..."
-  git push origin master 2>&1 || echo "[git-sync] Push failed (network? auth?) — commit saved locally"
+  PUSH_RESULT=""
+  if git push origin master 2>&1; then
+    PUSH_RESULT="pushed"
+  else
+    PUSH_RESULT="local-only"
+    echo "[git-sync] Push failed (network? auth?) — commit saved locally"
+  fi
 
-  echo "[git-sync] Done."
+  # Output structured JSON for the cron job
+  FILE_LIST_JSON=$(echo "$FILE_LIST" | jq -R -s -c 'split("\n") | map(select(. != ""))' 2>/dev/null || echo "[]")
+  cat <<EOF
+{"event":"commit","count":$TOTAL_COUNT,"short_sha":"$COMMIT_SHORT","sha":"$COMMIT_SHA","push":"$PUSH_RESULT","truncated":$TRUNCATED,"files":$FILE_LIST_JSON}
+EOF
 else
-  echo "[git-sync] No changes to commit."
+  echo '{"event":"noop"}'
 fi
