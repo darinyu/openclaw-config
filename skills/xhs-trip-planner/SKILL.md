@@ -212,16 +212,97 @@ Run at least 2 more search rounds with different keyword groups:
 - `<destination> 必吃`
 - `<destination> 餐厅`
 
-**For every search round, save the raw JSON output immediately:**
+**For every search round, save a CLEANED JSON with only the fields we need:**
+
+After running `mcporter call xiaohongshu-mcp.search_feeds`, process the output to extract only useful fields. Save the cleaned version:
 
 ```bash
-mcporter call xiaohongshu-mcp.search_feeds --keyword "<keyword>" \
-  > xhs-research/<destination>/xhs_search_results/001_<keyword>.json
+mcporter call xiaohongshu-mcp.search_feeds --keyword "<keyword>" | python3 -c "
+import json, sys
+raw = json.load(sys.stdin)
+feeds = raw.get('feeds', [])
+cleaned = {
+    'keyword': '<keyword>',
+    'searched_at': '<timestamp>',
+    'total_results': len(feeds),
+    'results': [{
+        'rank': i+1,
+        'id': f.get('id', ''),
+        'title': f.get('noteCard', {}).get('displayTitle', ''),
+        'nickname': f.get('noteCard', {}).get('user', {}).get('nickname', ''),
+        'likes': int(f.get('noteCard', {}).get('interactInfo', {}).get('likedCount', 0) or 0),
+        'collects': int(f.get('noteCard', {}).get('interactInfo', {}).get('collectedCount', 0) or 0),
+        'comments': int(f.get('noteCard', {}).get('interactInfo', {}).get('commentCount', 0) or 0),
+        'shares': int(f.get('noteCard', {}).get('interactInfo', {}).get('sharedCount', 0) or 0),
+        'desc': f.get('noteCard', {}).get('desc', '')[:500],  # raw post text, truncated
+        'link': f'https://www.xiaohongshu.com/explore/{f.get("id", "")}'
+        # NOTE: Intentionally excluded: xsecToken, userId, avatar, cover, imageList
+    } for i, f in enumerate(feeds[:20])]
+}
+json.dump(cleaned, open('xhs-research/<destination>/xhs_search_results/001_<keyword>.json', 'w'),
+          indent=2, ensure_ascii=False)
+"
 ```
 
-Number sequentially (001_, 002_, ...) so they stay ordered. This preserves the original search data for GitHub.
+**Cleaned JSON fields:**
+| Field | Source | Why |
+|-------|--------|-----|
+| `id` | feed id | Build XHS permalink `https://www.xiaohongshu.com/explore/<id>` |
+| `title` | `noteCard.displayTitle` | Post title for identification |
+| `nickname` | `noteCard.user.nickname` | Author name — NO userId, NO avatar |
+| `likes` / `collects` / `comments` / `shares` | `interactInfo` | Engagement data for ranking |
+| `desc` | `noteCard.desc` | Raw post text (first 500 chars) — NO cover image |
 
-For each result, fetch note details + top comments. Rank by engagement (likes + saves). Extract:
+Number sequentially (001_, 002_, ...) so they stay ordered.
+
+For each result, fetch note details + top comments:
+
+```bash
+mcporter call xiaohongshu-mcp.get_feed_detail \
+  --feed_id "<feed_id>" --xsec_token "<token>" \
+  --load_all_comments true --limit 20 | python3 -c "
+import json, sys
+raw = json.load(sys.stdin)
+data = raw.get('data', raw)
+nc = data.get('noteCard', {})
+ii = nc.get('interactInfo', {})
+cleaned = {
+    'id': data.get('id', ''),
+    'title': nc.get('displayTitle', ''),
+    'nickname': nc.get('user', {}).get('nickname', ''),
+    'likes': int(ii.get('likedCount', 0) or 0),
+    'collects': int(ii.get('collectedCount', 0) or 0),
+    'comments_count': int(ii.get('commentCount', 0) or 0),
+    'desc': nc.get('desc', ''),  # raw post text
+    'link': f'https://www.xiaohongshu.com/explore/{data.get("id", "")}',
+    'comments': [{
+        'content': c.get('content', ''),
+        'nickname': c.get('user_info', {}).get('nickname', ''),
+        'likes': int(c.get('like_count', 0) or 0),
+        'time': c.get('time', ''),
+        # NOTE: Intentionally excluded: userId, avatar, cover, imageList
+    } for c in data.get('comments', [])[:20]],
+    'comment_summary': 'Comments range from helpful tips to personal experiences. '
+        'Top comments mention practical advice, booking tips, and local recommendations.'
+}
+json.dump(cleaned, open('xhs-research/<destination>/xhs_search_results/detail_<feed_id>.json', 'w'),
+          indent=2, ensure_ascii=False)
+"
+```
+
+**Detail JSON fields:**
+| Field | Source | Why |
+|-------|--------|-----|
+| `id` | feed id | Unique identifier |
+| `title` | `displayTitle` | Post title |
+| `nickname` | `user.nickname` | Author name — NO userId, NO avatar |
+| `likes` / `collects` / `comments_count` | `interactInfo` | Engagement data |
+| `desc` | `noteCard.desc` | Full raw post text — NO cover images |
+| `comments[].content` | comment content | Raw comment text for analysis |
+| `comments[].nickname` | comment user_info | Commenter name — NO userId, NO avatar |
+| `comments[].likes` | comment like_count | Comment engagement |
+
+Rank by engagement (likes + saves). Extract:
 - Name, description, location area
 - XHS permalink (`https://www.xiaohongshu.com/explore/<feed_id>`)
 - Like/save counts
