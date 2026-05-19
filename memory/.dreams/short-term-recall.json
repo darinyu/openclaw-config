@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-19T07:26:21.596Z",
+  "updatedAt": "2026-05-19T15:10:45.345Z",
   "entries": {
     "memory:memory/2026-05-15.md:1:15": {
       "key": "memory:memory/2026-05-15.md:1:15",
@@ -30714,6 +30714,69 @@
         "post/comment",
         "xhs-trip-planner",
         "fixed"
+      ]
+    },
+    "memory:memory/2026-05-18.md:1:40": {
+      "key": "memory:memory/2026-05-18.md:1:40",
+      "path": "memory/2026-05-18.md",
+      "startLine": 1,
+      "endLine": 40,
+      "source": "memory",
+      "snippet": "# 2026-05-18 ## Correction Retrospective (cron, 11:00 UTC) Scanned last 24h for corrections from Darin. Sessions list returned 0 results (no visible sessions), relied on memory files. ### Corrections found from 2026-05-17 **1. Stock Analysis Pipeline — Darin caught 3 bugs** - Wrong thread (reports in their own thread, not reply under his message) - Italic in Slack output - No progress updates or GitHub push **Fix verification: ALL VERIFIED ✅** - `scripts/stock_analysis.py` exists with full TradingAgents pipeline + JSON progress + Slack formatting + GitHub push - TOOLS.md has full #stock Channel Rules protocol (threading, italic filter, progress updates) - `scripts/slack_format.sh` / `sl",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.8219949275255203,
+      "maxScore": 0.4287824481725693,
+      "firstRecalledAt": "2026-05-19T15:08:19.652Z",
+      "lastRecalledAt": "2026-05-19T15:10:45.345Z",
+      "queryHashes": [
+        "067b48e415e4",
+        "4c074a52e9bb"
+      ],
+      "recallDays": [
+        "2026-05-19"
+      ],
+      "conceptTags": [
+        "scripts/stock-analysis.py",
+        "tools.md",
+        "scripts/slack-format.sh",
+        "correction",
+        "retrospective",
+        "cron",
+        "utc",
+        "scanned"
+      ]
+    },
+    "memory:memory/journal/2026-05-18.md:1:13": {
+      "key": "memory:memory/journal/2026-05-18.md:1:13",
+      "path": "memory/journal/2026-05-18.md",
+      "startLine": 1,
+      "endLine": 13,
+      "source": "memory",
+      "snippet": "# Journal — 2026-05-18 (Monday) ## Retrospective & Corrections Sweep Ran a comprehensive corrections retrospective covering the last 24h. Found **4 known issues** from Darin's recent call-outs, all previously documented and already fixed: 1. **Stock Analysis Pipeline** — Threading, italic filter, progress updates, and GitHub push all verified working via `scripts/stock_analysis.py` and `scripts/push_trading_report.py`. 2. **Slack Routing** — Reply-in-thread rules reaffirmed in TOOLS.md and AGENTS.md. 3. **Think.py Auto-logging** — AGENTS.md integration complete with session_id format for every Slack conversation. 4. **Cron Job Output Rules** — Pre-Send checklist extended to cron jobs; bol",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.40093472301959987,
+      "maxScore": 0.40093472301959987,
+      "firstRecalledAt": "2026-05-19T15:08:19.652Z",
+      "lastRecalledAt": "2026-05-19T15:08:19.652Z",
+      "queryHashes": [
+        "067b48e415e4"
+      ],
+      "recallDays": [
+        "2026-05-19"
+      ],
+      "conceptTags": [
+        "call-outs",
+        "scripts/stock-analysis.py",
+        "scripts/push-trading-report.py",
+        "reply-in-thread",
+        "tools.md",
+        "agents.md",
+        "think.py",
+        "auto-logging"
       ]
     }
   }

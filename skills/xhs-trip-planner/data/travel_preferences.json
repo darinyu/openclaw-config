@@ -2,15 +2,15 @@
   "profile": {
     "travel_style": "balanced",
     "budget_level": "mid-range",
-    "pace": "relaxed",
+    "pace": "moderate",
     "accommodation": "hotel",
     "companions": "couple",
     "dietary": [],
     "interests": [
-      "nature",
       "food",
       "culture",
       "photography",
+      "nature",
       "hiking"
     ],
     "languages": [
@@ -19,6 +19,21 @@
     "previous_destinations": [],
     "bucket_list": []
   },
-  "trips": [],
-  "last_updated": "2026-05-19T17:10:03.923116+00:00"
+  "trips": [
+    {
+      "destination": "Italy + Greece",
+      "duration_days": 7,
+      "season": "summer",
+      "companions": "couple",
+      "priorities": [
+        "highest_rated",
+        "foodie",
+        "instagram"
+      ],
+      "minimize_moves": true,
+      "language": "Chinese",
+      "planned_at": "2026-05-19T17:30:46.737784+00:00"
+    }
+  ],
+  "last_updated": "2026-05-19T17:30:46.737837+00:00"
 }

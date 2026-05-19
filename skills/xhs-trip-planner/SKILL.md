@@ -76,9 +76,7 @@ Ask ONE question at a time. Use MCQ for prioritization. Save to preference syste
 7. *Where* are you going? (If multi-city, list them all)
 8. *How long*? (dates or number of days)
 9. *Who's going on this trip?* — note any mobility concerns
-10. *Hotel moves* — ONE hotel or OK switching? (MCQ)
-    > 1️⃣ *One hotel preferred* — minimize moves
-    > 2️⃣ *OK switching* — flexibility for better experience
+10. *Hotel moves* — REMOVED (standing rule: permanently set to minimize moves, never ask) ✅
 
 **Then ask prioritization (MCQ ONLY):**
 
@@ -212,9 +210,14 @@ Run at least 2 more search rounds with different keyword groups:
 - `<destination> 必吃`
 - `<destination> 餐厅`
 
-**For every search round, save a CLEANED JSON with only the fields we need:**
+**For every search round, save a CLEANED JSON with only the fields we need. ALSO accumulate into a global list for the final `data.json` push:**
 
-After running `mcporter call xiaohongshu-mcp.search_feeds`, process the output to extract only useful fields. Save the cleaned version:
+Accumulate all search results across rounds into a single Python list:
+```python
+all_results = []  # define at start of Step 3, grows with each round
+```
+
+After running `mcporter call xiaohongshu-mcp.search_feeds`, process the output to extract only useful fields. Save the cleaned version locally AND append to `all_results`:
 
 ```bash
 mcporter call xiaohongshu-mcp.search_feeds --keyword "<keyword>" | python3 -c "
@@ -239,10 +242,108 @@ cleaned = {
         # NOTE: Intentionally excluded: xsecToken, userId, avatar, cover, imageList
     } for i, f in enumerate(feeds[:20])]
 }
+# Save per-keyword JSON locally
 json.dump(cleaned, open('xhs-research/<destination>/xhs_search_results/001_<keyword>.json', 'w'),
           indent=2, ensure_ascii=False)
+# Print the results as JSON so the calling script can capture them
+print(json.dumps(cleaned['results'], ensure_ascii=False))
 "
 ```
+
+Capture the output into the `all_results` list:
+```python
+results_json = subprocess.check_output([...])  # or pipe the print output
+all_results.extend(json.loads(results_json))
+```
+
+At the end of all search rounds, build the consolidated `data.json`:
+### Enrichment step — fetch post details + comments for top posts
+
+Before building `data.json`, enrich the top posts with full description and comments. This is **mandatory** for keeping raw data useful.
+
+After all search rounds and deduplication:
+
+```python
+# Sort by likes, take top 10 for enrichment
+unique_results.sort(key=lambda r: r['likes'], reverse=True)
+top_posts = unique_results[:10]
+
+# Fetch enriched data for each post using get_feed_detail
+import subprocess, json as _json
+
+enriched_map = {}  # link -> {desc, top_comments}
+
+# You need id + xsec_token from the search results; look these up in the raw search data
+for post in top_posts:
+    fid = post['id']  # the feed_id from search
+    token = post.get('xsecToken', '')  # store this during search collection!
+    if not token:
+        continue
+    try:
+        result = subprocess.run(
+            ['mcporter', 'call', 'xiaohongshu-mcp.get_feed_detail',
+             '--feed_id', fid, '--xsec_token', token,
+             '--load_all_comments', 'true', '--limit', '10'],
+            capture_output=True, text=True, timeout=30
+        )
+        raw = _json.loads(result.stdout)
+        data = raw.get('data', {})
+        note = data.get('note', {})
+        comments_data = data.get('comments', {})
+        comments_list = comments_data.get('list', []) if isinstance(comments_data, dict) else (comments_data if isinstance(comments_data, list) else [])
+        
+        enriched_map[post['link']] = {
+            'desc': note.get('desc', '')[:3000],
+            'top_comments': [{
+                'content': c.get('content', '')[:500],
+                'nickname': c.get('user_info', {}).get('nickname', ''),
+                'likes': int(c.get('like_count', 0) or 0),
+            } for c in comments_list[:5] if c.get('content')]
+        }
+    except Exception as e:
+        print(f"Failed to enrich {fid}: {e}")
+```
+
+```python
+# Then build data_json WITH enriched fields
+import base64, json as _json, os, urllib.request
+from datetime import datetime, timezone
+
+data_json = {
+    'keyword': '<destination>',
+    'searched_at': datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ'),
+    'searched_by': 'xiaohongshu-mcp',
+    'total_results': len(unique_results),
+    'searches_used': ['<keyword1>', '<keyword2>', ...],
+    'results': [
+        {
+            'rank': i+1,
+            'title': r['title'],
+            'author': r['nickname'],
+            'likes': r['likes'],
+            'collects': r['collects'],
+            'comments_count': r['comments'],  # renamed: comments → comments_count for clarity
+            'link': r['link'],
+            'desc': enriched_map.get(r['link'], {}).get('desc', ''),  # <-- full post text, MANDATORY
+            'top_comments': enriched_map.get(r['link'], {}).get('top_comments', [])  # <-- top 5 comments, MANDATORY
+        }
+        for i, r in enumerate(unique_results)
+    ]
+}
+```
+
+**NOTE**: To enable enrichment, the `all_results[]` list must store `id` and `xsecToken` fields from search results:
+```python
+all_results.append({
+    'rank': ..., 'title': ..., 'nickname': ...,
+    'likes': ..., 'collects': ..., 'comments': ...,
+    'desc': ..., 'link': ...,
+    'id': f.get('id', ''),          # <-- needed for get_feed_detail
+    'xsecToken': f.get('xsecToken', '')  # <-- needed for get_feed_detail
+})
+```
+
+This gets pushed to `/xhs/YYYY-MM-DD/<destination>/data.json` at Step 6.
 
 **Cleaned JSON fields:**
 | Field | Source | Why |
@@ -387,18 +488,89 @@ Use the `hotel-research` skill:
 
 **Send a progress update** after hotel search.
 
-### Step 6: Store all data and commit to deep-research-reports
+### Step 6: Push ALL data to deep-research-reports
 
 After every significant research batch. Data goes to `darinyu/deep-research-reports`, NOT openclaw-config.
 
-**What to commit (ALL files):**
-- `01_geography_days.md` — geography map + transport
-- `02_activities.md` — activities with XHS sources
-- `03_food.md` — food with XHS sources
-- `04_itinerary.md` — final itinerary (see Step 8 for format)
-- `xhs_search_results/*.json` — raw XHS search JSON output from every keyword
+**TWO locations — push BOTH:**
 
-**Commit script:**
+**Location A — RAW DATA** → `/xhs/YYYY-MM-DD/<destination>/`
+- What: Single `data.json` with ALL search results consolidated (keyword, searched_at, searches_used[], results[{rank, title, author, likes, collects, comments, link}])
+- Purpose: Backbone raw data. Reusable by future research.
+- Organized by date, then keyword/destination.
+
+**Location B — PROCESSED DATA** → `/xhs-research/<destination>/`
+- What: `01_geography_days.md`, `02_activities.md`, `03_food.md`, `04_itinerary.md`, `xhs_search_results/*.json`
+- Purpose: Final plans, itineraries, recommendations.
+
+**Hard rules:**
+- `/xhs/` NEVER contains processed reports — only raw `data.json`
+- `/xhs-research/` NEVER replaces `/xhs/` — always push BOTH
+- Push raw data BEFORE or WITH processed data, never after
+
+**Python commit script (preferred):**
+```python
+import base64, json, os, urllib.request
+from datetime import datetime, timezone
+
+# Get GH token
+with open(os.path.expanduser('~/.config/gh/hosts.yml')) as f:
+    for line in f:
+        if 'oauth_token:' in line:
+            token = line.split(':', 1)[1].strip()
+            break
+
+def gh_put(path, content, message):
+    # Check if file exists (get SHA for update)
+    req = urllib.request.Request(f'https://api.github.com/repos/darinyu/deep-research-reports/contents/{path}')
+    req.add_header('Authorization', f'Bearer {token}')
+    sha = None
+    try:
+        existing = json.loads(urllib.request.urlopen(req).read())
+        sha = existing['sha']
+    except:
+        pass
+    body = {'message': message, 'content': base64.b64encode(content.encode()).decode(), 'branch': 'main'}
+    if sha: body['sha'] = sha
+    req2 = urllib.request.Request(f'https://api.github.com/repos/darinyu/deep-research-reports/contents/{path}',
+                                   data=json.dumps(body).encode(), method='PUT')
+    req2.add_header('Authorization', f'Bearer {token}')
+    req2.add_header('Content-Type', 'application/json')
+    urllib.request.urlopen(req2)
+
+# Push raw data to /xhs/YYYY-MM-DD/<destination>/
+# IMPORTANT: data.json MUST include desc + top_comments for each post.
+# Pre-enrich top posts using get_feed_detail (see enrichment section above).
+date_str = datetime.now(timezone.utc).strftime('%Y-%m-%d')
+data_json = {
+    'keyword': '<destination>',
+    'searched_at': datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ'),
+    'searched_by': 'xiaohongshu-mcp',
+    'total_results': <N>,
+    'searches_used': ['<keyword1>', '<keyword2>', '<keyword3>'],
+    'results': [{
+        'rank': r['rank'], 'title': r['title'], 'author': r['nickname'],
+        'likes': r['likes'], 'collects': r['collects'], 'comments_count': r['comments'],
+        'link': r['link'],
+        'desc': enriched_map.get(r['link'], {}).get('desc', ''),  # MANDATORY: full post text
+        'top_comments': enriched_map.get(r['link'], {}).get('top_comments', [])  # MANDATORY: top 5 comments
+    } for r in all_results]
+}
+gh_put(f'xhs/{date_str}/<destination>/data.json', json.dumps(data_json, indent=2, ensure_ascii=False),
+       'Add raw XHS search data for <destination>')
+
+# Push processed markdown files to /xhs-research/<destination>/
+with open('xhs-research/<destination>/01_geography_days.md') as f:
+    gh_put(f'xhs-research/<destination>/01_geography_days.md', f.read(), 'Add geography & transport')
+with open('xhs-research/<destination>/02_activities.md') as f:
+    gh_put(f'xhs-research/<destination>/02_activities.md', f.read(), 'Add activities')
+with open('xhs-research/<destination>/03_food.md') as f:
+    gh_put(f'xhs-research/<destination>/03_food.md', f.read(), 'Add food recommendations')
+with open('xhs-research/<destination>/04_itinerary.md') as f:
+    gh_put(f'xhs-research/<destination>/04_itinerary.md', f.read(), 'Add final itinerary')
+```
+
+**Bash commit script (alternative):**
 ```bash
 REPO_URL="https://github.com/darinyu/deep-research-reports.git"
 CLONE_DIR="/tmp/deep-research-reports"
@@ -408,25 +580,20 @@ else
   git clone "$REPO_URL" "$CLONE_DIR"
 fi
 
-DEST="$CLONE_DIR/xhs-research/<destination>"
-mkdir -p "$DEST"
-cp <data_file> "$DEST/"
+DATE=$(date -u +%Y-%m-%d)
+# Push raw data
+mkdir -p "$CLONE_DIR/xhs/$DATE/<destination>"
+cp data.json "$CLONE_DIR/xhs/$DATE/<destination>/"
+# Push processed data
+mkdir -p "$CLONE_DIR/xhs-research/<destination>/xhs_search_results"
+cp 01_*.md 02_*.md 03_*.md 04_*.md "$CLONE_DIR/xhs-research/<destination>/"
+cp xhs_search_results/*.json "$CLONE_DIR/xhs-research/<destination>/xhs_search_results/"
 
 cd "$CLONE_DIR"
-git add xhs-research/
-git commit -m "xhs-trip-plan: <destination> — added <round description>"
+git add xhs/ xhs-research/
+git commit -m "xhs-trip-plan: <destination> — raw data + processed report"
 git push origin main
 ```
-
-Or use the Python helper:
-```bash
-python3 /data/.openclaw/shared-skills/scripts/push_xhs_report.py \
-  --keyword "xhs-research/<destination>/04_itinerary" \
-  --file 04_itinerary.md
-```
-
-GitHub repo: `darinyu/deep-research-reports`
-Path: `xhs-research/<destination>/`
 
 **Send a progress update** after each commit.
 
@@ -440,7 +607,10 @@ After presenting the itinerary, ask:
 
 ### Step 8: Build ADHD-friendly itinerary with daily schedule
 
-**Hotel moves rule:** If user selected "one hotel preferred", design the itinerary so all days are reachable from a single base hotel. Activities on the same side of the destination go on the same day. **Hard rule: no criss-crossing the city** — group activities by geographic area within each day.
+**STANDING RULE — Always minimize hotel moves:** This is a hard-coded user preference, never ask about it.
+- Per destination/city: 1 hotel only. If visiting 2 cities, 1 hotel in each. No mid-city hotel switches.
+- Plan all activities from 1 base hotel per city. Group by geographic area — no criss-crossing.
+- For multi-country trips (e.g. Italy + Greece): 1 country/city = 1 hotel. The only moves are between cities (flight/train).
 
 **Timing rule:** Max 3-4 activities per day. Include realistic timing buffers between activities. Don't over-schedule.
 
@@ -628,19 +798,43 @@ Apply display conventions from xhs-mcp-workflow:
 
 ## Data Persistence Rules
 
-All research artifacts go in `xhs-research/<destination>/`:
+### Two GitHub locations — NEVER confuse them
 
-```
-xhs-research/<destination>/
-├── 01_geography_days.md     # Layer 1: geography map, days allocation, transport
-├── 02_activities.md          # Layer 2: activities with XHS links
-├── 03_food.md                # Layer 3: food recommendations with XHS links
-├── 04_itinerary.md           # Final itinerary
-├── xhs_search_results/       # Raw XHS search output (pushed by xhs-mcp-workflow)
-│   ├── 001_<keyword>.json
-│   └── ...
-└── README.md                 # Summary of all findings
-```
+**Location 1 — RAW DATA** → `xhs/YYYY-MM-DD/<destination>/`
+- A single `data.json` with ALL search results consolidated
+- Organized by date, then destination keyword
+- Purpose: Backbone, raw data store. Reusable by other research.
+- **NEVER** put processed reports (01_*.md, 04_*.md) here
+- Structure:
+  ```
+  xhs/
+  └── YYYY-MM-DD/
+      └── <destination>/
+          ├── data.json       # Consolidated raw XHS results
+          └── report.md       # Optional: auto-generated summary from raw data
+  ```
+
+**Location 2 — PROCESSED DATA** → `xhs-research/<destination>/`
+- Final plans, itineraries, recommendations
+- Structure:
+  ```
+  xhs-research/
+  └── <destination>/
+      ├── 01_geography_days.md     # Geography map, days allocation, transport
+      ├── 02_activities.md          # Activities with XHS links
+      ├── 03_food.md                # Food recommendations with XHS links
+      ├── 04_itinerary.md           # Final itinerary
+      ├── xhs_search_results/       # Raw XHS search JSON (per keyword)
+      │   ├── 001_<keyword>.json
+      │   └── ...
+      └── README.md                 # Summary of all findings
+  ```
+
+**Hard rules:**
+- `/xhs/` is ONLY for raw data. Never push markdown reports there.
+- `/xhs-research/` is ONLY for processed data. Never push raw data.json there.
+- Always push BOTH locations. Raw data first, then processed.
+- Search `/xhs/` BEFORE searching, to reuse existing raw data.
 
 ## Transport Consideration
 
