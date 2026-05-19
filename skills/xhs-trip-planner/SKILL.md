@@ -234,7 +234,7 @@ cleaned = {
         'collects': int(f.get('noteCard', {}).get('interactInfo', {}).get('collectedCount', 0) or 0),
         'comments': int(f.get('noteCard', {}).get('interactInfo', {}).get('commentCount', 0) or 0),
         'shares': int(f.get('noteCard', {}).get('interactInfo', {}).get('sharedCount', 0) or 0),
-        'desc': f.get('noteCard', {}).get('desc', '')[:500],  # raw post text, truncated
+        'desc': f.get('noteCard', {}).get('desc', ''),  # raw post text — full, no truncation
         'link': f'https://www.xiaohongshu.com/explore/{f.get("id", "")}'
         # NOTE: Intentionally excluded: xsecToken, userId, avatar, cover, imageList
     } for i, f in enumerate(feeds[:20])]
@@ -251,7 +251,7 @@ json.dump(cleaned, open('xhs-research/<destination>/xhs_search_results/001_<keyw
 | `title` | `noteCard.displayTitle` | Post title for identification |
 | `nickname` | `noteCard.user.nickname` | Author name — NO userId, NO avatar |
 | `likes` / `collects` / `comments` / `shares` | `interactInfo` | Engagement data for ranking |
-| `desc` | `noteCard.desc` | Raw post text (first 500 chars) — NO cover image |
+| `desc` | `noteCard.desc` | Raw post text — full, no truncation — NO cover image |
 
 Number sequentially (001_, 002_, ...) so they stay ordered.
 
