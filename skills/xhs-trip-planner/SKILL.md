@@ -1,94 +1,125 @@
 ---
 name: xhs-trip-planner
-description: Vacation trip planning using Xiaohongshu (小红书/XHS/Rednote) research. Interviews the user about their trip, then uses the xhs-mcp-workflow skill to search XHS for activities, food recommendations, and accommodation options. Presents a structured itinerary ranked by user-chosen prioritization method (price, comfort, food focus, etc.). Use when the user asks to plan a vacation, trip, holiday, travel itinerary, or needs recommendations for things to do, places to eat, or where to stay at a destination.
+description: Vacation trip planning using Xiaohongshu (小红书/XHS/Rednote) research. Covers the full pipeline: interviews user about their trip, checks existing GitHub XHS search reports from the past week, uses xhs-mcp-workflow to research activities/food on XHS, uses hotel-research skill for accommodations (hotels only, no Airbnb). Presents ADHD-friendly day-by-day itineraries with bold syntax. Use when user asks to: plan a vacation, plan a trip, plan a holiday, plan an itinerary, build a travel plan, what to do in [city], things to do in [country], where to eat in [city], where to stay in [city], travel recommendations, vacation planning, sightseeing, travel guide, 行程规划, 旅游攻略, 旅行计划, needs recommendations for things to do, places to eat, or where to stay. Also handles multi-city/country trips, road trips, honeymoon planning, family vacation planning, solo travel planning.
 ---
 
 # XHS Trip Planner
 
-This skill uses `xhs-mcp-workflow` to research trip destinations on Xiaohongshu and plan a complete itinerary.
+This skill uses `xhs-mcp-workflow` to research destinations on Xiaohongshu, and `hotel-research` skill for hotels via Google Maps/Travel. No Airbnb.
 
 ## Workflow
 
-### Step 1: Interview the user
+### Step 1: Interview the user (MCQ format only)
 
-Gather the following information systematically:
+Gather trip info. Ask ONE question at a time. Use MCQ for prioritization.
 
-| Question | Purpose | Example |
-|---|---|---|
-| **Destination** | Where are you going? | Honolulu, Tokyo, Paris |
-| **Dates / Duration** | How long is the trip? | 5 days, June 1-7 |
-| **Travelers** | Who's going? | Solo, couple, family with kids |
-| **Budget tier** | Budget level? | Budget, mid-range, luxury |
-| **Interests** | What matters most? | Food, hiking, shopping, culture, beach |
-| **Dietary needs** | Any food restrictions? | Vegetarian, halal, no restrictions |
-| **Priority method** | HOW to rank recommendations? | Price, comfort, food quality, convenience, instagram-worthy |
+**Questions to ask (adapt to natural conversation):**
 
-**Critical:** Always ask about **prioritization method** — how should recommendations be ranked? Options:
-- *Price* — cheapest options first
-- *Comfort* — highest-rated, most comfortable
-- *Food quality* — best food recommendations prioritized
-- *Convenience* — closest to hotel, easiest logistics
-- *Instagram-worthy* — best photo spots
-- *Balanced* — mix of everything
+1. *Where* are you going? (If multi-city, list them all)
+2. *How long*? (dates or number of days)
+3. *Who's going*? (solo, couple, family with kids, group)
+4. *Budget tier*? (budget / mid-range / luxury)
+5. *Dietary needs*? (none / vegetarian / halal / allergies)
+6. *Main interests*? (food / nature / culture / shopping / hiking / photography / mix)
 
-### Step 2: Research each category on XHS
+**Then ask prioritization (MCQ ONLY):**
 
-Use `xhs-mcp-workflow` to search Xiaohongshu for each category:
+> How should I prioritize recommendations?
+> 1️⃣ *Cheapest* — budget-friendly options first
+> 2️⃣ *Highest-rated* — best reviews, most comfortable
+> 3️⃣ *Foodie* — best food spots prioritized
+> 4️⃣ *Convenient* — closest to center / easy logistics
+> 5️⃣ *Instagram* — most photogenic spots
+> 6️⃣ *Balanced* — a mix of everything
 
-1. **Activities** — Search keywords like `"<destination> things to do"`, `"<destination> 攻略"`, `"<destination> must visit"`, `"<destination> 必去"`
-2. **Food** — Search keywords like `"<destination> 美食"`, `"<destination> restaurant"`, `"<destination> 必吃"`
-3. **Stay** — Search keywords like `"<destination> hotel"`, `"<destination> 酒店"`, `"<destination> where to stay"`
+Pick one number. No free-text.
 
-For each search, follow the full xhs-mcp-workflow pipeline:
-- Health check → Login guard → Search → Fetch details + comments → Rank by :heart:+:star:
-- Apply user's prioritization method when ranking (e.g. if price-focused, weight comments about cost higher)
-- Push each category's report to GitHub
+### Step 2: Check existing GitHub reports (past week)
 
-### Step 3: Send progress updates
+Before searching XHS, check if recent reports exist:
 
-Periodic Slack updates during research:
-- "Researching activities in <destination>..."
-- "Food research complete — found top 5 restaurants"
-- "Finding accommodation..."
-- "Building your itinerary..."
-
-### Step 4: Present the itinerary
-
-Organize into a structured travel plan:
-
-```
-*<Destination> Trip Plan for <dates>*
-
-*Prioritization:* <method>
-
-*Day 1 | <date>*
-  🎯 Activities: <top picks with XHS links>
-  🍜 Food: <top restaurant picks with XHS links>
-  🌙 Evening: <evening recommendations>
-
-*Day 2 | <date>*
-  ...
-
-*Accommodation Recommendations*
-  - <option 1> | XHS link
-  - <option 2> | XHS link
-
-*Tips from XHS users*
-  - <user insights from comments>
+```bash
+curl -s "https://api.github.com/repos/darinyu/deep-research-reports/contents/xhs" \
+  | jq -r '.[].name' | sort -r | head -7
 ```
 
-Apply all display conventions from `xhs-mcp-workflow`:
-- `:heart:` for likes, `:star:` for saves
+This returns date folders. For each date, list keyword folders:
+
+```bash
+curl -s "https://api.github.com/repos/darinyu/deep-research-reports/contents/xhs/<date>" \
+  | jq -r '.[].name'
+```
+
+If a keyword matches the destination (e.g. "paris", "france", "switzerland"), fetch and read the existing report instead of re-searching.
+
+### Step 3: Research on XHS (if no existing report)
+
+For categories without existing reports, use `xhs-mcp-workflow`:
+
+1. **Activities** — Search: `<destination> 攻略`, `<destination> things to do`, `<destination> 必去`
+2. **Food** — Search: `<destination> 美食`, `<destination> food`, `<destination> 必吃`
+3. **Hotels** (skip this — use hotel-research instead)
+
+Follow full pipeline: Health check → Login guard → Search → Fetch details + comments → Rank by :heart:+:star:
+Push each category's report to GitHub.
+
+### Step 4: Search hotels
+
+Use the `hotel-research` skill:
+- Extract guest count from interview
+- Use browser to search Google Hotels/Travel for the destination
+- Extract hotel name, price, star rating, review count
+- Hotels only, no Airbnb
+
+### Step 5: Build ADHD-friendly itinerary
+
+Format for quick scanning. **Bold** = key info. Keep it tight.
+
+```
+*<Destination> — <days> days*
+
+*Priority:* <method>       *Budget:* <tier>      *Travellers:* <who>
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+***Day 1*** | <theme/location>
+  **AM** · <activity> | <link>
+  **Lunch** · <restaurant> | <link>
+  **PM** · <activity>
+  **Dinner** · <restaurant> | <link>
+
+***Day 2*** | <theme/location>
+  **AM** · <activity>
+  **Lunch** · <restaurant>
+  **PM** · <activity>
+  **Dinner** · <restaurant>
+
+...
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+*Hotels*
+  * <name> — <price>/night ⭐<rating> | <booking link>
+
+*Pro tips from XHS*
+  * <tip 1>
+  * <tip 2>
+```
+
+Key rules:
+- **Bold** for times (AM/PM/Lunch/Dinner), day numbers, section headers
+- One line per thing. No paragraphs.
+- Emoji for categories (🎯 activities, 🍜 food, 🏨 hotel)
+- XHS permalink with each recommendation
+- Avoid walls of text
+
+### Step 6: Share GitHub report links
+
+```
+Full research: <url>
+```
+
+Apply display conventions from xhs-mcp-workflow:
+- :heart: for likes, :star: for saves
 - Bold for emphasis
-- Include XHS permalinks
-- Roll through `scripts/slack_format.sh` before Slack
-
-### Step 5: Share GitHub report links
-
-After presenting the itinerary, share links to the GitHub reports so the user can reference them later:
-```
-Full research reports saved to GitHub:
-- Activities: <url>
-- Food: <url>
-- Stay: <url>
-```
+- Run through `scripts/slack_format.sh` before Slack

@@ -8,6 +8,7 @@ set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 ACCOUNT="personal"
+cd "$SCRIPT_DIR"
 
 echo "===== Inbox Cleanup Report — $(date -u) ====="
 echo ""
