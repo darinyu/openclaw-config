@@ -212,29 +212,62 @@ Run at least 2 more search rounds with different keyword groups:
 - `<destination> 必吃`
 - `<destination> 餐厅`
 
+**For every search round, save the raw JSON output immediately:**
+
+```bash
+mcporter call xiaohongshu-mcp.search_feeds --keyword "<keyword>" \
+  > xhs-research/<destination>/xhs_search_results/001_<keyword>.json
+```
+
+Number sequentially (001_, 002_, ...) so they stay ordered. This preserves the original search data for GitHub.
+
 For each result, fetch note details + top comments. Rank by engagement (likes + saves). Extract:
 - Name, description, location area
-- XHS permalink
+- XHS permalink (`https://www.xiaohongshu.com/explore/<feed_id>`)
 - Like/save counts
 - Any pro tips from comments
+- Specific quotes from the post or comments (short, ≤25 words, attributed)
 - Estimated travel time from city center / nearby attractions
 
 **Store to files:**
 - `xhs-research/<destination>/02_activities.md`
 - `xhs-research/<destination>/03_food.md`
 
-Format:
+**02_activities.md format (EVERY entry must have XHS permalink + pro tip + evidence quote):**
 ```
 # <Destination> — Activities
-
-| Activity | Area | Distance | Source |
-|----------|------|----------|--------|
-| <name> | <area> | <km from center / nearby landmark> | [XHS](<url>) |
 
 ## Top Picks
 1. **<name>** — <description> | 👍<likes> ⭐<saves> | <area>
    - Pro tip: <from comments>
+   - 💡 Booking: <ticket note if applicable>
+   - Quote: "<short quote from XHS post or comment>"
+   - [XHS post](https://www.xiaohongshu.com/explore/<feed_id>)
+
+## Quick-Reference Table
+| Activity | Area | Distance | Source |
+|----------|------|----------|--------|
+| <name> | <area> | <km from center> | [XHS](<url>) |
+```
+
+**03_food.md format (EVERY entry must have XHS permalink + sentiment + quote):**
+```
+# <Destination> — Food Recommendations
+
+## Top Picks
+1. **<name>** — <cuisine> | 👍<likes> ⭐<saves> | <area>
+   - Quote: "<short quote from XHS, in original language>"
+   - Price: $/$$/$$
    - [XHS post](<url>)
+
+## Quick-Reference Table
+| Restaurant / Item | Type | Price | Sentiment | XHS Mentions |
+|---|---|---|---|---|
+| <name> | <type> | $ | Positive | [XHS](<url>) |
+
+## Pro Tips from XHS
+- <tip 1>
+- <tip 2>
 ```
 
 **Send a progress update** after each round.
@@ -277,8 +310,15 @@ Use the `hotel-research` skill:
 
 After every significant research batch. Data goes to `darinyu/deep-research-reports`, NOT openclaw-config.
 
+**What to commit (ALL files):**
+- `01_geography_days.md` — geography map + transport
+- `02_activities.md` — activities with XHS sources
+- `03_food.md` — food with XHS sources
+- `04_itinerary.md` — final itinerary (see Step 8 for format)
+- `xhs_search_results/*.json` — raw XHS search JSON output from every keyword
+
+**Commit script:**
 ```bash
-# Clone/pull the reports repo
 REPO_URL="https://github.com/darinyu/deep-research-reports.git"
 CLONE_DIR="/tmp/deep-research-reports"
 if [ -d "$CLONE_DIR" ]; then
@@ -287,14 +327,10 @@ else
   git clone "$REPO_URL" "$CLONE_DIR"
 fi
 
-# Create/update data files
 DEST="$CLONE_DIR/xhs-research/<destination>"
-mkdir -p "$DEST/01_geography_days.md"  # remove the filename part
-# Actually:
 mkdir -p "$DEST"
 cp <data_file> "$DEST/"
 
-# Commit and push
 cd "$CLONE_DIR"
 git add xhs-research/
 git commit -m "xhs-trip-plan: <destination> — added <round description>"
@@ -399,7 +435,29 @@ Format for quick scanning. **Bold** = key info. Keep it tight.
 - **Include transport mode + comfort** per leg
 - **Avoid walls of text**
 
-#### Budget Breakdown (inline in final report)
+---
+
+### GitHub Report Formatting Rules (for 04_itinerary.md and companion files)
+
+The GitHub report is the full authoritative output. It MUST use **proper Markdown syntax** throughout:
+
+1. **Bullet lists** use `- ` with proper blank line before/after — never indented paragraph-style items
+2. **Tables** use proper pipe syntax with header separators (`|---|---|`)
+3. **Headers** use `###` hierarchy, never raw bold text as headings
+4. **Every recommendation MUST have an XHS source link** — no recommendation without attribution
+   - Format: `[XHS post](https://www.xiaohongshu.com/explore/<feed_id>)` or `[XHS](<url>)` inline
+5. **Include evidence quotes from XHS** for top picks — short quote (≤25 words) in original language
+6. **Separate sections clearly** with `---` horizontal rules between major content blocks
+7. **Appendix A: All Posts Analyzed** — table of every XHS post used with title, 👍, ⭐, link
+8. **Appendix B: Web Research Sources** — URLs for practical research (transit, weather, safety, etc.)
+
+**Do NOT use:**
+- Raw HTML tags
+- Inconsistent indentation
+- Single-item bullet lists that could be inline text
+- Loose text without structure
+
+#### Budget Breakdown (inline in 04_itinerary.md)
 
 After collecting activity/food/hotel costs, compute and include:
 
@@ -417,7 +475,7 @@ Breakdown:
 
 No script needed — agent computes this inline from collected cost data.
 
-#### Pre-Trip Timeline (inline in final report)
+#### Pre-Trip Timeline (inline in 04_itinerary.md)
 
 Generate a timeline relative to departure date:
 
@@ -448,7 +506,7 @@ DAY BEFORE:
 
 Agent generates inline from departure date collected in interview.
 
-#### Packing Checklist (inline in final report)
+#### Packing Checklist (inline in 04_itinerary.md)
 
 Generate a simple climate/activity-aware checklist:
 
