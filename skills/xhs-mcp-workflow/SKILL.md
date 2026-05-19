@@ -69,6 +69,13 @@ Then present the QR image to the user for scanning.
 
 If the login flow itself fails (e.g. QR doesn't scan), retro on the issue and update this skill.
 
+## Language Rules (CRITICAL)
+
+1. **Ask the user** what language they prefer for the output. Default is Chinese.
+2. **DO NOT translate** location names, restaurant names, or hotel names — keep them in their original language (e.g. "Maguro Brothers" stays "Maguro Brothers", not translated to Chinese).
+3. **Keep all content from XHS posts in their original language** — if the post is in Chinese, keep the summary in Chinese. If the post is in English, keep it in English.
+4. The overall report/summary should be in the language the user requested.
+
 ## Display Conventions (Slack Summaries)
 
 Slack summaries should be **brief and scannable** — NOT the full report.
@@ -210,6 +217,26 @@ For each restaurant:
 | Restaurant | Type | Price | Mentions | Sentiment | XHS Links |
 |---|---|---|---|---|---|
 ...
+
+## Daily Itinerary
+
+**One hotel base preferred** — minimize hotel moves. Stay in one hotel for the whole trip if the destination allows.
+
+### Day 1 | Date — Theme
+  **AM** · activity
+  **Lunch** · restaurant
+  **PM** · activity
+  **Dinner** · restaurant
+  **Evening** · optional activity
+
+### Day 2 | Date — Theme
+  ...
+
+### Transport Map
+| Leg | Route | Duration | Mode | Comfort |
+|-----|-------|----------|------|---------|
+| 1 | Place A → Place B | 30min | Walk 🚶 | ★★★★★ |
+| 2 | Place B → Place C | 15min | Bus 🚌 | ★★★★☆ |
 
 ## Pro Tips (from XHS users)
 - Tip 1

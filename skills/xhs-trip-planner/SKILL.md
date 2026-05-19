@@ -41,6 +41,9 @@ Gather trip info. Ask ONE question at a time. Use MCQ for prioritization.
 4. *Budget tier*? (budget / mid-range / luxury)
 5. *Dietary needs*? (none / vegetarian / halal / allergies)
 6. *Main interests*? (food / nature / culture / shopping / hiking / photography / mix)
+7. *Hotel moves* — Do you want to stay in ONE hotel for the whole trip, or are you OK switching hotels? (MCQ)
+   > 1️⃣ *One hotel preferred* — minimize moves, all activities within reasonable distance
+   > 2️⃣ *OK switching* — flexibility to stay in different areas for better experience
 
 **Then ask prioritization (MCQ ONLY):**
 
@@ -53,6 +56,18 @@ Gather trip info. Ask ONE question at a time. Use MCQ for prioritization.
 > 6️⃣ *Balanced* — a mix of everything
 
 Pick one number. No free-text.
+
+**Then ask language preference (MCQ ONLY):**
+
+> What language should I use for the itinerary and report?
+> 1️⃣ *Chinese (中文)* — default
+> 2️⃣ *English*
+> 3️⃣ *Mixed* — keep restaurant/hotel names original, summary in [your choice]
+
+*RULES:*
+- Do NOT translate location names, restaurant names, or hotel names — keep original
+- Keep XHS post content in its original language
+- The overall report structure follows the user's chosen language
 
 **Send a progress update** after interview is complete.
 
@@ -216,7 +231,11 @@ After presenting the itinerary, ask:
 - Persist refinements back to the data files and re-commit
 - Repeat until user is satisfied
 
-### Step 7: Build ADHD-friendly itinerary
+### Step 7: Build ADHD-friendly itinerary with daily schedule
+
+**Hotel moves rule:** If user selected "one hotel preferred", design the itinerary so all days are reachable from a single base hotel. Activities on the same side of the destination go on the same day. Avoid criss-crossing.
+
+**Language rule:** Report/summary in user's chosen language. Keep all restaurant names, hotel names, and location names in their original language (e.g. "Maguro Brothers" stays "Maguro Brothers", 巴黎 stays 巴黎).
 
 Format for quick scanning. **Bold** = key info. Keep it tight.
 
