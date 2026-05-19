@@ -201,6 +201,7 @@ Grouped by location/area. For each activity:
 - XHS post links that recommend it
 - Comment sentiment summary
 - Pro tips from commenters
+- **Evidence**: include 1–2 short quotes (≤25 words each) from the post or comments + link
 
 ### [Location 1]
 ### [Location 2]
@@ -212,6 +213,7 @@ For each restaurant:
 - Number of XHS posts mentioning it (with links)
 - Comment sentiment (positive/mixed/negative — summarize what people say)
 - Pro tips
+- **Evidence**: include 1–2 short quotes (≤25 words each) from the post or comments + link
 
 ### Quick-reference table
 | Restaurant | Type | Price | Mentions | Sentiment | XHS Links |

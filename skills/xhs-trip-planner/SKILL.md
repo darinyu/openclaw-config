@@ -306,10 +306,20 @@ Key rules:
 - Include transport mode + comfort per leg
 - Avoid walls of text
 
-### Step 8: Share GitHub report links
+### Step 8: Share GitHub report links (Slack = summary only)
+
+In Slack thread, only post:
+- rationale (1 line)
+- pro tips (3–5 bullets)
+- activities preview (by location)
+- food preview (top clusters)
+- hotel preview (2–3 options)
+- GitHub report link
+
+Full day-by-day schedule + appendix (posts + comment quotes) goes in the GitHub report.
 
 ```
-Full research: <url>
+Full report: <url>
 ```
 
 Apply display conventions from xhs-mcp-workflow:
