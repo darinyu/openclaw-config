@@ -1,6 +1,6 @@
 ---
 name: xhs-mcp-workflow
-description: Unified workflow for Xiaohongshu (小红书/XHS/Rednote) via xiaohongshu-mcp MCP service. Covers the full pipeline: MCP health check, login guard, keyword search with pagination, parallel fetch of note details + comments, ranking by engagement, structured GitHub reports, and Slack-formatted summaries. Use whenever the user asks to search XHS, analyze XHS content, browse XHS notes, or any Rednote-related research, including food/restaurant searches, product research, travel planning, or trend analysis.
+description: "Unified workflow for Xiaohongshu (小红书/XHS/Rednote) via xiaohongshu-mcp MCP service. Covers the full pipeline: MCP health check, login guard, keyword search with pagination, parallel fetch of note details + comments, ranking by engagement, structured GitHub reports, and Slack-formatted summaries. Use whenever the user asks to search XHS, analyze XHS content, browse XHS notes, or any Rednote-related research, including food/restaurant searches, product research, travel planning, or trend analysis."
 ---
 
 # XHS MCP Workflow
