@@ -1,6 +1,6 @@
 ---
 name: xhs-mcp-workflow
-description: "Unified workflow for Xiaohongshu (小红书/XHS/Rednote) via xiaohongshu-mcp MCP service. Covers the full pipeline: MCP health check, login guard, keyword search with pagination, parallel fetch of note details + comments, ranking by engagement, structured GitHub reports, and Slack-formatted summaries. Use whenever the user asks to search XHS, analyze XHS content, browse XHS notes, or any Rednote-related research, including food/restaurant searches, product research, travel planning, or trend analysis."
+description: Unified workflow for Xiaohongshu (小红书/XHS/Rednote) via xiaohongshu-mcp MCP service. Covers the full pipeline: MCP health check, login guard, keyword search with pagination, parallel fetch of note details + comments, ranking by engagement, structured GitHub reports, and Slack-formatted summaries. Use whenever the user asks to search XHS, analyze XHS content, browse XHS notes, or any Rednote-related research, including food/restaurant searches, product research, travel planning, or trend analysis.
 ---
 
 # XHS MCP Workflow
@@ -8,6 +8,18 @@ description: "Unified workflow for Xiaohongshu (小红书/XHS/Rednote) via xiaoh
 Key paths:
 - `XHS_SKILL_DIR` = `/data/.openclaw/workspace/skills/xiaohongshu-mcp-openclaw`
 - `WORKFLOW_DIR` = `/data/.openclaw/workspace/skills/xhs-mcp-workflow`
+- `REPORT_REPO` = `darinyu/deep-research-reports` (push via `push_xhs_report.py`)
+
+**Do NOT write reports to darinyu/openclaw-config.** Use `push_xhs_report.py` which targets `darinyu/deep-research-reports`.
+
+## Report Push Script
+
+```bash
+python3 /data/.openclaw/shared-skills/scripts/push_xhs_report.py \
+  --keyword "<keyword>" --file <report.md>
+```
+
+Pushes to: `darinyu/deep-research-reports/blob/main/xhs/<YYYY-MM-DD>/<keyword>/report.md`
 
 ## Naming Convention
 
@@ -57,12 +69,21 @@ Then present the QR image to the user for scanning.
 
 If the login flow itself fails (e.g. QR doesn't scan), retro on the issue and update this skill.
 
-## Display Conventions
+## Display Conventions (Slack Summaries)
 
+Slack summaries should be **brief and scannable** — NOT the full report.
+
+**What goes in Slack:**
+- Rationale (1 line)
+- Pro tips (3-5 bullet points)
+- Activities preview (what's covered, not the schedule)
+- Food preview (cuisines available, not the list)
+- Link to full report on GitHub
+
+**Formatting:**
 - Use `:heart:` for likes, `:star:` for saves/collections
 - Always rank results by `likedCount + collectedCount` (descending)
-- Include permalink: `https://www.xiaohongshu.com/explore/<feed_id>`
-- Use `**bold**` for emphasis — run through `scripts/slack_format.sh` before sending to Slack
+- Use `*bold*` for emphasis — run through `scripts/slack_format.sh` before sending
 - Keep summaries in the post's original language (prefer Chinese)
 - Show progress periodically for multi-step operations
 
@@ -112,23 +133,116 @@ Collect **text and comments only** (`.desc` + `.comments[].content`) — skip vi
 
 ### Step 3: Aggregate structured data
 
-Compile results:
-- keyword, timestamp, account name
-- per-note: title, author, likes, collects, comments count, link, text, top N comments
+Compile results into a reusable data format:
 
-### Step 4: Push report to GitHub
+```json
+{
+  "keyword": "honolulu food",
+  "searched_at": "2026-05-19T05:26:00Z",
+  "searched_by": "xiaohongshu-mcp",
+  "total_results": 22,
+  "results": [
+    {
+      "rank": 1,
+      "title": "...",
+      "author": "...",
+      "likes": 1179,
+      "collects": 2128,
+      "comments": 34,
+      "link": "https://www.xiaohongshu.com/explore/<feed_id>",
+      "desc_excerpt": "...",
+      "comment_sentiment": "positive/mixed/negative",
+      "mentions": ["Restaurant A", "Restaurant B"]
+    }
+  ],
+  "aggregated": {
+    "top_restaurants": [
+      {"name": "Maguro Brothers", "mentions": 3, "avg_stars": 850, "sentiment": "positive"},
+      {"name": "Island Vintage Coffee", "mentions": 2, "avg_stars": 720, "sentiment": "positive"}
+    ],
+    "top_activities": [
+      {"name": "Lanikai Pillbox Hike", "location": "Kailua", "mentions": 2, "avg_stars": 900, "sentiment": "positive"}
+    ],
+    "pro_tips": ["Rent car for one day only", "..."]
+  }
+}
+```
+
+This JSON should be checked into the GitHub report alongside the markdown.
+
+### Step 4: Build the full report
+
+The full report lives on GitHub (NOT in Slack). Structure:
+
+```markdown
+# XHS Research: <keyword>
+
+**Date:** YYYY-MM-DD
+**Account:** xiaohongshu-mcp
+
+---
+
+## Summary
+> 1-2 sentence overview
+
+## Rationale
+> Why this research was done, what questions we're answering
+
+## Activities
+Grouped by location/area. For each activity:
+- Name, location, key details
+- XHS post links that recommend it
+- Comment sentiment summary
+- Pro tips from commenters
+
+### [Location 1]
+### [Location 2]
+...
+
+## Food & Restaurants
+For each restaurant:
+- Name, cuisine type, approximate price
+- Number of XHS posts mentioning it (with links)
+- Comment sentiment (positive/mixed/negative — summarize what people say)
+- Pro tips
+
+### Quick-reference table
+| Restaurant | Type | Price | Mentions | Sentiment | XHS Links |
+|---|---|---|---|---|---|
+...
+
+## Pro Tips (from XHS users)
+- Tip 1
+- Tip 2
+
+---
+
+## Appendix A: All Posts Analyzed
+Full list of XHS posts with links and metadata.
+
+| # | Title | Author | 👍 | ⭐ | 💬 | Link |
+|---|-------|--------|----|----|----|------|
+| 1 | ... | ... | ... | ... | ... | ... |
+
+## Appendix B: Post Summaries + Comments
+For each top post:
+- Title + Link
+- Full description excerpt (if useful)
+- Top comments (with likes, sentiment notes)
+```
+
+### Step 5: Push report to GitHub
 
 ```bash
 python3 /data/.openclaw/shared-skills/scripts/push_xhs_report.py \
   --keyword "<keyword>" --file <report.md>
 ```
 
-This pushes to `darinyu/deep-research-reports/blob/main/xhs/<YYYY-MM-DD>/<keyword>/<HHMMSS>/report.md`
+Also save the structured JSON alongside the report (same filename, `.json` extension).
 
-### Step 5: Present summary to user
+### Step 6: Present brief summary in Slack
 
-Use `summarize-pro` skill (or inline summary) to organize data into a concise readable format.
-Apply display conventions: bold, :heart:/:star:, original language, ranked.
+Only include: rationale, pro tips, activities preview, food preview, and the GitHub link. NOT the full schedule or full food list.
 
 ## Progress Reporting
 
