@@ -29,40 +29,95 @@ Next: Round 3 — searching "<keyword>"
 
 ## Workflow
 
-### Step 1: Interview the user (MCQ format only)
+### Step 1: Interview the user — with Preference System (MCQ format only)
 
-Gather trip info. Ask ONE question at a time. Use MCQ for prioritization.
+**Preference file:** `skills/xhs-trip-planner/data/travel_preferences.json` — stored in workspace and checked into git.
 
-**Questions to ask (adapt to natural conversation):**
+**At start of Step 1, load preferences:**
 
-1. *Where* are you going? (If multi-city, list them all — e.g. Tokyo, Osaka, Kyoto)
-2. *How long*? (dates or number of days)
-3. *Who's going*? (solo, couple, family with kids, group — note any mobility concerns)
-4. *Budget tier*? (budget / mid-range / luxury)
-5. *Dietary needs*? (none / vegetarian / halal / allergies)
-6. *Main interests*? (food / nature / culture / shopping / hiking / photography / mix)
-7. *Hotel moves* — Do you want to stay in ONE hotel for the whole trip, or are you OK switching hotels? (MCQ)
-   > 1️⃣ *One hotel preferred* — minimize moves, all activities within reasonable distance
-   > 2️⃣ *OK switching* — flexibility to stay in different areas for better experience
+```bash
+python3 skills/xhs-trip-planner/scripts/xhs_prefs.py show 2>/dev/null || echo "No preferences yet"
+```
+
+Check if this is a first-time user (no saved prefs) or returning user.
+
+#### First-time user: Full preference + trip interview
+
+Ask ONE question at a time. Use MCQ for prioritization. Save to preference system after collecting.
+
+**Preference questions (asked once, saved to JSON):**
+
+1. *Travel style* — How do you usually travel?
+   > 1️⃣ *Adventurous* — off the beaten path, local experiences
+   > 2️⃣ *Relaxed* — comfortable, slow-paced, less planning
+   > 3️⃣ *Balanced* — a mix of both
+
+2. *Pace* — How packed do you like your days?
+   > 1️⃣ *Relaxed* — 1-2 activities, lots of free time
+   > 2️⃣ *Moderate* — 3-4 activities, structured but not rushed
+   > 3️⃣ *Packed* — maximize every day, full schedule
+
+3. *Accommodation preference*
+   > 1️⃣ *Hotel* — standard comfort, reliable
+   > 2️⃣ *Boutique* — unique design, local character
+   > 3️⃣ *Resort* — all-inclusive, amenities-focused
+
+4. *Main interests* (multi-select — number each)
+   > 1️⃣ *Food* 2️⃣ *Nature* 3️⃣ *Culture* 4️⃣ *Shopping* 5️⃣ *Hiking* 6️⃣ *Photography* 7️⃣ *History* 8️⃣ *Nightlife*
+
+5. *Dietary needs* (multi-select — number each)
+   > 1️⃣ *None* 2️⃣ *Vegetarian* 3️⃣ *Vegan* 4️⃣ *Halal* 5️⃣ *Allergies* 6️⃣ *Other*
+
+6. *Who usually travels with you?*
+   > 1️⃣ *Solo* 2️⃣ *Couple* 3️⃣ *Family with kids* 4️⃣ *Group of friends*
+
+**Trip-specific questions (asked every time):**
+
+7. *Where* are you going? (If multi-city, list them all)
+8. *How long*? (dates or number of days)
+9. *Who's going on this trip?* — note any mobility concerns
+10. *Hotel moves* — ONE hotel or OK switching? (MCQ)
+    > 1️⃣ *One hotel preferred* — minimize moves
+    > 2️⃣ *OK switching* — flexibility for better experience
 
 **Then ask prioritization (MCQ ONLY):**
 
 > How should I prioritize recommendations?
 > 1️⃣ *Cheapest* — budget-friendly options first
-> 2️⃣ *Highest-rated* — best reviews, most comfortable
+> 2️⃣ *Highest-rated* — best reviews
 > 3️⃣ *Foodie* — best food spots prioritized
 > 4️⃣ *Convenient* — closest to center / easy logistics
 > 5️⃣ *Instagram* — most photogenic spots
 > 6️⃣ *Balanced* — a mix of everything
-
-Pick one number. No free-text.
 
 **Then ask language preference (MCQ ONLY):**
 
 > What language should I use for the itinerary and report?
 > 1️⃣ *Chinese (中文)* — default
 > 2️⃣ *English*
-> 3️⃣ *Mixed* — keep restaurant/hotel names original, summary in [your choice]
+> 3️⃣ *Mixed* — keep names original, summary in [your choice]
+
+**Save preferences after interview:**
+
+```python
+import json, os
+from datetime import datetime, timezone
+
+prefs = json.load(open("skills/xhs-trip-planner/data/travel_preferences.json"))
+prefs["profile"] = { ... }  # update with answers
+prefs["last_updated"] = datetime.now(timezone.utc).isoformat()
+json.dump(prefs, open("skills/xhs-trip-planner/data/travel_preferences.json", "w"), indent=2, ensure_ascii=False)
+```
+
+Alternatively use the helper:
+```bash
+python3 skills/xhs-trip-planner/scripts/xhs_prefs.py show  # inspect
+```
+Then write the updated prefs as described above (inline Python or manual edit).
+
+#### Returning user: Load preferences, skip profile questions
+
+Load existing preferences. Only ask trip-specific questions (#7-10 above) + prioritization + language.
 
 *RULES:*
 - Do NOT translate location names, restaurant names, or hotel names — keep original
@@ -190,7 +245,23 @@ Do NOT search for hotels on XHS. The hotel-research skill handles accommodations
 
 **Send a progress update** after XHS research is fully complete.
 
-### Step 4: Search hotels
+### Step 4: Practical Web Research (Phase 2 — added 2026-05-19)
+
+After XHS research, run targeted web searches for practical trip info that XHS won't cover well. Use `web_search` for each category:
+
+| Category | Search Query | Why |
+|----------|-------------|-----|
+| **Entry requirements** | `<destination> visa requirements <nationality>` | Passport/visa rules, fees |
+| **Best time to visit** | `<destination> best time to visit weather <month>` | Seasons, festivals, weather |
+| **Safety** | `<destination> safety tips scams` | Safe areas, common scams, advisories |
+| **Local transport** | `<destination> metro bus app` | How to get around (DiDi/Uber equivalents, transit cards) |
+| **Practical info** | `<destination> currency tipping power outlets` | Money, etiquette, plugs |
+
+Search up to 3 categories in a single `web_search` call (combine related ones). Prioritize the categories most relevant to the destination (e.g. visa info matters for China, less for Schengen).
+
+**Send a progress update** after practical research.
+
+### Step 5: Search hotels
 
 Use the `hotel-research` skill:
 - Extract guest count from interview
@@ -202,7 +273,7 @@ Use the `hotel-research` skill:
 
 **Send a progress update** after hotel search.
 
-### Step 5: Store all data and commit to deep-research-reports
+### Step 6: Store all data and commit to deep-research-reports
 
 After every significant research batch. Data goes to `darinyu/deep-research-reports`, NOT openclaw-config.
 
@@ -242,7 +313,7 @@ Path: `xhs-research/<destination>/`
 
 **Send a progress update** after each commit.
 
-### Step 6: Iterate on user feedback
+### Step 7: Iterate on user feedback
 
 After presenting the itinerary, ask:
 - "Does this look good or do you want to refine anything?"
@@ -250,9 +321,11 @@ After presenting the itinerary, ask:
 - Persist refinements back to the data files and re-commit
 - Repeat until user is satisfied
 
-### Step 7: Build ADHD-friendly itinerary with daily schedule
+### Step 8: Build ADHD-friendly itinerary with daily schedule
 
-**Hotel moves rule:** If user selected "one hotel preferred", design the itinerary so all days are reachable from a single base hotel. Activities on the same side of the destination go on the same day. Avoid criss-crossing.
+**Hotel moves rule:** If user selected "one hotel preferred", design the itinerary so all days are reachable from a single base hotel. Activities on the same side of the destination go on the same day. **Hard rule: no criss-crossing the city** — group activities by geographic area within each day.
+
+**Timing rule:** Max 3-4 activities per day. Include realistic timing buffers between activities. Don't over-schedule.
 
 **Language rule:** Report/summary in user's chosen language. Keep all restaurant names, hotel names, and location names in their original language (e.g. "Maguro Brothers" stays "Maguro Brothers", 巴黎 stays 巴黎).
 
@@ -270,17 +343,31 @@ Format for quick scanning. **Bold** = key info. Keep it tight.
 <City B> 🚌 2.5h → <City C> (south)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-***Day 1*** | <theme/location>
-  **AM** · <activity> | <link>
-  **Lunch** · <restaurant> | <link>
-  **PM** · <activity>
-  **Dinner** · <restaurant> | <link>
+***Day 1*** | <theme/location — geographically grouped>
+  **AM** · <activity>
+    ↳ <sub-spots> | <sub-spots>
+    💡 Booking: <booking tip>
+  **Lunch** · <restaurant> | <link> | ~€<cost>/pp
+  **PM** · <activity> | <link>
+    ↳ <sub-spots>
+    💡 Booking: <booking tip>
+  **Dinner** · <restaurant> | ~€<cost>/pp
+  **Evening** · <evening activity>
+  ───
+  🚶 Transport: <route from hotel> (<mode>, <min>)
+  💰 Day cost: ~€<total>/pp
+  📍 Note: <geographic coherence note>
 
 ***Day 2*** | <theme/location>
   **AM** · <activity>
-  **Lunch** · <restaurant>
-  **PM** · <activity>
-  **Dinner** · <restaurant>
+    ↳ <sub-spots>
+  **Lunch** · <restaurant> | ~€<cost>/pp
+  **PM** · <activity> | <link>
+    💡 Booking: <booking tip>
+  **Dinner** · <restaurant> | ~€<cost>/pp
+  ───
+  🚶 Transport: <route from hotel>
+  💰 Day cost: ~€<total>/pp
 
 ...
 
@@ -298,15 +385,88 @@ Format for quick scanning. **Bold** = key info. Keep it tight.
   * <tip 2> | <source>
 ```
 
-Key rules:
-- **Bold** for times (AM/PM/Lunch/Dinner), day numbers, section headers
-- One line per thing. No paragraphs.
-- Emoji for categories (🎯 activities, 🍜 food, 🏨 hotel, 🚄 transport)
-- XHS permalink with each recommendation
-- Include transport mode + comfort per leg
-- Avoid walls of text
+**Format rules (upgraded):**
+- **Time blocks**: Organize each day into `**AM**`, `**Lunch**`, `**PM**`, `**Dinner**`, `**Evening**`
+- **Sub-activity hierarchy**: Use `↳` indented lines under main activities for sub-spots (e.g. under Walking Tour: `↳ Cathedral | Plaça Reial | Las Ramblas`)
+- **Booking tips**: Add `💡 Booking:` line for activities that need advance booking ("sells out fast", "book online ~€15")
+- **Daily transport**: `🚶 Transport:` line showing how to get from hotel to first activity
+- **Daily cost**: `💰 Day cost:` line with estimated per-person total
+- **Geographic note**: `📍 Note:` about walkability or travel coordination
+- **Bold** for times, day numbers, section headers
+- **One line per thing**. No paragraphs.
+- **Emoji** for categories (🎯 activities, 🍜 food, 🏨 hotel, 🚄 transport)
+- **XHS permalink** with each recommendation
+- **Include transport mode + comfort** per leg
+- **Avoid walls of text**
 
-### Step 8: Share GitHub report links (Slack = summary only)
+#### Budget Breakdown (inline in final report)
+
+After collecting activity/food/hotel costs, compute and include:
+
+```
+Total Budget: $X (N days)
+Daily Average: $X
+
+Breakdown:
+- Accommodation: $X (35%) — $X/night
+- Food: $X (25%) — $X/day
+- Activities: $X (25%) — $X/day
+- Transportation: $X (10%) — $X/day
+- Miscellaneous: $X (5%)
+```
+
+No script needed — agent computes this inline from collected cost data.
+
+#### Pre-Trip Timeline (inline in final report)
+
+Generate a timeline relative to departure date:
+
+```
+2 MONTH BEFORE:
+  - Book flights & hotels
+  - Check passport/visa requirements
+
+1 MONTH BEFORE:
+  - Book popular attraction tickets (sells out fast)
+  - Notify bank of travel
+
+2 WEEKS BEFORE:
+  - Confirm all reservations
+  - Check weather forecast
+  - Download offline maps & transit apps
+
+1 WEEK BEFORE:
+  - Pack luggage (see checklist below)
+  - Buy travel insurance
+  - Arrange airport transfer
+
+DAY BEFORE:
+  - Re-check flight time & gate
+  - Print/download documents
+  - Set alarms & early sleep
+```
+
+Agent generates inline from departure date collected in interview.
+
+#### Packing Checklist (inline in final report)
+
+Generate a simple climate/activity-aware checklist:
+
+```
+Essentials: passport, visa printout, phone, charger, power adapter
+Clothing: [based on destination climate + season]
+Footwear: [based on activities — hiking boots, sandals, walking shoes]
+Tech: camera, power bank, earbuds
+Health: [medications, first-aid, sunscreen, insect repellent]
+Documents: booking confirmations, insurance, itineraries
+Activity-specific: swimsuit, hiking gear, umbrella, etc.
+```
+
+Agent generates inline — context-aware based on destination climate, season, and user's listed activities.
+
+---
+
+### Step 9: Share GitHub report links (Slack = summary only)
 
 In Slack thread, only post:
 - rationale (1 line)

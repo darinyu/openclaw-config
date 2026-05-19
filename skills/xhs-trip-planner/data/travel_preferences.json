@@ -1,0 +1,18 @@
+{
+  "profile": {
+    "travel_style": null,
+    "budget_level": null,
+    "pace": null,
+    "accommodation": null,
+    "companions": null,
+    "dietary": [],
+    "interests": [],
+    "languages": [
+      "English"
+    ],
+    "previous_destinations": [],
+    "bucket_list": []
+  },
+  "trips": [],
+  "last_updated": "2026-05-19T16:17:19.576797+00:00"
+}
