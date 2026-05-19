@@ -13,6 +13,11 @@ START_TIMEOUT="${XHS_MCP_START_TIMEOUT:-20}"
 ALLOW_KILL_OTHER="${XHS_MCP_ALLOW_KILL_OTHER:-0}"
 HOST="${XHS_MCP_HOST:-127.0.0.1}"
 
+# XHS_BASE_URL overrides the default https://www.xiaohongshu.com base URL.
+# Users outside mainland China should set XHS_BASE_URL=https://www.rednote.com
+# since www.xiaohongshu.com redirects to www.rednote.com for non-CN traffic.
+BASE_URL="${XHS_BASE_URL:-}"
+
 case "$HEADLESS" in
   true|false) ;;
   *)
@@ -152,6 +157,9 @@ if port_open; then
   fi
 fi
 
+if [ -n "$BASE_URL" ]; then
+  echo "[INFO] XHS_BASE_URL=$BASE_URL"
+fi
 echo "[INFO] Starting xiaohongshu-mcp on :$PORT (headless=$HEADLESS)"
 echo "[INFO] State dir: $STATE_DIR"
 (
