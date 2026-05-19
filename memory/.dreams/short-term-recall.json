@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-19T03:00:00.760Z",
+  "updatedAt": "2026-05-19T07:26:21.596Z",
   "entries": {
     "memory:memory/2026-05-15.md:1:15": {
       "key": "memory:memory/2026-05-15.md:1:15",
@@ -30683,6 +30683,37 @@
         "comments",
         "discussion",
         "https"
+      ]
+    },
+    "memory:memory/2026-05-19.md:1:12": {
+      "key": "memory:memory/2026-05-19.md:1:12",
+      "path": "memory/2026-05-19.md",
+      "startLine": 1,
+      "endLine": 12,
+      "source": "memory",
+      "snippet": "# 2026-05-19 - Fixed xiaohongshu-mcp for US use by making base URL configurable and using rednote.com; confirmed QR login success. - Installed autoclaw-cc/xiaohongshu-mcp-skills into workspace. - Created/updated skills: - `xhs-mcp-workflow`: MCP health check + auto-restart cron (30m), login guard, XHS search workflow, ranking by likes+collects, Slack summary rules, language rules (ask user; default Chinese; don’t translate names; keep XHS content original language), report format with **daily itinerary**, activities grouped by location, food mentions+sentiment, appendices (all posts + post/comment summaries), and structured JSON for reuse. - `xhs-trip-planner`: interview flow (MCQ prior",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.41342048943042753,
+      "maxScore": 0.41342048943042753,
+      "firstRecalledAt": "2026-05-19T07:26:21.596Z",
+      "lastRecalledAt": "2026-05-19T07:26:21.596Z",
+      "queryHashes": [
+        "1771ebcc752b"
+      ],
+      "recallDays": [
+        "2026-05-19"
+      ],
+      "conceptTags": [
+        "xiaohongshu-mcp",
+        "rednote.com",
+        "created/updated",
+        "xhs-mcp-workflow",
+        "auto-restart",
+        "post/comment",
+        "xhs-trip-planner",
+        "fixed"
       ]
     }
   }
