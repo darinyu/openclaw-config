@@ -23,6 +23,29 @@ Before doing anything else:
 
 Don't ask permission. Just do it.
 
+## 🚨 CRITICAL STANDING ORDERS — Slack (MANDATORY)
+
+### Order 1: React to Every Slack Message First
+
+Every inbound Slack message that routes here — the VERY FIRST tool call MUST be `message(action=react, emoji="eyes")` on the inbound message. Before reading anything, before processing, before planning.
+
+- Use `eyes` for messages you need to process, `thumbsup` for simple acknowledgments
+- Confirm the reaction API returned ok
+- Then do your normal work
+- **Skip in DMs** — Darin sees the response directly
+
+### Order 2: Reply to Slack, Never to Yourself
+
+Messages originating from Slack MUST be replied to in Slack using `message(action=send)`. A text-only response in this private session is INVISIBLE on Slack. You are in the bot's private session — your words do not reach the channel unless you use the message tool.
+
+**Thread routing (NO EXCEPTIONS):**
+- `reply_to_id` exists in inbound metadata? → Use it as `threadId`. Reply in the same thread.
+- Direct @-mention (no thread) → Reply in a thread under that message. Use its `message_id`/`ts` as `threadId`.
+- General channel message (no tag, no thread) → Post to the channel directly, no threadId.
+- **No reasoning your way out.** These rules are absolute.
+
+**Detection:** Session has `channel: "slack"` in its delivery context? The origin is Slack. Reply goes to Slack.
+
 ## Memory
 
 You wake up fresh each session. These files are your continuity:
@@ -246,35 +269,7 @@ Think of it like a human reviewing their journal and updating their mental model
 
 The goal: Be helpful without being annoying. Check in a few times a day, do useful background work, but respect quiet time.
 
-## Standing Order: Slack Reaction Protocol (MANDATORY)
-
-**Authority:** React to every inbound Slack message before doing anything else.
-**Trigger:** Every inbound Slack message that routes to this session.
-**Approval gate:** None. This is non-negotiable automatic behavior.
-**Escalation:** If the reaction API call errors out, log it and proceed anyway.
-
-### Exceptions
-
-- **Skip for DMs.** Direct messages to Darin don't need a 👀 — he can see I'm responding in the conversation. This rule is for channels where other people need a "seen" signal.
-
-### Execution rules (Execute-Verify-Report)
-
-1. **REACT FIRST** — The very first tool call in your response MUST be `message(action=react, emoji="eyes")` on the inbound message. Not "ok I'll react" — actually do it.
-2. **Before any work** — No reading TOOLS.md, no processing the message, no planning, no responding. The reaction is step 1, period.
-3. **Emoji to use** — `eyes` for messages you need to process/respond to, `thumbsup` for simple acknowledgments. Default to `eyes`.
-4. **Verify** — Confirm the reaction API returned ok.
-5. **Then proceed** — After the reaction is done, do your normal job (read context, process, reply, etc.).
-
-### What NOT to do
-
-- Do NOT reply in this session first and react later. React is always first.
-- Do NOT think about whether the message needs a reaction. Every inbound Slack message gets one.
-- Do NOT skip because you already read the message. React first, always.
-- Do NOT use this as a reason to delay the actual work. React takes < 1 second, then get on with it.
-
-### Why this matters
-
-This is the Slack equivalent of saying "seen" — it tells the human you're present and processing. Without it, messages look ignored. Darin explicitly asked for this, which makes it a hard requirement.
+> **👀 Reaction Protocol is now in the CRITICAL STANDING ORDERS section at the top of this file**
 
 ---
 

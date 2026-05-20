@@ -116,6 +116,14 @@ Structure the report as:
 Depth tier: [Quick/Standard/Deep]
 Searched [N] queries across web and news. Analyzed [M] sources.
 Sub-questions investigated: [list]
+
+## Cost & Token Summary
+**Model used:** [model name]  
+**Estimated input tokens:** [input token count]  
+**Estimated output tokens:** [output token count]  
+**Total estimated cost:** ~[$X.XX]
+
+Token counts cover search queries, fetched source content, synthesis reasoning, and report generation. Cost is estimated at current API pricing for the model used. Include this section in every report.
 ```
 
 ### Step 6: Push to Repo & Deliver
