@@ -53,3 +53,4 @@
 {"type":"memory.recall.recorded","timestamp":"2026-05-20T03:00:02.872Z","query":"__dreaming_sessions__:2026-05-20","resultCount":1,"results":[{"path":"memory/.dreams/session-corpus/2026-05-20.txt","startLine":7,"endLine":7,"score":0.58}]}
 {"type":"memory.dream.completed","timestamp":"2026-05-20T03:00:02.872Z","phase":"rem","reportPath":"/data/.openclaw/workspace/memory/dreaming/rem/2026-05-20.md","lineCount":7,"storageMode":"separate"}
 {"type":"memory.dream.completed","timestamp":"2026-05-20T03:00:02.872Z","phase":"deep","reportPath":"/data/.openclaw/workspace/memory/dreaming/deep/2026-05-20.md","lineCount":2,"storageMode":"separate"}
+{"type":"memory.recall.recorded","timestamp":"2026-05-20T11:00:29.965Z","query":"correction from Darin recent","resultCount":1,"results":[{"path":"memory/2026-05-18.md","startLine":1,"endLine":40,"score":0.3558668941259384}]}

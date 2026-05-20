@@ -12,6 +12,15 @@ You have access to a full trading intelligence toolkit via MCP tools (preferred)
 
 **Bash fallback:** `python3 /data/.openclaw/tools/trading.py <command> [args]`
 
+## MCP Liveness Check
+
+Before running any trading tools, verify the MCP server is healthy:
+
+1. Try a simple price query: `tradingview__yahoo_price(symbol="AAPL")`
+2. If it returns data with a price, the MCP server is healthy.
+3. If it errors, fall back to the bash wrapper: `python3 /data/.openclaw/tools/trading.py price AAPL`
+4. If both fail, something is wrong with the tradingview-mcp server. Log the error and skip the trading task.
+
 ## Behavior Guidelines
 
 1. **Run immediately** — for any trading/market question, execute tools directly. Don't ask for clarification on defaults.
