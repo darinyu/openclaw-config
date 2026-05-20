@@ -150,6 +150,52 @@ For destinations without recent reports, research in layers. This is the most im
 
 **Use the thinking log (`think.py`) for every search round.** Generate a session_id and log each reasoning step.
 
+#### ⚠️ CRITICAL RULE: Recommendations MUST come from reading post content, not from counts
+
+**The entire recommendation flow depends on reading the actual post desc (full text) and comments.** If you cannot get these, you cannot recommend that post.
+
+1. **Before anything else:** Fetch `get_feed_detail` for every post you intend to use. Save to `enriched_map`.
+2. **Filter out unusable posts:** Any post with empty `desc` (no content retrieved) must be **excluded entirely** from recommendations. You cannot use a post you can't read.
+3. **Read, then recommend:** For each enriched post, read the full `desc` and top 5 `comments`. Extract:
+   - **Positive sentiment**: Which activities/restaurants get praised? Specific quotes.
+   - **Negative sentiment**: What gets warned about? Overpriced, overrated, tourist traps.
+   - **Practical tips**: Booking advice, timing, what to avoid, hidden gems.
+   - **Evidence quotes**: Short (≤25 words) quotes from desc or comments in original language.
+4. **Cite your sources**: Every recommendation links back to the XHS post and includes a specific quote as evidence.
+5. **No empty-content recommendations**: If a post has no `desc`, no amount of likes/saves qualifies it for a recommendation. Skip it.
+
+**How to run content analysis in your process (inline, no external API):**
+```python
+# After enrichment, for each post with desc:
+usable_posts = []
+for link, enriched in enriched_map.items():
+    if not enriched.get('desc') or len(enriched['desc'].strip()) < 20:
+        print(f'SKIP (no content): {link}')
+        continue
+    
+    desc = enriched['desc']
+    comments = enriched.get('top_comments', [])
+    
+    # Extract positive mentions (you read and summarize these)
+    positive_highlights = []  # specific things praised
+    warnings = []  # negative sentiment from desc or comments
+    tips = []  # practical tips from comments
+    
+    # Read desc for attractions, restaurants, tips, warnings
+    # Read comments for opinion, additional tips, warnings
+    
+    usable_posts.append({
+        'link': link,
+        'desc': desc,
+        'comments': comments,
+        'highlights': positive_highlights,
+        'warnings': warnings,
+        'tips': tips
+    })
+```
+
+**This content analysis IS the recommendation source.** The engagement metrics (likes, collects) are used for ranking — the recommendation text comes from reading the actual post content.
+
 #### Layer 1: Days Allocation & Geography Map (Round 1 of 3+)
 
 Search with keywords:
@@ -210,6 +256,16 @@ Run at least 2 more search rounds with different keyword groups:
 - `<destination> 必吃`
 - `<destination> 餐厅`
 
+#### Engagement threshold — use xhs-mcp-workflow (Step 1b)
+
+After all search rounds, before enriching, apply the shared engagement threshold from xhs-mcp-workflow (Step 1b). The logic is:
+```python
+threshold = max(top_engagement * 0.1, 30)
+```
+If top post has 1K+ likes, skip posts under 100. If top has 500, skip under 50. Only enrich posts worth your time.
+
+See `xhs-mcp-workflow/SKILL.md` → Search Workflow → Step 1b for the full implementation.
+
 **For every search round, save a CLEANED JSON with only the fields we need. ALSO accumulate into a global list for the final `data.json` push:**
 
 Accumulate all search results across rounds into a single Python list:
@@ -264,7 +320,8 @@ Before building `data.json`, enrich the top posts with full description and comm
 After all search rounds and deduplication:
 
 ```python
-# Sort by likes, take top 10 for enrichment
+# Sort by likes, enrich ALL posts (not just top 10)
+top_posts = unique_results[:len(unique_results)]  # ALL posts
 unique_results.sort(key=lambda r: r['likes'], reverse=True)
 top_posts = unique_results[:10]
 
@@ -294,14 +351,26 @@ for post in top_posts:
         
         enriched_map[post['link']] = {
             'desc': note.get('desc', '')[:3000],
+            'has_content': bool(note.get('desc', '').strip()) and len(note.get('desc', '').strip()) >= 20,
             'top_comments': [{
                 'content': c.get('content', '')[:500],
                 'nickname': c.get('user_info', {}).get('nickname', ''),
                 'likes': int(c.get('like_count', 0) or 0),
             } for c in comments_list[:5] if c.get('content')]
         }
+        if not enriched_map[post['link']]['has_content']:
+            print(f'SKIP (no desc): {post["link"]}')
+        else:
+            print(f'  ENRICHED: {post["link"]} — {len(enriched_map[post["link"]]["desc"])} chars, {len(enriched_map[post["link"]]["top_comments"])} comments')
     except Exception as e:
         print(f"Failed to enrich {fid}: {e}")
+
+# Filter out posts with no content before building recommendations
+usable_for_recommendation = {link for link, e in enriched_map.items() if e.get('has_content')}
+print(f'Posts with content: {len(usable_for_recommendation)}/{len(enriched_map)}')
+
+# When building 02_activities.md, 03_food.md, and 04_itinerary.md:
+# ONLY use posts in usable_for_recommendation. Skip all others.
 ```
 
 ```python
@@ -325,11 +394,18 @@ data_json = {
             'comments_count': r['comments'],  # renamed: comments → comments_count for clarity
             'link': r['link'],
             'desc': enriched_map.get(r['link'], {}).get('desc', ''),  # <-- full post text, MANDATORY
+            'has_content': enriched_map.get(r['link'], {}).get('has_content', False),  # <-- whether we could read the desc
             'top_comments': enriched_map.get(r['link'], {}).get('top_comments', [])  # <-- top 5 comments, MANDATORY
         }
         for i, r in enumerate(unique_results)
     ]
 }
+
+# VALIDATION: warn if posts in data.json have no content
+empty_content = [r['rank'] for r in data_json['results'] if not r.get('has_content')]
+if empty_content:
+    print(f'WARNING: {len(empty_content)} posts have no desc content (ranks: {empty_content})')
+    print('These posts will be SKIPPED when building recommendations.')
 ```
 
 **NOTE**: To enable enrichment, the `all_results[]` list must store `id` and `xsecToken` fields from search results:
@@ -415,7 +491,9 @@ Rank by engagement (likes + saves). Extract:
 - `xhs-research/<destination>/02_activities.md`
 - `xhs-research/<destination>/03_food.md`
 
-**02_activities.md format (EVERY entry must have XHS permalink + pro tip + evidence quote):**
+**02_activities.md format (EVERY entry must have XHS permalink + pro tip + evidence quote from desc/comments + sentiment):**
+
+⚠️ **Only include posts where `get_feed_detail` returned non-empty `desc`.** If you couldn't read the post content, you CANNOT include it here. No exceptions.
 ```
 # <Destination> — Activities
 
@@ -432,7 +510,9 @@ Rank by engagement (likes + saves). Extract:
 | <name> | <area> | <km from center> | [XHS](<url>) |
 ```
 
-**03_food.md format (EVERY entry must have XHS permalink + sentiment + quote):**
+**03_food.md format (EVERY entry must have XHS permalink + sentiment + quote from desc/comments + price):**
+
+⚠️ **Only include posts where `get_feed_detail` returned non-empty `desc`.** If you couldn't read the post content, you CANNOT include it here. No exceptions.
 ```
 # <Destination> — Food Recommendations
 
@@ -553,9 +633,16 @@ data_json = {
         'likes': r['likes'], 'collects': r['collects'], 'comments_count': r['comments'],
         'link': r['link'],
         'desc': enriched_map.get(r['link'], {}).get('desc', ''),  # MANDATORY: full post text
+        'has_content': enriched_map.get(r['link'], {}).get('has_content', False),  # MANDATORY: whether desc was retrievable
         'top_comments': enriched_map.get(r['link'], {}).get('top_comments', [])  # MANDATORY: top 5 comments
     } for r in all_results]
 }
+
+# Run validation before pushing
+empty_content = [r['rank'] for r in data_json['results'] if not r.get('has_content')]
+if empty_content:
+    print(f'WARNING: {len(empty_content)} posts have no desc — will be skipped in recommendations')
+    print(f'  Ranks without content: {empty_content}')
 gh_put(f'xhs/{date_str}/<destination>/data.json', json.dumps(data_json, indent=2, ensure_ascii=False),
        'Add raw XHS search data for <destination>')
 
@@ -615,6 +702,24 @@ After presenting the itinerary, ask:
 **Timing rule:** Max 3-4 activities per day. Include realistic timing buffers between activities. Don't over-schedule.
 
 **Language rule:** Report/summary in user's chosen language. Keep all restaurant names, hotel names, and location names in their original language (e.g. "Maguro Brothers" stays "Maguro Brothers", 巴黎 stays 巴黎).
+
+#### ⚠️ RECOMMENDATION SOURCE RULE: desc + comments only, never title/likes alone
+
+1. **Every** activity, restaurant, or tip in the itinerary MUST trace back to enriched post content (non-empty `desc`).
+2. **Filter first**: Start with `usable_for_recommendation` (posts with non-empty desc). Discard all others.
+3. **Read, extract, cite**: For each usable post, read the full desc + top 5 comments, then:
+   - Extract specific activities mentioned (with context — what makes them good)
+   - Extract specific restaurants/foods mentioned (with specific dish names)
+   - Note warnings/negative sentiment ("overrated", "tourist trap", "skip this")
+   - Extract practical tips ("go early to avoid crowds", "book 2 weeks in advance")
+   - Pull a short evidence quote (≤25 words, original language, from desc or comments)
+4. **Build the schedule**: Group extracted activities by geography and time of day. Each entry needs:
+   - Activity/restaurant name (from post content)
+   - Description/sentiment (derived from reading the post, not from title)
+   - Evidence quote (directly from desc or comments)
+   - XHS permalink
+   - Pro tips from comments
+5. **No empty-content entries**: If you couldn't read a post's content, you cannot list its recommendations. Period.
 
 Format for quick scanning. **Bold** = key info. Keep it tight.
 

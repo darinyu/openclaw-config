@@ -3,7 +3,9 @@ name: xhs-mcp-workflow
 description: Unified workflow for Xiaohongshu (小红书/XHS/Rednote) via xiaohongshu-mcp MCP service. Covers the full pipeline: MCP health check, login guard, keyword search with pagination, parallel fetch of note details + comments, ranking by engagement, structured GitHub reports, and Slack-formatted summaries. Use whenever the user asks to search XHS, analyze XHS content, browse XHS notes, or any Rednote-related research, including food/restaurant searches, product research, travel planning, or trend analysis.
 ---
 
-# XHS MCP Workflow
+# XHS MCP Workflow — Shared Search Engine
+
+This skill is the **single authoritative source** for all XHS search strategy. Other skills (xhs-food-research, xhs-trip-planner) reference this workflow rather than duplicating search logic. If you change how XHS searches work, change it here.
 
 Key paths:
 - `XHS_SKILL_DIR` = `/data/.openclaw/workspace/skills/xiaohongshu-mcp-openclaw`
@@ -111,20 +113,41 @@ Relevant topics that work well on XHS:
 - Life hacks & how-tos
 - Things to do in [city/area]
 
-## Search Workflow
+## Search Workflow (SHARED — all XHS skills use this)
 
-### Step 1: Search for keyword(s)
+If another skill says "Use xhs-mcp-workflow for search", this is the section they're referring to.
+
+### Step 1: Search for keyword(s) — wide net first
 
 ```bash
 mcporter call xiaohongshu-mcp.search_feeds --keyword "<keyword>"
 ```
 
 If the keyword might have multiple language variants, search each and merge results.
-Handle pagination if `hasMore` is true — pass `cursor` from the previous response.
+**Use pagination** — pass `cursor` from response when `hasMore=true`. Collect **40-60+ total results** to have a wide pool.
+
+### Step 1b: Filter by engagement threshold
+
+After collecting all results, only proceed with posts that have meaningful engagement. This avoids wasting API calls and tokens on low-value posts:
+
+```python
+results.sort(key=lambda p: p['likes'] + p['collects'], reverse=True)
+top_engagement = results[0]['likes'] + results[0]['collects']
+threshold = max(top_engagement * 0.1, 30)
+
+worthy = [p for p in results if (p['likes'] + p['collects']) >= threshold]
+skipped = len(results) - len(worthy)
+print(f'Top engagement: {top_engagement}, Threshold: {threshold}')
+print(f'Worthy: {len(worthy)}/{len(results)} ({skipped} skipped — too low)')
+```
+
+**Rationale:** If top post has 1K+ likes, skip posts under 100. If top has 500, skip under 50. Only enrich posts worth your time.
+
+Only use `worthy` posts for enrichment in Step 2. Skip the rest.
 
 ### Step 2: Fetch details + comments
 
-From search results, extract top N notes by `likedCount + collectedCount`.
+From search results, extract **ALL** notes (not just top N) — every post that will be in data.json must have details fetched.
 Fetch their details with comments:
 
 ```bash
@@ -138,9 +161,57 @@ mcporter call xiaohongshu-mcp.get_feed_detail \
 Parallelize by spawning multiple `mcporter call` requests concurrently (up to 5 at a time).
 Collect **text and comments only** (`.desc` + `.comments[].content`) — skip video/image data.
 
-### Step 3: Aggregate structured data
+#### ⚠️ CRITICAL: search_feeds has NO desc — must call get_feed_detail separately
 
-Compile results into a reusable data format:
+`search_feeds` only returns `noteCard` with 5 keys: `type, displayTitle, user, interactInfo, cover`. **It does NOT include `desc` (post body text) or comments.** The desc field is ONLY available via `get_feed_detail`.
+
+Think of it like:
+- `search_feeds` = Google SERP (titles, links, engagement counts)
+- `get_feed_detail` = clicking into the actual article
+
+This means:
+1. **Never** assume a post from `search_feeds` has usable content. You MUST call `get_feed_detail` to get desc + comments.
+2. Track which posts have been enriched with a `has_content` flag (True if desc is non-empty after get_feed_detail).
+3. **Never use a post for recommendations if get_feed_detail returned empty desc.** No content = no recommendation.
+4. All recommendations must come from reading and analyzing the actual desc + comments text.
+
+#### ⚠️ CRITICAL: search_feeds has NO desc — must call get_feed_detail separately
+
+`search_feeds` only returns `noteCard` with 5 keys: `type, displayTitle, user, interactInfo, cover`. **It does NOT include `desc` (post body text) or comments.** The desc field is ONLY available via `get_feed_detail`.
+
+Think of it like:
+- `search_feeds` = Google SERP (titles, links, engagement counts)
+- `get_feed_detail` = clicking into the actual article
+
+This means:
+1. **Never** assume a post from `search_feeds` has usable content. You MUST call `get_feed_detail` to get desc + comments.
+2. Track which posts have been enriched with a `has_content` flag (True if desc is non-empty after get_feed_detail).
+3. **Never use a post for recommendations if get_feed_detail returned empty desc.** No content = no recommendation.
+4. All recommendations must come from reading and analyzing the actual desc + comments text.
+
+### Step 3: Aggregate structured data (with content validation)
+
+After fetching details for all top posts, validate which ones actually have content:
+
+```python
+# After enrichment, build has_content tracking
+usable_posts = []
+skip_count = 0
+for post in enriched_posts:
+    has_content = bool(post.get('desc', '').strip()) and len(post.get('desc', '').strip()) >= 20
+    post['has_content'] = has_content
+    if has_content:
+        usable_posts.append(post)
+    else:
+        skip_count += 1
+        print(f'SKIP (no desc): {post["link"]}')
+
+print(f'Posts with content: {len(usable_posts)}/{len(enriched_posts)} ({skip_count} skipped)')
+```
+
+Only use posts with `has_content=True` for analysis and recommendations.
+
+Compile results into a reusable data format (include `desc` and `has_content`):
 
 ```json
 {
@@ -157,25 +228,19 @@ Compile results into a reusable data format:
       "collects": 2128,
       "comments": 34,
       "link": "https://www.xiaohongshu.com/explore/<feed_id>",
-      "desc_excerpt": "...",
-      "comment_sentiment": "positive/mixed/negative",
+      "desc": "...",  # full post text, MANDATORY from get_feed_detail
+      "has_content": true,  # whether get_feed_detail returned non-empty desc
+      "top_comments": [
+        {"content": "...", "nickname": "...", "likes": 5}
+      ],
       "mentions": ["Restaurant A", "Restaurant B"]
     }
   ],
-  "aggregated": {
-    "top_restaurants": [
-      {"name": "Maguro Brothers", "mentions": 3, "avg_stars": 850, "sentiment": "positive"},
-      {"name": "Island Vintage Coffee", "mentions": 2, "avg_stars": 720, "sentiment": "positive"}
-    ],
-    "top_activities": [
-      {"name": "Lanikai Pillbox Hike", "location": "Kailua", "mentions": 2, "avg_stars": 900, "sentiment": "positive"}
-    ],
-    "pro_tips": ["Rent car for one day only", "..."]
-  }
+  "aggregated": { ... }
 }
 ```
 
-This JSON should be checked into the GitHub report alongside the markdown.
+**Hard rule:** Do NOT include any result with `has_content=false` in `aggregated` analysis. They have no readable content.
 
 ### Step 4: Build the full report
 
