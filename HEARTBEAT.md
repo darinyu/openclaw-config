@@ -12,4 +12,11 @@
 - **Calendar** — Any events coming up in the next 24h?
 - **Email** — Any urgent unread from personal Gmail?
 - **Weather** — Rain/weather worth mentioning for the day?
+- **Stock signals** — Quick check of key tickers for strategy entry signals (use stock-strategy-monitor skill)
 export PATH="/data/.openclaw/bin:$PATH"
+
+## Stock Strategy Monitor
+- **Risk tolerance:** Moderate (strategies risk 1-6)
+- **Cron:** Weekday pre-market 6:00 AM PT deep analysis + signal check → stock channel C0B48T730DT
+- **Skill:** `/data/.openclaw/workspace/skills/stock-strategy-monitor/SKILL.md`
+- **Signals to watch:** NVDA RSI<30 (top priority), ETFs BB touches, EMA/MACD crosses

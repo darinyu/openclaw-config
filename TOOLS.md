@@ -12,7 +12,7 @@ Skills define _how_ tools work. This file is for _your_ specifics — the stuff 
 
 **FAILING THIS CHECKLIST = BROKEN MESSAGE = ANGRY DARIN.**
 
-Before ANY `message(action=send)` call to Slack, run through ALL THREE checks.
+Before ANY `message(action=send)` call to Slack, run through ALL FIVE checks.
 
 ### ✅ Check 1: Thread Routing
 
@@ -62,7 +62,30 @@ Wrapper around `scripts/slack_formatter.py` — converts BOTH `*italic*` and `_i
 
 **SKIP REASONING:** Do not "but I didn't use italic" yourself out of this. The filter catches accidents. Run it.
 
-### ✅ Check 4: Stock Analysis = TradingAgents Pipeline + GitHub Push (MANDATORY)
+### ✅ Check 4: THE HOOK — Auto-Filter Before Every Send
+
+**Problem diagnosis (from Darin):** The no-italic rule moves between tool context and agent context and gets lost. I need *multiple* copies of the rule and an automatic hook.
+
+**Zero-think ritual for EVERY Slack send:**
+```bash
+# Step 1: Write message to file
+cat > /tmp/slack_msg.txt << 'ENDOFFILE'
+Your message content here — write **bold** naturally
+ENDOFFILE
+
+# Step 2: Run through the filter (mandatory)
+FILTERED=$(python3 /data/.openclaw/workspace/scripts/slack_formatter.py < /tmp/slack_msg.txt)
+```
+Then pass `$FILTERED` as the message. The filter auto-converts `*italic*` and `_italic_` to `**bold**`.
+
+**Train your fingers:** Before any `message(action=send)`, your hand should reach for:
+1. Write to `/tmp/slack_msg.txt`
+2. Pipe through the formatter
+3. Send the filtered version
+
+**No thinking required.** The hook handles it.
+
+### ✅ Check 5: Stock Analysis = TradingAgents Pipeline + GitHub Push (MANDATORY)
 
 When someone asks to analyze a stock ("analyze X", "what about Y stock"):
 

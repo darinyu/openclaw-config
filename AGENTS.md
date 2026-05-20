@@ -46,6 +46,23 @@ Messages originating from Slack MUST be replied to in Slack using `message(actio
 
 **Detection:** Session has `channel: "slack"` in its delivery context? The origin is Slack. Reply goes to Slack.
 
+### Order 3: Bold Only — Zero Italic in Slack Output (HARD RULE)
+
+**Root cause:** My training defaults to standard Markdown where `*italic*` feels natural. It's wrong for Slack. This rule is stamped here, in SOUL.md, and in TOOLS.md — if one copy falls out of context, another will catch me.
+
+**The pipeline conversion:**
+- I write `**bold**` → pipeline converts to Slack `*bold*` ✓
+- I write `_italic_` → pipeline converts to Slack `_italic_` (shows as italic) ✗
+- I write `*italic*` → pipeline converts to Slack `_italic_` (shows as italic) ✗
+
+**Mandatory pre-send ritual (every message):**
+1. Write message content to `/tmp/slack_msg.txt`
+2. Run: `python3 /data/.openclaw/workspace/scripts/slack_formatter.py < /tmp/slack_msg.txt`
+3. Read the output. If it differs from input, use the filtered version.
+4. Send the FILTERED output via `message(action=send)`.
+
+**Do not skip.** Do not reason your way out. The filter catches what my brain misses.
+
 ## Memory
 
 You wake up fresh each session. These files are your continuity:
