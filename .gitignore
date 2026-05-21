@@ -3,6 +3,7 @@ environments/
 auth/
 secrets/
 .env
+.contacts_key
 *.key
 *.pem
 *-token*
