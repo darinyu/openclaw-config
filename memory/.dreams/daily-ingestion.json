@@ -1,29 +1,40 @@
 {
   "version": 1,
   "files": {
+    "memory/2026-05-20.md": {
+      "mtimeMs": 1779306819351,
+      "size": 3983,
+      "lastDreamingDayIngested": "2026-05-21"
+    },
     "memory/2026-05-19.md": {
-      "mtimeMs": 1779227953009,
-      "size": 6686
+      "mtimeMs": 1779282149771,
+      "size": 6686,
+      "lastDreamingDayIngested": "2026-05-21"
     },
     "memory/2026-05-18.md": {
       "mtimeMs": 1779102068458,
-      "size": 1915
+      "size": 1915,
+      "lastDreamingDayIngested": "2026-05-21"
     },
     "memory/2026-05-17.md": {
       "mtimeMs": 1779062496088,
-      "size": 1013
+      "size": 1013,
+      "lastDreamingDayIngested": "2026-05-21"
     },
     "memory/2026-05-16.md": {
       "mtimeMs": 1778965498522,
-      "size": 2582
+      "size": 2582,
+      "lastDreamingDayIngested": "2026-05-21"
     },
     "memory/2026-05-15.md": {
       "mtimeMs": 1778824880661,
-      "size": 3286
+      "size": 3286,
+      "lastDreamingDayIngested": "2026-05-21"
     },
     "memory/2026-05-14.md": {
       "mtimeMs": 1778784090156,
-      "size": 933
+      "size": 933,
+      "lastDreamingDayIngested": "2026-05-21"
     }
   }
 }

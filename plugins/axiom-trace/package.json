@@ -1,0 +1,13 @@
+{
+  "name": "@darinyu/axiom-trace",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "openclaw": {
+    "extensions": ["./index.ts"],
+    "build": {
+      "openclawVersion": "2026.5.14",
+      "pluginSdkVersion": "2026.5.14"
+    }
+  }
+}

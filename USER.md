@@ -14,6 +14,9 @@ _Learn about the person you're helping. Update this as you go._
 - **Location:** Sunnyvale, CA 94086 (near Sunnyvale Library)
 - **Partner:** Paofu (wife)
 - **Baby:** Expecting a baby girl, due September 5, 2026 🎀
+- **Employer:** OpenAI (updated 2026-05-21 — was Netflix)
+- **Office:** Mission Bay 2, 1515 Third St, San Francisco, CA 94158
+- **Start date:** May 26, 2026
 - **Anniversaries (from Days Matter app):**
   - 在一起 (Got together): Nov 18, 2017 — 3,100 days
   - Engagement: Mar 29, 2019 — 2,605 days

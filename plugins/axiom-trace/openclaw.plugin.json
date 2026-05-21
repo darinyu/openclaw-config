@@ -1,0 +1,19 @@
+{
+  "id": "axiom-trace",
+  "name": "Axiom Trace Logger",
+  "description": "Full agent-turn tracing to Axiom: prompt, model calls, tool calls, final reply",
+  "activation": {
+    "onStartup": true
+  },
+  "contracts": {},
+  "configSchema": {
+    "type": "object",
+    "properties": {
+      "dataset": {
+        "type": "string",
+        "default": "openclaw",
+        "description": "Axiom dataset name"
+      }
+    }
+  }
+}
