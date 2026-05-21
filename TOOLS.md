@@ -333,6 +333,17 @@ All cron job output that delivers to Slack MUST use bold over italic. No excepti
 - Every cron job prompt MUST include formatting instructions: use *bold* for emphasis, never use italic.
 - Even one italic underscore in cron output is a bug.
 
+### Rule 1b (NEW): Mobile Readability — All Cron Output
+
+Every cron job output to Slack MUST be mobile-readable. See MEMORY.md > *Mobile Readability* section for the full rules.
+
+**Quick reference:**
+- Single-line bullets only — no prose paragraphs
+- Under ~60 chars per line
+- 1 emoji per section as visual anchor
+- `---` section separators
+- No tables, no code blocks, no markdown headings, no pipe syntax
+
 ### Rule 2: Always Output — Never Complete Silently
 
 Every cron job MUST output something. If a job has nothing to report (no events, no changes, nothing urgent), it MUST post a brief status message to <#C0B4EK31NCU> (C0B4EK31NCU).

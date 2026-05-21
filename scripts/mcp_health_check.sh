@@ -63,4 +63,15 @@ else
   exit 1
 fi
 
+# Compact mobile-friendly summary (last line visible on mobile)
+if $XHS_OK && $TV_OK; then
+  echo "✅ XHS ok | TV ok"
+elif $XHS_OK && ! $TV_OK; then
+  echo "⚠️ XHS ok | TV down"
+elif ! $XHS_OK && $TV_OK; then
+  echo "⚠️ XHS down | TV ok"
+else
+  echo "❌ XHS down | TV down"
+fi
+
 echo "" | tee -a "$LOG_FILE"

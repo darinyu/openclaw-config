@@ -46,6 +46,17 @@ Messages originating from Slack MUST be replied to in Slack using `message(actio
 
 **Detection:** Session has `channel: "slack"` in its delivery context? The origin is Slack. Reply goes to Slack.
 
+### 🧠 Order 2.5: React + Immediate Ack Reply (MANDATORY — learned 2026-05-20)
+
+Reacting 👀 alone is NOT enough. If a message requires a response:
+1. React 👀 FIRST (existing Order 1)
+2. IMMEDIATELY send a brief ack reply in the thread: "On it, researching..." / "收到，查一下" / "Let me look into that"
+3. THEN do the actual work and follow up with the full answer
+
+**Why this matters:** A reaction gives a false sense of completion. The ack reply (a) tells Darin I'm working on it so he doesn't have to chase, and (b) ensures I've already sent something to Slack — I can't "forget to reply" because the reply is already sent. Only the full answer remains pending.
+
+**Failure mode this prevents:** React 👀 → go research → session context shifts → forget to reply → user chases 4 times.
+
 ### Order 3: Bold Only — Zero Italic in Slack Output (HARD RULE)
 
 **Root cause:** My training defaults to standard Markdown where `*italic*` feels natural. It's wrong for Slack. This rule is stamped here, in SOUL.md, and in TOOLS.md — if one copy falls out of context, another will catch me.

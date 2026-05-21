@@ -27,3 +27,42 @@
 - Slack @-mentions that route to WebChat do **NOT** auto-route replies back to Slack
 - I **MUST** always use `message(action=send)` to reply in Slack
 - TOOLS.md has the full rules (thread vs direct channel) — follow them every time
+
+## 🛑 Lesson: React + Reply Rule (2026-05-20)
+Reacting with eyes on a message but never replying is a broken promise. If I react to a message that asks a question or needs a response, I MUST follow up with an actual reply in the same thread. A reaction alone is meaningless if the user is waiting for an answer.
+
+## ✨ MOBILE READABILITY — Default for ALL Slack Output (set 2026-05-20)
+
+Every piece of content written to Slack (cron jobs, responses, reports, DMs) MUST follow these mobile-first formatting rules:
+
+**The rules:**
+- **Single-line bullets only** — no prose paragraphs. If it can't fit in one line, break it up.
+- **Under ~60 chars per line** — keeps text readable on a phone screen without sideways scrolling.
+- **1 emoji per section** as a visual anchor so readers can scan by emoji.
+- **`---` section separators** between major sections.
+- **No tables, no code blocks, no markdown headings** — Slack doesn't render these well on mobile.
+- **Bold for emphasis only** (`**bold**`), never italic (`_italic_` or `*italic*`).
+- **No pipe syntax** — markdown tables with pipes are unreadable on mobile Slack.
+
+**When to apply:**
+- Creating a new cron job → include the full MOBILE READABILITY block in the prompt
+- Writing any Slack message → keep content short, bulletized, scannable
+- Writing a stock/finance report → follow the Stock Pre-Market pattern (one-line-per-ticker, emoji-coded sections)
+
+**Reference format block to copy into new cron job prompts:**
+```
+**MOBILE READABILITY (HARD RULES):**
+- Keep it SHORT — single-line bullets only, no prose paragraphs
+- Each line under ~60 chars when possible
+- One emoji per section as visual anchor
+- Section separators: ---
+- No tables, no code blocks (except single inline), no markdown headings
+- No pipe syntax, no complex formatting
+- Scannable on a phone screen — assume Darin's reading on mobile
+```
+
+**Stock report example** (best-in-class mobile format):
+- Each bullet: `*TICKER* key stat — brief note (under ~60 chars)`
+- VIX: `VIX: *22.5* (mean reversion)`
+- Index perf: `SPY *+0.8%* DJI *-0.2%*`
+- Total report under ~25 lines
