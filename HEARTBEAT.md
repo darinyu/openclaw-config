@@ -13,6 +13,7 @@
 - **Email** — Any urgent unread from personal Gmail?
 - **Weather** — Rain/weather worth mentioning for the day?
 - **Stock signals** — Quick check of key tickers for strategy entry signals (use stock-strategy-monitor skill)
+
 ## ✅ Vocabulary Evening Quiz (updated 2026-05-21)
 - Cron: 8:30 PM PT daily → sends to C07LV6XMHNJ with @Paofu
 - ONLY words from Darin or Paofu — no self-added words

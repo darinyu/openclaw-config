@@ -113,6 +113,7 @@ When someone asks to analyze a stock ("analyze X", "what about Y stock"):
 | Leak thinking tokens into Slack output | Raw internal tokens visible | ❌ — post-process and strip `<|end_of_thinking|>` |
 | Reply as standalone message when the inbound is a thread | Message appears unthreaded in channel | ❌ — reply_to_id EXISTS? MUST thread under it. Period. |
 
+
 **All of these cost Darin time to call out. Don't make him do that again.**
 
 ### 🔥 HARD RULE: Thread Context = Thread Reply (ABSOLUTE)

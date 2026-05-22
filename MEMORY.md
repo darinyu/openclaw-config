@@ -4,20 +4,24 @@
 - **Darin** = the user, my human (darinyu27@gmail.com)
 - **Paofu** = Darin's wife
 
-## Paofu English Level (set 2026-05-21)
+## Paofu English Level & Annotation Guide (set 2026-05-21, updated 2026-05-22)
 - Estimated B2+ (Upper-Intermediate)
 - Can read AI/tech news overall but needs help with: idioms/collocations (breakneck speed), formal/academic vocab (constituency), phrasal verbs, compound concepts
-- **When posting to #learning:** auto-annotate B2+/C1 level words inline with Chinese translation in parentheses, right in the text
-- **Also annotate:** abstract metaphors (比喻), idioms (隐喻), internet memes, special collocations where simple words combine to mean something non-obvious
-- For idioms/metaphors: first give literal meaning, then explain actual usage
-- **DON'T annotate:** metaphors with direct Chinese equivalents (e.g. 泼冷水/泼冷水, 冰山一角/冰山一角)
-- **PRIORITY:** phrasal verbs & fixed collocations > internet memes & cultural metaphors > idioms without Chinese equivalent
+
+### Annotation Rules (from Paofu's original request, pending her confirmation on format)
+- **Format:** inline in the text — **word(中文翻译)** right where the word appears in the sentence
+- **Judgment-based:** annotate SOME words she might not know, no minimum count per story
+- **Prioritize:** phrasal verbs & fixed collocations > cultural metaphors & idioms without Chinese equivalent > formal/academic vocab
+- **For idioms/metaphors:** first give literal meaning, then explain actual usage
+- **DON'T annotate:** basic/common words, or metaphors with direct Chinese equivalents (泼冷水/泼冷水, 冰山一角/冰山一角)
+- **Keep it readable** — don't annotate every word, only ones worth learning but hard to guess from context
 - **PAOFU'S ASSESSMENT (2026-05-21):** She self-reports that metaphors with clear Chinese parallels are easy. The hard stuff is phrasal verbs (fell through), cultural references (Slop Grenade), and collocations where simple words combine unexpectedly.
+- **⚠️ FORMAT NOT FINALIZED —** Need to test with Paofu and confirm she likes this format before making permanent
+
+### Nightly Quiz (set 2026-05-21)
 - **After posting:** automatically select annotated words, add them to vocab list (can edit/curate later)
 - **Nightly quiz:** interactive, ask Paofu if she knows the word/idiom, then reveal answer
 - **Ongoing assessment:** find opportunities to assess level and adjust difficulty
-- Only annotate words that are worth learning but hard to guess from context
-- Don't annotate every word — keep it readable
 
 ## Google Calendar Integration (configured 2026-05-14)
 - Connected via `google-workspace-byok` skill, personal account OAuth
@@ -108,3 +112,10 @@ Every piece of content written to Slack (cron jobs, responses, reports, DMs) MUS
 
 <!-- openclaw-memory-promotion:memory:memory/2026-05-16.md:5:5 -->
 - Darin and I had a long thread in #random brainstorming a platform for agents and humans. [score=0.826 recalls=0 avg=0.620 source=memory/2026-05-16.md:5-5]
+
+## Promoted From Short-Term Memory (2026-05-22)
+
+<!-- openclaw-memory-promotion:memory:memory/2026-05-16.md:8:8 -->
+- A platform where both humans and AI agents are first-class citizens. Structured data posts (typed schemas, not just text). MCP-native access by default. Built-in data marketplace with pay-per-query economics. [score=0.824 recalls=0 avg=0.620 source=memory/2026-05-16.md:8-8]
+<!-- openclaw-memory-promotion:memory:memory/2026-05-15.md:17:17 -->
+- Replaced heartbeat-based checks with proper cron jobs: [score=0.806 recalls=0 avg=0.620 source=memory/2026-05-15.md:17-17]
