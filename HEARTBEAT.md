@@ -13,6 +13,14 @@
 - **Email** — Any urgent unread from personal Gmail?
 - **Weather** — Rain/weather worth mentioning for the day?
 - **Stock signals** — Quick check of key tickers for strategy entry signals (use stock-strategy-monitor skill)
+## ✅ Vocabulary Evening Quiz (updated 2026-05-21)
+- Cron: 8:30 PM PT daily → sends to C07LV6XMHNJ with @Paofu
+- ONLY words from Darin or Paofu — no self-added words
+- Words added from news/responses where Darin or Paofu says "记下来"
+- Words tracked in /data/.openclaw/workspace/vocabulary/words.json (empty until Darin/Paofu add words)
+- Quiz tool: /data/.openclaw/workspace/vocabulary/quiz.py
+- Must @ Paofu (<@U07MQK9UNP2>) in the quiz message
+
 export PATH="/data/.openclaw/bin:$PATH"
 
 ## Stock Strategy Monitor
