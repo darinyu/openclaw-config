@@ -164,7 +164,11 @@ echo "[INFO] Starting xiaohongshu-mcp on :$PORT (headless=$HEADLESS)"
 echo "[INFO] State dir: $STATE_DIR"
 (
   cd "$STATE_DIR"
-  nohup "$MCP_BIN" -headless="$HEADLESS" -port ":$PORT" >"$LOG_FILE" 2>&1 &
+  if [ -n "$BASE_URL" ]; then
+    nohup env XHS_BASE_URL="$BASE_URL" "$MCP_BIN" -headless="$HEADLESS" -port ":$PORT" >"$LOG_FILE" 2>&1 &
+  else
+    nohup "$MCP_BIN" -headless="$HEADLESS" -port ":$PORT" >"$LOG_FILE" 2>&1 &
+  fi
   echo "$!" > "$PID_FILE"
 )
 

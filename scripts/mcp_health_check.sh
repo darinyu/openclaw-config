@@ -14,15 +14,41 @@ XHS_OK=false
 TV_OK=false
 
 # ─── Check 1: xiaohongshu-mcp ────────────────────────────────────────────
+XHS_LOGIN_OK=false
 XHS_CHECK=$(mcporter list xiaohongshu-mcp 2>&1 || true)
 if echo "$XHS_CHECK" | grep -q "check_login_status"; then
-  echo "[$TIMESTAMP] ✅ xiaohongshu-mcp is healthy" | tee -a "$LOG_FILE"
+  echo "[$TIMESTAMP] ✅ xiaohongshu-mcp service is online" | tee -a "$LOG_FILE"
   XHS_OK=true
+
+  # Also check login status (not expired)
+  XHS_LOGIN=$(mcporter call xiaohongshu-mcp.check_login_status --timeout 15000 --output json 2>&1 || true)
+  if echo "$XHS_LOGIN" | grep -qiE "未登录|not.logged|login.required|请登录"; then
+    echo "[$TIMESTAMP] ⚠️ xiaohongshu-mcp login EXPIRED" | tee -a "$LOG_FILE"
+    XHS_LOGIN_OK=false
+  elif echo "$XHS_LOGIN" | grep -qiE "已登录|logged.in|already.login|success"; then
+    echo "[$TIMESTAMP] ✅ xiaohongshu-mcp login is valid" | tee -a "$LOG_FILE"
+    XHS_LOGIN_OK=true
+  elif echo "$XHS_LOGIN" | grep -qE "timeout"; then
+    echo "[$TIMESTAMP] ⚠️ xiaohongshu-mcp login check timed out (may need headless browser)" | tee -a "$LOG_FILE"
+    XHS_LOGIN_OK=false
+  else
+    XHS_LOGIN_TEXT=$(echo "$XHS_LOGIN" | python3 -c "import sys,json; d=json.load(sys.stdin); print(next((c['text'] for c in d.get('content',[]) if c.get('type')=='text'), 'unknown'))" 2>/dev/null || echo "unknown")
+    if echo "$XHS_LOGIN_TEXT" | grep -qiE "未登录|not.logged"; then
+      echo "[$TIMESTAMP] ⚠️ xiaohongshu-mcp login EXPIRED: $XHS_LOGIN_TEXT" | tee -a "$LOG_FILE"
+      XHS_LOGIN_OK=false
+    elif echo "$XHS_LOGIN_TEXT" | grep -qiE "已登录|logged.in"; then
+      echo "[$TIMESTAMP] ✅ xiaohongshu-mcp login valid: $XHS_LOGIN_TEXT" | tee -a "$LOG_FILE"
+      XHS_LOGIN_OK=true
+    else
+      echo "[$TIMESTAMP] ⚠️ xiaohongshu-mcp login status unknown: $XHS_LOGIN_TEXT" | tee -a "$LOG_FILE"
+      XHS_LOGIN_OK=false
+    fi
+  fi
 else
   echo "[$TIMESTAMP] ⚠️ xiaohongshu-mcp is DOWN. Attempting restart..." | tee -a "$LOG_FILE"
   XHS_SKILL_DIR="$SCRIPT_DIR/../skills/xiaohongshu-mcp-openclaw"
   if [ -f "$XHS_SKILL_DIR/scripts/start_server.sh" ]; then
-    bash "$XHS_SKILL_DIR/scripts/start_server.sh" 2>&1 | tee -a "$LOG_FILE"
+    XHS_BASE_URL=https://www.rednote.com bash "$XHS_SKILL_DIR/scripts/start_server.sh" 2>&1 | tee -a "$LOG_FILE"
     sleep 3
     if mcporter list xiaohongshu-mcp 2>&1 | grep -q "check_login_status"; then
       echo "[$TIMESTAMP] ✅ xiaohongshu-mcp restart successful" | tee -a "$LOG_FILE"
@@ -65,9 +91,17 @@ fi
 
 # Compact mobile-friendly summary (last line visible on mobile)
 if $XHS_OK && $TV_OK; then
-  echo "✅ XHS ok | TV ok"
+  if $XHS_LOGIN_OK; then
+    echo "✅ XHS online&loggedin | TV ok"
+  else
+    echo "⚠️ XHS online+login-expired | TV ok"
+  fi
 elif $XHS_OK && ! $TV_OK; then
-  echo "⚠️ XHS ok | TV down"
+  if $XHS_LOGIN_OK; then
+    echo "⚠️ XHS online&loggedin | TV down"
+  else
+    echo "⚠️ XHS online+login-expired | TV down"
+  fi
 elif ! $XHS_OK && $TV_OK; then
   echo "⚠️ XHS down | TV ok"
 else
