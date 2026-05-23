@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-23T03:00:02.266Z",
+  "updatedAt": "2026-05-23T11:00:31.905Z",
   "entries": {
     "memory:memory/2026-05-15.md:1:15": {
       "key": "memory:memory/2026-05-15.md:1:15",
@@ -30825,23 +30825,25 @@
       "endLine": 40,
       "source": "memory",
       "snippet": "# 2026-05-18 ## Correction Retrospective (cron, 11:00 UTC) Scanned last 24h for corrections from Darin. Sessions list returned 0 results (no visible sessions), relied on memory files. ### Corrections found from 2026-05-17 **1. Stock Analysis Pipeline — Darin caught 3 bugs** - Wrong thread (reports in their own thread, not reply under his message) - Italic in Slack output - No progress updates or GitHub push **Fix verification: ALL VERIFIED ✅** - `scripts/stock_analysis.py` exists with full TradingAgents pipeline + JSON progress + Slack formatting + GitHub push - TOOLS.md has full #stock Channel Rules protocol (threading, italic filter, progress updates) - `scripts/slack_format.sh` / `sl",
-      "recallCount": 4,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.530199408531189,
+      "totalScore": 1.933541291952133,
       "maxScore": 0.4287824481725693,
       "firstRecalledAt": "2026-05-19T15:08:19.652Z",
-      "lastRecalledAt": "2026-05-21T12:03:58.784Z",
+      "lastRecalledAt": "2026-05-23T11:00:23.573Z",
       "queryHashes": [
         "067b48e415e4",
         "4c074a52e9bb",
         "6b4cb4681a3a",
-        "6565a186fda7"
+        "6565a186fda7",
+        "4ca296459ade"
       ],
       "recallDays": [
         "2026-05-19",
         "2026-05-20",
-        "2026-05-21"
+        "2026-05-21",
+        "2026-05-23"
       ],
       "conceptTags": [
         "scripts/stock-analysis.py",
@@ -30861,18 +30863,20 @@
       "endLine": 13,
       "source": "memory",
       "snippet": "# Journal — 2026-05-18 (Monday) ## Retrospective & Corrections Sweep Ran a comprehensive corrections retrospective covering the last 24h. Found **4 known issues** from Darin's recent call-outs, all previously documented and already fixed: 1. **Stock Analysis Pipeline** — Threading, italic filter, progress updates, and GitHub push all verified working via `scripts/stock_analysis.py` and `scripts/push_trading_report.py`. 2. **Slack Routing** — Reply-in-thread rules reaffirmed in TOOLS.md and AGENTS.md. 3. **Think.py Auto-logging** — AGENTS.md integration complete with session_id format for every Slack conversation. 4. **Cron Job Output Rules** — Pre-Send checklist extended to cron jobs; bol",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.40093472301959987,
+      "totalScore": 0.7565892040729523,
       "maxScore": 0.40093472301959987,
       "firstRecalledAt": "2026-05-19T15:08:19.652Z",
-      "lastRecalledAt": "2026-05-19T15:08:19.652Z",
+      "lastRecalledAt": "2026-05-23T11:00:23.573Z",
       "queryHashes": [
-        "067b48e415e4"
+        "067b48e415e4",
+        "4ca296459ade"
       ],
       "recallDays": [
-        "2026-05-19"
+        "2026-05-19",
+        "2026-05-23"
       ],
       "conceptTags": [
         "call-outs",
@@ -84308,6 +84312,131 @@
         "github.com",
         "darinyu",
         "openclaw"
+      ]
+    },
+    "memory:memory/2026-05-22.md:1:31": {
+      "key": "memory:memory/2026-05-22.md:1:31",
+      "path": "memory/2026-05-22.md",
+      "startLine": 1,
+      "endLine": 31,
+      "source": "memory",
+      "snippet": "# 2026-05-22 ## Correction Retrospective (cron, 11:00 UTC) - Scanned recent session files, trajectory logs, memory files, and config for last ~23h - **Window:** May 21 12:07 UTC → May 22 11:00 UTC ### Corrections found: 5 (all previously applied in May 21 window) **1. Vocabulary Quiz — Auto-added words → removed** - Darin: \"你从哪里记了7个词？ 删掉他们\" - **Fix: VERIFIED ✅** — words.json only has 5 words from Darin's #learning screenshots. HEARTBEAT.md updated. **2. Vocab quiz → #learning channel + @Paofu** - Darin: \"每天晚上把小考发<#C07LV6XMHNJ> 然后记得@ paofu\" - **Fix: VERIFIED ✅** — HEARTBEAT.md shows C07LV6XMHNJ with @Paofu tag **3. Paofu English Annotation Guide** - Darin created rules for inline vocab a",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.744262883067131,
+      "maxScore": 0.39367441833019257,
+      "firstRecalledAt": "2026-05-23T11:00:23.573Z",
+      "lastRecalledAt": "2026-05-23T11:00:31.905Z",
+      "queryHashes": [
+        "4ca296459ade",
+        "bbfcf5a01d01"
+      ],
+      "recallDays": [
+        "2026-05-23"
+      ],
+      "conceptTags": [
+        "auto-added",
+        "words.json",
+        "heartbeat.md",
+        "correction",
+        "retrospective",
+        "cron",
+        "utc",
+        "scanned"
+      ]
+    },
+    "memory:memory/2026-05-19.md:9:40": {
+      "key": "memory:memory/2026-05-19.md:9:40",
+      "path": "memory/2026-05-19.md",
+      "startLine": 9,
+      "endLine": 40,
+      "source": "memory",
+      "snippet": "- `push_xhs_report.py` updated to push reports into `deep-research-reports` under `xhs/<YYYY-MM-DD>/<keyword>/report.md`. - Created Honolulu XHS report in new format (with appendices + JSON) and migrated other reports. - Ran a skill audit (requested \"ChatGPT 5.5\"; closest available was GPT-5.2) and logged findings; fixed a medium bug where trip-planner Step 5 previously pushed to the wrong repo. ## Correction Retrospective (15:07 UTC) Time window: 2026-05-18 15:07 UTC → 2026-05-19 15:07 UTC ### Scope Scanned session transcripts, memory files, and Slack channels (#C0B4EK31NCU, DM, threads) for corrections from Darin. ### Corrections found: NONE Darin's only interactions in the window: -",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.37361083328723904,
+      "maxScore": 0.37361083328723904,
+      "firstRecalledAt": "2026-05-23T11:00:23.573Z",
+      "lastRecalledAt": "2026-05-23T11:00:23.573Z",
+      "queryHashes": [
+        "4ca296459ade"
+      ],
+      "recallDays": [
+        "2026-05-23"
+      ],
+      "conceptTags": [
+        "gpt",
+        "push-xhs-report.py",
+        "deep-research-reports",
+        "yyyy-mm-dd",
+        "report.md",
+        "5.5",
+        "gpt-5.2",
+        "trip-planner"
+      ]
+    },
+    "memory:memory/2026-05-21.md:1:25": {
+      "key": "memory:memory/2026-05-21.md:1:25",
+      "path": "memory/2026-05-21.md",
+      "startLine": 1,
+      "endLine": 25,
+      "source": "memory",
+      "snippet": "## New Feature: Vocabulary Quiz System - Darin asked me to track English words he doesn't understand and quiz him - Created vocabulary tracking at /data/.openclaw/workspace/vocabulary/words.json - Created quiz.py for picking/recording quiz results - Added cron job: 8:30 PM PT daily → DMs Darin with 3 vocabulary words - Added 7 initial words from today's research conversations ## Conversation with Darin (#random thread) - Darin asked what new things we can add to DDDD - Proposed Baby Prep Hub, Deals Hunter (dealmoon), traffic estimate, and more - **Baby Prep Hub** → Greenlit. Created baby-prep-tracker.md with full milestone tracking (due Sept 5, ~24-25 wks) - **Dealmoon** → Put on hold, Dar",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.3620316922664642,
+      "maxScore": 0.3620316922664642,
+      "firstRecalledAt": "2026-05-23T11:00:23.573Z",
+      "lastRecalledAt": "2026-05-23T11:00:23.573Z",
+      "queryHashes": [
+        "4ca296459ade"
+      ],
+      "recallDays": [
+        "2026-05-23"
+      ],
+      "conceptTags": [
+        "quiz.py",
+        "picking/recording",
+        "baby-prep-tracker.md",
+        "24-25",
+        "new",
+        "feature",
+        "vocabulary",
+        "quiz"
+      ]
+    },
+    "memory:memory/2026-05-21.md:21:42": {
+      "key": "memory:memory/2026-05-21.md:21:42",
+      "path": "memory/2026-05-21.md",
+      "startLine": 21,
+      "endLine": 42,
+      "source": "memory",
+      "snippet": "- **Corrections found: 3** ### 1. Mobile Readability Rules (Darin, May 20) - Darin: \"update all cronjob that write to channel to improve readability, especially for mobile\" - Also followed up with \"rewrite the response using the new format rule/skill\" + stock formatting rules (ticker first, bold numbers, bullet points) - **Fix: VERIFIED ✅** — TOOLS.md has Rule 1b, MEMORY.md has full mobile readability section, 9 cron jobs updated with mobile formatting - Stock report format rules saved in MEMORY.md with example format ### 2. Stock Report Formatting (Darin, May 20) - Darin asked for: ticker first on each row, bold key numbers, bullet points for sections - **Fix: VERIFIED ✅** — Mobile Readab",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.35829873383045197,
+      "maxScore": 0.35829873383045197,
+      "firstRecalledAt": "2026-05-23T11:00:23.573Z",
+      "lastRecalledAt": "2026-05-23T11:00:23.573Z",
+      "queryHashes": [
+        "4ca296459ade"
+      ],
+      "recallDays": [
+        "2026-05-23"
+      ],
+      "conceptTags": [
+        "rule/skill",
+        "tools.md",
+        "memory.md",
+        "corrections",
+        "found",
+        "mobile",
+        "readability",
+        "rules"
       ]
     }
   }
