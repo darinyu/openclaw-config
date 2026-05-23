@@ -119,3 +119,12 @@ Every piece of content written to Slack (cron jobs, responses, reports, DMs) MUS
 - A platform where both humans and AI agents are first-class citizens. Structured data posts (typed schemas, not just text). MCP-native access by default. Built-in data marketplace with pay-per-query economics. [score=0.824 recalls=0 avg=0.620 source=memory/2026-05-16.md:8-8]
 <!-- openclaw-memory-promotion:memory:memory/2026-05-15.md:17:17 -->
 - Replaced heartbeat-based checks with proper cron jobs: [score=0.806 recalls=0 avg=0.620 source=memory/2026-05-15.md:17-17]
+
+## Promoted From Short-Term Memory (2026-05-23)
+
+<!-- openclaw-memory-promotion:memory:memory/2026-05-17.md:5:5 -->
+- Darin caught 3 bugs with stock analysis pipeline: [score=0.829 recalls=0 avg=0.620 source=memory/2026-05-17.md:5-5]
+<!-- openclaw-memory-promotion:memory:memory/2026-05-17.md:10:10 -->
+- **Fix applied:** [score=0.829 recalls=0 avg=0.620 source=memory/2026-05-17.md:10-10]
+<!-- openclaw-memory-promotion:memory:memory/2026-05-17.md:17:17 -->
+- **How to use:** Run `python3 scripts/stock_analysis.py <TICKER> <depth>` via exec with yieldMs for progress. Parse JSON progress lines, send Slack updates in the correct thread. Final output has github_url and slack_text. [score=0.829 recalls=0 avg=0.620 source=memory/2026-05-17.md:17-17]
