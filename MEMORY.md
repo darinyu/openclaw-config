@@ -128,3 +128,10 @@ Every piece of content written to Slack (cron jobs, responses, reports, DMs) MUS
 - **Fix applied:** [score=0.829 recalls=0 avg=0.620 source=memory/2026-05-17.md:10-10]
 <!-- openclaw-memory-promotion:memory:memory/2026-05-17.md:17:17 -->
 - **How to use:** Run `python3 scripts/stock_analysis.py <TICKER> <depth>` via exec with yieldMs for progress. Parse JSON progress lines, send Slack updates in the correct thread. Final output has github_url and slack_text. [score=0.829 recalls=0 avg=0.620 source=memory/2026-05-17.md:17-17]
+
+## Promoted From Short-Term Memory (2026-05-24)
+
+<!-- openclaw-memory-promotion:memory:memory/2026-05-19.md:7:10 -->
+- - `xhs-trip-planner`: interview flow (MCQ prioritization + MCQ hotel-move preference + MCQ output language), checks existing XHS reports from past week, uses `xhs-mcp-workflow` for XHS research and `hotel-research` for hotels (no Airbnb), ADHD-friendly day-by-day output, progress updates every 2 min. - Reports repo: `darinyu/deep-research-reports` exists (clone succeeded) and is the correct target for deep research / trading / XHS reports. Do NOT write reports to `darinyu/openclaw-config`. - `push_xhs_report.py` updated to push reports into `deep-research-reports` under `xhs/<YYYY-MM-DD>/<keyword>/report.md`. - Created Honolulu XHS report in new format (with appendices + JSON) and migrated other reports. [score=0.899 recalls=0 avg=0.620 source=memory/2026-05-19.md:7-10]
+<!-- openclaw-memory-promotion:memory:memory/2026-05-19.md:11:11 -->
+- - Ran a skill audit (requested "ChatGPT 5.5"; closest available was GPT-5.2) and logged findings; fixed a medium bug where trip-planner Step 5 previously pushed to the wrong repo. [score=0.835 recalls=0 avg=0.620 source=memory/2026-05-19.md:11-11]
