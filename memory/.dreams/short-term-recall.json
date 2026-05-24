@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-24T04:00:35.030Z",
+  "updatedAt": "2026-05-24T11:02:37.083Z",
   "entries": {
     "memory:memory/2026-05-15.md:1:15": {
       "key": "memory:memory/2026-05-15.md:1:15",
@@ -30837,25 +30837,28 @@
       "endLine": 40,
       "source": "memory",
       "snippet": "# 2026-05-18 ## Correction Retrospective (cron, 11:00 UTC) Scanned last 24h for corrections from Darin. Sessions list returned 0 results (no visible sessions), relied on memory files. ### Corrections found from 2026-05-17 **1. Stock Analysis Pipeline — Darin caught 3 bugs** - Wrong thread (reports in their own thread, not reply under his message) - Italic in Slack output - No progress updates or GitHub push **Fix verification: ALL VERIFIED ✅** - `scripts/stock_analysis.py` exists with full TradingAgents pipeline + JSON progress + Slack formatting + GitHub push - TOOLS.md has full #stock Channel Rules protocol (threading, italic filter, progress updates) - `scripts/slack_format.sh` / `sl",
-      "recallCount": 5,
+      "recallCount": 7,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.933541291952133,
+      "totalScore": 2.6976364672183992,
       "maxScore": 0.4287824481725693,
       "firstRecalledAt": "2026-05-19T15:08:19.652Z",
-      "lastRecalledAt": "2026-05-23T11:00:23.573Z",
+      "lastRecalledAt": "2026-05-24T11:02:37.083Z",
       "queryHashes": [
         "067b48e415e4",
         "4c074a52e9bb",
         "6b4cb4681a3a",
         "6565a186fda7",
-        "4ca296459ade"
+        "4ca296459ade",
+        "1643fd3538a1",
+        "b18f1142a028"
       ],
       "recallDays": [
         "2026-05-19",
         "2026-05-20",
         "2026-05-21",
-        "2026-05-23"
+        "2026-05-23",
+        "2026-05-24"
       ],
       "conceptTags": [
         "scripts/stock-analysis.py",
@@ -84372,19 +84375,22 @@
       "endLine": 31,
       "source": "memory",
       "snippet": "# 2026-05-22 ## Correction Retrospective (cron, 11:00 UTC) - Scanned recent session files, trajectory logs, memory files, and config for last ~23h - **Window:** May 21 12:07 UTC → May 22 11:00 UTC ### Corrections found: 5 (all previously applied in May 21 window) **1. Vocabulary Quiz — Auto-added words → removed** - Darin: \"你从哪里记了7个词？ 删掉他们\" - **Fix: VERIFIED ✅** — words.json only has 5 words from Darin's #learning screenshots. HEARTBEAT.md updated. **2. Vocab quiz → #learning channel + @Paofu** - Darin: \"每天晚上把小考发<#C07LV6XMHNJ> 然后记得@ paofu\" - **Fix: VERIFIED ✅** — HEARTBEAT.md shows C07LV6XMHNJ with @Paofu tag **3. Paofu English Annotation Guide** - Darin created rules for inline vocab a",
-      "recallCount": 2,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.744262883067131,
+      "totalScore": 1.497612193226814,
       "maxScore": 0.39367441833019257,
       "firstRecalledAt": "2026-05-23T11:00:23.573Z",
-      "lastRecalledAt": "2026-05-23T11:00:31.905Z",
+      "lastRecalledAt": "2026-05-24T11:02:37.083Z",
       "queryHashes": [
         "4ca296459ade",
-        "bbfcf5a01d01"
+        "bbfcf5a01d01",
+        "1643fd3538a1",
+        "b18f1142a028"
       ],
       "recallDays": [
-        "2026-05-23"
+        "2026-05-23",
+        "2026-05-24"
       ],
       "conceptTags": [
         "auto-added",
@@ -84404,18 +84410,20 @@
       "endLine": 40,
       "source": "memory",
       "snippet": "- `push_xhs_report.py` updated to push reports into `deep-research-reports` under `xhs/<YYYY-MM-DD>/<keyword>/report.md`. - Created Honolulu XHS report in new format (with appendices + JSON) and migrated other reports. - Ran a skill audit (requested \"ChatGPT 5.5\"; closest available was GPT-5.2) and logged findings; fixed a medium bug where trip-planner Step 5 previously pushed to the wrong repo. ## Correction Retrospective (15:07 UTC) Time window: 2026-05-18 15:07 UTC → 2026-05-19 15:07 UTC ### Scope Scanned session transcripts, memory files, and Slack channels (#C0B4EK31NCU, DM, threads) for corrections from Darin. ### Corrections found: NONE Darin's only interactions in the window: -",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.37361083328723904,
+      "totalScore": 0.7360309898853301,
       "maxScore": 0.37361083328723904,
       "firstRecalledAt": "2026-05-23T11:00:23.573Z",
-      "lastRecalledAt": "2026-05-23T11:00:23.573Z",
+      "lastRecalledAt": "2026-05-24T11:00:31.874Z",
       "queryHashes": [
-        "4ca296459ade"
+        "4ca296459ade",
+        "1643fd3538a1"
       ],
       "recallDays": [
-        "2026-05-23"
+        "2026-05-23",
+        "2026-05-24"
       ],
       "conceptTags": [
         "gpt",
@@ -84466,18 +84474,20 @@
       "endLine": 42,
       "source": "memory",
       "snippet": "- **Corrections found: 3** ### 1. Mobile Readability Rules (Darin, May 20) - Darin: \"update all cronjob that write to channel to improve readability, especially for mobile\" - Also followed up with \"rewrite the response using the new format rule/skill\" + stock formatting rules (ticker first, bold numbers, bullet points) - **Fix: VERIFIED ✅** — TOOLS.md has Rule 1b, MEMORY.md has full mobile readability section, 9 cron jobs updated with mobile formatting - Stock report format rules saved in MEMORY.md with example format ### 2. Stock Report Formatting (Darin, May 20) - Darin asked for: ticker first on each row, bold key numbers, bullet points for sections - **Fix: VERIFIED ✅** — Mobile Readab",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.35829873383045197,
-      "maxScore": 0.35829873383045197,
+      "totalScore": 0.7243082374334335,
+      "maxScore": 0.36600950360298157,
       "firstRecalledAt": "2026-05-23T11:00:23.573Z",
-      "lastRecalledAt": "2026-05-23T11:00:23.573Z",
+      "lastRecalledAt": "2026-05-24T11:00:31.874Z",
       "queryHashes": [
-        "4ca296459ade"
+        "4ca296459ade",
+        "1643fd3538a1"
       ],
       "recallDays": [
-        "2026-05-23"
+        "2026-05-23",
+        "2026-05-24"
       ],
       "conceptTags": [
         "rule/skill",
