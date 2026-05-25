@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-25T03:00:01.001Z",
+  "updatedAt": "2026-05-25T14:30:46.169Z",
   "entries": {
     "memory:memory/2026-05-15.md:1:15": {
       "key": "memory:memory/2026-05-15.md:1:15",
@@ -46485,18 +46485,20 @@
       "endLine": 24,
       "source": "memory",
       "snippet": "# 2026-05-14 ## Google Workspace BYOK Setup - Installed `google-workspace-byok` skill from ClawHub - Set up GCP project \"splendid-window-496318-g6\" with Calendar API + Gmail API enabled - Created OAuth desktop creds, stored at ~/.openclaw/google-workspace-byok/credentials.json - Authorized **personal** account (darinyu27@gmail.com): - Calendar: full read/write - Gmail: read-only - Access confirmed via test calls ## Calendars discovered - Personal: darinyu27@gmail.com (owner) - Work: zyu@netflix.com (reader — already shared to personal) - Family: family03280057382472202100@group.calendar.google.com (owner) - Paofu & D: a083de30704edd3b8a3ef5e846c5c6396e236a7a1244a41ca67db9c92591f3ce@g",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.35823178887367246,
+      "totalScore": 0.7101623445749282,
       "maxScore": 0.35823178887367246,
       "firstRecalledAt": "2026-05-21T02:56:37.466Z",
-      "lastRecalledAt": "2026-05-21T02:56:37.466Z",
+      "lastRecalledAt": "2026-05-25T14:30:46.169Z",
       "queryHashes": [
-        "739330afa75a"
+        "739330afa75a",
+        "3b1783ce865f"
       ],
       "recallDays": [
-        "2026-05-21"
+        "2026-05-21",
+        "2026-05-25"
       ],
       "conceptTags": [
         "google-workspace-byok",
@@ -84486,18 +84488,20 @@
       "endLine": 25,
       "source": "memory",
       "snippet": "## New Feature: Vocabulary Quiz System - Darin asked me to track English words he doesn't understand and quiz him - Created vocabulary tracking at /data/.openclaw/workspace/vocabulary/words.json - Created quiz.py for picking/recording quiz results - Added cron job: 8:30 PM PT daily → DMs Darin with 3 vocabulary words - Added 7 initial words from today's research conversations ## Conversation with Darin (#random thread) - Darin asked what new things we can add to DDDD - Proposed Baby Prep Hub, Deals Hunter (dealmoon), traffic estimate, and more - **Baby Prep Hub** → Greenlit. Created baby-prep-tracker.md with full milestone tracking (due Sept 5, ~24-25 wks) - **Dealmoon** → Put on hold, Dar",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.3620316922664642,
-      "maxScore": 0.3620316922664642,
+      "totalScore": 0.7333043336868286,
+      "maxScore": 0.37127264142036437,
       "firstRecalledAt": "2026-05-23T11:00:23.573Z",
-      "lastRecalledAt": "2026-05-23T11:00:23.573Z",
+      "lastRecalledAt": "2026-05-25T14:30:20.374Z",
       "queryHashes": [
-        "4ca296459ade"
+        "4ca296459ade",
+        "84b274d417d3"
       ],
       "recallDays": [
-        "2026-05-23"
+        "2026-05-23",
+        "2026-05-25"
       ],
       "conceptTags": [
         "quiz.py",
@@ -90446,18 +90450,20 @@
       "endLine": 64,
       "source": "memory",
       "snippet": "- Checks work calendar (zyu@netflix.com) for meetings ≤30 min away - Also checks Gmail for urgent unread - NO_REPLY if nothing urgent 3. **Personal Calendar Morning Brief** (new) - Cron: `0 8 * * *` PT, DMs Darin - Summarizes today's events on personal, family, Paofu & D calendars - NO_REPLY if no events 4. **Daily Weather Brief** (new) - Cron: `0 7 * * *` PT, posts to slack channel C0B420KCYAV - Covers Sunnyvale, Wuhan (Hubei), Linyi (Shandong) ### Key lesson on cron setup: - `openclaw cron add` CLI couldn't connect to the gateway from sandbox (scope/pairing issue) - Workaround: Edited ~/.openclaw/cron/jobs.json directly - Gateway auto-reloads on external edits pe",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.3638289004564285,
+      "totalScore": 0.7207592785358429,
       "maxScore": 0.3638289004564285,
       "firstRecalledAt": "2026-05-24T04:00:35.030Z",
-      "lastRecalledAt": "2026-05-24T04:00:35.030Z",
+      "lastRecalledAt": "2026-05-25T14:30:20.374Z",
       "queryHashes": [
-        "9252978fac57"
+        "9252978fac57",
+        "84b274d417d3"
       ],
       "recallDays": [
-        "2026-05-24"
+        "2026-05-24",
+        "2026-05-25"
       ],
       "conceptTags": [
         "gateway",
@@ -94436,6 +94442,37 @@
         "online",
         "login",
         "expired"
+      ]
+    },
+    "memory:memory/journal/2026-05-21.md:1:23": {
+      "key": "memory:memory/journal/2026-05-21.md:1:23",
+      "path": "memory/journal/2026-05-21.md",
+      "startLine": 1,
+      "endLine": 23,
+      "source": "memory",
+      "snippet": "# Journal — 2026-05-21 (Thursday) ## New Feature: Vocabulary Quiz System * Darin asked me to track English words he doesn't recognize and quiz him daily * Built vocabulary tracker at vocabulary/words.json + quiz.py for spaced recall * Added cron job: 8:30 PM PT → DMs 3 words each evening * Seeded 7 words from recent research conversations ## Brainstorming: What's Next for DDDD? * Darin asked what new features we could add — pitched several ideas * **Baby Prep Hub** — Greenlit ✅ Built baby-prep-tracker.md with full milestone tracking (due Sept 5, ~24-25 wks) * **Dealmoon Deals Hunter** — On hold, Darin wants to think on it * **Traffic Estimates** — Greenlit ✅ Will add Sunnyvale Library → Op",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.3613072097301483,
+      "maxScore": 0.3613072097301483,
+      "firstRecalledAt": "2026-05-25T14:30:20.374Z",
+      "lastRecalledAt": "2026-05-25T14:30:20.374Z",
+      "queryHashes": [
+        "84b274d417d3"
+      ],
+      "recallDays": [
+        "2026-05-25"
+      ],
+      "conceptTags": [
+        "vocabulary/words.json",
+        "quiz.py",
+        "baby-prep-tracker.md",
+        "24-25",
+        "journal",
+        "thursday",
+        "new",
+        "feature"
       ]
     }
   }
