@@ -1,0 +1,13 @@
+[main/sessions/main/23a91294-a0d2-4a17-80ab-15df2831a976.jsonl#L38] Assistant: MCP health check complete. Report sent to <#C0B4EK31NCU>. **Summary:** XHS ✅ online (login expired), TV ✅ healthy (AAPL $308.82). All good, no restarts needed.
+[main/sessions/main/27c9d8f6-e55f-4a29-b479-7affcf173fea.jsonl#L30] Assistant: Report sent to <#C0B4EK31NCU>. **Summary:** XHS is online but login cookie is expired (⚠️), TV is healthy (✅ AAPL $308.82). Overall services running. (thinking trace: think_20260525_020135_91a552d2)
+[main/sessions/main/2e84f826-828c-4c09-926a-7f0bf1199298.jsonl#L73] Assistant: All 3 digest sections posted to **#learning** ✅ - **HN Stories** (msg1) — 8 top stories from Sunday's front page, mostly general tech - **Tech News** (msg2) — 10 stories covering Anthropic $900B funding, OpenAI IPO filing, Nvidia $81.6B earnings, Google IO, Claude 
+[main/sessions/main/a6673fae-6ede-4c91-9a4a-ddad6da74301.jsonl#L18] Assistant: I see the script hangs likely on the XHS login check. Let me run the checks individually with timeouts.
+[main/sessions/main/a6673fae-6ede-4c91-9a4a-ddad6da74301.jsonl#L21] Assistant: Good - both services are listed/responding. Now let me check XHS login status.
+[main/sessions/main/a6673fae-6ede-4c91-9a4a-ddad6da74301.jsonl#L29] Assistant: All checks done. Let me format and send the report.
+[main/sessions/main/a6673fae-6ede-4c91-9a4a-ddad6da74301.jsonl#L31] Assistant: Filter looks clean. Sending to <#C0B4EK31NCU>.
+[main/sessions/main/a6673fae-6ede-4c91-9a4a-ddad6da74301.jsonl#L33] Assistant: MCP health check complete. Report sent to <#C0B4EK31NCU>: - **XHS** ⚠️ service is online but login is expired (needs re-login via QR code) - **TV** ✅ healthy — AAPL priced at $308.82
+[main/sessions/main/e936dd23-364d-4f60-b038-f75c2abe007b.jsonl#L16] Assistant: (session: sess_20260525_010101) NO_REPLY
+[main/sessions/main/00ee7ffd-3c46-40bd-ad14-3be9d63954d0.jsonl#L221] Assistant: **MCP Health** Mon May 25 00:03 UTC **XHS** ⚠️ service online, login expired **TV** ✅ healthy (AAPL $308.82)
+[main/sessions/main/00ee7ffd-3c46-40bd-ad14-3be9d63954d0.jsonl#L222] Assistant: 🃏 **MCP Health Check** | Mon 01:00 UTC **XHS** ✅ online (login expired) **TV** ✅ healthy (AAPL $308.82) **Overall** ✅ All good, no restarts needed
+[main/sessions/main/00ee7ffd-3c46-40bd-ad14-3be9d63954d0.jsonl#L223] Assistant: Git sync: **2 file(s)** committed -> <https://github.com/darinyu/openclaw-config/commit/c5af16f661b8efdf58fe24b947bef5c7d040d1e6|c5af16f> :git: • hn-seen-ids.json • memory/2026-05-24.md Push status: **pushed** :rocket:
+[main/sessions/main/00ee7ffd-3c46-40bd-ad14-3be9d63954d0.jsonl#L224] Assistant: ⏰ MCP Health — Mon 2:00 AM **XHS** ⚠️ online, login expired **TV** ✅ AAPL $308.82 **Svc** ✅ all running

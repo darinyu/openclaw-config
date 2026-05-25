@@ -108,30 +108,19 @@ Every piece of content written to Slack (cron jobs, responses, reports, DMs) MUS
 - If DeepSeek is unavailable or unsuitable for a task, fall back to Gemini, then ChatGPT
 - This applies to ALL generated content (reports, analyses, responses, cron jobs)
 
-## Promoted From Short-Term Memory (2026-05-21)
+## Promoted From Short-Term Memory (2026-05-25)
 
-<!-- openclaw-memory-promotion:memory:memory/2026-05-16.md:5:5 -->
-- Darin and I had a long thread in #random brainstorming a platform for agents and humans. [score=0.826 recalls=0 avg=0.620 source=memory/2026-05-16.md:5-5]
-
-## Promoted From Short-Term Memory (2026-05-22)
-
-<!-- openclaw-memory-promotion:memory:memory/2026-05-16.md:8:8 -->
-- A platform where both humans and AI agents are first-class citizens. Structured data posts (typed schemas, not just text). MCP-native access by default. Built-in data marketplace with pay-per-query economics. [score=0.824 recalls=0 avg=0.620 source=memory/2026-05-16.md:8-8]
-<!-- openclaw-memory-promotion:memory:memory/2026-05-15.md:17:17 -->
-- Replaced heartbeat-based checks with proper cron jobs: [score=0.806 recalls=0 avg=0.620 source=memory/2026-05-15.md:17-17]
-
-## Promoted From Short-Term Memory (2026-05-23)
-
-<!-- openclaw-memory-promotion:memory:memory/2026-05-17.md:5:5 -->
-- Darin caught 3 bugs with stock analysis pipeline: [score=0.829 recalls=0 avg=0.620 source=memory/2026-05-17.md:5-5]
-<!-- openclaw-memory-promotion:memory:memory/2026-05-17.md:10:10 -->
-- **Fix applied:** [score=0.829 recalls=0 avg=0.620 source=memory/2026-05-17.md:10-10]
-<!-- openclaw-memory-promotion:memory:memory/2026-05-17.md:17:17 -->
-- **How to use:** Run `python3 scripts/stock_analysis.py <TICKER> <depth>` via exec with yieldMs for progress. Parse JSON progress lines, send Slack updates in the correct thread. Final output has github_url and slack_text. [score=0.829 recalls=0 avg=0.620 source=memory/2026-05-17.md:17-17]
-
-## Promoted From Short-Term Memory (2026-05-24)
-
-<!-- openclaw-memory-promotion:memory:memory/2026-05-19.md:7:10 -->
-- - `xhs-trip-planner`: interview flow (MCQ prioritization + MCQ hotel-move preference + MCQ output language), checks existing XHS reports from past week, uses `xhs-mcp-workflow` for XHS research and `hotel-research` for hotels (no Airbnb), ADHD-friendly day-by-day output, progress updates every 2 min. - Reports repo: `darinyu/deep-research-reports` exists (clone succeeded) and is the correct target for deep research / trading / XHS reports. Do NOT write reports to `darinyu/openclaw-config`. - `push_xhs_report.py` updated to push reports into `deep-research-reports` under `xhs/<YYYY-MM-DD>/<keyword>/report.md`. - Created Honolulu XHS report in new format (with appendices + JSON) and migrated other reports. [score=0.899 recalls=0 avg=0.620 source=memory/2026-05-19.md:7-10]
-<!-- openclaw-memory-promotion:memory:memory/2026-05-19.md:11:11 -->
-- - Ran a skill audit (requested "ChatGPT 5.5"; closest available was GPT-5.2) and logged findings; fixed a medium bug where trip-planner Step 5 previously pushed to the wrong repo. [score=0.835 recalls=0 avg=0.620 source=memory/2026-05-19.md:11-11]
+<!-- openclaw-memory-promotion:memory:memory/2026-05-19.md:18:18 -->
+- Scanned session transcripts, memory files, and Slack channels (#C0B4EK31NCU, DM, threads) for corrections from Darin. [score=0.856 recalls=0 avg=0.620 source=memory/2026-05-19.md:18-18]
+<!-- openclaw-memory-promotion:memory:memory/2026-05-19.md:22:22 -->
+- Darin's only interactions in the window: [score=0.856 recalls=0 avg=0.620 source=memory/2026-05-19.md:22-22]
+<!-- openclaw-memory-promotion:memory:memory/2026-05-18.md:5:5 -->
+- Scanned last 24h for corrections from Darin. Sessions list returned 0 results (no visible sessions), relied on memory files. [score=0.850 recalls=0 avg=0.620 source=memory/2026-05-18.md:5-5]
+<!-- openclaw-memory-promotion:memory:memory/2026-05-18.md:9:9 -->
+- **1. Stock Analysis Pipeline — Darin caught 3 bugs** [score=0.850 recalls=0 avg=0.620 source=memory/2026-05-18.md:9-9]
+<!-- openclaw-memory-promotion:memory:memory/2026-05-18.md:14:14 -->
+- **Fix verification: ALL VERIFIED ✅** [score=0.850 recalls=0 avg=0.620 source=memory/2026-05-18.md:14-14]
+<!-- openclaw-memory-promotion:memory:memory/2026-05-18.md:1:40 -->
+- # 2026-05-18 ## Correction Retrospective (cron, 11:00 UTC) Scanned last 24h for corrections from Darin. Sessions list returned 0 results (no visible sessions), relied on memory files. ### Corrections found from 2026-05-17 **1. Stock Analysis Pipeline — Darin caught 3 bugs** - Wrong thread (reports in their own thread, not reply under his message) - Italic in Slack output - No progress updates or GitHub push **Fix verification: ALL VERIFIED ✅** - `scripts/stock_analysis.py` exists with full TradingAgents pipeline + JSON progress + Slack formatting + GitHub push - TOOLS.md has full #stock Channel Rules protocol (threading, italic filter, progress updates) - `scripts/slack_format.sh` / `slack_formatter.py` exist and work - `shared-skills/scripts/push_trading_report.py` exists **2. Slack Routing (from 2026-05-15, reaffirmed)** - Darin called out replying in WebChat instead of Slack **Fix verification: ALL VERIFIED ✅** - TOOLS.md: "CRITICAL: Slack Replies Must Be Explicit" section - TOOLS.md: Channel Routing with thread rules - AGENTS.md: Standing Order for Slack reaction protocol **3. Auto-log every conversation (set by Darin 2026-05-17)** - Think.py logging required for every Slack conversation **Fix verification: ALL VERIFIED ✅** - AGENTS.md has full think.py integration rules with session_id format - `shared-skills/scripts/think.py` exists **4. Cron job output rules (set by Darin 2026-05-17)** - Pre-Send Checklist applies to all cron output - Bold only, zero italic - Always output (never silent NO_REPLY) - Fallback channel: C0B4EK31NCU [score=0.849 recalls=7 avg=0.385 source=memory/2026-05-18.md:1-40]
+<!-- openclaw-memory-promotion:memory:memory/2026-05-19.md:15:15 -->
+- Time window: 2026-05-18 15:07 UTC → 2026-05-19 15:07 UTC [score=0.846 recalls=0 avg=0.620 source=memory/2026-05-19.md:15-15]
