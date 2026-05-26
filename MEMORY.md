@@ -108,19 +108,9 @@ Every piece of content written to Slack (cron jobs, responses, reports, DMs) MUS
 - If DeepSeek is unavailable or unsuitable for a task, fall back to Gemini, then ChatGPT
 - This applies to ALL generated content (reports, analyses, responses, cron jobs)
 
-## Promoted From Short-Term Memory (2026-05-25)
+## Promoted From Short-Term Memory (2026-05-26)
 
-<!-- openclaw-memory-promotion:memory:memory/2026-05-19.md:18:18 -->
-- Scanned session transcripts, memory files, and Slack channels (#C0B4EK31NCU, DM, threads) for corrections from Darin. [score=0.856 recalls=0 avg=0.620 source=memory/2026-05-19.md:18-18]
-<!-- openclaw-memory-promotion:memory:memory/2026-05-19.md:22:22 -->
-- Darin's only interactions in the window: [score=0.856 recalls=0 avg=0.620 source=memory/2026-05-19.md:22-22]
-<!-- openclaw-memory-promotion:memory:memory/2026-05-18.md:5:5 -->
-- Scanned last 24h for corrections from Darin. Sessions list returned 0 results (no visible sessions), relied on memory files. [score=0.850 recalls=0 avg=0.620 source=memory/2026-05-18.md:5-5]
-<!-- openclaw-memory-promotion:memory:memory/2026-05-18.md:9:9 -->
-- **1. Stock Analysis Pipeline — Darin caught 3 bugs** [score=0.850 recalls=0 avg=0.620 source=memory/2026-05-18.md:9-9]
-<!-- openclaw-memory-promotion:memory:memory/2026-05-18.md:14:14 -->
-- **Fix verification: ALL VERIFIED ✅** [score=0.850 recalls=0 avg=0.620 source=memory/2026-05-18.md:14-14]
-<!-- openclaw-memory-promotion:memory:memory/2026-05-18.md:1:40 -->
-- # 2026-05-18 ## Correction Retrospective (cron, 11:00 UTC) Scanned last 24h for corrections from Darin. Sessions list returned 0 results (no visible sessions), relied on memory files. ### Corrections found from 2026-05-17 **1. Stock Analysis Pipeline — Darin caught 3 bugs** - Wrong thread (reports in their own thread, not reply under his message) - Italic in Slack output - No progress updates or GitHub push **Fix verification: ALL VERIFIED ✅** - `scripts/stock_analysis.py` exists with full TradingAgents pipeline + JSON progress + Slack formatting + GitHub push - TOOLS.md has full #stock Channel Rules protocol (threading, italic filter, progress updates) - `scripts/slack_format.sh` / `slack_formatter.py` exist and work - `shared-skills/scripts/push_trading_report.py` exists **2. Slack Routing (from 2026-05-15, reaffirmed)** - Darin called out replying in WebChat instead of Slack **Fix verification: ALL VERIFIED ✅** - TOOLS.md: "CRITICAL: Slack Replies Must Be Explicit" section - TOOLS.md: Channel Routing with thread rules - AGENTS.md: Standing Order for Slack reaction protocol **3. Auto-log every conversation (set by Darin 2026-05-17)** - Think.py logging required for every Slack conversation **Fix verification: ALL VERIFIED ✅** - AGENTS.md has full think.py integration rules with session_id format - `shared-skills/scripts/think.py` exists **4. Cron job output rules (set by Darin 2026-05-17)** - Pre-Send Checklist applies to all cron output - Bold only, zero italic - Always output (never silent NO_REPLY) - Fallback channel: C0B4EK31NCU [score=0.849 recalls=7 avg=0.385 source=memory/2026-05-18.md:1-40]
-<!-- openclaw-memory-promotion:memory:memory/2026-05-19.md:15:15 -->
-- Time window: 2026-05-18 15:07 UTC → 2026-05-19 15:07 UTC [score=0.846 recalls=0 avg=0.620 source=memory/2026-05-19.md:15-15]
+<!-- openclaw-memory-promotion:memory:memory/2026-05-20.md:4:4 -->
+- Darin & Paofu saw OB today. Key reminders: [score=0.856 recalls=0 avg=0.620 source=memory/2026-05-20.md:4-4]
+<!-- openclaw-memory-promotion:memory:memory/2026-05-20.md:13:13 -->
+- **HN Top 10:** [score=0.846 recalls=0 avg=0.620 source=memory/2026-05-20.md:13-13]

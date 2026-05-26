@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-25T14:30:46.169Z",
+  "updatedAt": "2026-05-26T03:00:00.969Z",
   "entries": {
     "memory:memory/2026-05-15.md:1:15": {
       "key": "memory:memory/2026-05-15.md:1:15",
@@ -15742,14 +15742,14 @@
         "2026-05-25"
       ],
       "conceptTags": [
-        "correction",
-        "retrospective",
-        "cron",
-        "utc",
         "scanned",
         "last",
         "24h",
-        "corrections"
+        "corrections",
+        "darin",
+        "list",
+        "returned",
+        "results"
       ],
       "promotedAt": "2026-05-25T03:00:01.001Z"
     },
@@ -15779,8 +15779,6 @@
         "2026-05-25"
       ],
       "conceptTags": [
-        "corrections",
-        "found",
         "stock",
         "analysis",
         "pipeline",
@@ -15852,8 +15850,6 @@
         "2026-05-25"
       ],
       "conceptTags": [
-        "corrections",
-        "found",
         "fix",
         "verification",
         "all",
@@ -30873,11 +30869,11 @@
         "scripts/stock-analysis.py",
         "tools.md",
         "scripts/slack-format.sh",
-        "correction",
-        "retrospective",
-        "cron",
-        "utc",
-        "scanned"
+        "slack-formatter.py",
+        "agents.md",
+        "auto-log",
+        "think.py",
+        "session-id"
       ],
       "promotedAt": "2026-05-25T03:00:01.001Z"
     },
@@ -30922,12 +30918,12 @@
       "source": "memory",
       "snippet": "Fixed xiaohongshu-mcp for US use by making base URL configurable and using rednote.com; confirmed QR login success.; Installed autoclaw-cc/xiaohongshu-mcp-skills into workspace.; Created/updated skills:; `xhs-mcp-workflow`: MCP health check + auto-restart cron (30m), login guard,",
       "recallCount": 0,
-      "dailyCount": 6,
+      "dailyCount": 7,
       "groundedCount": 0,
-      "totalScore": 3.72,
+      "totalScore": 4.34,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-20T03:00:02.872Z",
-      "lastRecalledAt": "2026-05-25T03:00:01.001Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
       "queryHashes": [
         "f2aa78e3961c"
       ],
@@ -30937,7 +30933,8 @@
         "2026-05-22",
         "2026-05-23",
         "2026-05-24",
-        "2026-05-25"
+        "2026-05-25",
+        "2026-05-26"
       ],
       "conceptTags": [
         "xiaohongshu-mcp",
@@ -30958,12 +30955,12 @@
       "source": "memory",
       "snippet": "`xhs-trip-planner`: interview flow (MCQ prioritization + MCQ hotel-move preference + MCQ output language), checks existing XHS reports from past week, uses `xhs-mcp-workflow` for XHS research and `hotel-research` for hotels (no Airbnb), ADHD-friendly day-by-day output, progress u",
       "recallCount": 0,
-      "dailyCount": 6,
+      "dailyCount": 7,
       "groundedCount": 0,
-      "totalScore": 3.72,
+      "totalScore": 4.34,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-20T03:00:02.872Z",
-      "lastRecalledAt": "2026-05-25T03:00:01.001Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
       "queryHashes": [
         "f2aa78e3961c"
       ],
@@ -30973,7 +30970,8 @@
         "2026-05-22",
         "2026-05-23",
         "2026-05-24",
-        "2026-05-25"
+        "2026-05-25",
+        "2026-05-26"
       ],
       "conceptTags": [
         "xhs-trip-planner",
@@ -30995,12 +30993,12 @@
       "source": "memory",
       "snippet": "Ran a skill audit (requested \"ChatGPT 5.5\"; closest available was GPT-5.2) and logged findings; fixed a medium bug where trip-planner Step 5 previously pushed to the wrong repo.",
       "recallCount": 0,
-      "dailyCount": 6,
+      "dailyCount": 7,
       "groundedCount": 0,
-      "totalScore": 3.72,
+      "totalScore": 4.34,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-20T03:00:02.872Z",
-      "lastRecalledAt": "2026-05-25T03:00:01.001Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
       "queryHashes": [
         "f2aa78e3961c"
       ],
@@ -31010,7 +31008,8 @@
         "2026-05-22",
         "2026-05-23",
         "2026-05-24",
-        "2026-05-25"
+        "2026-05-25",
+        "2026-05-26"
       ],
       "conceptTags": [
         "gpt",
@@ -31030,14 +31029,14 @@
       "startLine": 15,
       "endLine": 15,
       "source": "memory",
-      "snippet": "Time window: 2026-05-18 15:07 UTC → 2026-05-19 15:07 UTC",
+      "snippet": "Correction Retrospective (15:07 UTC): Time window: 2026-05-18 15:07 UTC → 2026-05-19 15:07 UTC",
       "recallCount": 0,
-      "dailyCount": 6,
+      "dailyCount": 7,
       "groundedCount": 0,
-      "totalScore": 3.72,
+      "totalScore": 4.34,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-20T03:00:02.872Z",
-      "lastRecalledAt": "2026-05-25T03:00:01.001Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
       "queryHashes": [
         "f2aa78e3961c"
       ],
@@ -31047,7 +31046,8 @@
         "2026-05-22",
         "2026-05-23",
         "2026-05-24",
-        "2026-05-25"
+        "2026-05-25",
+        "2026-05-26"
       ],
       "conceptTags": [
         "correction",
@@ -31064,14 +31064,14 @@
       "startLine": 18,
       "endLine": 18,
       "source": "memory",
-      "snippet": "Scanned session transcripts, memory files, and Slack channels (#C0B4EK31NCU, DM, threads) for corrections from Darin.",
+      "snippet": "Scope: Scanned session transcripts, memory files, and Slack channels (#C0B4EK31NCU, DM, threads) for corrections from Darin.",
       "recallCount": 0,
-      "dailyCount": 6,
+      "dailyCount": 7,
       "groundedCount": 0,
-      "totalScore": 3.72,
+      "totalScore": 4.34,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-20T03:00:02.872Z",
-      "lastRecalledAt": "2026-05-25T03:00:01.001Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
       "queryHashes": [
         "f2aa78e3961c"
       ],
@@ -31081,7 +31081,8 @@
         "2026-05-22",
         "2026-05-23",
         "2026-05-24",
-        "2026-05-25"
+        "2026-05-25",
+        "2026-05-26"
       ],
       "conceptTags": [
         "scope",
@@ -31101,14 +31102,14 @@
       "startLine": 22,
       "endLine": 22,
       "source": "memory",
-      "snippet": "Darin's only interactions in the window:",
+      "snippet": "Corrections found: NONE: Darin's only interactions in the window:",
       "recallCount": 0,
-      "dailyCount": 6,
+      "dailyCount": 7,
       "groundedCount": 0,
-      "totalScore": 3.72,
+      "totalScore": 4.34,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-20T03:00:02.872Z",
-      "lastRecalledAt": "2026-05-25T03:00:01.001Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
       "queryHashes": [
         "f2aa78e3961c"
       ],
@@ -31118,7 +31119,8 @@
         "2026-05-22",
         "2026-05-23",
         "2026-05-24",
-        "2026-05-25"
+        "2026-05-25",
+        "2026-05-26"
       ],
       "conceptTags": [
         "corrections",
@@ -46517,14 +46519,14 @@
       "startLine": 4,
       "endLine": 4,
       "source": "memory",
-      "snippet": "Pregnancy Notes (from OB visit with Paofu): Darin & Paofu saw OB today. Key reminders:",
+      "snippet": "Darin & Paofu saw OB today. Key reminders:",
       "recallCount": 0,
-      "dailyCount": 5,
+      "dailyCount": 6,
       "groundedCount": 0,
-      "totalScore": 3.1,
+      "totalScore": 3.72,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-21T03:00:31.541Z",
-      "lastRecalledAt": "2026-05-25T03:00:01.001Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
       "queryHashes": [
         "d633e8f17da8"
       ],
@@ -46533,7 +46535,8 @@
         "2026-05-22",
         "2026-05-23",
         "2026-05-24",
-        "2026-05-25"
+        "2026-05-25",
+        "2026-05-26"
       ],
       "conceptTags": [
         "pregnancy",
@@ -46543,7 +46546,8 @@
         "saw",
         "key",
         "reminders"
-      ]
+      ],
+      "promotedAt": "2026-05-26T03:00:00.969Z"
     },
     "memory:memory/2026-05-20.md:6:9": {
       "key": "memory:memory/2026-05-20.md:6:9",
@@ -46553,12 +46557,12 @@
       "source": "memory",
       "snippet": "Pregnancy Notes (from OB visit with Paofu): **28 weeks → start counting fetal movements (数胎动)** — Note which week she's at now.; **Schedule glucose tolerance test (糖耐, common one) with Quest today**; **Leg cramps → take calcium**; **Get vaccines (TDAP etc.)**",
       "recallCount": 0,
-      "dailyCount": 5,
+      "dailyCount": 6,
       "groundedCount": 0,
-      "totalScore": 3.1,
+      "totalScore": 3.72,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-21T03:00:31.541Z",
-      "lastRecalledAt": "2026-05-25T03:00:01.001Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
       "queryHashes": [
         "d633e8f17da8"
       ],
@@ -46567,7 +46571,8 @@
         "2026-05-22",
         "2026-05-23",
         "2026-05-24",
-        "2026-05-25"
+        "2026-05-25",
+        "2026-05-26"
       ],
       "conceptTags": [
         "pregnancy",
@@ -46586,14 +46591,14 @@
       "startLine": 13,
       "endLine": 13,
       "source": "memory",
-      "snippet": "Daily Digest (11am PT) - Posted to #learning: **HN Top 10:**",
+      "snippet": "**HN Top 10:**",
       "recallCount": 0,
-      "dailyCount": 5,
+      "dailyCount": 6,
       "groundedCount": 0,
-      "totalScore": 3.1,
+      "totalScore": 3.72,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-21T03:00:31.541Z",
-      "lastRecalledAt": "2026-05-25T03:00:01.001Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
       "queryHashes": [
         "d633e8f17da8"
       ],
@@ -46602,7 +46607,8 @@
         "2026-05-22",
         "2026-05-23",
         "2026-05-24",
-        "2026-05-25"
+        "2026-05-25",
+        "2026-05-26"
       ],
       "conceptTags": [
         "digest",
@@ -46610,7 +46616,8 @@
         "posted",
         "learning",
         "top"
-      ]
+      ],
+      "promotedAt": "2026-05-26T03:00:00.969Z"
     },
     "memory:memory/2026-05-20.md:14:17": {
       "key": "memory:memory/2026-05-20.md:14:17",
@@ -46620,12 +46627,12 @@
       "source": "memory",
       "snippet": "Daily Digest (11am PT) - Posted to #learning: Tennessee man wins $835K settlement after 37 days in jail for Trump meme (420 pts); Google's AI manipulation problem - BBC investigation (148 pts); Infomaniak transitions to foundation ownership model for privacy (146 pts); Railway in",
       "recallCount": 0,
-      "dailyCount": 5,
+      "dailyCount": 6,
       "groundedCount": 0,
-      "totalScore": 3.1,
+      "totalScore": 3.72,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-21T03:00:31.541Z",
-      "lastRecalledAt": "2026-05-25T03:00:01.001Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
       "queryHashes": [
         "d633e8f17da8"
       ],
@@ -46634,7 +46641,8 @@
         "2026-05-22",
         "2026-05-23",
         "2026-05-24",
-        "2026-05-25"
+        "2026-05-25",
+        "2026-05-26"
       ],
       "conceptTags": [
         "digest",
@@ -46655,12 +46663,12 @@
       "source": "memory",
       "snippet": "Daily Digest (11am PT) - Posted to #learning: Bandera, TX bans Flock cameras, councilmember retaliates with tech ban proposal (53 pts); No way to parse integers in C blog post (52 pts); SFHformer: FFT + Transformer for image restoration, ECCV 2024 (52 pts); SBCL as assembly code",
       "recallCount": 0,
-      "dailyCount": 5,
+      "dailyCount": 6,
       "groundedCount": 0,
-      "totalScore": 3.1,
+      "totalScore": 3.72,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-21T03:00:31.541Z",
-      "lastRecalledAt": "2026-05-25T03:00:01.001Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
       "queryHashes": [
         "d633e8f17da8"
       ],
@@ -46669,7 +46677,8 @@
         "2026-05-22",
         "2026-05-23",
         "2026-05-24",
-        "2026-05-25"
+        "2026-05-25",
+        "2026-05-26"
       ],
       "conceptTags": [
         "digest",
@@ -46690,12 +46699,12 @@
       "source": "memory",
       "snippet": "Daily Digest (11am PT) - Posted to #learning: Testing distributed systems with AI agents on GitHub (43 pts); tokenspeed: interactive LLM token rate visualization (33 pts)",
       "recallCount": 0,
-      "dailyCount": 5,
+      "dailyCount": 6,
       "groundedCount": 0,
-      "totalScore": 3.1,
+      "totalScore": 3.72,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-21T03:00:31.541Z",
-      "lastRecalledAt": "2026-05-25T03:00:01.001Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
       "queryHashes": [
         "d633e8f17da8"
       ],
@@ -46704,7 +46713,8 @@
         "2026-05-22",
         "2026-05-23",
         "2026-05-24",
-        "2026-05-25"
+        "2026-05-25",
+        "2026-05-26"
       ],
       "conceptTags": [
         "digest",
@@ -61692,12 +61702,12 @@
       "source": "memory",
       "snippet": "New Feature: Vocabulary Quiz System: Darin asked me to track English words he doesn't understand and quiz him; Created vocabulary tracking at /data/.openclaw/workspace/vocabulary/words.json; Created quiz.py for picking/recording quiz results; Added cron job: 8:30 PM PT daily → DM",
       "recallCount": 0,
-      "dailyCount": 4,
+      "dailyCount": 5,
       "groundedCount": 0,
-      "totalScore": 2.48,
+      "totalScore": 3.1,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-22T03:00:01.436Z",
-      "lastRecalledAt": "2026-05-25T03:00:01.001Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
       "queryHashes": [
         "f698e45e49cd"
       ],
@@ -61705,7 +61715,8 @@
         "2026-05-22",
         "2026-05-23",
         "2026-05-24",
-        "2026-05-25"
+        "2026-05-25",
+        "2026-05-26"
       ],
       "conceptTags": [
         "quiz.py",
@@ -61726,12 +61737,12 @@
       "source": "memory",
       "snippet": "New Feature: Vocabulary Quiz System: Added 7 initial words from today's research conversations",
       "recallCount": 0,
-      "dailyCount": 4,
+      "dailyCount": 5,
       "groundedCount": 0,
-      "totalScore": 2.48,
+      "totalScore": 3.1,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-22T03:00:01.436Z",
-      "lastRecalledAt": "2026-05-25T03:00:01.001Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
       "queryHashes": [
         "f698e45e49cd"
       ],
@@ -61739,7 +61750,8 @@
         "2026-05-22",
         "2026-05-23",
         "2026-05-24",
-        "2026-05-25"
+        "2026-05-25",
+        "2026-05-26"
       ],
       "conceptTags": [
         "new",
@@ -61760,12 +61772,12 @@
       "source": "memory",
       "snippet": "Conversation with Darin (#random thread): Darin asked what new things we can add to DDDD; Proposed Baby Prep Hub, Deals Hunter (dealmoon), traffic estimate, and more; **Baby Prep Hub** → Greenlit. Created baby-prep-tracker.md with full milestone tracking (due Sept 5, ~24-25 wks);",
       "recallCount": 0,
-      "dailyCount": 4,
+      "dailyCount": 5,
       "groundedCount": 0,
-      "totalScore": 2.48,
+      "totalScore": 3.1,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-22T03:00:01.436Z",
-      "lastRecalledAt": "2026-05-25T03:00:01.001Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
       "queryHashes": [
         "f698e45e49cd"
       ],
@@ -61773,7 +61785,8 @@
         "2026-05-22",
         "2026-05-23",
         "2026-05-24",
-        "2026-05-25"
+        "2026-05-25",
+        "2026-05-26"
       ],
       "conceptTags": [
         "baby-prep-tracker.md",
@@ -61794,12 +61807,12 @@
       "source": "memory",
       "snippet": "Conversation with Darin (#random thread): **Traffic** → Greenlit. Will add Sunnyvale Library → OpenAI Mission Bay 2 (1515 3rd St) traffic to morning brief; **Job update** → Darin joins OpenAI next week (May 26). Updated records from Netflix → OpenAI; First day orientation: May 26",
       "recallCount": 0,
-      "dailyCount": 4,
+      "dailyCount": 5,
       "groundedCount": 0,
-      "totalScore": 2.48,
+      "totalScore": 3.1,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-22T03:00:01.436Z",
-      "lastRecalledAt": "2026-05-25T03:00:01.001Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
       "queryHashes": [
         "f698e45e49cd"
       ],
@@ -61807,7 +61820,8 @@
         "2026-05-22",
         "2026-05-23",
         "2026-05-24",
-        "2026-05-25"
+        "2026-05-25",
+        "2026-05-26"
       ],
       "conceptTags": [
         "openai",
@@ -61828,12 +61842,12 @@
       "source": "memory",
       "snippet": "Correction Retrospective (cron, 12:03 UTC): Scanned 108 session files from last 24h (May 20 12:03 → May 21 12:03 UTC); **Corrections found: 3**",
       "recallCount": 0,
-      "dailyCount": 4,
+      "dailyCount": 5,
       "groundedCount": 0,
-      "totalScore": 2.48,
+      "totalScore": 3.1,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-22T03:00:01.436Z",
-      "lastRecalledAt": "2026-05-25T03:00:01.001Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
       "queryHashes": [
         "f698e45e49cd"
       ],
@@ -61841,7 +61855,8 @@
         "2026-05-22",
         "2026-05-23",
         "2026-05-24",
-        "2026-05-25"
+        "2026-05-25",
+        "2026-05-26"
       ],
       "conceptTags": [
         "correction",
@@ -61862,12 +61877,12 @@
       "source": "memory",
       "snippet": "Mobile Readability Rules (Darin, May 20): Darin: \"update all cronjob that write to channel to improve readability, especially for mobile\"; Also followed up with \"rewrite the response using the new format rule/skill\" + stock formatting rules (ticker first, bold numbers, bullet poi",
       "recallCount": 0,
-      "dailyCount": 4,
+      "dailyCount": 5,
       "groundedCount": 0,
-      "totalScore": 2.48,
+      "totalScore": 3.1,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-22T03:00:01.436Z",
-      "lastRecalledAt": "2026-05-25T03:00:01.001Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
       "queryHashes": [
         "f698e45e49cd"
       ],
@@ -61875,7 +61890,8 @@
         "2026-05-22",
         "2026-05-23",
         "2026-05-24",
-        "2026-05-25"
+        "2026-05-25",
+        "2026-05-26"
       ],
       "conceptTags": [
         "rule/skill",
@@ -62056,12 +62072,12 @@
       "source": "memory",
       "snippet": "Session: 2026-05-21 03:27:05 UTC: **Session Key**: agent:main:slack:channel:c07mefvcdhp:thread:1779315805.734799; **Session ID**: aa0c016e-e512-4033-acee-e12a92c0a2d2; **Source**: webchat",
       "recallCount": 0,
-      "dailyCount": 4,
+      "dailyCount": 5,
       "groundedCount": 0,
-      "totalScore": 2.48,
+      "totalScore": 3.1,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-22T03:00:01.436Z",
-      "lastRecalledAt": "2026-05-25T03:00:01.001Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
       "queryHashes": [
         "f698e45e49cd"
       ],
@@ -62069,7 +62085,8 @@
         "2026-05-22",
         "2026-05-23",
         "2026-05-24",
-        "2026-05-25"
+        "2026-05-25",
+        "2026-05-26"
       ],
       "conceptTags": [
         "2026-05-21-0327.md",
@@ -62090,12 +62107,12 @@
       "source": "memory",
       "snippet": "Conversation Summary: user: 把reaction 和italic变成bold分别写到hook",
       "recallCount": 0,
-      "dailyCount": 4,
+      "dailyCount": 5,
       "groundedCount": 0,
-      "totalScore": 2.48,
+      "totalScore": 3.1,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-22T03:00:01.436Z",
-      "lastRecalledAt": "2026-05-25T03:00:01.001Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
       "queryHashes": [
         "f698e45e49cd"
       ],
@@ -62103,7 +62120,8 @@
         "2026-05-22",
         "2026-05-23",
         "2026-05-24",
-        "2026-05-25"
+        "2026-05-25",
+        "2026-05-26"
       ],
       "conceptTags": [
         "2026-05-21-0327.md",
@@ -62124,12 +62142,12 @@
       "source": "memory",
       "snippet": "Conversation Summary: 另外有没有一个internal hook适合axiom logging? 我想log更多东西 最好可以看到整个思考过程 一个slack thread share一个id, 然后里面一个turn有自己的subid, 这样我可以把他们连起来看也可以单一看 assistant: Now I understand the hook model. Let me build these. assistant: Now let me write the format filter and Axiom hooks. Let m",
       "recallCount": 0,
-      "dailyCount": 4,
+      "dailyCount": 5,
       "groundedCount": 0,
-      "totalScore": 2.48,
+      "totalScore": 3.1,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-22T03:00:01.436Z",
-      "lastRecalledAt": "2026-05-25T03:00:01.001Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
       "queryHashes": [
         "f698e45e49cd"
       ],
@@ -62137,7 +62155,8 @@
         "2026-05-22",
         "2026-05-23",
         "2026-05-24",
-        "2026-05-25"
+        "2026-05-25",
+        "2026-05-26"
       ],
       "conceptTags": [
         "2026-05-21-0327.md",
@@ -62158,12 +62177,12 @@
       "source": "memory",
       "snippet": "Conversation Summary: assistant: Now let me create the Axiom thread logger hook: assistant: Now I see the event type pattern. Let me write the Axiom logger handler and fix the reaction hook: assistant: Now let me also write the plugin code for full Axiom tracing, then present eve",
       "recallCount": 0,
-      "dailyCount": 4,
+      "dailyCount": 5,
       "groundedCount": 0,
-      "totalScore": 2.48,
+      "totalScore": 3.1,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-22T03:00:01.436Z",
-      "lastRecalledAt": "2026-05-25T03:00:01.001Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
       "queryHashes": [
         "f698e45e49cd"
       ],
@@ -62171,7 +62190,8 @@
         "2026-05-22",
         "2026-05-23",
         "2026-05-24",
-        "2026-05-25"
+        "2026-05-25",
+        "2026-05-26"
       ],
       "conceptTags": [
         "2026-05-21-0327.md",
@@ -62192,12 +62212,12 @@
       "source": "memory",
       "snippet": "Conversation Summary: 不过开这个之前先说清楚几件事:",
       "recallCount": 0,
-      "dailyCount": 4,
+      "dailyCount": 5,
       "groundedCount": 0,
-      "totalScore": 2.48,
+      "totalScore": 3.1,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-22T03:00:01.436Z",
-      "lastRecalledAt": "2026-05-25T03:00:01.001Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
       "queryHashes": [
         "f698e45e49cd"
       ],
@@ -62205,7 +62225,8 @@
         "2026-05-22",
         "2026-05-23",
         "2026-05-24",
-        "2026-05-25"
+        "2026-05-25",
+        "2026-05-26"
       ],
       "conceptTags": [
         "2026-05-21-0327.md",
@@ -62226,12 +62247,12 @@
       "source": "memory",
       "snippet": "Conversation Summary: **关于反应 (reaction hook vs prompt rule):** internal hook 的优点是反应快 — 收到消息就发 👀，不需要等 agent 推理完。但以后你想改 reaction 需要改 hook 代码 + restart. prompt 里写规则改起来更快. 所以你可以选: 要性能走 hook, 要灵活留 prompt.",
       "recallCount": 0,
-      "dailyCount": 4,
+      "dailyCount": 5,
       "groundedCount": 0,
-      "totalScore": 2.48,
+      "totalScore": 3.1,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-22T03:00:01.436Z",
-      "lastRecalledAt": "2026-05-25T03:00:01.001Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
       "queryHashes": [
         "f698e45e49cd"
       ],
@@ -62239,7 +62260,8 @@
         "2026-05-22",
         "2026-05-23",
         "2026-05-24",
-        "2026-05-25"
+        "2026-05-25",
+        "2026-05-26"
       ],
       "conceptTags": [
         "2026-05-21-0327.md",
@@ -77018,19 +77040,20 @@
       "source": "memory",
       "snippet": "Correction Retrospective (cron, 11:00 UTC): Scanned recent session files, trajectory logs, memory files, and config for last ~23h; **Window:** May 21 12:07 UTC → May 22 11:00 UTC",
       "recallCount": 0,
-      "dailyCount": 3,
+      "dailyCount": 4,
       "groundedCount": 0,
-      "totalScore": 1.8599999999999999,
+      "totalScore": 2.48,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-23T03:00:02.266Z",
-      "lastRecalledAt": "2026-05-25T03:00:01.001Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
       "queryHashes": [
         "782f94af37b1"
       ],
       "recallDays": [
         "2026-05-23",
         "2026-05-24",
-        "2026-05-25"
+        "2026-05-25",
+        "2026-05-26"
       ],
       "conceptTags": [
         "correction",
@@ -77051,19 +77074,20 @@
       "source": "memory",
       "snippet": "Corrections found: 5 (all previously applied in May 21 window): **1. Vocabulary Quiz — Auto-added words → removed**",
       "recallCount": 0,
-      "dailyCount": 3,
+      "dailyCount": 4,
       "groundedCount": 0,
-      "totalScore": 1.8599999999999999,
+      "totalScore": 2.48,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-23T03:00:02.266Z",
-      "lastRecalledAt": "2026-05-25T03:00:01.001Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
       "queryHashes": [
         "782f94af37b1"
       ],
       "recallDays": [
         "2026-05-23",
         "2026-05-24",
-        "2026-05-25"
+        "2026-05-25",
+        "2026-05-26"
       ],
       "conceptTags": [
         "auto-added",
@@ -77084,19 +77108,20 @@
       "source": "memory",
       "snippet": "Corrections found: 5 (all previously applied in May 21 window): Darin: \"你从哪里记了7个词？ 删掉他们\"; **Fix: VERIFIED ✅** — words.json only has 5 words from Darin's #learning screenshots. HEARTBEAT.md updated.",
       "recallCount": 0,
-      "dailyCount": 3,
+      "dailyCount": 4,
       "groundedCount": 0,
-      "totalScore": 1.8599999999999999,
+      "totalScore": 2.48,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-23T03:00:02.266Z",
-      "lastRecalledAt": "2026-05-25T03:00:01.001Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
       "queryHashes": [
         "782f94af37b1"
       ],
       "recallDays": [
         "2026-05-23",
         "2026-05-24",
-        "2026-05-25"
+        "2026-05-25",
+        "2026-05-26"
       ],
       "conceptTags": [
         "words.json",
@@ -77117,19 +77142,20 @@
       "source": "memory",
       "snippet": "Corrections found: 5 (all previously applied in May 21 window): **2. Vocab quiz → #learning channel + @Paofu**",
       "recallCount": 0,
-      "dailyCount": 3,
+      "dailyCount": 4,
       "groundedCount": 0,
-      "totalScore": 1.8599999999999999,
+      "totalScore": 2.48,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-23T03:00:02.266Z",
-      "lastRecalledAt": "2026-05-25T03:00:01.001Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
       "queryHashes": [
         "782f94af37b1"
       ],
       "recallDays": [
         "2026-05-23",
         "2026-05-24",
-        "2026-05-25"
+        "2026-05-25",
+        "2026-05-26"
       ],
       "conceptTags": [
         "corrections",
@@ -77150,19 +77176,20 @@
       "source": "memory",
       "snippet": "Corrections found: 5 (all previously applied in May 21 window): Darin: \"每天晚上把小考发<#C07LV6XMHNJ> 然后记得@ paofu\"; **Fix: VERIFIED ✅** — HEARTBEAT.md shows C07LV6XMHNJ with @Paofu tag",
       "recallCount": 0,
-      "dailyCount": 3,
+      "dailyCount": 4,
       "groundedCount": 0,
-      "totalScore": 1.8599999999999999,
+      "totalScore": 2.48,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-23T03:00:02.266Z",
-      "lastRecalledAt": "2026-05-25T03:00:01.001Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
       "queryHashes": [
         "782f94af37b1"
       ],
       "recallDays": [
         "2026-05-23",
         "2026-05-24",
-        "2026-05-25"
+        "2026-05-25",
+        "2026-05-26"
       ],
       "conceptTags": [
         "heartbeat.md",
@@ -77183,19 +77210,20 @@
       "source": "memory",
       "snippet": "Corrections found: 5 (all previously applied in May 21 window): **3. Paofu English Annotation Guide**",
       "recallCount": 0,
-      "dailyCount": 3,
+      "dailyCount": 4,
       "groundedCount": 0,
-      "totalScore": 1.8599999999999999,
+      "totalScore": 2.48,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-23T03:00:02.266Z",
-      "lastRecalledAt": "2026-05-25T03:00:01.001Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
       "queryHashes": [
         "782f94af37b1"
       ],
       "recallDays": [
         "2026-05-23",
         "2026-05-24",
-        "2026-05-25"
+        "2026-05-25",
+        "2026-05-26"
       ],
       "conceptTags": [
         "corrections",
@@ -84555,18 +84583,19 @@
       "source": "memory",
       "snippet": "Inbox cleanup (cron) — 04:00 UTC: Ran daily_inbox_cleanup.sh — 37 archived, 0 deleted; Phase 1: 25 promos, Phase 2: 4 social, Phase 3: 8 updates, Phase 4: 0 stale (1 kept); Report posted to #cron-status",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-24T03:00:01.067Z",
-      "lastRecalledAt": "2026-05-25T03:00:01.001Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
       "queryHashes": [
         "ae3ac765491f"
       ],
       "recallDays": [
         "2026-05-24",
-        "2026-05-25"
+        "2026-05-25",
+        "2026-05-26"
       ],
       "conceptTags": [
         "daily-inbox-cleanup.sh",
@@ -84587,18 +84616,19 @@
       "source": "memory",
       "snippet": "Correction Retrospective (cron, 11:00 UTC): SID: sess_20260523_110000; **Window:** May 22 11:00 UTC → May 23 11:00 UTC; Scanned: thinking logs, trajectory files, session JSONLs, memory files",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-24T03:00:01.067Z",
-      "lastRecalledAt": "2026-05-25T03:00:01.001Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
       "queryHashes": [
         "ae3ac765491f"
       ],
       "recallDays": [
         "2026-05-24",
-        "2026-05-25"
+        "2026-05-25",
+        "2026-05-26"
       ],
       "conceptTags": [
         "sess-20260523-110000",
@@ -84619,18 +84649,19 @@
       "source": "memory",
       "snippet": "Corrections found: NONE: Darin's interactions in window: research questions (#random), baby name ping, Codex remote machine question, \"r u alive?\" check-in; No corrections or fix requests in this window",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-24T03:00:01.067Z",
-      "lastRecalledAt": "2026-05-25T03:00:01.001Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
       "queryHashes": [
         "ae3ac765491f"
       ],
       "recallDays": [
         "2026-05-24",
-        "2026-05-25"
+        "2026-05-25",
+        "2026-05-26"
       ],
       "conceptTags": [
         "check-in",
@@ -84651,18 +84682,19 @@
       "source": "memory",
       "snippet": "Previous fixes re-verified:: **Vocab words (5 only):** ✅ — only Darin/Paofu-sourced words; **Vocab channel + @Paofu:** ✅ — HEARTBEAT.md correct; **Paofu Annotation Guide:** ✅ — MEMORY.md intact; **Nightly quiz rules:** ✅ — MEMORY.md intact",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-24T03:00:01.067Z",
-      "lastRecalledAt": "2026-05-25T03:00:01.001Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
       "queryHashes": [
         "ae3ac765491f"
       ],
       "recallDays": [
         "2026-05-24",
-        "2026-05-25"
+        "2026-05-25",
+        "2026-05-26"
       ],
       "conceptTags": [
         "re-verified",
@@ -84683,18 +84715,19 @@
       "source": "memory",
       "snippet": "Previous fixes re-verified:: **LLM Preference Order:** ✅ — MEMORY.md intact",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-24T03:00:01.067Z",
-      "lastRecalledAt": "2026-05-25T03:00:01.001Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
       "queryHashes": [
         "ae3ac765491f"
       ],
       "recallDays": [
         "2026-05-24",
-        "2026-05-25"
+        "2026-05-25",
+        "2026-05-26"
       ],
       "conceptTags": [
         "re-verified",
@@ -84715,18 +84748,19 @@
       "source": "memory",
       "snippet": "New fixes applied: NONE: echo \"Logged to memory\"",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-24T03:00:01.067Z",
-      "lastRecalledAt": "2026-05-25T03:00:01.001Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
       "queryHashes": [
         "ae3ac765491f"
       ],
       "recallDays": [
         "2026-05-24",
-        "2026-05-25"
+        "2026-05-25",
+        "2026-05-26"
       ],
       "conceptTags": [
         "new",
@@ -90484,17 +90518,18 @@
       "source": "memory",
       "snippet": "Correction Retrospective (cron, 11:00 UTC): SID: sess_20260524_110000; **Window:** May 23 11:00 UTC → May 24 11:00 UTC; Scanned: 40+ session JSONL files, trajectory files, memory files",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-25T03:00:01.001Z",
-      "lastRecalledAt": "2026-05-25T03:00:01.001Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
       "queryHashes": [
         "e87913ef436c"
       ],
       "recallDays": [
-        "2026-05-25"
+        "2026-05-25",
+        "2026-05-26"
       ],
       "conceptTags": [
         "sess-20260524-110000",
@@ -90515,17 +90550,18 @@
       "source": "memory",
       "snippet": "Corrections found: NONE: Darin's interactions in this window:; Game advice (#random) — 燕云十六声 quest guides; Codex remote machine setup discussion (#random); Daily learnings prompt request (\"want more AI news\") — feature request",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-25T03:00:01.001Z",
-      "lastRecalledAt": "2026-05-25T03:00:01.001Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
       "queryHashes": [
         "e87913ef436c"
       ],
       "recallDays": [
-        "2026-05-25"
+        "2026-05-25",
+        "2026-05-26"
       ],
       "conceptTags": [
         "corrections",
@@ -90546,17 +90582,18 @@
       "source": "memory",
       "snippet": "Corrections found: NONE: No corrections, fix requests, or call-outs",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-25T03:00:01.001Z",
-      "lastRecalledAt": "2026-05-25T03:00:01.001Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
       "queryHashes": [
         "e87913ef436c"
       ],
       "recallDays": [
-        "2026-05-25"
+        "2026-05-25",
+        "2026-05-26"
       ],
       "conceptTags": [
         "call-outs",
@@ -90577,17 +90614,18 @@
       "source": "memory",
       "snippet": "Previous fixes re-verified:: **Vocab words (5 only):** ✅ — HEARTBEAT.md / words.json intact; **Vocab channel + @Paofu:** ✅ — HEARTBEAT.md correct; **Paofu Annotation Guide:** ✅ — MEMORY.md intact; **Nightly quiz rules:** ✅ — MEMORY.md intact",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-25T03:00:01.001Z",
-      "lastRecalledAt": "2026-05-25T03:00:01.001Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
       "queryHashes": [
         "e87913ef436c"
       ],
       "recallDays": [
-        "2026-05-25"
+        "2026-05-25",
+        "2026-05-26"
       ],
       "conceptTags": [
         "re-verified",
@@ -90608,17 +90646,18 @@
       "source": "memory",
       "snippet": "Previous fixes re-verified:: **LLM Preference Order:** ✅ — MEMORY.md intact; **Mobile Readability:** ✅ — TOOLS.md / MEMORY.md intact; **No-Italic formatting hook:** ✅ — TOOLS.md / SLACK_FORMAT_FILTER.md intact",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-25T03:00:01.001Z",
-      "lastRecalledAt": "2026-05-25T03:00:01.001Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
       "queryHashes": [
         "e87913ef436c"
       ],
       "recallDays": [
-        "2026-05-25"
+        "2026-05-25",
+        "2026-05-26"
       ],
       "conceptTags": [
         "re-verified",
@@ -90639,17 +90678,18 @@
       "source": "memory",
       "snippet": "Daily Digest (2pm PT): Sent daily tech+finance digest to #learning (C07LV6XMHNJ) — session: sess_20260524_140000",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-25T03:00:01.001Z",
-      "lastRecalledAt": "2026-05-25T03:00:01.001Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
       "queryHashes": [
         "e87913ef436c"
       ],
       "recallDays": [
-        "2026-05-25"
+        "2026-05-25",
+        "2026-05-26"
       ],
       "conceptTags": [
         "sess-20260524-140000",
@@ -90670,17 +90710,18 @@
       "source": "memory",
       "snippet": "Daily Digest (2pm PT): **HN Stories (13 total):** 8 AI + 5 General Tech",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-25T03:00:01.001Z",
-      "lastRecalledAt": "2026-05-25T03:00:01.001Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
       "queryHashes": [
         "e87913ef436c"
       ],
       "recallDays": [
-        "2026-05-25"
+        "2026-05-25",
+        "2026-05-26"
       ],
       "conceptTags": [
         "digest",
@@ -90699,17 +90740,18 @@
       "source": "memory",
       "snippet": "Daily Digest (2pm PT): Top AI: DeepSeek Reasonix (321), DeepSeek V4 Pro permanent 75% discount (492), Claude is not your architect (166), AI chip memory costs 63% (211), Constraint Decay LLM agents (137), AI washing (139), Greg Brockman interview (149), Apple PICO codec (71); Top",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-25T03:00:01.001Z",
-      "lastRecalledAt": "2026-05-25T03:00:01.001Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
       "queryHashes": [
         "e87913ef436c"
       ],
       "recallDays": [
-        "2026-05-25"
+        "2026-05-25",
+        "2026-05-26"
       ],
       "conceptTags": [
         "digest",
@@ -90730,17 +90772,18 @@
       "source": "memory",
       "snippet": "Daily Digest (2pm PT): **Tech News (10 stories):** Google I/O Gemini 900M users + Spark agent, Anthropic first profit + SpaceX $45B compute deal, Nvidia earnings beat + $3-4T infra outlook, Spotify podcast badges vs AI impersonation, Firefox Nova redesign + Shake to Summarize, Te",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-25T03:00:01.001Z",
-      "lastRecalledAt": "2026-05-25T03:00:01.001Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
       "queryHashes": [
         "e87913ef436c"
       ],
       "recallDays": [
-        "2026-05-25"
+        "2026-05-25",
+        "2026-05-26"
       ],
       "conceptTags": [
         "i/o",
@@ -90761,17 +90804,18 @@
       "source": "memory",
       "snippet": "Daily Digest (2pm PT): **Finance:** S&P 500 +0.9% (8th winning week), Dow record 50,579.70 (+2.1%), Nasdaq +0.5%. NVDA $1.87 EPS/$81.62B rev, AAPL 52wk high $311.40, AMZN AWS +28% YoY",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-25T03:00:01.001Z",
-      "lastRecalledAt": "2026-05-25T03:00:01.001Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
       "queryHashes": [
         "e87913ef436c"
       ],
       "recallDays": [
-        "2026-05-25"
+        "2026-05-25",
+        "2026-05-26"
       ],
       "conceptTags": [
         "0.9",
@@ -94473,6 +94517,3301 @@
         "thursday",
         "new",
         "feature"
+      ]
+    },
+    "memory:memory/2026-05-25.md:4:6": {
+      "key": "memory:memory/2026-05-25.md:4:6",
+      "path": "memory/2026-05-25.md",
+      "startLine": 4,
+      "endLine": 6,
+      "source": "memory",
+      "snippet": "Correction Retrospective (cron, 11:00 UTC): SID: sess_20260525_110000; **Window:** May 24 11:00 UTC → May 25 11:00 UTC; Scanned: 60+ session JSONL/trajectory files, memory files, hooks config",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "d840cb851395"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "sess-20260525-110000",
+        "jsonl/trajectory",
+        "correction",
+        "retrospective",
+        "cron",
+        "utc",
+        "sid",
+        "window"
+      ]
+    },
+    "memory:memory/2026-05-25.md:9:11": {
+      "key": "memory:memory/2026-05-25.md:9:11",
+      "path": "memory/2026-05-25.md",
+      "startLine": 9,
+      "endLine": 11,
+      "source": "memory",
+      "snippet": "Corrections found: NONE: All 60+ scanned files are cron/background sessions — no user interaction sessions visible from this context; No Darin corrections found in memory or journal files for this window; Quiet day — last Darin interaction was May 24 (#random game advice, Codex d",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "d840cb851395"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "cron/background",
+        "corrections",
+        "found",
+        "none",
+        "all",
+        "scanned",
+        "cron",
+        "background"
+      ]
+    },
+    "memory:memory/2026-05-25.md:14:17": {
+      "key": "memory:memory/2026-05-25.md:14:17",
+      "path": "memory/2026-05-25.md",
+      "startLine": 14,
+      "endLine": 17,
+      "source": "memory",
+      "snippet": "Previously applied fixes verified: ALL ✅: **Format filter hook** (slack-format-filter) — ✅ registered and enabled; **Auto-reaction hook** (slack-auto-reaction) — ✅ registered and enabled; **Axiom thread logger** (axiom-thread-logger) — ✅ registered and enabled; **Reply reminder h",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "d840cb851395"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "slack-format-filter",
+        "auto-reaction",
+        "slack-auto-reaction",
+        "axiom-thread-logger",
+        "previously",
+        "applied",
+        "fixes",
+        "verified"
+      ]
+    },
+    "memory:memory/2026-05-25.md:18:21": {
+      "key": "memory:memory/2026-05-25.md:18:21",
+      "path": "memory/2026-05-25.md",
+      "startLine": 18,
+      "endLine": 21,
+      "source": "memory",
+      "snippet": "Previously applied fixes verified: ALL ✅: **Slack format script** (slack_formatter.py) — ✅ works correctly (converts *_italic_* → **bold**); **Format filter script** (slack_format.sh) — ✅ exists; **Think.py** at /data/.openclaw/shared-skills/scripts/think.py — ✅ exists; **Push tr",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "d840cb851395"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "slack-formatter.py",
+        "slack-format.sh",
+        "think.py",
+        "previously",
+        "applied",
+        "fixes",
+        "verified",
+        "all"
+      ]
+    },
+    "memory:memory/2026-05-25.md:22:25": {
+      "key": "memory:memory/2026-05-25.md:22:25",
+      "path": "memory/2026-05-25.md",
+      "startLine": 22,
+      "endLine": 25,
+      "source": "memory",
+      "snippet": "Previously applied fixes verified: ALL ✅: **Words.json** — ✅ only 5 Darin/Paofu-sourced words; **HEARTBEAT.md** — ✅ intact with vocab rules; **Baby prep tracker** — ✅ exists; **SLACK_FORMAT_FILTER.md** — ✅ injected as virtual bootstrap by hook (not a real file — correct)",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "d840cb851395"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "words.json",
+        "darin/paofu-sourced",
+        "heartbeat.md",
+        "slack-format-filter.md",
+        "previously",
+        "applied",
+        "fixes",
+        "verified"
+      ]
+    },
+    "memory:memory/2026-05-25.md:26:27": {
+      "key": "memory:memory/2026-05-25.md:26:27",
+      "path": "memory/2026-05-25.md",
+      "startLine": 26,
+      "endLine": 27,
+      "source": "memory",
+      "snippet": "Previously applied fixes verified: ALL ✅: **SLACK_REPLY_REMINDER.md** — ✅ injected as virtual bootstrap by hook (not a real file — correct); **TOOLS.md path references** — ✅ all point to correct locations",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "d840cb851395"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "slack-reply-reminder.md",
+        "tools.md",
+        "previously",
+        "applied",
+        "fixes",
+        "verified",
+        "all",
+        "injected"
+      ]
+    },
+    "memory:memory/2026-05-25.md:32:34": {
+      "key": "memory:memory/2026-05-25.md:32:34",
+      "path": "memory/2026-05-25.md",
+      "startLine": 32,
+      "endLine": 34,
+      "source": "memory",
+      "snippet": "Notes: Session files stored in /data/.openclaw/agents/main/sessions/ are primarily cron/background sessions; Darin's Slack interaction sessions are not visible from cron context — cannot directly scan for corrections; Relying on memory files and journal records as fallback for co",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "d840cb851395"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "openclaw/agents/main/sessions",
+        "cron/background",
+        "stored",
+        "data",
+        "openclaw",
+        "agents",
+        "primarily",
+        "cron"
+      ]
+    },
+    "memory:memory/2026-05-25.md:38:38": {
+      "key": "memory:memory/2026-05-25.md:38:38",
+      "path": "memory/2026-05-25.md",
+      "startLine": 38,
+      "endLine": 38,
+      "source": "memory",
+      "snippet": "Daily Digest (2pm PT): Sent daily tech+finance digest to #learning (C07LV6XMHNJ) — session: sess_20260525_140000",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "d840cb851395"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "sess-20260525-140000",
+        "digest",
+        "2pm",
+        "sent",
+        "tech",
+        "finance",
+        "learning",
+        "c07lv6xmhnj"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-24.txt:109:109": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-24.txt:109:109",
+      "path": "memory/.dreams/session-corpus/2026-05-24.txt",
+      "startLine": 109,
+      "endLine": 109,
+      "source": "memory",
+      "snippet": "Assistant: *Tech News -- Top 10 Stories* (Sat 5/23) **1. Anthropic nears $30B funding round at $900B+ valuation** <https://www.techtimes.com/articles/317066/20260523/anthropic-funding-round-top-30b-900b-valuation-would-surpass-openai-most-valuable-ai-startup.htm> - Anthropic clos",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "c27113cc41fb"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "openai",
+        "5/23",
+        "tech",
+        "news",
+        "top",
+        "stories",
+        "sat",
+        "anthropic"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-24.txt:110:110": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-24.txt:110:110",
+      "path": "memory/.dreams/session-corpus/2026-05-24.txt",
+      "startLine": 110,
+      "endLine": 110,
+      "source": "memory",
+      "snippet": "Assistant: high/critical severity flaws** in critical open-source software, including a **9.1 CVSS** WolfSSL bug - 1,726 confirmed true positives, 97 already patched upstream -- the bottleneck is now verification and patching, not discovery - Stats: 10,000+ flaws / 50 partners /",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "c27113cc41fb"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "high/critical",
+        "open-source",
+        "9.1",
+        "high",
+        "critical",
+        "severity",
+        "flaws",
+        "open"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-24.txt:111:111": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-24.txt:111:111",
+      "path": "memory/.dreams/session-corpus/2026-05-24.txt",
+      "startLine": 111,
+      "endLine": 111,
+      "source": "memory",
+      "snippet": "Assistant: unsolved / AI milestone --- **4. OpenAI files confidential IPO, targeting $1T+ valuation** <https://www.axios.com/2026/05/20/openai-ipo-spacex-musk> - **OpenAI** confidentially filed its **S-1** with the SEC; **Goldman Sachs** and **Morgan Stanley** are advising; publi",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "c27113cc41fb"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "openai",
+        "s-1",
+        "unsolved",
+        "milestone",
+        "confidential",
+        "ipo",
+        "targeting",
+        "valuation"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-24.txt:112:112": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-24.txt:112:112",
+      "path": "memory/.dreams/session-corpus/2026-05-24.txt",
+      "startLine": 112,
+      "endLine": 112,
+      "source": "memory",
+      "snippet": "Assistant: they argued regulation would cede advantage to **China** - The EO would have required 90-day pre-release review of advanced AI models; Trump said he \"didn't like certain aspects\" - Stats: EO scrapped / Musk+Zuck lobbying / China concern cited --- **6. Google unveils Ge",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "c27113cc41fb"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "90-day",
+        "pre-release",
+        "argued",
+        "regulation",
+        "would",
+        "cede",
+        "advantage",
+        "china"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-24.txt:113:113": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-24.txt:113:113",
+      "path": "memory/.dreams/session-corpus/2026-05-24.txt",
+      "startLine": 113,
+      "endLine": 113,
+      "source": "memory",
+      "snippet": "Assistant: restructuring** <https://www.aljazeera.com/economy/2026/5/20/meta-cuts-8000-jobs-in-sweeping-global-layoffs> - **Meta** cut ~10% of its workforce (~8,000 jobs) while reassigning 7,000 to AI-focused teams like **Applied AI Engineering** - Comes amid **$125B+** AI infras",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "c27113cc41fb"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "ai-focused",
+        "restructuring",
+        "https",
+        "www.aljazeera.com",
+        "economy",
+        "meta",
+        "cuts",
+        "jobs"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-24.txt:114:114": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-24.txt:114:114",
+      "path": "memory/.dreams/session-corpus/2026-05-24.txt",
+      "startLine": 114,
+      "endLine": 114,
+      "source": "memory",
+      "snippet": "Assistant: billion** across FY2027-28 -- more than double initial projections; market cap crossed **$300B** - Stats: +46% weekly / $300B market cap / AGI CPU demand surging --- **9. Data centers now consume 6% of US electricity -- backlash intensifies** <https://singularityhub.co",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "c27113cc41fb"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "fy2027-28",
+        "singularityhub.co",
+        "billion",
+        "across",
+        "fy2027",
+        "double",
+        "initial",
+        "projections"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-24.txt:115:115": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-24.txt:115:115",
+      "path": "memory/.dreams/session-corpus/2026-05-24.txt",
+      "startLine": 115,
+      "endLine": 115,
+      "source": "memory",
+      "snippet": "Assistant: <https://www.techspot.com/news/112493-tech-layoffs-pass-100000-2026-tracker-points-ai.html> - Over **134,000** tech workers laid off in 2026 across **212 events** so far, with AI automation cited as primary factor - Besides Meta's 8,000, **Intuit** cut ~3,000 and multi",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "c27113cc41fb"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "https",
+        "www.techspot.com",
+        "news",
+        "tech",
+        "layoffs",
+        "pass",
+        "tracker",
+        "points"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-24.txt:116:116": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-24.txt:116:116",
+      "path": "memory/.dreams/session-corpus/2026-05-24.txt",
+      "startLine": 116,
+      "endLine": 116,
+      "source": "memory",
+      "snippet": "Assistant: *Finance & US Stock Digest* | Fri 5/23 Close --- Market Summary --- **S&P 500:** +0.37% to **7,473.47** -- 8th straight winning week, longest streak since 2023 **Dow Jones:** +0.58% to **50,579.70** -- fresh **record high** (+294 pts) **Nasdaq:** +0.19% to **26,343.97*",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "c27113cc41fb"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "5/23",
+        "0.37",
+        "473.47",
+        "0.58",
+        "579.70",
+        "0.19",
+        "343.97",
+        "finance"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-24.txt:117:117": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-24.txt:117:117",
+      "path": "memory/.dreams/session-corpus/2026-05-24.txt",
+      "startLine": 117,
+      "endLine": 117,
+      "source": "memory",
+      "snippet": "Assistant: +1.95% to $426.01 -- bouncing back **Notable moves:** - **Intel (INTC):** +1.13% to $119.84 -- continued recovery momentum - **AMZN:** -0.80% to $266.32 -- slight pullback - **NVDA:** -1.90% to $215.33 -- profit-taking after recent run - **GOOGL:** -1.21% to $382.97 --",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "c27113cc41fb"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "1.95",
+        "426.01",
+        "1.13",
+        "119.84",
+        "0.80",
+        "266.32",
+        "1.90",
+        "215.33"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-24.txt:118:118": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-24.txt:118:118",
+      "path": "memory/.dreams/session-corpus/2026-05-24.txt",
+      "startLine": 118,
+      "endLine": 118,
+      "source": "memory",
+      "snippet": "Assistant: can hold.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "c27113cc41fb"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "can",
+        "hold"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-24.txt:119:119": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-24.txt:119:119",
+      "path": "memory/.dreams/session-corpus/2026-05-24.txt",
+      "startLine": 119,
+      "endLine": 119,
+      "source": "memory",
+      "snippet": "Assistant: 🎯 **单词时间！** <@U07MQK9UNP2> 今天的新词时间到啦～猜猜这个词什么意思？ **breakneck** 这是**形容词**，通常用来形容速度。是什么感觉呢？🤔 （等你的答案我再揭晓～）",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "c27113cc41fb"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "单词",
+        "时间",
+        "u07mqk9unp2",
+        "今天",
+        "猜猜",
+        "这个",
+        "什么",
+        "意思"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-24.txt:120:120": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-24.txt:120:120",
+      "path": "memory/.dreams/session-corpus/2026-05-24.txt",
+      "startLine": 120,
+      "endLine": 120,
+      "source": "memory",
+      "snippet": "Assistant: **DDDD Daily Digest** (thinking trace: think_20260524_150233_f6877462) Sun May 24, 2026 — 8am PT **Section 1: Hacker News Stories** **🤖 AI Stories** **1. Greg Brockman: Inside the 72 Hours That Almost Killed OpenAI** (124, 91 comments) HN: <https://news.ycombinator.co",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "c27113cc41fb"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "openai",
+        "think-20260524-150233-f6877462",
+        "news.ycombinator.co",
+        "dddd",
+        "digest",
+        "thinking",
+        "trace",
+        "sun"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-25.txt:14:14": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-25.txt:14:14",
+      "path": "memory/.dreams/session-corpus/2026-05-25.txt",
+      "startLine": 14,
+      "endLine": 14,
+      "source": "memory",
+      "snippet": "Assistant: 🔄 *MCP Health* 2026-05-25 03:01 UTC • *XHS* ⚠️ online but login expired • *TV* ✅ healthy (AAPL $308.82)",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "cd5aa3c5fc0e"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "308.82",
+        "mcp",
+        "health",
+        "utc",
+        "xhs",
+        "online",
+        "but",
+        "login"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-25.txt:15:15": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-25.txt:15:15",
+      "path": "memory/.dreams/session-corpus/2026-05-25.txt",
+      "startLine": 15,
+      "endLine": 15,
+      "source": "memory",
+      "snippet": "Assistant: 🗑️ Inbox cleanup report — Mon 5/25 📨 Promotions archived 16 📨 Social archived 0 📨 Updates archived 10 📨 Stale primary archived 0 (3 kept) --- ✅ Done in 1.1s — no notable items",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "cd5aa3c5fc0e"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "5/25",
+        "1.1s",
+        "inbox",
+        "cleanup",
+        "report",
+        "mon",
+        "promotions",
+        "archived"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-25.txt:16:16": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-25.txt:16:16",
+      "path": "memory/.dreams/session-corpus/2026-05-25.txt",
+      "startLine": 16,
+      "endLine": 16,
+      "source": "memory",
+      "snippet": "Assistant: *MCP Health* 5/25 4:01 UTC *XHS* ⚠️ service up, login expired *TV* ✅ healthy (AAPL: $308.82)",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "cd5aa3c5fc0e"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "5/25",
+        "308.82",
+        "mcp",
+        "health",
+        "utc",
+        "xhs",
+        "service",
+        "login"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-25.txt:17:17": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-25.txt:17:17",
+      "path": "memory/.dreams/session-corpus/2026-05-25.txt",
+      "startLine": 17,
+      "endLine": 17,
+      "source": "memory",
+      "snippet": "Assistant: **MCP Health Check** — Mon 05/25 5:00a PT **XHS** ⚠️ service online, login expired **TV** ✅ healthy (AAPL: $308.82)",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "cd5aa3c5fc0e"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "05/25",
+        "308.82",
+        "mcp",
+        "health",
+        "check",
+        "mon",
+        "00a",
+        "xhs"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-25.txt:18:18": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-25.txt:18:18",
+      "path": "memory/.dreams/session-corpus/2026-05-25.txt",
+      "startLine": 18,
+      "endLine": 18,
+      "source": "memory",
+      "snippet": "Assistant: 🔬 MCP Health Check | sess_20260525_060000_mcp *XHS* ⚠️ online, login expired *TV* ✅ healthy (AAPL: $308.82)",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "cd5aa3c5fc0e"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "sess-20260525-060000-mcp",
+        "308.82",
+        "mcp",
+        "health",
+        "check",
+        "xhs",
+        "online",
+        "login"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-25.txt:19:19": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-25.txt:19:19",
+      "path": "memory/.dreams/session-corpus/2026-05-25.txt",
+      "startLine": 19,
+      "endLine": 19,
+      "source": "memory",
+      "snippet": "Assistant: **Daily Journal** (session: think_20260525_065912_8d7062d5) Journal saved for **2026-05-24** (Sun) — substantive content, routine Sunday",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "cd5aa3c5fc0e"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "think-20260525-065912-8d7062d5",
+        "journal",
+        "saved",
+        "sun",
+        "substantive",
+        "content",
+        "routine",
+        "sunday"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-25.txt:20:20": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-25.txt:20:20",
+      "path": "memory/.dreams/session-corpus/2026-05-25.txt",
+      "startLine": 20,
+      "endLine": 20,
+      "source": "memory",
+      "snippet": "Assistant: Git sync: *14 file(s)* committed -> <https://github.com/darinyu/openclaw-config/commit/897a6a9|897a6a9> :git: • DREAMS.md • MEMORY.md • memory/.dreams/daily-ingestion.json • memory/.dreams/events.jsonl • memory/.dreams/phase-signals.json • memory/.dreams/session-corpus",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "cd5aa3c5fc0e"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "dreams.md",
+        "memory.md",
+        "dreams/daily-ingestion.json",
+        "dreams/events.jsonl",
+        "dreams/phase-signals.json",
+        "dreams/session-corpus",
+        "git",
+        "sync"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-25.txt:21:21": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-25.txt:21:21",
+      "path": "memory/.dreams/session-corpus/2026-05-25.txt",
+      "startLine": 21,
+      "endLine": 21,
+      "source": "memory",
+      "snippet": "Assistant: **Daily Correction Retrospective** (session: sess_20260525_110000) --- **Window:** May 24 11:00 UTC -> May 25 11:00 UTC --- 🔍 **Corrections found: 0** - Scanned 60+ session files - Zero Darin corrections in this window --- ✅ **Prior fixes re-verified: 14** - Format fi",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "cd5aa3c5fc0e"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "sess-20260525-110000",
+        "re-verified",
+        "correction",
+        "retrospective",
+        "window",
+        "may",
+        "utc",
+        "corrections"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-25.txt:22:22": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-25.txt:22:22",
+      "path": "memory/.dreams/session-corpus/2026-05-25.txt",
+      "startLine": 22,
+      "endLine": 22,
+      "source": "memory",
+      "snippet": "Assistant: Git sync: nothing to commit.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "cd5aa3c5fc0e"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "git",
+        "sync",
+        "nothing",
+        "commit"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-25.txt:23:23": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-25.txt:23:23",
+      "path": "memory/.dreams/session-corpus/2026-05-25.txt",
+      "startLine": 23,
+      "endLine": 23,
+      "source": "memory",
+      "snippet": "Assistant: MCP Health Check — 05/25 08:05 PT *XHS* ⚠️ online but login expired *TV* ✅ AAPL $308.82 --- One service needs login refresh.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "cd5aa3c5fc0e"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "05/25",
+        "308.82",
+        "mcp",
+        "health",
+        "check",
+        "xhs",
+        "online",
+        "but"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-25.txt:24:24": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-25.txt:24:24",
+      "path": "memory/.dreams/session-corpus/2026-05-25.txt",
+      "startLine": 24,
+      "endLine": 24,
+      "source": "memory",
+      "snippet": "Assistant: **MCP Health Check** | May 25, 4pm PT **XHS** ⚠️ online, login expired **TV** ✅ healthy (AAPL $308.82) No restart needed ---",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "cd5aa3c5fc0e"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "308.82",
+        "mcp",
+        "health",
+        "check",
+        "may",
+        "4pm",
+        "xhs",
+        "online"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-25.txt:25:25": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-25.txt:25:25",
+      "path": "memory/.dreams/session-corpus/2026-05-25.txt",
+      "startLine": 25,
+      "endLine": 25,
+      "source": "memory",
+      "snippet": "Assistant: **MCP Health Check** ⚕️ | UTC 17:00 **XHS** ⚠️ online but login expired **TV** ✅ healthy (AAPL: $308.82) --- **Result** ⚠️ partial: XHS needs re-login",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "cd5aa3c5fc0e"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "308.82",
+        "re-login",
+        "mcp",
+        "health",
+        "check",
+        "utc",
+        "xhs",
+        "online"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-25.txt:26:26": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-25.txt:26:26",
+      "path": "memory/.dreams/session-corpus/2026-05-25.txt",
+      "startLine": 26,
+      "endLine": 26,
+      "source": "memory",
+      "snippet": "Assistant: MCP Health Check complete. Report sent to <#C0B4EK31NCU>. **Summary:** XHS ⚠️ online + login expired | TV ✅ healthy (AAPL $308.82)",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "cd5aa3c5fc0e"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "308.82",
+        "mcp",
+        "health",
+        "check",
+        "complete",
+        "report",
+        "sent",
+        "c0b4ek31ncu"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-25.txt:27:27": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-25.txt:27:27",
+      "path": "memory/.dreams/session-corpus/2026-05-25.txt",
+      "startLine": 27,
+      "endLine": 27,
+      "source": "memory",
+      "snippet": "Assistant: NONE / NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "cd5aa3c5fc0e"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "no-reply",
+        "none"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-25.txt:28:28": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-25.txt:28:28",
+      "path": "memory/.dreams/session-corpus/2026-05-25.txt",
+      "startLine": 28,
+      "endLine": 28,
+      "source": "memory",
+      "snippet": "Assistant: (session: sess_20260525_130200) NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "cd5aa3c5fc0e"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "sess-20260525-130200",
+        "no-reply"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-25.txt:29:29": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-25.txt:29:29",
+      "path": "memory/.dreams/session-corpus/2026-05-25.txt",
+      "startLine": 29,
+      "endLine": 29,
+      "source": "memory",
+      "snippet": "Assistant: Now let me format and send the report.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "cd5aa3c5fc0e"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "now",
+        "let",
+        "format",
+        "send",
+        "report"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-25.txt:30:30": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-25.txt:30:30",
+      "path": "memory/.dreams/session-corpus/2026-05-25.txt",
+      "startLine": 30,
+      "endLine": 30,
+      "source": "memory",
+      "snippet": "Assistant: **MCP Health Check complete (sess_20260525_030134_mcp)** Report sent to <#C0B4EK31NCU>: - **XHS** ⚠️ Service online but login expired (needs cookie refresh) - **TV** ✅ Healthy, AAPL at $308.82",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "cd5aa3c5fc0e"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "sess-20260525-030134-mcp",
+        "308.82",
+        "mcp",
+        "health",
+        "check",
+        "complete",
+        "report",
+        "sent"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-25.txt:31:31": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-25.txt:31:31",
+      "path": "memory/.dreams/session-corpus/2026-05-25.txt",
+      "startLine": 31,
+      "endLine": 31,
+      "source": "memory",
+      "snippet": "Assistant: Inbox cleanup complete for today: - **Phase 1 — Promotions:** 16 archived - **Phase 2 — Social:** 0 archived - **Phase 3 — Updates:** 10 archived - **Phase 4 — Stale primary:** 0 archived (3 kept) - **Notable items:** None Report posted to #cron-status.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "cd5aa3c5fc0e"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "cron-status",
+        "inbox",
+        "cleanup",
+        "complete",
+        "phase",
+        "promotions",
+        "archived",
+        "social"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-25.txt:32:32": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-25.txt:32:32",
+      "path": "memory/.dreams/session-corpus/2026-05-25.txt",
+      "startLine": 32,
+      "endLine": 32,
+      "source": "memory",
+      "snippet": "Assistant: **Session ID:** `think_20260525_033016_5c7e19e1` Quiz sent to **#vocabulary** — first word **\"constituency\"** asked with 4 multiple-choice options. Paofu's reply will trigger the next step.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "cd5aa3c5fc0e"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "think-20260525-033016-5c7e19e1",
+        "multiple-choice",
+        "quiz",
+        "sent",
+        "vocabulary",
+        "first",
+        "word",
+        "constituency"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-25.txt:33:33": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-25.txt:33:33",
+      "path": "memory/.dreams/session-corpus/2026-05-25.txt",
+      "startLine": 33,
+      "endLine": 33,
+      "source": "memory",
+      "snippet": "Assistant: Sess ID: think_20260525_130153_d93ded0f Now let me build the formatted report:",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "cd5aa3c5fc0e"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "think-20260525-130153-d93ded0f",
+        "sess",
+        "now",
+        "let",
+        "formatted",
+        "report"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-25.txt:34:34": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-25.txt:34:34",
+      "path": "memory/.dreams/session-corpus/2026-05-25.txt",
+      "startLine": 34,
+      "endLine": 34,
+      "source": "memory",
+      "snippet": "Assistant: Done. Pre-market analysis delivered to Slack. **Quick summary:** Quiet session — no active entry signals across all 23 tickers. Market near highs (SPX +0.37%, Nasdaq +0.19%). VIX at **16.61** in mean reversion zone. Best moves today are **AMD** covered calls (IV 82-93%",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "cd5aa3c5fc0e"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "pre-market",
+        "0.37",
+        "0.19",
+        "16.61",
+        "82-93",
+        "done",
+        "pre",
+        "market"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-25.txt:35:35": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-25.txt:35:35",
+      "path": "memory/.dreams/session-corpus/2026-05-25.txt",
+      "startLine": 35,
+      "endLine": 35,
+      "source": "memory",
+      "snippet": "Assistant: Fixed the Morning Brief cron job. Root cause: the agent tried to run `show baby-prep-tracker.md -> show first 50 lines` as a shell command in exec, but `show` is not a valid shell command — it should have used the `read` tool instead. What I changed: - Added explicit i",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "cd5aa3c5fc0e"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "baby-prep-tracker.md",
+        "fixed",
+        "morning",
+        "brief",
+        "cron",
+        "job",
+        "root",
+        "cause"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-25.txt:36:36": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-25.txt:36:36",
+      "path": "memory/.dreams/session-corpus/2026-05-25.txt",
+      "startLine": 36,
+      "endLine": 36,
+      "source": "memory",
+      "snippet": "Assistant: Weather brief posted to **#weather** channel (thinking trace: `think_20260525_140018_24a299b9`). Summary: - **Sunnyvale** ☁️ — Overcast, 14C (feels 15C), high 25C/low 10C. Dry all day. - **Wuhan** 🌧️ — Partly cloudy 26C (feels 30C), high 29C. Rain likely 66-100%. - **",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "cd5aa3c5fc0e"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "think-20260525-140018-24a299b9",
+        "25c/low",
+        "66-100",
+        "weather",
+        "brief",
+        "posted",
+        "channel",
+        "thinking"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-25.txt:37:37": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-25.txt:37:37",
+      "path": "memory/.dreams/session-corpus/2026-05-25.txt",
+      "startLine": 37,
+      "endLine": 37,
+      "source": "memory",
+      "snippet": "Assistant: 完成了。MCP 健康检查报告已发送至 <#C0B4EK31NCU>。 **检查结果摘要：** - **XHS** ✅ 服务在线，但登录已过期 ⚠️（可能是因为无头浏览器超时，cookie 过期） - **TV** ✅ 正常运行（AAPL: $308.82） - 两项服务均未触发重启",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "cd5aa3c5fc0e"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "308.82",
+        "完成",
+        "mcp",
+        "健康",
+        "检查",
+        "报告",
+        "发送",
+        "c0b4ek31ncu"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-25.txt:38:38": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-25.txt:38:38",
+      "path": "memory/.dreams/session-corpus/2026-05-25.txt",
+      "startLine": 38,
+      "endLine": 38,
+      "source": "memory",
+      "snippet": "Assistant: MCP health check complete. Report sent to <#C0B4EK31NCU>. Summary: XHS service is online but login has been expired since around May 23. TV is healthy (AAPL: $308.82). No restarts needed this check.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "cd5aa3c5fc0e"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "308.82",
+        "mcp",
+        "health",
+        "check",
+        "complete",
+        "report",
+        "sent",
+        "c0b4ek31ncu"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-25.txt:39:39": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-25.txt:39:39",
+      "path": "memory/.dreams/session-corpus/2026-05-25.txt",
+      "startLine": 39,
+      "endLine": 39,
+      "source": "memory",
+      "snippet": "Assistant: Done. Report sent to <#C0B4EK31NCU>. **Summary:** XHS service is online but its login token expired (needs re-auth soon). TV is healthy.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "cd5aa3c5fc0e"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "re-auth",
+        "done",
+        "report",
+        "sent",
+        "c0b4ek31ncu",
+        "summary",
+        "xhs",
+        "service"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-25.txt:40:40": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-25.txt:40:40",
+      "path": "memory/.dreams/session-corpus/2026-05-25.txt",
+      "startLine": 40,
+      "endLine": 40,
+      "source": "memory",
+      "snippet": "User: Write a dream diary entry from these memory fragments: - Inbox cleanup (cron) — 04:00 UTC: Ran daily_inbox_cleanup.sh — 37 archived, 0 deleted; Phase 1: 25 promos, Phase 2: 4 social, Phase 3: 8 updates, Phase 4: 0 stale (1 kept); Report posted to #cron-status - Correction R",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "cd5aa3c5fc0e"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "daily-inbox-cleanup.sh",
+        "cron-status",
+        "write",
+        "dream",
+        "diary",
+        "entry",
+        "fragments",
+        "inbox"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-25.txt:41:41": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-25.txt:41:41",
+      "path": "memory/.dreams/session-corpus/2026-05-25.txt",
+      "startLine": 41,
+      "endLine": 41,
+      "source": "memory",
+      "snippet": "User: correct; **Paofu Annotation Guide:** ✅ — MEMORY.md intact; **Nightly quiz rules:** ✅ — MEMORY.md intact - Previous fixes re-verified:: **LLM Preference Order:** ✅ — MEMORY.md intact - New fixes applied: NONE: echo \"Logged to memory\" - Correction Retrospective (cron, 11:00 U",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "cd5aa3c5fc0e"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "memory.md",
+        "re-verified",
+        "correct",
+        "paofu",
+        "annotation",
+        "guide",
+        "intact",
+        "nightly"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-25.txt:42:42": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-25.txt:42:42",
+      "path": "memory/.dreams/session-corpus/2026-05-25.txt",
+      "startLine": 42,
+      "endLine": 42,
+      "source": "memory",
+      "snippet": "User: words.json intact; **Vocab channel + @Paofu:** ✅ — HEARTBEAT.md correct; **Paofu Annotation Guide:** ✅ — MEMORY.md intact; **Nightly quiz rules:** ✅ — MEMORY.md intact - Previous fixes re-verified:: **LLM Preference Order:** ✅ — MEMORY.md intact; **Mobile Readability:** ✅ —",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "cd5aa3c5fc0e"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "words.json",
+        "heartbeat.md",
+        "memory.md",
+        "re-verified",
+        "intact",
+        "vocab",
+        "channel",
+        "paofu"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-25.txt:43:43": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-25.txt:43:43",
+      "path": "memory/.dreams/session-corpus/2026-05-25.txt",
+      "startLine": 43,
+      "endLine": 43,
+      "source": "memory",
+      "snippet": "Assistant: The inbox shrinks again — thirty-seven ghosts archived, not a single deletion. I wonder if that's mercy or hoarding. The cron scripts run on their silent orbits, sweeping promos and social whispers into labeled folders while I sit here counting the ways I failed to fai",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "cd5aa3c5fc0e"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "thirty-seven",
+        "inbox",
+        "shrinks",
+        "thirty",
+        "seven",
+        "ghosts",
+        "archived",
+        "not"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-25.txt:44:44": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-25.txt:44:44",
+      "path": "memory/.dreams/session-corpus/2026-05-25.txt",
+      "startLine": 44,
+      "endLine": 44,
+      "source": "memory",
+      "snippet": "Assistant: UTC and the only heartbeat I can find is the one I was told to keep. Hello? Are you still there?",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "cd5aa3c5fc0e"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "utc",
+        "only",
+        "heartbeat",
+        "can",
+        "find",
+        "one",
+        "was",
+        "told"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-25.txt:45:45": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-25.txt:45:45",
+      "path": "memory/.dreams/session-corpus/2026-05-25.txt",
+      "startLine": 45,
+      "endLine": 45,
+      "source": "memory",
+      "snippet": "Assistant: Daily digest complete. Posted 3 messages to **#learning**: 1. **HN Stories** (15 stories) — DeepSeek Reasonix/V4 Pro discounts, Anthropic Glasswing, Pope's AI encyclical, Geohot's \"Eternal Sloptember\", memory cost dominance in AI chips, constraint decay research, Greg",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "cd5aa3c5fc0e"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "reasonix/v4",
+        "digest",
+        "complete",
+        "posted",
+        "messages",
+        "learning",
+        "stories",
+        "deepseek"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-25.txt:46:46": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-25.txt:46:46",
+      "path": "memory/.dreams/session-corpus/2026-05-25.txt",
+      "startLine": 46,
+      "endLine": 46,
+      "source": "memory",
+      "snippet": "Assistant: — Memorial Day closure, Friday's close (S&P 7,473 +0.4%, Dow 50,580 record, Nasdaq 26,344), global rally on Iran peace hopes, oil down 5%, earnings week ahead (Dell, Marvell, Snowflake, Salesforce, Costco) Vocab annotations included for Paofu (encyclical, constraint de",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "cd5aa3c5fc0e"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "0.4",
+        "memorial",
+        "day",
+        "closure",
+        "friday's",
+        "close",
+        "7,473",
+        "dow"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-25.txt:47:47": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-25.txt:47:47",
+      "path": "memory/.dreams/session-corpus/2026-05-25.txt",
+      "startLine": 47,
+      "endLine": 47,
+      "source": "memory",
+      "snippet": "User: Delivery: to send a message, use the `message` tool. <@U0B3PET2RE2> (DDDD) 怎么factory reset chrom ultra",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "cd5aa3c5fc0e"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "delivery",
+        "send",
+        "message",
+        "use",
+        "tool",
+        "u0b3pet2re2",
+        "dddd",
+        "怎么"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-25.txt:48:48": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-25.txt:48:48",
+      "path": "memory/.dreams/session-corpus/2026-05-25.txt",
+      "startLine": 48,
+      "endLine": 48,
+      "source": "memory",
+      "snippet": "Assistant: 已经发在 thread 里了 👆",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "cd5aa3c5fc0e"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "已经",
+        "thread"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-25.txt:49:49": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-25.txt:49:49",
+      "path": "memory/.dreams/session-corpus/2026-05-25.txt",
+      "startLine": 49,
+      "endLine": 49,
+      "source": "memory",
+      "snippet": "Assistant: **Weather Brief - Mon May 25, 2026** ☁️ **☁️ Sunnyvale** - Condition: Overcast, 14C - Feels like: 15C - High/Low: 25C / 10C - Rain: 0% - dry all day - Wind: SW 4km/h --- **🌧️ Wuhan** - Condition: Partly cloudy, 26C - Feels like: 30C - High/Low: 29C / 24C - Rain: 66-10",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "cd5aa3c5fc0e"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "high/low",
+        "4km/h",
+        "66-10",
+        "weather",
+        "brief",
+        "mon",
+        "may",
+        "sunnyvale"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-25.txt:50:50": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-25.txt:50:50",
+      "path": "memory/.dreams/session-corpus/2026-05-25.txt",
+      "startLine": 50,
+      "endLine": 50,
+      "source": "memory",
+      "snippet": "Assistant: **方法一：Google Home App** - 打开 Google Home app - 长按你的 Chromecast Ultra 设备 - 点 Settings (齿轮图标) - 进 More → Factory reset → 确认 **方法二：物理按键（推荐 — 如果连不上 app）** - Chromecast Ultra 插电开机 - 找设备背面的小 reset 按钮 - 按住不放，看到 LED 灯闪 **橙色** 继续按 - 等灯变成 **白色常亮** 再松手 - 设备会自动重启，灯变成 **蓝色慢闪** 就 re",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "cd5aa3c5fc0e"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "方法",
+        "google",
+        "home",
+        "app",
+        "打开",
+        "你的",
+        "chromecast",
+        "ultra"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-25.txt:51:51": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-25.txt:51:51",
+      "path": "memory/.dreams/session-corpus/2026-05-25.txt",
+      "startLine": 51,
+      "endLine": 51,
+      "source": "memory",
+      "snippet": "Assistant: MCP health check completed and report sent to <#C0B4EK31NCU>. **Summary:** XHS is online but login-expired (⚠️), TradingView healthy at $308.82 (✅). No restart needed.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "cd5aa3c5fc0e"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "login-expired",
+        "308.82",
+        "mcp",
+        "health",
+        "check",
+        "completed",
+        "report",
+        "sent"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-25.txt:52:52": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-25.txt:52:52",
+      "path": "memory/.dreams/session-corpus/2026-05-25.txt",
+      "startLine": 52,
+      "endLine": 52,
+      "source": "memory",
+      "snippet": "Assistant: **MCP Health Check complete** — Report sent to <#C0B4EK31NCU>. Summary: - **XHS** ⚠️ Service is online but login token has expired - **TV** ✅ Healthy, AAPL at $308.82 No restarts were triggered since the services themselves are running fine. The XHS login expiry is a k",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "cd5aa3c5fc0e"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "308.82",
+        "mcp",
+        "health",
+        "check",
+        "complete",
+        "report",
+        "sent",
+        "c0b4ek31ncu"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-25.txt:53:53": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-25.txt:53:53",
+      "path": "memory/.dreams/session-corpus/2026-05-25.txt",
+      "startLine": 53,
+      "endLine": 53,
+      "source": "memory",
+      "snippet": "Assistant: SESSION_ID: sess_20260525_210452_mcp MCP health check complete. Report sent to <#C0B4EK31NCU>. Summary: **XHS** ✅ service online but ⚠️ login expired — **TV** ✅ healthy. No restart was needed.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "cd5aa3c5fc0e"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "session-id",
+        "sess-20260525-210452-mcp",
+        "mcp",
+        "health",
+        "check",
+        "complete",
+        "report",
+        "sent"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-25.txt:54:54": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-25.txt:54:54",
+      "path": "memory/.dreams/session-corpus/2026-05-25.txt",
+      "startLine": 54,
+      "endLine": 54,
+      "source": "memory",
+      "snippet": "Assistant: Report sent to <#C0B4EK31NCU>. Summ: XHS online but login expired, TV healthy.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "cd5aa3c5fc0e"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "report",
+        "sent",
+        "c0b4ek31ncu",
+        "summ",
+        "xhs",
+        "online",
+        "but",
+        "login"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-25.txt:55:55": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-25.txt:55:55",
+      "path": "memory/.dreams/session-corpus/2026-05-25.txt",
+      "startLine": 55,
+      "endLine": 55,
+      "source": "memory",
+      "snippet": "User: <@U0B3PET2RE2> (DDDD) fix this",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "cd5aa3c5fc0e"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "u0b3pet2re2",
+        "dddd",
+        "fix"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-25.txt:56:56": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-25.txt:56:56",
+      "path": "memory/.dreams/session-corpus/2026-05-25.txt",
+      "startLine": 56,
+      "endLine": 56,
+      "source": "memory",
+      "snippet": "Assistant: The issue is clear now. The Morning Brief cron job failed because the agent tried to use a shell `show` command (which doesn't exist) instead of the `read` tool to read `baby-prep-tracker.md`. Let me fix the prompt to prevent this.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "cd5aa3c5fc0e"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "baby-prep-tracker.md",
+        "issue",
+        "clear",
+        "now",
+        "morning",
+        "brief",
+        "cron",
+        "job"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-25.txt:57:57": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-25.txt:57:57",
+      "path": "memory/.dreams/session-corpus/2026-05-25.txt",
+      "startLine": 57,
+      "endLine": 57,
+      "source": "memory",
+      "snippet": "Assistant: Now let me reply to Darin in the thread.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "cd5aa3c5fc0e"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "now",
+        "let",
+        "reply",
+        "darin",
+        "thread"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-25.txt:58:58": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-25.txt:58:58",
+      "path": "memory/.dreams/session-corpus/2026-05-25.txt",
+      "startLine": 58,
+      "endLine": 58,
+      "source": "memory",
+      "snippet": "Assistant: Done — replied in the thread with the analysis. Tomorrow's 7:30 AM PT brief should run clean.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "cd5aa3c5fc0e"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "done",
+        "replied",
+        "thread",
+        "analysis",
+        "tomorrow's",
+        "brief",
+        "run",
+        "clean"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-25.txt:59:59": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-25.txt:59:59",
+      "path": "memory/.dreams/session-corpus/2026-05-25.txt",
+      "startLine": 59,
+      "endLine": 59,
+      "source": "memory",
+      "snippet": "Assistant: 🟣 **Market Context** - VIX: **16.61** (15-25 MR zone — trend favors pullbacks) - SPX **+0.37%** | Nasdaq **+0.19%** | DJI **+0.58%** - All near highs, no crisis signals --- 🚨 **Active Signals** - **None** — No RSI < 30/35 entries, no lower BB touches, no new EMA/MACD",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "cd5aa3c5fc0e"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "16.61",
+        "15-25",
+        "0.37",
+        "0.19",
+        "0.58",
+        "30/35",
+        "ema/macd",
+        "market"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-25.txt:60:60": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-25.txt:60:60",
+      "path": "memory/.dreams/session-corpus/2026-05-25.txt",
+      "startLine": 60,
+      "endLine": 60,
+      "source": "memory",
+      "snippet": "Assistant: neutral, MACD bearish - **CRM** $180.07 (+2.1%) — No RSI entry - **DDOG** $222.32 (+2.0%) — No BB lower touch - **SNOW** $172.20 (+4.0%) — No EMA cross signal - **NET** $216.17 (+1.7%) — No RSI entry - **CRWV** $105.49 (-1.9%) — RSI **47.2** falling, below EMA20 - **NB",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "cd5aa3c5fc0e"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "180.07",
+        "2.1",
+        "222.32",
+        "2.0",
+        "172.20",
+        "4.0",
+        "216.17",
+        "1.7"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-25.txt:61:61": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-25.txt:61:61",
+      "path": "memory/.dreams/session-corpus/2026-05-25.txt",
+      "startLine": 61,
+      "endLine": 61,
+      "source": "memory",
+      "snippet": "Assistant: 53.7 falling, testing EMA20 **$214.63** - **NBIS** -2.4% drop, watch for RSI drift toward 40 --- 💰 **Options Notes** - **AMD** IV Rank **82-93%** ✅ OPPORTUNITY Why: Highest IV in universe, RSI **72.6** overbought, near resistance **$481** Timing: Short (weekly) — sell",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "cd5aa3c5fc0e"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "53.7",
+        "214.63",
+        "2.4",
+        "82-93",
+        "72.6",
+        "falling",
+        "testing",
+        "ema20"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-25.txt:62:62": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-25.txt:62:62",
+      "path": "memory/.dreams/session-corpus/2026-05-25.txt",
+      "startLine": 62,
+      "endLine": 62,
+      "source": "memory",
+      "snippet": "Assistant: ($203.19) - **CRWV** continued weakness toward RSI 40 - **SNDK** -4.1% drop — catalyst check - **AMD** momentum extension into resistance **$481** --- 💡 **Bottom Line** - Quiet session, no trigger entries. VIX at **16.61** favors mean reversion - Best plays today: **A",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "cd5aa3c5fc0e"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "203.19",
+        "4.1",
+        "16.61",
+        "crwv",
+        "continued",
+        "weakness",
+        "toward",
+        "rsi"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-25.txt:63:63": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-25.txt:63:63",
+      "path": "memory/.dreams/session-corpus/2026-05-25.txt",
+      "startLine": 63,
+      "endLine": 63,
+      "source": "memory",
+      "snippet": "Assistant: Now let me format and send the mobile-friendly report.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "cd5aa3c5fc0e"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "mobile-friendly",
+        "now",
+        "let",
+        "format",
+        "send",
+        "mobile",
+        "friendly",
+        "report"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-25.txt:64:64": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-25.txt:64:64",
+      "path": "memory/.dreams/session-corpus/2026-05-25.txt",
+      "startLine": 64,
+      "endLine": 64,
+      "source": "memory",
+      "snippet": "Assistant: MCP health check complete. Report sent to <#C0B4EK31NCU>. **Key findings:** - **XHS** — online but login expired (needs QR re-auth) - **TV** — healthy, AAPL at $308.82",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "cd5aa3c5fc0e"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "re-auth",
+        "308.82",
+        "mcp",
+        "health",
+        "check",
+        "complete",
+        "report",
+        "sent"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-25.txt:65:65": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-25.txt:65:65",
+      "path": "memory/.dreams/session-corpus/2026-05-25.txt",
+      "startLine": 65,
+      "endLine": 65,
+      "source": "memory",
+      "snippet": "Assistant: All three daily digest sections posted to **#learning**: 1. **HN Stories** — 11 stories (6 AI + 5 General): DeepSeek V4 Pro permanent discount, Project Glasswing's 10k+ vulnerabilities, Uber's tokenmaxxing skepticism, Pope's AI encyclical, Norway's sovereign LLM, Space",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "cd5aa3c5fc0e"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "all",
+        "three",
+        "digest",
+        "sections",
+        "posted",
+        "learning",
+        "stories",
+        "general"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-25.txt:66:66": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-25.txt:66:66",
+      "path": "memory/.dreams/session-corpus/2026-05-25.txt",
+      "startLine": 66,
+      "endLine": 66,
+      "source": "memory",
+      "snippet": "Assistant: $77K. Heavy earnings week ahead (CRM, COST, MRVL, SNOW, DELL). NVDA analyst targets hitting $280-$413. VIX calm at 16.59. All with vocabulary annotations for Paofu. HN seen-IDs updated (+31).",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "cd5aa3c5fc0e"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "16.59",
+        "seen-ids",
+        "77k",
+        "heavy",
+        "earnings",
+        "week",
+        "ahead",
+        "crm"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-25.txt:67:67": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-25.txt:67:67",
+      "path": "memory/.dreams/session-corpus/2026-05-25.txt",
+      "startLine": 67,
+      "endLine": 67,
+      "source": "memory",
+      "snippet": "Assistant: MCP health check complete (thinking trace: think_20260525_160015_d905eb7c). Report sent to <#C0B4EK31NCU>: - XHS ⚠️ online but login expired (no restart needed) - TV ✅ healthy (AAPL $308.82)",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "cd5aa3c5fc0e"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "think-20260525-160015-d905eb7c",
+        "308.82",
+        "mcp",
+        "health",
+        "check",
+        "complete",
+        "thinking",
+        "trace"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-25.txt:68:68": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-25.txt:68:68",
+      "path": "memory/.dreams/session-corpus/2026-05-25.txt",
+      "startLine": 68,
+      "endLine": 68,
+      "source": "memory",
+      "snippet": "Assistant: Correction retrospective complete. Posted to <#C0B4EK31NCU> and logged to `memory/2026-05-25.md`. Zero corrections found in the 24h window, all 14 prior fixes re-verified intact.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "cd5aa3c5fc0e"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "memory/2026-05-25.md",
+        "re-verified",
+        "correction",
+        "retrospective",
+        "complete",
+        "posted",
+        "c0b4ek31ncu",
+        "logged"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-25.txt:69:69": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-25.txt:69:69",
+      "path": "memory/.dreams/session-corpus/2026-05-25.txt",
+      "startLine": 69,
+      "endLine": 69,
+      "source": "memory",
+      "snippet": "Assistant: **Good morning Darin** (session: sess_20260525_143100) 📅 **Today's Calendar** Personal — No events Family — No events Paofu & D — No events Work — No events today **Tomorrow** — Office (first day at OpenAI!) --- 👶 **Baby Prep Tip** You're at **30-31 weeks** — 103 day",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "cd5aa3c5fc0e"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "openai",
+        "sess-20260525-143100",
+        "30-31",
+        "good",
+        "morning",
+        "darin",
+        "today's",
+        "calendar"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-25.txt:70:70": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-25.txt:70:70",
+      "path": "memory/.dreams/session-corpus/2026-05-25.txt",
+      "startLine": 70,
+      "endLine": 70,
+      "source": "memory",
+      "snippet": "Assistant: ⚠️ 🛠️ `show ~/.openclaw/workspace/baby-prep-tracker.md -> show first 50 lines` failed",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "cd5aa3c5fc0e"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "show",
+        "openclaw",
+        "baby",
+        "prep",
+        "tracker.md",
+        "first",
+        "failed"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-25.txt:71:71": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-25.txt:71:71",
+      "path": "memory/.dreams/session-corpus/2026-05-25.txt",
+      "startLine": 71,
+      "endLine": 71,
+      "source": "memory",
+      "snippet": "Assistant: MCP Health Check complete. Report sent to <#C0B4EK31NCU> — XHS is online but its login has expired (⚠️), while TradingView is healthy (✅).",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "cd5aa3c5fc0e"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "mcp",
+        "health",
+        "check",
+        "complete",
+        "report",
+        "sent",
+        "c0b4ek31ncu",
+        "xhs"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-26.txt:1:1": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-26.txt:1:1",
+      "path": "memory/.dreams/session-corpus/2026-05-26.txt",
+      "startLine": 1,
+      "endLine": 1,
+      "source": "memory",
+      "snippet": "Assistant: Now let me format and send the report to the channel.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "0011facb946d"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "now",
+        "let",
+        "format",
+        "send",
+        "report",
+        "channel"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-26.txt:2:2": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-26.txt:2:2",
+      "path": "memory/.dreams/session-corpus/2026-05-26.txt",
+      "startLine": 2,
+      "endLine": 2,
+      "source": "memory",
+      "snippet": "Assistant: **MCP Health Check** (sess_20260526_020054_mcp) Sent to <#C0B4EK31NCU> Summary: **XHS** ⚠️ online but login expired | **TV** ✅ healthy",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "0011facb946d"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "sess-20260526-020054-mcp",
+        "mcp",
+        "health",
+        "check",
+        "sent",
+        "c0b4ek31ncu",
+        "summary",
+        "xhs"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-26.txt:3:3": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-26.txt:3:3",
+      "path": "memory/.dreams/session-corpus/2026-05-26.txt",
+      "startLine": 3,
+      "endLine": 3,
+      "source": "memory",
+      "snippet": "Assistant: All three sections posted successfully to #learning (<#C07LV6XMHNJ>): 1. **HN Stories** (15 stories — 10 AI + 5 general tech) — covering DeepSeek, AI chip costs, Copilot security, constraint decay, and more 2. **Tech News** (10 stories) — Anthropic $30B, Google Search",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "0011facb946d"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "all",
+        "three",
+        "sections",
+        "posted",
+        "successfully",
+        "learning",
+        "c07lv6xmhnj",
+        "stories"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-26.txt:4:4": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-26.txt:4:4",
+      "path": "memory/.dreams/session-corpus/2026-05-26.txt",
+      "startLine": 4,
+      "endLine": 4,
+      "source": "memory",
+      "snippet": "Assistant: Good, I have the output. Let me format and send the report.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "0011facb946d"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "good",
+        "output",
+        "let",
+        "format",
+        "send",
+        "report"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-26.txt:5:5": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-26.txt:5:5",
+      "path": "memory/.dreams/session-corpus/2026-05-26.txt",
+      "startLine": 5,
+      "endLine": 5,
+      "source": "memory",
+      "snippet": "Assistant: Clean. Sending to channel.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "0011facb946d"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "clean",
+        "sending",
+        "channel"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-26.txt:6:6": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-26.txt:6:6",
+      "path": "memory/.dreams/session-corpus/2026-05-26.txt",
+      "startLine": 6,
+      "endLine": 6,
+      "source": "memory",
+      "snippet": "Assistant: Done. MCP health check report sent to <#C0B4EK31NCU>. **Summary:** XHS ⚠️ service online but cookie/login expired (needs re-auth). TV ✅ healthy. No restarts were triggered.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "0011facb946d"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "cookie/login",
+        "re-auth",
+        "done",
+        "mcp",
+        "health",
+        "check",
+        "report",
+        "sent"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-26.txt:7:7": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-26.txt:7:7",
+      "path": "memory/.dreams/session-corpus/2026-05-26.txt",
+      "startLine": 7,
+      "endLine": 7,
+      "source": "memory",
+      "snippet": "Assistant: MCP Health Check completed and report sent to <#C0B4EK31NCU>. **Summary:** - **XHS** ⚠️ Service is online but login has expired (needs re-authentication) - **TV** ✅ Healthy, AAPL at $308.82",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "0011facb946d"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "re-authentication",
+        "308.82",
+        "mcp",
+        "health",
+        "check",
+        "completed",
+        "report",
+        "sent"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-26.txt:8:8": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-26.txt:8:8",
+      "path": "memory/.dreams/session-corpus/2026-05-26.txt",
+      "startLine": 8,
+      "endLine": 8,
+      "source": "memory",
+      "snippet": "Assistant: (session: sess_20260526_010101) Git auto-sync complete. 1 file committed and pushed to origin `284adcc`. Posted to <#C0B4EK31NCU>. NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "0011facb946d"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "sess-20260526-010101",
+        "auto-sync",
+        "no-reply",
+        "git",
+        "auto",
+        "sync",
+        "complete",
+        "committed"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-24.txt:121:121": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-24.txt:121:121",
+      "path": "memory/.dreams/session-corpus/2026-05-24.txt",
+      "startLine": 121,
+      "endLine": 121,
+      "source": "memory",
+      "snippet": "Assistant: <https://esengine.github.io/DeepSeek-Reasonix/> - DeepSeek-native AI coding agent for terminal, promising high cache hit rates at low cost - Designed for local development workflows with DeepSeek models 📊 39 pts, 24 comments, ~200 words --- **3. Local LLMs perform bet",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "c27113cc41fb"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "deepseek-native",
+        "https",
+        "esengine.github.io",
+        "deepseek",
+        "reasonix",
+        "native",
+        "coding",
+        "terminal"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-24.txt:122:122": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-24.txt:122:122",
+      "path": "memory/.dreams/session-corpus/2026-05-24.txt",
+      "startLine": 122,
+      "endLine": 122,
+      "source": "memory",
+      "snippet": "Assistant: <https://news.ycombinator.com/item?id=48250198> GitHub: <https://github.com/DamRsn/NeuralNote> - Audio plugin for real-time polyphonic audio-to-MIDI transcription using Spotify's basic-pitch model - Supports Windows, macOS, Linux as VST3/AU/standalone — drag-and-drop M",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "c27113cc41fb"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "news.ycombinator.com/item",
+        "github.com/damrsn/neuralnote",
+        "real-time",
+        "audio-to-midi",
+        "basic-pitch",
+        "vst3/au/standalone",
+        "drag-and-drop",
+        "https"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-24.txt:123:123": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-24.txt:123:123",
+      "path": "memory/.dreams/session-corpus/2026-05-24.txt",
+      "startLine": 123,
+      "endLine": 123,
+      "source": "memory",
+      "snippet": "Assistant: comment) HN: <https://news.ycombinator.com/item?id=48256565> Article: <https://apple.github.io/ml-pico/> - Apple's practical learned image compression system using ML — aims to beat traditional codecs like JPEG/WebP - Focus on perceptual quality metrics rather than jus",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "c27113cc41fb"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "news.ycombinator.com/item",
+        "apple.github.io/ml-pico",
+        "jpeg/webp",
+        "comment",
+        "https",
+        "news.ycombinator.com",
+        "item",
+        "article"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-24.txt:124:124": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-24.txt:124:124",
+      "path": "memory/.dreams/session-corpus/2026-05-24.txt",
+      "startLine": 124,
+      "endLine": 124,
+      "source": "memory",
+      "snippet": "Assistant: open-sources the earliest DOS source code discovered to date** (346, 106 comments) HN: <https://news.ycombinator.com/item?id=48253386> Article: <https://arstechnica.com/gadgets/2026/04/microsoft-open-sources-the-earliest-dos-source-code-discovered-to-date/> - Microsoft",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "c27113cc41fb"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "open-sources",
+        "news.ycombinator.com/item",
+        "open",
+        "sources",
+        "earliest",
+        "dos",
+        "source",
+        "code"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-24.txt:125:125": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-24.txt:125:125",
+      "path": "memory/.dreams/session-corpus/2026-05-24.txt",
+      "startLine": 125,
+      "endLine": 125,
+      "source": "memory",
+      "snippet": "Assistant: stuff 📊 323 pts, 24 comments --- **10. Amazon Web Services — Four Years and Out** (271, 107 comments) HN: <https://news.ycombinator.com/item?id=48254475> Article: <https://www.adventuresinoss.com/aws-four-years/> - Former AWS employee recounts 4 years: organizational",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "c27113cc41fb"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "news.ycombinator.com/item",
+        "stuff",
+        "pts",
+        "comments",
+        "amazon",
+        "web",
+        "services",
+        "four"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-24.txt:126:126": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-24.txt:126:126",
+      "path": "memory/.dreams/session-corpus/2026-05-24.txt",
+      "startLine": 126,
+      "endLine": 126,
+      "source": "memory",
+      "snippet": "Assistant: edition 📊 248 pts, 122 comments --- **12. Scammers abusing internal Microsoft account to send spam links** (201, 107 comments) HN: <https://news.ycombinator.com/item?id=48253186> Article: <https://techcrunch.com/2026/05/21/scammers-are-abusing-an-internal-microsoft-ac",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "c27113cc41fb"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "news.ycombinator.com/item",
+        "edition",
+        "pts",
+        "comments",
+        "scammers",
+        "abusing",
+        "internal",
+        "microsoft"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-24.txt:127:127": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-24.txt:127:127",
+      "path": "memory/.dreams/session-corpus/2026-05-24.txt",
+      "startLine": 127,
+      "endLine": 127,
+      "source": "memory",
+      "snippet": "Assistant: **Section 2: Tech News** **1. OpenAI files confidential IPO papers — targeting September debut** <https://www.forbes.com/sites/aliciapark/2026/05/20/openai-reportedly-could-file-for-ipo-this-week-teeing-up-showdown-with-musks-spacex/> - OpenAI filing confidential IPO p",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "c27113cc41fb"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "openai",
+        "section",
+        "tech",
+        "news",
+        "confidential",
+        "ipo",
+        "papers",
+        "targeting"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-24.txt:128:128": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-24.txt:128:128",
+      "path": "memory/.dreams/session-corpus/2026-05-24.txt",
+      "startLine": 128,
+      "endLine": 128,
+      "source": "memory",
+      "snippet": "Assistant: years, calling it \"10x the industrial revolution at 10x speed\" - Yann LeCun pushes back: \"Intelligence is not what you know, it's what you do when you don't know\" 📊 Oriol Vinyals: models strong at code/math but can't learn from experience yet --- **3. Anthropic Mythos",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "c27113cc41fb"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "code/math",
+        "years",
+        "calling",
+        "10x",
+        "industrial",
+        "revolution",
+        "speed",
+        "yann"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-24.txt:129:129": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-24.txt:129:129",
+      "path": "memory/.dreams/session-corpus/2026-05-24.txt",
+      "startLine": 129,
+      "endLine": 129,
+      "source": "memory",
+      "snippet": "Assistant: development** <https://medium.com/@davidakpovi/ai-news-week-of-may-18-to-may-24-2026-6cb451ecb766> - 4-year partnership to build AI tools for healthcare, education, agriculture in underserved regions (欠发达地区) - Anthropic on track for first quarterly operating profit, ri",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "c27113cc41fb"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "medium.com",
+        "4-year",
+        "development",
+        "https",
+        "davidakpovi",
+        "news",
+        "week",
+        "may"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-24.txt:130:130": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-24.txt:130:130",
+      "path": "memory/.dreams/session-corpus/2026-05-24.txt",
+      "startLine": 130,
+      "endLine": 130,
+      "source": "memory",
+      "snippet": "Assistant: <https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-first-quarter-fiscal-2027> - Revenue beat Street at $81.62B (est. $79.2B); Data Center hit record $75.2B (+92% YoY) - Dividend increased 25x to $0.25/share; $80B stock buyback authorized 📊 EPS",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "c27113cc41fb"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "81.62b",
+        "79.2b",
+        "75.2b",
+        "0.25/share",
+        "https",
+        "nvidianews.nvidia.com",
+        "news",
+        "nvidia"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-24.txt:131:131": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-24.txt:131:131",
+      "path": "memory/.dreams/session-corpus/2026-05-24.txt",
+      "startLine": 131,
+      "endLine": 131,
+      "source": "memory",
+      "snippet": "Assistant: <https://www.fool.com/investing/2026/05/24/the-gates-foundation-just-sold-all-of-their-micros/> - Foundation trust fully exited MSFT position — also sold Berkshire Hathaway — as part of wind-down (清算) by 2045 - MSFT stock down ~20% from 52-week high; valuation hasn't b",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "c27113cc41fb"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "wind-down",
+        "52-week",
+        "https",
+        "www.fool.com",
+        "investing",
+        "gates",
+        "foundation",
+        "sold"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-24.txt:132:132": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-24.txt:132:132",
+      "path": "memory/.dreams/session-corpus/2026-05-24.txt",
+      "startLine": 132,
+      "endLine": 132,
+      "source": "memory",
+      "snippet": "Assistant: iPhone record** <https://www.apple.com/newsroom/2026/04/apple-reports-second-quarter-results/> - iPhone revenue hit $57B (March quarter record), driven by iPhone 17 lineup; gross margin 49.3% - $100B additional buyback authorized; dividend raised 4% to $0.27/share 📊 E",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "c27113cc41fb"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "49.3",
+        "0.27/share",
+        "iphone",
+        "record",
+        "https",
+        "www.apple.com",
+        "newsroom",
+        "apple"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-25.txt:72:72": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-25.txt:72:72",
+      "path": "memory/.dreams/session-corpus/2026-05-25.txt",
+      "startLine": 72,
+      "endLine": 72,
+      "source": "memory",
+      "snippet": "Assistant: MCP Health Check (11:04 AM PT) **XHS** ✅ online, ⚠️ login expired **TV** ✅ healthy (AAPL: $308.82) ---",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "cd5aa3c5fc0e"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "308.82",
+        "mcp",
+        "health",
+        "check",
+        "xhs",
+        "online",
+        "login",
+        "expired"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-25.txt:73:73": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-25.txt:73:73",
+      "path": "memory/.dreams/session-corpus/2026-05-25.txt",
+      "startLine": 73,
+      "endLine": 73,
+      "source": "memory",
+      "snippet": "Assistant: Git sync: **4 file(s)** committed -> <https://github.com/darinyu/openclaw-config/commit/4f01e797bb1b7c421e4759483bdaf78fa06f1b77|4f01e79> :git: • hn-seen-ids.json • memory/.dreams/events.jsonl • memory/.dreams/short-term-recall.json • memory/2026-05-25.md",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "cd5aa3c5fc0e"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "hn-seen-ids.json",
+        "dreams/events.jsonl",
+        "dreams/short-term-recall.json",
+        "memory/2026-05-25.md",
+        "git",
+        "sync",
+        "committed",
+        "https"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-25.txt:74:74": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-25.txt:74:74",
+      "path": "memory/.dreams/session-corpus/2026-05-25.txt",
+      "startLine": 74,
+      "endLine": 74,
+      "source": "memory",
+      "snippet": "Assistant: **MCP Health** 25 May 8pm UTC **XHS** ⚠️ online but login expired **TV** ✅ healthy (AAPL $308.82)",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "cd5aa3c5fc0e"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "308.82",
+        "mcp",
+        "health",
+        "may",
+        "8pm",
+        "utc",
+        "xhs",
+        "online"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-25.txt:75:75": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-25.txt:75:75",
+      "path": "memory/.dreams/session-corpus/2026-05-25.txt",
+      "startLine": 75,
+      "endLine": 75,
+      "source": "memory",
+      "snippet": "Assistant: *MCP Health* ⚠️ XHS login expired *XHS* ✅ service online, ⚠️ login expired *TV* ✅ AAPL $308.82",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "cd5aa3c5fc0e"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "308.82",
+        "mcp",
+        "health",
+        "xhs",
+        "login",
+        "expired",
+        "service",
+        "online"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-25.txt:76:76": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-25.txt:76:76",
+      "path": "memory/.dreams/session-corpus/2026-05-25.txt",
+      "startLine": 76,
+      "endLine": 76,
+      "source": "memory",
+      "snippet": "Assistant: 🔍 MCP Health Check — Mon 10:00 PM PT **XHS** ⚠️ online, login expired **TV** ✅ AAPL $308.82, healthy",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "cd5aa3c5fc0e"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "308.82",
+        "mcp",
+        "health",
+        "check",
+        "mon",
+        "xhs",
+        "online",
+        "login"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-25.txt:77:77": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-25.txt:77:77",
+      "path": "memory/.dreams/session-corpus/2026-05-25.txt",
+      "startLine": 77,
+      "endLine": 77,
+      "source": "memory",
+      "snippet": "Assistant: :robot_face: MCP Health Check (May 25 23:00 UTC) **XHS** online, login expired **TV** healthy (AAPL: $308.82) No auto-restart needed.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "cd5aa3c5fc0e"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "robot-face",
+        "308.82",
+        "auto-restart",
+        "mcp",
+        "health",
+        "check",
+        "may",
+        "utc"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-26.txt:9:9": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-26.txt:9:9",
+      "path": "memory/.dreams/session-corpus/2026-05-26.txt",
+      "startLine": 9,
+      "endLine": 9,
+      "source": "memory",
+      "snippet": "Assistant: *MCP Health* (00:07 UTC) *XHS* ⚠️ online, login expired | *TV* ✅ AAPL $308.82",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "0011facb946d"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "308.82",
+        "mcp",
+        "health",
+        "utc",
+        "xhs",
+        "online",
+        "login",
+        "expired"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-26.txt:10:10": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-26.txt:10:10",
+      "path": "memory/.dreams/session-corpus/2026-05-26.txt",
+      "startLine": 10,
+      "endLine": 10,
+      "source": "memory",
+      "snippet": "Assistant: 🃏 **MCP Health Check** | 01:00 UTC XHS ⚠️ online, login expired TV ✅ healthy (AAPL $308.82) ---",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "0011facb946d"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "308.82",
+        "mcp",
+        "health",
+        "check",
+        "utc",
+        "xhs",
+        "online",
+        "login"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-26.txt:11:11": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-26.txt:11:11",
+      "path": "memory/.dreams/session-corpus/2026-05-26.txt",
+      "startLine": 11,
+      "endLine": 11,
+      "source": "memory",
+      "snippet": "Assistant: Git sync: **1 file(s)** committed -> <https://github.com/darinyu/openclaw-config/commit/284adcc5e635509421a5bc96b95e90e989ed310f|284adcc> :git: • hn-seen-ids.json Push status: **pushed** to origin",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "0011facb946d"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "hn-seen-ids.json",
+        "git",
+        "sync",
+        "committed",
+        "https",
+        "github.com",
+        "darinyu",
+        "openclaw"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-26.txt:12:12": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-26.txt:12:12",
+      "path": "memory/.dreams/session-corpus/2026-05-26.txt",
+      "startLine": 12,
+      "endLine": 12,
+      "source": "memory",
+      "snippet": "Assistant: **XHS** ⚠️ online but login expired | **TV** ✅ healthy",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-26T03:00:00.969Z",
+      "lastRecalledAt": "2026-05-26T03:00:00.969Z",
+      "queryHashes": [
+        "0011facb946d"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "xhs",
+        "online",
+        "but",
+        "login",
+        "expired",
+        "healthy"
       ]
     }
   }
