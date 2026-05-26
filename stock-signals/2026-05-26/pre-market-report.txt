@@ -1,0 +1,82 @@
+*Pre-Market Deep Analysis | Tue May 26, 2026 | Sess: think_20260526_130023_7152472a*
+
+---sections---
+🟣 *Market Context*
+VIX: *16.72* (+0.78%) — 15-25 MR regime
+SPX *+0.37%* at *7,473* | Nasdaq *+0.19%* at *26,344*
+QQQ *+0.42%* pre at *717.54* | SPY *+0.39%* at *745.64*
+Semis leading pre: AMD *+3.99%*, SNOW *+4.02%*, SOXX *+2.41%*
+
+---sections---
+🚨 *Active Signals*
+- *MRVL* MACD Bullish Cross confirmed (MACD *13.82* > Signal *13.44*, histo *+0.37*)
+  RSI *71.2* overbought — pullback entry preferred
+  Strategy: MACD Cross (Risk 5) — YELLOW ALERT
+
+---sections---
+📊 *Ticker Status* (all 23)
+- *AAPL* $308.82 (+1.26%) — near 52w high $311
+- *MSFT* $418.57 (-0.12%) — flat, BB MR strategy
+- *GOOGL* $382.97 (-1.21%) — down, EMA cross active
+- *META* $610.26 (+0.47%) — MACD cross strategy
+- *AMZN* $266.32 (-0.80%) — RSI MR strategy
+- *NVDA* $215.33 (-1.90%) — RSI *53.7* neutral, above EMA20 $214.63
+- *AMD* $467.51 (+3.99%) — RSI *72.6* overbought, extended
+- *TSM* $404.52 (-0.65%) — RSI MR strategy
+- *AVGO* $414.14 (-0.10%) — RSI *53.1* neutral, above EMA20
+- *CRM* $180.07 (+2.13%) — RSI MR strategy
+- *DDOG* $222.32 (+1.96%) — near 52w high $224.77
+- *SNOW* $172.20 (+4.02%) — EMA cross strategy
+- *NET* $216.17 (+1.66%) — RSI MR strategy
+- *CRWV* $105.49 (-1.94%) — RSI *47.2*, below EMA20, bearish momentum
+- *NBIS* $214.77 (-2.35%) — RSI MR strategy
+- *MRVL* $196.33 (+2.96%) — RSI *71.2* O/B, above upper BB $193.63
+- *APP* $481.68 (-0.87%) — RSI *53.2* neutral, weak uptrend
+- *SNDK* $1,478.68 (-4.12%) — biggest pre-market loser
+- *QQQ* $717.54 (+0.42%) — RSI *71.4* overbought
+- *SMH* $576.32 (+1.49%) — RSI *68.7* bullish
+- *XLK* $180.39 (+1.00%) — RSI MR strategy
+- *SOXX* $537.33 (+2.41%) — RSI *69.1* bullish
+
+---sections---
+🔶 *Near Misses*
+- *NVDA* RSI *53.7* — well above oversold threshold of 30
+- *AVGO* RSI *53.1* — needs RSI<35 for entry, currently far
+- *CRWV* RSI *47.2* — closest to oversold, trending lower
+- *SNDK* -4.12% premarket — sharp drop, watch for RSI entry
+- No tickers near RSI *<30* or lower BB touch today
+
+---sections---
+💰 *Options Notes* (Premium Selling Opportunities)
+- *AMD* $467.51 IV *82-93%* ✅ OPPORTUNITY
+  Why: Highest IV in universe, RSI *72.6* overbought at resistance $481
+  Timing: Short (weekly) — sell CC *$480/$490*
+  Hold shares: Yes, strong uptrend
+- *MRVL* $196.33 IV *~70%* ✅ OPPORTUNITY
+  Why: Above upper BB *$193.63*, RSI *71.2* extended
+  Timing: Mid (30-45 DTE) — sell CC *$200/$210*
+  Hold shares: Yes, MACD bullish cross
+- *QQQ* $717.54 IV *~55%* ⚠️ MODERATE
+  Why: RSI *71.4* overbought, near resistance $733
+  Timing: Short (weekly) — sell CC *$725/$730*
+- *NVDA* $215.33 IV *65-76%* ⚠️ MODERATE
+  Why: RSI neutral *53.7*, weekly trend bullish — hold for upside
+  Timing: CSP at support — sell put *$200* 30-45 DTE
+- *SMH* $576.32 IV *~50%* ⚠️ MODERATE
+  Why: RSI *68.7*, near resistance $597
+  Timing: Mid — sell CC *$585/$590*
+- *SOXX* $537.33 IV *~50%* ⚠️ MODERATE
+  Why: RSI *69.1*, in strong uptrend
+  Timing: Mid — sell CC *$550/$555*
+
+---sections---
+👁️ *Day Watchlist*
+- *NVDA* — pullback watch near EMA20 *$214.63* for bounce
+- *SNDK* — sharp -4.1% pre, volume for RSI entry
+- *AMD* — trend extension or reversal at $481 resistance
+- *CRWV* — continues to drift lower, RSI approaching oversold
+- *MRVL* — MACD cross + overbought = watch for pullback entry
+
+---sections---
+💡 *Bottom Line*
+VIX at *16.72* = quiet regime with bullish bias. No oversold entries today — semis leading. Best setup is *MRVL* MACD bullish cross, but wait for pullback (RSI *71.2* extended). Options: *AMD* CC at $480+ is the top premium play. *NVDA* weekly trend intact — dip buyers active near EMA20. Market trending, no panic. Stay patient.
