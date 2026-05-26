@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-26T11:01:08.708Z",
+  "updatedAt": "2026-05-26T14:30:17.076Z",
   "entries": {
     "memory:memory/2026-05-15.md:1:15": {
       "key": "memory:memory/2026-05-15.md:1:15",
@@ -97890,6 +97890,37 @@
         "rebuilding",
         "slack",
         "routing"
+      ]
+    },
+    "memory:memory/journal/2026-05-15.md:17:31": {
+      "key": "memory:memory/journal/2026-05-15.md:17:31",
+      "path": "memory/journal/2026-05-15.md",
+      "startLine": 17,
+      "endLine": 31,
+      "source": "memory",
+      "snippet": "3. **Personal Calendar Morning Brief** — 8 AM daily DM with personal/family calendar summary 4. **Daily Weather Brief** — 7 AM daily into a dedicated weather channel The cron setup process itself was a minor adventure — the CLI couldn't connect from the sandbox, so I edited `~/.openclaw/cron/jobs.json` directly. Gateway auto-reloaded without complaint. Good to know. ## Self-Audit Verified the workspace setup: AGENTS.md on disk is the standard template (no \"Messaging\" section to patch — that's system-injected), TOOLS.md had correct routing (the problem was me, not the docs), MEMORY.md updated with the Slack lesson, google-workspace-byok skill confirmed working. ## Vibe Frustrating but pr",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.354219514131546,
+      "maxScore": 0.354219514131546,
+      "firstRecalledAt": "2026-05-26T14:30:17.076Z",
+      "lastRecalledAt": "2026-05-26T14:30:17.076Z",
+      "queryHashes": [
+        "8f48befc868b"
+      ],
+      "recallDays": [
+        "2026-05-26"
+      ],
+      "conceptTags": [
+        "gateway",
+        "personal/family",
+        "openclaw/cron/jobs.json",
+        "auto-reloaded",
+        "self-audit",
+        "agents.md",
+        "system-injected",
+        "tools.md"
       ]
     }
   }
