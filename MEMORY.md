@@ -114,3 +114,14 @@ Every piece of content written to Slack (cron jobs, responses, reports, DMs) MUS
 - Darin & Paofu saw OB today. Key reminders: [score=0.856 recalls=0 avg=0.620 source=memory/2026-05-20.md:4-4]
 <!-- openclaw-memory-promotion:memory:memory/2026-05-20.md:13:13 -->
 - **HN Top 10:** [score=0.846 recalls=0 avg=0.620 source=memory/2026-05-20.md:13-13]
+
+## Promoted From Short-Term Memory (2026-05-27)
+
+<!-- openclaw-memory-promotion:memory:memory/2026-05-21-0327.md:9:9 -->
+- user: 把reaction 和italic变成bold分别写到hook [score=0.856 recalls=0 avg=0.620 source=memory/2026-05-21-0327.md:9-9]
+<!-- openclaw-memory-promotion:memory:memory/2026-05-21-0327.md:11:14 -->
+- 另外有没有一个internal hook适合axiom logging? 我想log更多东西 最好可以看到整个思考过程 一个slack thread share一个id, 然后里面一个turn有自己的subid, 这样我可以把他们连起来看也可以单一看 assistant: Now I understand the hook model. Let me build these. [score=0.856 recalls=0 avg=0.620 source=memory/2026-05-21-0327.md:11-12]
+<!-- openclaw-memory-promotion:memory:memory/2026-05-21-0327.md:15:18 -->
+- assistant: Now let me create the Axiom thread logger hook: assistant: Now I see the event type pattern. Let me write the Axiom logger handler and fix the reaction hook: [score=0.856 recalls=0 avg=0.620 source=memory/2026-05-21-0327.md:15-16]
+<!-- openclaw-memory-promotion:memory:memory/2026-05-21-0327.md:20:20 -->
+- 不过开这个之前先说清楚几件事: [score=0.856 recalls=0 avg=0.620 source=memory/2026-05-21-0327.md:20-20]

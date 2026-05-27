@@ -43,19 +43,23 @@ if __name__ == "__main__":
             print(words)
         else:
             for w in words:
-                print(f"  {w['word']}")
+                pron = f"  [{w.get('pronunciation', '')}]" if w.get('pronunciation') else ""
+                print(f"  {w['word']}{pron}")
             print("---")
             for w in words:
-                print(f"  {w['word']} — {w['meaning']}")
+                pron = f" [{w.get('pronunciation', '')}]" if w.get('pronunciation') else ""
+                print(f"  {w['word']}{pron} — {w['meaning']}")
     elif cmd == "add":
         word = sys.argv[2]
         meaning = sys.argv[3]
-        source = sys.argv[4] if len(sys.argv) > 4 else ""
+        pron = sys.argv[4] if len(sys.argv) > 4 else ""
+        source = sys.argv[5] if len(sys.argv) > 5 else ""
         data = load()
         data["words"].append({
             "id": f"w{len(data['words'])+1}",
             "word": word,
             "meaning": meaning,
+            "pronunciation": pron,
             "source": source,
             "times_quizzed": 0,
             "added": __import__("datetime").date.today().isoformat()

@@ -4,6 +4,7 @@
       "id": "w1",
       "word": "Grenade",
       "meaning": "手榴弹",
+      "pronunciation": "/ɡrəˈneɪd/",
       "source": "Darin - #learning screenshot",
       "times_quizzed": 0,
       "added": "2026-05-21"
@@ -12,14 +13,16 @@
       "id": "w2",
       "word": "satirical",
       "meaning": "讽刺的",
+      "pronunciation": "/səˈtɪrɪkəl/",
       "source": "Darin - #learning screenshot",
-      "times_quizzed": 0,
+      "times_quizzed": 1,
       "added": "2026-05-21"
     },
     {
       "id": "w3",
       "word": "AI Rebellion",
       "meaning": "AI反叛/反抗AI的运动",
+      "pronunciation": "",
       "source": "Darin - #learning screenshot",
       "times_quizzed": 0,
       "added": "2026-05-21"
@@ -28,18 +31,81 @@
       "id": "w4",
       "word": "breakneck",
       "meaning": "极快的、惊险的 (breakneck speed = 极快的速度)",
+      "pronunciation": "/ˈbreɪknek/",
       "source": "Darin - #learning screenshot",
-      "times_quizzed": 0,
+      "times_quizzed": 1,
       "added": "2026-05-21"
     },
     {
       "id": "w5",
       "word": "constituency",
       "meaning": "支持者群体、选民群体",
+      "pronunciation": "/kənˈstɪtʃuənsi/",
       "source": "Darin - #learning screenshot",
-      "times_quizzed": 0,
+      "times_quizzed": 1,
       "added": "2026-05-21"
+    },
+    {
+      "id": "w6",
+      "word": "divisive",
+      "meaning": "有争议的、引起分歧的（指观点或事物使人分裂成对立阵营）",
+      "pronunciation": "/dɪˈvaɪsɪv/",
+      "source": "Paofu - #learning stock digest (Ferrari Luce design)",
+      "times_quizzed": 0,
+      "added": "2026-05-27"
+    },
+    {
+      "id": "w7",
+      "word": "plummet",
+      "meaning": "暴跌、急降",
+      "pronunciation": "/ˈplʌmɪt/",
+      "source": "Paofu - #learning HN digest",
+      "times_quizzed": 0,
+      "added": "2026-05-27"
+    },
+    {
+      "id": "w8",
+      "word": "contamination",
+      "meaning": "污染、玷污",
+      "pronunciation": "/kənˌtæmɪˈneɪʃən/",
+      "source": "Paofu - #learning HN digest",
+      "times_quizzed": 0,
+      "added": "2026-05-27"
+    },
+    {
+      "id": "w9",
+      "word": "crackdown",
+      "meaning": "打击、镇压（尤指对违法行为的严厉整治）",
+      "pronunciation": "/ˈkrækdaʊn/",
+      "source": "Paofu - #learning HN digest",
+      "times_quizzed": 0,
+      "added": "2026-05-27"
+    },
+    {
+      "id": "w10",
+      "word": "sovereignty",
+      "meaning": "主权、自主权（tech sovereignty = 技术主权）",
+      "pronunciation": "/ˈsɒvrənti/",
+      "source": "Paofu - #learning HN digest",
+      "times_quizzed": 0,
+      "added": "2026-05-27"
     }
   ],
-  "quiz_history": []
+  "quiz_history": [
+    {
+      "word_id": "w2",
+      "quizzed": "2026-05-27",
+      "correct": true
+    },
+    {
+      "word_id": "w4",
+      "quizzed": "2026-05-27",
+      "correct": true
+    },
+    {
+      "word_id": "w5",
+      "quizzed": "2026-05-27",
+      "correct": true
+    }
+  ]
 }
