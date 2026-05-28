@@ -125,3 +125,8 @@ Every piece of content written to Slack (cron jobs, responses, reports, DMs) MUS
 - assistant: Now let me create the Axiom thread logger hook: assistant: Now I see the event type pattern. Let me write the Axiom logger handler and fix the reaction hook: [score=0.856 recalls=0 avg=0.620 source=memory/2026-05-21-0327.md:15-16]
 <!-- openclaw-memory-promotion:memory:memory/2026-05-21-0327.md:20:20 -->
 - 不过开这个之前先说清楚几件事: [score=0.856 recalls=0 avg=0.620 source=memory/2026-05-21-0327.md:20-20]
+
+## Promoted From Short-Term Memory (2026-05-28)
+
+<!-- openclaw-memory-promotion:memory:memory/2026-05-21-0327.md:22:23 -->
+- **关于反应 (reaction hook vs prompt rule):** internal hook 的优点是反应快 — 收到消息就发 👀，不需要等 agent 推理完。但以后你想改 reaction 需要改 hook 代码 + restart. prompt 里写规则改起来更快. 所以你可以选: 要性能走 hook, 要灵活留 prompt. [score=0.874 recalls=0 avg=0.620 source=memory/2026-05-21-0327.md:22-23]
