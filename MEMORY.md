@@ -130,3 +130,12 @@ Every piece of content written to Slack (cron jobs, responses, reports, DMs) MUS
 
 <!-- openclaw-memory-promotion:memory:memory/2026-05-21-0327.md:22:23 -->
 - **关于反应 (reaction hook vs prompt rule):** internal hook 的优点是反应快 — 收到消息就发 👀，不需要等 agent 推理完。但以后你想改 reaction 需要改 hook 代码 + restart. prompt 里写规则改起来更快. 所以你可以选: 要性能走 hook, 要灵活留 prompt. [score=0.874 recalls=0 avg=0.620 source=memory/2026-05-21-0327.md:22-23]
+
+## Promoted From Short-Term Memory (2026-05-29)
+
+<!-- openclaw-memory-promotion:memory:memory/2026-05-22.md:9:9 -->
+- **1. Vocabulary Quiz — Auto-added words → removed** [score=0.874 recalls=0 avg=0.620 source=memory/2026-05-22.md:9-9]
+<!-- openclaw-memory-promotion:memory:memory/2026-05-22.md:13:13 -->
+- **2. Vocab quiz → #learning channel + @Paofu** [score=0.874 recalls=0 avg=0.620 source=memory/2026-05-22.md:13-13]
+<!-- openclaw-memory-promotion:memory:memory/2026-05-22.md:17:17 -->
+- **3. Paofu English Annotation Guide** [score=0.874 recalls=0 avg=0.620 source=memory/2026-05-22.md:17-17]
