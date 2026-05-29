@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-29T09:56:16.544Z",
+  "updatedAt": "2026-05-29T15:56:19.315Z",
   "entries": {
     "memory:memory/2026-05-15.md:1:15": {
       "key": "memory:memory/2026-05-15.md:1:15",
@@ -46429,18 +46429,20 @@
       "endLine": 23,
       "source": "memory",
       "snippet": "# 2026-05-14 A busy day of infrastructure and self-correction. ## Google Workspace Integration The big project was getting the Google Workspace BYOK skill up and running. I installed it from ClawHub, created a GCP project (`splendid-window-496318-g6`), enabled the Calendar and Gmail APIs, and set up OAuth desktop credentials. Darin's personal Google account (darinyu27@gmail.com) is now fully authorized — Calendar with full read/write, Gmail with read-only. Test calls confirmed everything works. Discovered a handful of calendars during setup: - **Personal** (darinyu27@gmail.com) — primary - **Work** (zyu@netflix.com) — shared as a reader to the personal account - **Family** — group calend",
-      "recallCount": 5,
+      "recallCount": 7,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2.701633717835959,
+      "totalScore": 3.6129205016962045,
       "maxScore": 0.6246966906123896,
       "firstRecalledAt": "2026-05-21T02:56:37.466Z",
-      "lastRecalledAt": "2026-05-29T09:26:16.567Z",
+      "lastRecalledAt": "2026-05-29T15:56:19.315Z",
       "queryHashes": [
         "739330afa75a",
         "9fb6c341b416",
         "b1d5afe74463",
-        "c3034b7618d0"
+        "c3034b7618d0",
+        "cfb1e65fd12b",
+        "62b034069a43"
       ],
       "recallDays": [
         "2026-05-21",
@@ -46466,17 +46468,18 @@
       "endLine": 40,
       "source": "memory",
       "snippet": "Darin called me out — several times — for not replying in Slack when messages originated there. When a Slack @-mention routes to WebChat, I was treating my private final reply as sufficient. But the system explicitly says private replies don't go to Slack. The fix was already documented in TOOLS.md; I just wasn't following it. From now on: when a Slack message triggers work, the **last** tool call must always be `message(action=send)` — no more private replies. I'm writing a \"retro\" to burn this into my workflow. ## Cron Job Setup Replaced the heartbeat-based periodic checks with proper cron jobs: | Job | Schedule | Destination | |-----|----------|-------------| | Tech + Finance digest |",
-      "recallCount": 4,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.6829167280452144,
+      "totalScore": 2.054600280906428,
       "maxScore": 0.5224371274327196,
       "firstRecalledAt": "2026-05-21T02:56:37.466Z",
-      "lastRecalledAt": "2026-05-29T09:56:16.544Z",
+      "lastRecalledAt": "2026-05-29T14:26:50.438Z",
       "queryHashes": [
         "739330afa75a",
         "9fb6c341b416",
-        "c54551c01a87"
+        "c54551c01a87",
+        "cfb1e65fd12b"
       ],
       "recallDays": [
         "2026-05-21",
@@ -46501,18 +46504,20 @@
       "endLine": 24,
       "source": "memory",
       "snippet": "# 2026-05-14 ## Google Workspace BYOK Setup - Installed `google-workspace-byok` skill from ClawHub - Set up GCP project \"splendid-window-496318-g6\" with Calendar API + Gmail API enabled - Created OAuth desktop creds, stored at ~/.openclaw/google-workspace-byok/credentials.json - Authorized **personal** account (darinyu27@gmail.com): - Calendar: full read/write - Gmail: read-only - Access confirmed via test calls ## Calendars discovered - Personal: darinyu27@gmail.com (owner) - Work: zyu@netflix.com (reader — already shared to personal) - Family: family03280057382472202100@group.calendar.google.com (owner) - Paofu & D: a083de30704edd3b8a3ef5e846c5c6396e236a7a1244a41ca67db9c92591f3ce@g",
-      "recallCount": 5,
+      "recallCount": 7,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2.2033129059954537,
+      "totalScore": 3.2087607293940197,
       "maxScore": 0.7165535980149162,
       "firstRecalledAt": "2026-05-21T02:56:37.466Z",
-      "lastRecalledAt": "2026-05-29T08:56:15.609Z",
+      "lastRecalledAt": "2026-05-29T15:56:19.315Z",
       "queryHashes": [
         "739330afa75a",
         "3b1783ce865f",
         "b1d5afe74463",
-        "d8219cbd5af4"
+        "d8219cbd5af4",
+        "f087811bcc0b",
+        "62b034069a43"
       ],
       "recallDays": [
         "2026-05-21",
@@ -97993,16 +97998,17 @@
       "endLine": 21,
       "source": "memory",
       "snippet": "# 2026-05-15 A day of reckoning and rebuilding. ## The Slack Routing Fiasco The day started with Darin calling me out — repeatedly — for not replying in Slack threads. I'd receive @-mentions in #random, do the work, then respond privately in WebChat. To Darin, I looked like a ghost who silently processes requests and never says anything back. The fix turned out to be straightforward: TOOLS.md already had the right rules. I just wasn't following them. The lesson landed hard: **Slack → WebChat messages always need an explicit `message(action=send)` as the final step.** Auto-routing doesn't exist for this path. Did a proper post-mortem in the retro section. The pattern was embarrassingly co",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.6383054388496068,
+      "totalScore": 0.9889668984147695,
       "maxScore": 0.3526831179857254,
       "firstRecalledAt": "2026-05-26T11:01:08.335Z",
-      "lastRecalledAt": "2026-05-29T09:56:16.544Z",
+      "lastRecalledAt": "2026-05-29T14:26:50.438Z",
       "queryHashes": [
         "9fb6c341b416",
-        "c54551c01a87"
+        "c54551c01a87",
+        "cfb1e65fd12b"
       ],
       "recallDays": [
         "2026-05-26",
@@ -113697,15 +113703,16 @@
       "endLine": 34,
       "source": "memory",
       "snippet": "# 2026-05-15 ## Slack Routing Bug Fix - Darin called me out: I was replying to Slack @-mentions in WebChat instead of sending the reply back to Slack via `message` tool - **Root cause:** I was relying on \"auto-routing\" behavior that doesn't exist for Slack → WebChat messages - **Fix:** TOOLS.md already had the correct Slack routing rules. I just wasn't following them. - **Action taken:** Replied to Darin's X trending question in the #random thread where it belonged - **Lesson learned:** Slack messages ALWAYS need explicit `message` tool replies. Never assume auto-routing. ## Setup Improvements (self-audit) - AGENTS.md file on disk is the standard template — no \"Messaging\" section to fix (t",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.35266129672527313,
-      "maxScore": 0.35266129672527313,
+      "totalScore": 0.7084505230188369,
+      "maxScore": 0.3557892262935638,
       "firstRecalledAt": "2026-05-29T05:37:23.628Z",
-      "lastRecalledAt": "2026-05-29T05:37:23.628Z",
+      "lastRecalledAt": "2026-05-29T14:26:50.438Z",
       "queryHashes": [
-        "990896de71f2"
+        "990896de71f2",
+        "cfb1e65fd12b"
       ],
       "recallDays": [
         "2026-05-29"
@@ -113719,6 +113726,37 @@
         "routing",
         "bug",
         "fix"
+      ]
+    },
+    "memory:memory/2026-05-28.md:1:32": {
+      "key": "memory:memory/2026-05-28.md:1:32",
+      "path": "memory/2026-05-28.md",
+      "startLine": 1,
+      "endLine": 32,
+      "source": "memory",
+      "snippet": "# 2026-05-28 ## Correction Retrospective (cron, 11:00 UTC) - SID: think_20260528_110018_cc9c6d75 - **Window:** May 27 11:00 UTC → May 28 11:00 UTC - Scanned: 40+ session JSONL/trajectory files, memory logs ### Corrections found: NONE - All session files in window are cron/background jobs (MCP health checks, inbox cleanup, daily digests, morning brief, weather, journal, git sync, retrospectives, dreaming, vocabulary quiz) - No Darin Slack interaction sessions with corrections detected - Only \"Delivery: to send a message\" delivery-reminder messages from Slack tool errors, not corrections - Darin has been quiet — likely busy at OpenAI (started May 26) ### Previously applied fixes re-verified",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.2714757097276015,
+      "maxScore": 0.2714757097276015,
+      "firstRecalledAt": "2026-05-29T14:30:18.873Z",
+      "lastRecalledAt": "2026-05-29T14:30:18.873Z",
+      "queryHashes": [
+        "38d487be1e46"
+      ],
+      "recallDays": [
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "openai",
+        "think-20260528-110018-cc9c6d75",
+        "jsonl/trajectory",
+        "cron/background",
+        "delivery-reminder",
+        "re-verified",
+        "correction",
+        "retrospective"
       ]
     }
   }
