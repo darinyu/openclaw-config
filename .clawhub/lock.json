@@ -72,6 +72,10 @@
     "tradingview-quantitative-skills": {
       "version": "1.0.4",
       "installedAt": 1779256956943
+    },
+    "robinhood-for-agents": {
+      "version": "0.6.1",
+      "installedAt": 1779997731565
     }
   }
 }
