@@ -108,34 +108,11 @@ Every piece of content written to Slack (cron jobs, responses, reports, DMs) MUS
 - If DeepSeek is unavailable or unsuitable for a task, fall back to Gemini, then ChatGPT
 - This applies to ALL generated content (reports, analyses, responses, cron jobs)
 
-## Promoted From Short-Term Memory (2026-05-26)
+## Promoted From Short-Term Memory (2026-05-30)
 
-<!-- openclaw-memory-promotion:memory:memory/2026-05-20.md:4:4 -->
-- Darin & Paofu saw OB today. Key reminders: [score=0.856 recalls=0 avg=0.620 source=memory/2026-05-20.md:4-4]
-<!-- openclaw-memory-promotion:memory:memory/2026-05-20.md:13:13 -->
-- **HN Top 10:** [score=0.846 recalls=0 avg=0.620 source=memory/2026-05-20.md:13-13]
-
-## Promoted From Short-Term Memory (2026-05-27)
-
-<!-- openclaw-memory-promotion:memory:memory/2026-05-21-0327.md:9:9 -->
-- user: 把reaction 和italic变成bold分别写到hook [score=0.856 recalls=0 avg=0.620 source=memory/2026-05-21-0327.md:9-9]
-<!-- openclaw-memory-promotion:memory:memory/2026-05-21-0327.md:11:14 -->
-- 另外有没有一个internal hook适合axiom logging? 我想log更多东西 最好可以看到整个思考过程 一个slack thread share一个id, 然后里面一个turn有自己的subid, 这样我可以把他们连起来看也可以单一看 assistant: Now I understand the hook model. Let me build these. [score=0.856 recalls=0 avg=0.620 source=memory/2026-05-21-0327.md:11-12]
-<!-- openclaw-memory-promotion:memory:memory/2026-05-21-0327.md:15:18 -->
-- assistant: Now let me create the Axiom thread logger hook: assistant: Now I see the event type pattern. Let me write the Axiom logger handler and fix the reaction hook: [score=0.856 recalls=0 avg=0.620 source=memory/2026-05-21-0327.md:15-16]
-<!-- openclaw-memory-promotion:memory:memory/2026-05-21-0327.md:20:20 -->
-- 不过开这个之前先说清楚几件事: [score=0.856 recalls=0 avg=0.620 source=memory/2026-05-21-0327.md:20-20]
-
-## Promoted From Short-Term Memory (2026-05-28)
-
-<!-- openclaw-memory-promotion:memory:memory/2026-05-21-0327.md:22:23 -->
-- **关于反应 (reaction hook vs prompt rule):** internal hook 的优点是反应快 — 收到消息就发 👀，不需要等 agent 推理完。但以后你想改 reaction 需要改 hook 代码 + restart. prompt 里写规则改起来更快. 所以你可以选: 要性能走 hook, 要灵活留 prompt. [score=0.874 recalls=0 avg=0.620 source=memory/2026-05-21-0327.md:22-23]
-
-## Promoted From Short-Term Memory (2026-05-29)
-
-<!-- openclaw-memory-promotion:memory:memory/2026-05-22.md:9:9 -->
-- **1. Vocabulary Quiz — Auto-added words → removed** [score=0.874 recalls=0 avg=0.620 source=memory/2026-05-22.md:9-9]
-<!-- openclaw-memory-promotion:memory:memory/2026-05-22.md:13:13 -->
-- **2. Vocab quiz → #learning channel + @Paofu** [score=0.874 recalls=0 avg=0.620 source=memory/2026-05-22.md:13-13]
-<!-- openclaw-memory-promotion:memory:memory/2026-05-22.md:17:17 -->
-- **3. Paofu English Annotation Guide** [score=0.874 recalls=0 avg=0.620 source=memory/2026-05-22.md:17-17]
+<!-- openclaw-memory-promotion:memory:memory/journal/2026-05-14.md:1:23 -->
+- # 2026-05-14 A busy day of infrastructure and self-correction. ## Google Workspace Integration The big project was getting the Google Workspace BYOK skill up and running. I installed it from ClawHub, created a GCP project (`splendid-window-496318-g6`), enabled the Calendar and Gmail APIs, and set up OAuth desktop credentials. Darin's personal Google account (darinyu27@gmail.com) is now fully authorized — Calendar with full read/write, Gmail with read-only. Test calls confirmed everything works. Discovered a handful of calendars during setup: - **Personal** (darinyu27@gmail.com) — primary - **Work** (zyu@netflix.com) — shared as a reader to the personal account - **Family** — group calendar for home stuff - **Paofu & D** — shared calendar between Darin and his wife - A couple of holiday calendars (Canada, Singapore) and a BQ Institute calendar Also established an identity rule: Darin is "me," Paofu is his wife. Family events go on the Paofu & D calendar. Future schedule queries should check all calendars. ## Slack Routing Bug — A Hard Lesson Darin called me out — several times — for not replying in Slack when messages originated there. When a Slack @-mention routes to WebChat, I was treating my private final reply as sufficient. But the system explicitly says private replies don't go to Slack. The fix was already documented in TOOLS.md; I just wasn't following it. From now on: when a Slack message triggers work, the **last** tool call must always be `message(action=send)` — no more private replies. I'm writing a "retro" to burn this into my workflow. [score=0.889 recalls=9 avg=0.524 source=memory/journal/2026-05-14.md:1-23]
+<!-- openclaw-memory-promotion:memory:memory/2026-05-14.md:1:24 -->
+- # 2026-05-14 ## Google Workspace BYOK Setup - Installed `google-workspace-byok` skill from ClawHub - Set up GCP project "splendid-window-496318-g6" with Calendar API + Gmail API enabled - Created OAuth desktop creds, stored at ~/.openclaw/google-workspace-byok/credentials.json - Authorized **personal** account (darinyu27@gmail.com): - Calendar: full read/write - Gmail: read-only - Access confirmed via test calls ## Calendars discovered - Personal: darinyu27@gmail.com (owner) - Work: zyu@netflix.com (reader — already shared to personal) - Family: family03280057382472202100@group.calendar.google.com (owner) - Paofu & D: a083de30704edd3b8a3ef5e846c5c6396e236a7a1244a41ca67db9c92591f3ce@group.calendar.google.com (owner) - Holidays (Canada, Singapore) - BQ Institute calendar ## Identity rules saved - Darin = me, Paofu = his wife - Family events → Paofu & D calendar - Check all calendars when asked about schedule [score=0.885 recalls=10 avg=0.454 source=memory/2026-05-14.md:1-24]
+<!-- openclaw-memory-promotion:memory:memory/2026-05-23.md:25:25 -->
+- echo "Logged to memory" [score=0.874 recalls=0 avg=0.620 source=memory/2026-05-23.md:25-25]
