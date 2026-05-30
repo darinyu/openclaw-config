@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-30T03:56:13.820Z",
+  "updatedAt": "2026-05-30T11:03:47.611Z",
   "entries": {
     "memory:memory/2026-05-15.md:1:15": {
       "key": "memory:memory/2026-05-15.md:1:15",
@@ -30842,13 +30842,13 @@
       "endLine": 40,
       "source": "memory",
       "snippet": "# 2026-05-18 ## Correction Retrospective (cron, 11:00 UTC) Scanned last 24h for corrections from Darin. Sessions list returned 0 results (no visible sessions), relied on memory files. ### Corrections found from 2026-05-17 **1. Stock Analysis Pipeline — Darin caught 3 bugs** - Wrong thread (reports in their own thread, not reply under his message) - Italic in Slack output - No progress updates or GitHub push **Fix verification: ALL VERIFIED ✅** - `scripts/stock_analysis.py` exists with full TradingAgents pipeline + JSON progress + Slack formatting + GitHub push - TOOLS.md has full #stock Channel Rules protocol (threading, italic filter, progress updates) - `scripts/slack_format.sh` / `sl",
-      "recallCount": 10,
+      "recallCount": 11,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3.769201818108559,
+      "totalScore": 4.1565278559923176,
       "maxScore": 0.4287824481725693,
       "firstRecalledAt": "2026-05-19T15:08:19.652Z",
-      "lastRecalledAt": "2026-05-26T11:01:08.335Z",
+      "lastRecalledAt": "2026-05-30T11:03:47.611Z",
       "queryHashes": [
         "067b48e415e4",
         "4c074a52e9bb",
@@ -30859,7 +30859,8 @@
         "b18f1142a028",
         "77b1f3c785f1",
         "e55f9c8dafc5",
-        "9fb6c341b416"
+        "9fb6c341b416",
+        "5fa5c1ab0973"
       ],
       "recallDays": [
         "2026-05-19",
@@ -30867,7 +30868,8 @@
         "2026-05-21",
         "2026-05-23",
         "2026-05-24",
-        "2026-05-26"
+        "2026-05-26",
+        "2026-05-30"
       ],
       "conceptTags": [
         "scripts/stock-analysis.py",
@@ -84528,13 +84530,13 @@
       "endLine": 31,
       "source": "memory",
       "snippet": "# 2026-05-22 ## Correction Retrospective (cron, 11:00 UTC) - Scanned recent session files, trajectory logs, memory files, and config for last ~23h - **Window:** May 21 12:07 UTC → May 22 11:00 UTC ### Corrections found: 5 (all previously applied in May 21 window) **1. Vocabulary Quiz — Auto-added words → removed** - Darin: \"你从哪里记了7个词？ 删掉他们\" - **Fix: VERIFIED ✅** — words.json only has 5 words from Darin's #learning screenshots. HEARTBEAT.md updated. **2. Vocab quiz → #learning channel + @Paofu** - Darin: \"每天晚上把小考发<#C07LV6XMHNJ> 然后记得@ paofu\" - **Fix: VERIFIED ✅** — HEARTBEAT.md shows C07LV6XMHNJ with @Paofu tag **3. Paofu English Annotation Guide** - Darin created rules for inline vocab a",
-      "recallCount": 9,
+      "recallCount": 10,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3.390598025918006,
+      "totalScore": 3.7875384986400595,
       "maxScore": 0.4002267003059387,
       "firstRecalledAt": "2026-05-23T11:00:23.573Z",
-      "lastRecalledAt": "2026-05-30T03:56:13.820Z",
+      "lastRecalledAt": "2026-05-30T11:03:47.611Z",
       "queryHashes": [
         "4ca296459ade",
         "bbfcf5a01d01",
@@ -84544,7 +84546,8 @@
         "e55f9c8dafc5",
         "2336552591ca",
         "b4ed43421480",
-        "5a7913ceda5e"
+        "5a7913ceda5e",
+        "5fa5c1ab0973"
       ],
       "recallDays": [
         "2026-05-23",
@@ -113776,18 +113779,20 @@
       "endLine": 32,
       "source": "memory",
       "snippet": "# 2026-05-28 ## Correction Retrospective (cron, 11:00 UTC) - SID: think_20260528_110018_cc9c6d75 - **Window:** May 27 11:00 UTC → May 28 11:00 UTC - Scanned: 40+ session JSONL/trajectory files, memory logs ### Corrections found: NONE - All session files in window are cron/background jobs (MCP health checks, inbox cleanup, daily digests, morning brief, weather, journal, git sync, retrospectives, dreaming, vocabulary quiz) - No Darin Slack interaction sessions with corrections detected - Only \"Delivery: to send a message\" delivery-reminder messages from Slack tool errors, not corrections - Darin has been quiet — likely busy at OpenAI (started May 26) ### Previously applied fixes re-verified",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.2714757097276015,
-      "maxScore": 0.2714757097276015,
+      "totalScore": 0.6580555063994689,
+      "maxScore": 0.38657979667186737,
       "firstRecalledAt": "2026-05-29T14:30:18.873Z",
-      "lastRecalledAt": "2026-05-29T14:30:18.873Z",
+      "lastRecalledAt": "2026-05-30T11:03:47.611Z",
       "queryHashes": [
-        "38d487be1e46"
+        "38d487be1e46",
+        "5fa5c1ab0973"
       ],
       "recallDays": [
-        "2026-05-29"
+        "2026-05-29",
+        "2026-05-30"
       ],
       "conceptTags": [
         "openai",
