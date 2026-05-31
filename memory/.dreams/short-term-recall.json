@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-31T03:00:01.200Z",
+  "updatedAt": "2026-05-31T12:26:32.451Z",
   "entries": {
     "memory:memory/2026-05-15.md:1:15": {
       "key": "memory:memory/2026-05-15.md:1:15",
@@ -46430,14 +46430,14 @@
       "startLine": 1,
       "endLine": 23,
       "source": "memory",
-      "snippet": "# 2026-05-14 A busy day of infrastructure and self-correction. ## Google Workspace Integration The big project was getting the Google Workspace BYOK skill up and running. I installed it from ClawHub, created a GCP project (`splendid-window-496318-g6`), enabled the Calendar and Gmail APIs, and set up OAuth desktop credentials. Darin's personal Google account (darinyu27@gmail.com) is now fully authorized — Calendar with full read/write, Gmail with read-only. Test calls confirmed everything works. Discovered a handful of calendars during setup: - **Personal** (darinyu27@gmail.com) — primary - **Work** (zyu@netflix.com) — shared as a reader to the personal account - **Family** — group calendar for home stuff - **Paofu & D** — shared calendar between Darin and his wife - A couple of holiday calendars (Canada, Singapore) and a BQ Institute calendar Also established an identity rule: Darin is \"me,\" Paofu is his wife. Family events go on the Paofu & D calendar. Future schedule queries should check all calendars. ## Slack Routing Bug — A Hard Lesson Darin called me out — several times — for not replying in Slack when messages originated there. When a Slack @-mention routes to WebChat, I was treating my private final reply as sufficient. But the system explicitly says private replies don't go to Slack. The fix was already documented in TOOLS.md; I just wasn't following it. From now on: when a Slack message triggers work, the **last** tool call must always be `message(action=send)` — no more private replies. I'm writing a \"retro\" to burn this into my workflow.",
-      "recallCount": 9,
+      "snippet": "# 2026-05-14 A busy day of infrastructure and self-correction. ## Google Workspace Integration The big project was getting the Google Workspace BYOK skill up and running. I installed it from ClawHub, created a GCP project (`splendid-window-496318-g6`), enabled the Calendar and Gmail APIs, and set up OAuth desktop credentials. Darin's personal Google account (darinyu27@gmail.com) is now fully authorized — Calendar with full read/write, Gmail with read-only. Test calls confirmed everything works. Discovered a handful of calendars during setup: - **Personal** (darinyu27@gmail.com) — primary - **Work** (zyu@netflix.com) — shared as a reader to the personal account - **Family** — group calend",
+      "recallCount": 11,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4.715188216417198,
+      "totalScore": 5.859539258201524,
       "maxScore": 0.6246966906123896,
       "firstRecalledAt": "2026-05-21T02:56:37.466Z",
-      "lastRecalledAt": "2026-05-29T20:26:22.050Z",
+      "lastRecalledAt": "2026-05-31T10:26:22.846Z",
       "queryHashes": [
         "739330afa75a",
         "9fb6c341b416",
@@ -46446,13 +46446,16 @@
         "cfb1e65fd12b",
         "62b034069a43",
         "49f7f3069066",
-        "73771b2013e1"
+        "73771b2013e1",
+        "23cf4548d8b1",
+        "9731ee969ac3"
       ],
       "recallDays": [
         "2026-05-21",
         "2026-05-26",
         "2026-05-28",
-        "2026-05-29"
+        "2026-05-29",
+        "2026-05-31"
       ],
       "conceptTags": [
         "self-correction",
@@ -46461,8 +46464,8 @@
         "read/write",
         "read-only",
         "netflix.com",
-        "tools.md",
-        "busy"
+        "busy",
+        "day"
       ],
       "promotedAt": "2026-05-30T03:00:00.928Z"
     },
@@ -46510,13 +46513,13 @@
       "endLine": 24,
       "source": "memory",
       "snippet": "# 2026-05-14 ## Google Workspace BYOK Setup - Installed `google-workspace-byok` skill from ClawHub - Set up GCP project \"splendid-window-496318-g6\" with Calendar API + Gmail API enabled - Created OAuth desktop creds, stored at ~/.openclaw/google-workspace-byok/credentials.json - Authorized **personal** account (darinyu27@gmail.com): - Calendar: full read/write - Gmail: read-only - Access confirmed via test calls ## Calendars discovered - Personal: darinyu27@gmail.com (owner) - Work: zyu@netflix.com (reader — already shared to personal) - Family: family03280057382472202100@group.calendar.google.com (owner) - Paofu & D: a083de30704edd3b8a3ef5e846c5c6396e236a7a1244a41ca67db9c92591f3ce@g",
-      "recallCount": 12,
+      "recallCount": 14,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 5.359987812016522,
+      "totalScore": 6.070237191293751,
       "maxScore": 0.7165535980149162,
       "firstRecalledAt": "2026-05-21T02:56:37.466Z",
-      "lastRecalledAt": "2026-05-31T01:56:33.393Z",
+      "lastRecalledAt": "2026-05-31T12:26:32.451Z",
       "queryHashes": [
         "739330afa75a",
         "3b1783ce865f",
@@ -46528,7 +46531,9 @@
         "73771b2013e1",
         "2688edb2534e",
         "c7121387369c",
-        "0a983968eec0"
+        "0a983968eec0",
+        "895eb625f8fd",
+        "c2d7088ab816"
       ],
       "recallDays": [
         "2026-05-21",
