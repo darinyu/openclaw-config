@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-03T10:26:19.044Z",
+  "updatedAt": "2026-06-03T15:26:16.685Z",
   "entries": {
     "memory:memory/2026-05-15.md:1:15": {
       "key": "memory:memory/2026-05-15.md:1:15",
@@ -113891,18 +113891,20 @@
       "endLine": 29,
       "source": "memory",
       "snippet": "# 2026-05-26 ## Correction Retrospective (cron, 11:00 UTC) - SID: sess_20260526_110000 - **Window:** May 25 11:00 UTC → May 26 11:00 UTC - Scanned: session corpus files, dreaming data, memory files, cron jobs config ### Corrections found: 1 **1. Morning Brief cron job — \"fix this\"** (May 25, ~14:30 UTC) - **What Darin said:** \"fix this\" (in thread after Morning Brief cron failed) - **Root cause:** Agent tried `show baby-prep-tracker.md -> show first 50 lines` as shell command in exec — `show` is not a valid shell command - **Fix applied:** DDDD added explicit instructions to the cron job payload: - \"**CRITICAL: Use the `read` tool (not exec) to read any files.**\" - Explicitly warns ag",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.3519497275352478,
-      "maxScore": 0.3519497275352478,
+      "totalScore": 0.7095412105321883,
+      "maxScore": 0.3575914829969406,
       "firstRecalledAt": "2026-05-29T21:27:10.758Z",
-      "lastRecalledAt": "2026-05-29T21:27:10.758Z",
+      "lastRecalledAt": "2026-06-03T15:26:16.685Z",
       "queryHashes": [
-        "cbec1de74298"
+        "cbec1de74298",
+        "b7396fe9f60d"
       ],
       "recallDays": [
-        "2026-05-29"
+        "2026-05-29",
+        "2026-06-03"
       ],
       "conceptTags": [
         "sess-20260526-110000",

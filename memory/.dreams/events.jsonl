@@ -334,3 +334,4 @@
 {"type":"memory.dream.completed","timestamp":"2026-06-03T03:00:02.368Z","phase":"deep","reportPath":"/data/.openclaw/workspace/memory/dreaming/deep/2026-06-03.md","lineCount":3,"storageMode":"separate"}
 {"type":"memory.recall.recorded","timestamp":"2026-06-03T06:26:41.980Z","query":"google calendar skill personal calendar family calendar","resultCount":1,"results":[{"path":"memory/2026-05-14.md","startLine":1,"endLine":24,"score":0.6745690252074921}]}
 {"type":"memory.recall.recorded","timestamp":"2026-06-03T10:26:19.044Z","query":"Google Calendar integration personal work family calendar IDs","resultCount":1,"results":[{"path":"memory/2026-05-14.md","startLine":1,"endLine":24,"score":0.3821231693029403}]}
+{"type":"memory.recall.recorded","timestamp":"2026-06-03T15:26:16.685Z","query":"morning brief cron duplicate June 2026","resultCount":1,"results":[{"path":"memory/2026-05-26.md","startLine":1,"endLine":29,"score":0.3575914829969406}]}
