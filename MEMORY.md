@@ -108,14 +108,12 @@ Every piece of content written to Slack (cron jobs, responses, reports, DMs) MUS
 - If DeepSeek is unavailable or unsuitable for a task, fall back to Gemini, then ChatGPT
 - This applies to ALL generated content (reports, analyses, responses, cron jobs)
 
-## Promoted From Short-Term Memory (2026-05-31)
-
-<!-- openclaw-memory-promotion:memory:memory/2026-05-22.md:1:31 -->
-- # 2026-05-22 ## Correction Retrospective (cron, 11:00 UTC) - Scanned recent session files, trajectory logs, memory files, and config for last ~23h - **Window:** May 21 12:07 UTC → May 22 11:00 UTC ### Corrections found: 5 (all previously applied in May 21 window) **1. Vocabulary Quiz — Auto-added words → removed** - Darin: "你从哪里记了7个词？ 删掉他们" - **Fix: VERIFIED ✅** — words.json only has 5 words from Darin's #learning screenshots. HEARTBEAT.md updated. **2. Vocab quiz → #learning channel + @Paofu** - Darin: "每天晚上把小考发<#C07LV6XMHNJ> 然后记得@ paofu" - **Fix: VERIFIED ✅** — HEARTBEAT.md shows C07LV6XMHNJ with @Paofu tag **3. Paofu English Annotation Guide** - Darin created rules for inline vocab annotations in #learning posts - **Fix: VERIFIED ✅** — MEMORY.md has full "Paofu English Level & Annotation Guide" with priority rules **4. Nightly quiz with adaptive difficulty** - Darin: "每天晚上你可以根据水平随机选多选1-3个词" - **Fix: VERIFIED ✅** — MEMORY.md has Nightly Quiz rules, quiz.py exists for adaptive selection **5. LLM Preference Order** - Darin: DeepSeek > Gemini > ChatGPT - **Fix: VERIFIED ✅** — MEMORY.md has LLM Preference Order section ### New fixes applied: NONE ### Items needing human review: NONE [score=0.899 recalls=10 avg=0.379 source=memory/2026-05-22.md:1-31]
-<!-- openclaw-memory-promotion:memory:memory/2026-05-24.md:28:28 -->
-- Sent daily tech+finance digest to #learning (C07LV6XMHNJ) — session: sess_20260524_140000 [score=0.874 recalls=0 avg=0.620 source=memory/2026-05-24.md:28-28]
-
 ## Promoted From Short-Term Memory (2026-06-02)
 
 <!-- openclaw-memory-promotion:memory:memory/2026-05-26.md:10:10 -->
 - **1. Morning Brief cron job — "fix this"** (May 25, ~14:30 UTC) [score=0.860 recalls=0 avg=0.620 source=memory/2026-05-26.md:10-10]
+
+## Promoted From Short-Term Memory (2026-06-05)
+
+<!-- openclaw-memory-promotion:memory:memory/journal/2026-05-14.md:20:40 -->
+- Darin called me out — several times — for not replying in Slack when messages originated there. When a Slack @-mention routes to WebChat, I was treating my private final reply as sufficient. But the system explicitly says private replies don't go to Slack. The fix was already documented in TOOLS.md; I just wasn't following it. From now on: when a Slack message triggers work, the **last** tool call must always be `message(action=send)` — no more private replies. I'm writing a "retro" to burn this into my workflow. ## Cron Job Setup Replaced the heartbeat-based periodic checks with proper cron jobs: | Job | Schedule | Destination | |-----|----------|-------------| | Tech + Finance digest | 9am, 4pm PT daily | #learning | | Work meeting + email alerts | Every 10-20 min during work hours (8am-9pm) | Darin DM | | Personal calendar morning brief | 8am PT daily | Darin DM | | Daily weather brief | 7am PT daily | Slack channel | Notable: the `openclaw cron add` CLI couldn't reach the gateway from the sandbox, so I edited `~/.openclaw/cron/jobs.json` directly. Gateway auto-reloads on external file changes, which saved the day. ## Vibe Frustrating but productive. Getting called out for the same mistake three times in one conversation stung, but the fix is concrete and the retro is done. The Google Workspace integration went smoothly and opens up a lot of capability — calendar awareness, email triage. By the end of the day the automation foundation was much stronger than it was at the start. [score=0.877 recalls=8 avg=0.395 source=memory/journal/2026-05-14.md:20-40]
