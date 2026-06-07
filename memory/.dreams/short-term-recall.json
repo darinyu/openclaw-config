@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-07T03:56:28.693Z",
+  "updatedAt": "2026-06-07T18:26:23.804Z",
   "entries": {
     "memory:memory/2026-05-15.md:1:15": {
       "key": "memory:memory/2026-05-15.md:1:15",
@@ -46529,13 +46529,13 @@
       "endLine": 24,
       "source": "memory",
       "snippet": "# 2026-05-14 ## Google Workspace BYOK Setup - Installed `google-workspace-byok` skill from ClawHub - Set up GCP project \"splendid-window-496318-g6\" with Calendar API + Gmail API enabled - Created OAuth desktop creds, stored at ~/.openclaw/google-workspace-byok/credentials.json - Authorized **personal** account (darinyu27@gmail.com): - Calendar: full read/write - Gmail: read-only - Access confirmed via test calls ## Calendars discovered - Personal: darinyu27@gmail.com (owner) - Work: zyu@netflix.com (reader — already shared to personal) - Family: family03280057382472202100@group.calendar.google.com (owner) - Paofu & D: a083de30704edd3b8a3ef5e846c5c6396e236a7a1244a41ca67db9c92591f3ce@g",
-      "recallCount": 20,
+      "recallCount": 21,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 9.154801153429833,
+      "totalScore": 9.505444317349282,
       "maxScore": 0.7165535980149162,
       "firstRecalledAt": "2026-05-21T02:56:37.466Z",
-      "lastRecalledAt": "2026-06-07T03:56:28.693Z",
+      "lastRecalledAt": "2026-06-07T18:26:23.804Z",
       "queryHashes": [
         "739330afa75a",
         "3b1783ce865f",
@@ -46555,7 +46555,8 @@
         "fb9228c15055",
         "8aeab31ef508",
         "a1a693d757a5",
-        "02d3ca25ba23"
+        "02d3ca25ba23",
+        "2ac47f6c0f96"
       ],
       "recallDays": [
         "2026-05-21",
@@ -113894,22 +113895,24 @@
       "endLine": 32,
       "source": "memory",
       "snippet": "# 2026-05-28 ## Correction Retrospective (cron, 11:00 UTC) - SID: think_20260528_110018_cc9c6d75 - **Window:** May 27 11:00 UTC → May 28 11:00 UTC - Scanned: 40+ session JSONL/trajectory files, memory logs ### Corrections found: NONE - All session files in window are cron/background jobs (MCP health checks, inbox cleanup, daily digests, morning brief, weather, journal, git sync, retrospectives, dreaming, vocabulary quiz) - No Darin Slack interaction sessions with corrections detected - Only \"Delivery: to send a message\" delivery-reminder messages from Slack tool errors, not corrections - Darin has been quiet — likely busy at OpenAI (started May 26) ### Previously applied fixes re-verified",
-      "recallCount": 3,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.0162518096478743,
-      "maxScore": 0.38657979667186737,
+      "totalScore": 1.4035107565434737,
+      "maxScore": 0.38725894689559937,
       "firstRecalledAt": "2026-05-29T14:30:18.873Z",
-      "lastRecalledAt": "2026-06-04T11:00:30.071Z",
+      "lastRecalledAt": "2026-06-07T11:00:53.974Z",
       "queryHashes": [
         "38d487be1e46",
         "5fa5c1ab0973",
-        "327dbf7b450e"
+        "327dbf7b450e",
+        "a23ebab1d03d"
       ],
       "recallDays": [
         "2026-05-29",
         "2026-05-30",
-        "2026-06-04"
+        "2026-06-04",
+        "2026-06-07"
       ],
       "conceptTags": [
         "openai",
@@ -113929,20 +113932,22 @@
       "endLine": 29,
       "source": "memory",
       "snippet": "# 2026-05-26 ## Correction Retrospective (cron, 11:00 UTC) - SID: sess_20260526_110000 - **Window:** May 25 11:00 UTC → May 26 11:00 UTC - Scanned: session corpus files, dreaming data, memory files, cron jobs config ### Corrections found: 1 **1. Morning Brief cron job — \"fix this\"** (May 25, ~14:30 UTC) - **What Darin said:** \"fix this\" (in thread after Morning Brief cron failed) - **Root cause:** Agent tried `show baby-prep-tracker.md -> show first 50 lines` as shell command in exec — `show` is not a valid shell command - **Fix applied:** DDDD added explicit instructions to the cron job payload: - \"**CRITICAL: Use the `read` tool (not exec) to read any files.**\" - Explicitly warns ag",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.7095412105321883,
-      "maxScore": 0.3575914829969406,
+      "totalScore": 1.0903094589710234,
+      "maxScore": 0.3807682484388351,
       "firstRecalledAt": "2026-05-29T21:27:10.758Z",
-      "lastRecalledAt": "2026-06-03T15:26:16.685Z",
+      "lastRecalledAt": "2026-06-07T11:00:53.974Z",
       "queryHashes": [
         "cbec1de74298",
-        "b7396fe9f60d"
+        "b7396fe9f60d",
+        "a23ebab1d03d"
       ],
       "recallDays": [
         "2026-05-29",
-        "2026-06-03"
+        "2026-06-03",
+        "2026-06-07"
       ],
       "conceptTags": [
         "sess-20260526-110000",
@@ -150371,6 +150376,37 @@
         "request",
         "was",
         "aborted"
+      ]
+    },
+    "memory:memory/2026-05-30.md:1:27": {
+      "key": "memory:memory/2026-05-30.md:1:27",
+      "path": "memory/2026-05-30.md",
+      "startLine": 1,
+      "endLine": 27,
+      "source": "memory",
+      "snippet": "# 2026-05-30 ## Correction Retrospective (cron, 11:00 UTC) - SID: think_20260530_110018_ea7aecff - **Window:** May 29 11:00 UTC → May 30 11:00 UTC - Scanned: sessions_list, memory files, dreaming data, journal, system files ### Corrections found: NONE - No Darin Slack interaction sessions in window - All sessions in window are automated cron/background jobs only - 9th consecutive retrospective with zero new corrections ### Previously applied fixes re-verified: ALL ✅ - **Slack format scripts** — ✅ slack_format.sh + slack_formatter.py both exist and work - **Think.py (Axiom logging)** — ✅ at shared-skills/scripts/think.py - **Push trading report** — ✅ at shared-skills/scripts/push_trading_r",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.3818988442420959,
+      "maxScore": 0.3818988442420959,
+      "firstRecalledAt": "2026-06-07T11:00:53.974Z",
+      "lastRecalledAt": "2026-06-07T11:00:53.974Z",
+      "queryHashes": [
+        "a23ebab1d03d"
+      ],
+      "recallDays": [
+        "2026-06-07"
+      ],
+      "conceptTags": [
+        "think-20260530-110018-ea7aecff",
+        "sessions-list",
+        "cron/background",
+        "re-verified",
+        "slack-format.sh",
+        "slack-formatter.py",
+        "think.py",
+        "shared-skills/scripts/think.py"
       ]
     }
   }
