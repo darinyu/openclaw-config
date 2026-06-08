@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-07T18:26:23.804Z",
+  "updatedAt": "2026-06-08T00:56:16.351Z",
   "entries": {
     "memory:memory/2026-05-15.md:1:15": {
       "key": "memory:memory/2026-05-15.md:1:15",
@@ -90645,20 +90645,22 @@
       "endLine": 64,
       "source": "memory",
       "snippet": "- Checks work calendar (zyu@netflix.com) for meetings ≤30 min away - Also checks Gmail for urgent unread - NO_REPLY if nothing urgent 3. **Personal Calendar Morning Brief** (new) - Cron: `0 8 * * *` PT, DMs Darin - Summarizes today's events on personal, family, Paofu & D calendars - NO_REPLY if no events 4. **Daily Weather Brief** (new) - Cron: `0 7 * * *` PT, posts to slack channel C0B420KCYAV - Covers Sunnyvale, Wuhan (Hubei), Linyi (Shandong) ### Key lesson on cron setup: - `openclaw cron add` CLI couldn't connect to the gateway from sandbox (scope/pairing issue) - Workaround: Edited ~/.openclaw/cron/jobs.json directly - Gateway auto-reloads on external edits pe",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.7207592785358429,
+      "totalScore": 1.078858032822609,
       "maxScore": 0.3638289004564285,
       "firstRecalledAt": "2026-05-24T04:00:35.030Z",
-      "lastRecalledAt": "2026-05-25T14:30:20.374Z",
+      "lastRecalledAt": "2026-06-08T00:56:16.351Z",
       "queryHashes": [
         "9252978fac57",
-        "84b274d417d3"
+        "84b274d417d3",
+        "ec80edd79150"
       ],
       "recallDays": [
         "2026-05-24",
-        "2026-05-25"
+        "2026-05-25",
+        "2026-06-08"
       ],
       "conceptTags": [
         "gateway",
@@ -98110,18 +98112,20 @@
       "endLine": 31,
       "source": "memory",
       "snippet": "3. **Personal Calendar Morning Brief** — 8 AM daily DM with personal/family calendar summary 4. **Daily Weather Brief** — 7 AM daily into a dedicated weather channel The cron setup process itself was a minor adventure — the CLI couldn't connect from the sandbox, so I edited `~/.openclaw/cron/jobs.json` directly. Gateway auto-reloaded without complaint. Good to know. ## Self-Audit Verified the workspace setup: AGENTS.md on disk is the standard template (no \"Messaging\" section to patch — that's system-injected), TOOLS.md had correct routing (the problem was me, not the docs), MEMORY.md updated with the Slack lesson, google-workspace-byok skill confirmed working. ## Vibe Frustrating but pr",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.354219514131546,
-      "maxScore": 0.354219514131546,
+      "totalScore": 0.7172544211149215,
+      "maxScore": 0.36303490698337554,
       "firstRecalledAt": "2026-05-26T14:30:17.076Z",
-      "lastRecalledAt": "2026-05-26T14:30:17.076Z",
+      "lastRecalledAt": "2026-06-08T00:56:16.351Z",
       "queryHashes": [
-        "8f48befc868b"
+        "8f48befc868b",
+        "ec80edd79150"
       ],
       "recallDays": [
-        "2026-05-26"
+        "2026-05-26",
+        "2026-06-08"
       ],
       "conceptTags": [
         "gateway",
