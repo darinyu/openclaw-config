@@ -437,3 +437,5 @@
 {"type":"memory.dream.completed","timestamp":"2026-06-10T03:00:01.730Z","phase":"rem","reportPath":"/data/.openclaw/workspace/memory/dreaming/rem/2026-06-10.md","lineCount":7,"storageMode":"separate"}
 {"type":"memory.dream.completed","timestamp":"2026-06-10T03:00:01.730Z","phase":"deep","reportPath":"/data/.openclaw/workspace/memory/dreaming/deep/2026-06-10.md","lineCount":2,"storageMode":"separate"}
 {"type":"memory.recall.recorded","timestamp":"2026-06-10T03:56:19.481Z","query":"google calendar integration credentials oauth","resultCount":1,"results":[{"path":"memory/journal/2026-05-14.md","startLine":1,"endLine":23,"score":0.5490020618357563}]}
+{"type":"memory.recall.recorded","timestamp":"2026-06-10T07:56:21.748Z","query":"Google Calendar integration skill path","resultCount":1,"results":[{"path":"memory/2026-05-14.md","startLine":1,"endLine":24,"score":0.3514721632003784}]}
+{"type":"memory.recall.recorded","timestamp":"2026-06-10T12:26:25.411Z","query":"google calendar integration","resultCount":1,"results":[{"path":"memory/journal/2026-05-14.md","startLine":1,"endLine":23,"score":0.549393633940858}]}
