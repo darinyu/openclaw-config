@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-11T21:26:20.755Z",
+  "updatedAt": "2026-06-12T06:56:21.528Z",
   "entries": {
     "memory:memory/2026-05-15.md:1:15": {
       "key": "memory:memory/2026-05-15.md:1:15",
@@ -142378,12 +142378,12 @@
       "source": "memory",
       "snippet": "Heartbeat (~12:56 AM UTC / 5:56 PM PT Thu): No urgent items; Calendar: \"Investment\" event tomorrow 9:00-10:00 AM PT (Paofu & D) — Roth IRA contributions; Weather: Sunny, 54-78°F, no rain; NVDA closed $218.66 (+1.82%) — bounce from $214.75. After-hours -1% on Elizabeth Warren requ",
       "recallCount": 0,
-      "dailyCount": 7,
+      "dailyCount": 8,
       "groundedCount": 0,
-      "totalScore": 4.34,
+      "totalScore": 4.96,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-06-05T03:00:01.146Z",
-      "lastRecalledAt": "2026-06-11T03:00:03.827Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
       "queryHashes": [
         "b58cb32b4279"
       ],
@@ -142394,7 +142394,8 @@
         "2026-06-08",
         "2026-06-09",
         "2026-06-10",
-        "2026-06-11"
+        "2026-06-11",
+        "2026-06-12"
       ],
       "conceptTags": [
         "00-10",
@@ -142415,12 +142416,12 @@
       "source": "memory",
       "snippet": "Heartbeat (~12:56 AM UTC / 5:56 PM PT Thu): SPY $757.09 (+0.38%) near 52w high $760.40; No entry signals triggered; Vocabulary quiz cron at 8:30 PM PT — still pending (check in next heartbeat)",
       "recallCount": 0,
-      "dailyCount": 7,
+      "dailyCount": 8,
       "groundedCount": 0,
-      "totalScore": 4.34,
+      "totalScore": 4.96,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-06-05T03:00:01.146Z",
-      "lastRecalledAt": "2026-06-11T03:00:03.827Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
       "queryHashes": [
         "b58cb32b4279"
       ],
@@ -142431,7 +142432,8 @@
         "2026-06-08",
         "2026-06-09",
         "2026-06-10",
-        "2026-06-11"
+        "2026-06-11",
+        "2026-06-12"
       ],
       "conceptTags": [
         "757.09",
@@ -150478,12 +150480,12 @@
       "source": "memory",
       "snippet": "Correction Retrospective (cron, 11:00 UTC): SID: sess_20260607_110000; **Window:** Jun 6 11:00 UTC → Jun 7 11:00 UTC; Scanned: sessions_list, memory files, dreaming data, journal, Slack channel C0B4EK31NCU, session corpus files",
       "recallCount": 0,
-      "dailyCount": 4,
+      "dailyCount": 5,
       "groundedCount": 0,
-      "totalScore": 2.48,
+      "totalScore": 3.1,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-06-08T03:00:00.829Z",
-      "lastRecalledAt": "2026-06-11T03:00:03.827Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
       "queryHashes": [
         "848f5c932f67"
       ],
@@ -150491,7 +150493,8 @@
         "2026-06-08",
         "2026-06-09",
         "2026-06-10",
-        "2026-06-11"
+        "2026-06-11",
+        "2026-06-12"
       ],
       "conceptTags": [
         "sess-20260607-110000",
@@ -150512,12 +150515,12 @@
       "source": "memory",
       "snippet": "Corrections found: NONE: No Darin Slack interaction sessions in window; All sessions in window are automated cron/background jobs only; Only user interaction in corpus was \"现在有钱了嘛\" (a question, not a correction); 13th consecutive retrospective with zero new corrections",
       "recallCount": 0,
-      "dailyCount": 4,
+      "dailyCount": 5,
       "groundedCount": 0,
-      "totalScore": 2.48,
+      "totalScore": 3.1,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-06-08T03:00:00.829Z",
-      "lastRecalledAt": "2026-06-11T03:00:03.827Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
       "queryHashes": [
         "848f5c932f67"
       ],
@@ -150525,7 +150528,8 @@
         "2026-06-08",
         "2026-06-09",
         "2026-06-10",
-        "2026-06-11"
+        "2026-06-11",
+        "2026-06-12"
       ],
       "conceptTags": [
         "cron/background",
@@ -150546,12 +150550,12 @@
       "source": "memory",
       "snippet": "Previously applied fixes re-verified: ALL ✅: **Slack format scripts** — ✅ slack_format.sh + slack_formatter.py both exist and work; **Think.py (Axiom logging)** — ✅ at shared-skills/scripts/think.py (13722 bytes); **Push trading report** — ✅ at shared-skills/scripts/push_trading_",
       "recallCount": 0,
-      "dailyCount": 4,
+      "dailyCount": 5,
       "groundedCount": 0,
-      "totalScore": 2.48,
+      "totalScore": 3.1,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-06-08T03:00:00.829Z",
-      "lastRecalledAt": "2026-06-11T03:00:03.827Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
       "queryHashes": [
         "848f5c932f67"
       ],
@@ -150559,7 +150563,8 @@
         "2026-06-08",
         "2026-06-09",
         "2026-06-10",
-        "2026-06-11"
+        "2026-06-11",
+        "2026-06-12"
       ],
       "conceptTags": [
         "re-verified",
@@ -150580,12 +150585,12 @@
       "source": "memory",
       "snippet": "Previously applied fixes re-verified: ALL ✅: **SOUL.md** — ✅ bold-only rule intact; **AGENTS.md** — ✅ standing orders + reaction rules intact; **Slack format filter** — ✅ SLACK_FORMAT_FILTER.md exists with proper rules",
       "recallCount": 0,
-      "dailyCount": 4,
+      "dailyCount": 5,
       "groundedCount": 0,
-      "totalScore": 2.48,
+      "totalScore": 3.1,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-06-08T03:00:00.829Z",
-      "lastRecalledAt": "2026-06-11T03:00:03.827Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
       "queryHashes": [
         "848f5c932f67"
       ],
@@ -150593,7 +150598,8 @@
         "2026-06-08",
         "2026-06-09",
         "2026-06-10",
-        "2026-06-11"
+        "2026-06-11",
+        "2026-06-12"
       ],
       "conceptTags": [
         "re-verified",
@@ -150614,12 +150620,12 @@
       "source": "memory",
       "snippet": "Notable events: Several MCP Health Check cron jobs timed out overnight (model-call-started / tool-execution-started phases); Inbox cleanup also timed out (Request was aborted); Dreaming system ran successfully at 03:00 UTC",
       "recallCount": 0,
-      "dailyCount": 4,
+      "dailyCount": 5,
       "groundedCount": 0,
-      "totalScore": 2.48,
+      "totalScore": 3.1,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-06-08T03:00:00.829Z",
-      "lastRecalledAt": "2026-06-11T03:00:03.827Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
       "queryHashes": [
         "848f5c932f67"
       ],
@@ -150627,7 +150633,8 @@
         "2026-06-08",
         "2026-06-09",
         "2026-06-10",
-        "2026-06-11"
+        "2026-06-11",
+        "2026-06-12"
       ],
       "conceptTags": [
         "model-call-started",
@@ -159150,20 +159157,22 @@
       "endLine": 50,
       "source": "memory",
       "snippet": "- Anthropic IPO targeting Oct 2026, Bristol-Myers Squibb Claude Enterprise deal - Google I/O 2026: Gemini 3.5 Flash, Omni Flash, Pics, Spark, smart glasses, Gemma 4 - GPT-5.5: 60% fewer hallucinations, GPT-5.5 Instant cuts 50% - Meta TRIBE v2: digital twin of human neural activity, 70x resolution - Anthropic patches Claude Code sandbox bypass, dreaming technique - DeepMind union talks, Contextual AI acquisition $80-90M - UPenn light-matter particles for energy-efficient AI computing **Finance:** - S&P +0.84%, Dow +1.07%, Nasdaq +1.29%, VIX 17.53 - Nvidia rallied ahead of Q1 FY2027 earnings (expect ~$79B rev) - Target -7.2% despite beat (cautious outlook punished) - TJX +5.7%, Red Robin +15.",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.9857486177469086,
+      "totalScore": 1.3635156084085296,
       "maxScore": 0.5723766524577927,
       "firstRecalledAt": "2026-06-09T03:16:21.299Z",
-      "lastRecalledAt": "2026-06-10T23:56:16.622Z",
+      "lastRecalledAt": "2026-06-12T06:56:21.528Z",
       "queryHashes": [
         "1d5357a21ba4",
-        "81f21954caab"
+        "81f21954caab",
+        "71954bd39be5"
       ],
       "recallDays": [
         "2026-06-09",
-        "2026-06-10"
+        "2026-06-10",
+        "2026-06-12"
       ],
       "conceptTags": [
         "gpt",
@@ -162841,17 +162850,18 @@
       "source": "memory",
       "snippet": "Heartbeat 4:56 PM UTC (9:56 AM PT): **Hat reminder:** Sent DM to Darin — back-to-back work meetings starting 10:05 AM PT",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-06-11T03:00:03.827Z",
-      "lastRecalledAt": "2026-06-11T03:00:03.827Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
       "queryHashes": [
         "15a88de18915"
       ],
       "recallDays": [
-        "2026-06-11"
+        "2026-06-11",
+        "2026-06-12"
       ],
       "conceptTags": [
         "back-to-back",
@@ -162872,17 +162882,18 @@
       "source": "memory",
       "snippet": "Heartbeat 4:56 PM UTC (9:56 AM PT): **Morning Brief duplicate watch:** ✅ No duplicate. Ran once at 7:30 AM PT but errored (DeepSeek \"Request was aborted\")",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-06-11T03:00:03.827Z",
-      "lastRecalledAt": "2026-06-11T03:00:03.827Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
       "queryHashes": [
         "15a88de18915"
       ],
       "recallDays": [
-        "2026-06-11"
+        "2026-06-11",
+        "2026-06-12"
       ],
       "conceptTags": [
         "heartbeat",
@@ -162903,17 +162914,18 @@
       "source": "memory",
       "snippet": "Heartbeat 4:56 PM UTC (9:56 AM PT): **Calendar:**",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-06-11T03:00:03.827Z",
-      "lastRecalledAt": "2026-06-11T03:00:03.827Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
       "queryHashes": [
         "15a88de18915"
       ],
       "recallDays": [
-        "2026-06-11"
+        "2026-06-11",
+        "2026-06-12"
       ],
       "conceptTags": [
         "heartbeat",
@@ -162929,17 +162941,18 @@
       "source": "memory",
       "snippet": "Heartbeat 4:56 PM UTC (9:56 AM PT): Personal: No events today; Paofu & D: No events today; Family: No events today; Work (OpenAI): 8 meetings, 10:05 AM - 7:00 PM PT",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-06-11T03:00:03.827Z",
-      "lastRecalledAt": "2026-06-11T03:00:03.827Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
       "queryHashes": [
         "15a88de18915"
       ],
       "recallDays": [
-        "2026-06-11"
+        "2026-06-11",
+        "2026-06-12"
       ],
       "conceptTags": [
         "openai",
@@ -162960,17 +162973,18 @@
       "source": "memory",
       "snippet": "Heartbeat 4:56 PM UTC (9:56 AM PT): **Weather:** Sunnyvale — Sunny, 21°C",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-06-11T03:00:03.827Z",
-      "lastRecalledAt": "2026-06-11T03:00:03.827Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
       "queryHashes": [
         "15a88de18915"
       ],
       "recallDays": [
-        "2026-06-11"
+        "2026-06-11",
+        "2026-06-12"
       ],
       "conceptTags": [
         "heartbeat",
@@ -162988,17 +163002,18 @@
       "source": "memory",
       "snippet": "Heartbeat 4:56 PM UTC (9:56 AM PT): **Stock check (NVDA):** $202.71 (-2.63%). Not at RSI<30 trigger.",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-06-11T03:00:03.827Z",
-      "lastRecalledAt": "2026-06-11T03:00:03.827Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
       "queryHashes": [
         "15a88de18915"
       ],
       "recallDays": [
-        "2026-06-11"
+        "2026-06-11",
+        "2026-06-12"
       ],
       "conceptTags": [
         "202.71",
@@ -163019,17 +163034,18 @@
       "source": "memory",
       "snippet": "Heartbeat 5:56 PM UTC (10:56 AM PT): **Status:** Darin in back-to-back meetings (10:05 AM - 7:00 PM PT). All periodic checks handled in prior heartbeat. Nothing urgent.",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-06-11T03:00:03.827Z",
-      "lastRecalledAt": "2026-06-11T03:00:03.827Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
       "queryHashes": [
         "15a88de18915"
       ],
       "recallDays": [
-        "2026-06-11"
+        "2026-06-11",
+        "2026-06-12"
       ],
       "conceptTags": [
         "back-to-back",
@@ -163050,17 +163066,18 @@
       "source": "memory",
       "snippet": "Heartbeat 5:56 PM UTC (10:56 AM PT): **Cron job failures:** Multiple jobs failing with \"Request was aborted\" (DeepSeek API timeout). Affecting: morning brief, weather brief, tech digest, MCP health check. This is a recurring DeepSeek API issue.",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-06-11T03:00:03.827Z",
-      "lastRecalledAt": "2026-06-11T03:00:03.827Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
       "queryHashes": [
         "15a88de18915"
       ],
       "recallDays": [
-        "2026-06-11"
+        "2026-06-11",
+        "2026-06-12"
       ],
       "conceptTags": [
         "heartbeat",
@@ -167159,18 +167176,20 @@
       "endLine": 70,
       "source": "memory",
       "snippet": "- Script: `scripts/check_strategy_signals.sh` (signal conditions reference) - Cron job updated to load skill for weekday pre-market analysis at 6:00 AM PT - Key signals: NVDA RSI<30 (strongest + most robust WFA), ETFs BB touches, EMA/MACD crosses - Eligible moderate-risk strategies: RSI MR (R4), BB MR (R3), EMA Cross (R5), MACD Cross (R5), Covered Calls (R1-2), Cash Puts (R2-3) - Excluded for moderate: Supertrend (R7), Pair Trading (R7), 0DTE (R10), Earnings Straddles (R9) - HEARTBEAT.md updated with signal check reminder ## Pre-Market Deep Analysis (12:19 PM PT) — sess_20260520_121900 - VIX: 17.44 (15-25 regime, mean reversion favored) - Market: Strong green day, semis leading (AMD +8.3%,",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.3805200576782226,
-      "maxScore": 0.3805200576782226,
+      "totalScore": 0.7847035199403762,
+      "maxScore": 0.4041834622621536,
       "firstRecalledAt": "2026-06-11T09:26:19.471Z",
-      "lastRecalledAt": "2026-06-11T09:26:19.471Z",
+      "lastRecalledAt": "2026-06-12T06:56:21.528Z",
       "queryHashes": [
-        "eade0cc28eb3"
+        "eade0cc28eb3",
+        "71954bd39be5"
       ],
       "recallDays": [
-        "2026-06-11"
+        "2026-06-11",
+        "2026-06-12"
       ],
       "conceptTags": [
         "pre-market",
@@ -167212,6 +167231,4855 @@
         "16.06",
         "637.90",
         "0.9"
+      ]
+    },
+    "memory:memory/2026-06-10.md:26:26": {
+      "key": "memory:memory/2026-06-10.md:26:26",
+      "path": "memory/2026-06-10.md",
+      "startLine": 26,
+      "endLine": 26,
+      "source": "memory",
+      "snippet": "Heartbeat 10:56 PM PT (night check): **Calendar:** Thursday June 11 — No events across all calendars.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "15a88de18915"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "heartbeat",
+        "night",
+        "check",
+        "calendar",
+        "thursday",
+        "june",
+        "events",
+        "across"
+      ]
+    },
+    "memory:memory/2026-06-10.md:28:28": {
+      "key": "memory:memory/2026-06-10.md:28:28",
+      "path": "memory/2026-06-10.md",
+      "startLine": 28,
+      "endLine": 28,
+      "source": "memory",
+      "snippet": "Heartbeat 10:56 PM PT (night check): **Weather:** Sunnyvale — Clear, hot tomorrow. High 96°F, Low 62°F, 2% rain.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "15a88de18915"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "heartbeat",
+        "night",
+        "check",
+        "weather",
+        "sunnyvale",
+        "clear",
+        "hot",
+        "tomorrow"
+      ]
+    },
+    "memory:memory/2026-06-10.md:30:30": {
+      "key": "memory:memory/2026-06-10.md:30:30",
+      "path": "memory/2026-06-10.md",
+      "startLine": 30,
+      "endLine": 30,
+      "source": "memory",
+      "snippet": "Heartbeat 10:56 PM PT (night check): **Morning Brief check:** Today's brief (Jun 10) errored with \"Request was aborted\" at 7:30 AM PT. Darin got failure notification. Tomorrow's run at 7:30 AM PT.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "15a88de18915"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "heartbeat",
+        "night",
+        "check",
+        "morning",
+        "brief",
+        "today's",
+        "jun",
+        "errored"
+      ]
+    },
+    "memory:memory/2026-06-10.md:32:32": {
+      "key": "memory:memory/2026-06-10.md:32:32",
+      "path": "memory/2026-06-10.md",
+      "startLine": 32,
+      "endLine": 32,
+      "source": "memory",
+      "snippet": "Heartbeat 10:56 PM PT (night check): **Stock pre-market:** N/A — market closed. 6 AM PT cron handles this.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "15a88de18915"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "pre-market",
+        "n/a",
+        "heartbeat",
+        "night",
+        "check",
+        "stock",
+        "pre",
+        "market"
+      ]
+    },
+    "memory:memory/2026-06-10.md:34:34": {
+      "key": "memory:memory/2026-06-10.md:34:34",
+      "path": "memory/2026-06-10.md",
+      "startLine": 34,
+      "endLine": 34,
+      "source": "memory",
+      "snippet": "Heartbeat 10:56 PM PT (night check): **Hat check:** N/A — not workday morning/early afternoon.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "15a88de18915"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "n/a",
+        "morning/early",
+        "heartbeat",
+        "night",
+        "check",
+        "hat",
+        "not",
+        "workday"
+      ]
+    },
+    "memory:memory/2026-06-10.md:36:36": {
+      "key": "memory:memory/2026-06-10.md:36:36",
+      "path": "memory/2026-06-10.md",
+      "startLine": 36,
+      "endLine": 36,
+      "source": "memory",
+      "snippet": "Heartbeat 10:56 PM PT (night check): **Vocabulary quiz:** 8:30 PM PT cron handles this.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "15a88de18915"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "heartbeat",
+        "night",
+        "check",
+        "vocabulary",
+        "quiz",
+        "cron",
+        "handles"
+      ]
+    },
+    "memory:memory/2026-06-10.md:38:38": {
+      "key": "memory:memory/2026-06-10.md:38:38",
+      "path": "memory/2026-06-10.md",
+      "startLine": 38,
+      "endLine": 38,
+      "source": "memory",
+      "snippet": "Heartbeat 10:56 PM PT (night check): Nothing actionable at this hour.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "15a88de18915"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "heartbeat",
+        "night",
+        "check",
+        "nothing",
+        "actionable",
+        "hour"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:18:18": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:18:18",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 18,
+      "endLine": 18,
+      "source": "memory",
+      "snippet": "Assistant: Request was aborted",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "request",
+        "was",
+        "aborted"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:19:19": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:19:19",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 19,
+      "endLine": 19,
+      "source": "memory",
+      "snippet": "Assistant: **MCP Health Check** ✅ All online **XHS** ✅ service up, ⚠️ login expired **TV** ✅ healthy (AAPL: $291.58) No restarts needed",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "291.58",
+        "mcp",
+        "health",
+        "check",
+        "all",
+        "online",
+        "xhs",
+        "service"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:20:20": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:20:20",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 20,
+      "endLine": 20,
+      "source": "memory",
+      "snippet": "Assistant: **XHS** ✅ online, ⚠️ login expired **TradingView** ✅ healthy (AAPL $291.58) No restarts needed.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "291.58",
+        "xhs",
+        "online",
+        "login",
+        "expired",
+        "tradingview",
+        "healthy",
+        "aapl"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:21:21": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:21:21",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 21,
+      "endLine": 21,
+      "source": "memory",
+      "snippet": "Assistant: **MCP Health Check** (Thu Jun 11, 6:00 AM PT) --- **XHS** ⚠️ online, login expired **TV** ✅ healthy (AAPL $291.58) --- No restarts needed",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "291.58",
+        "mcp",
+        "health",
+        "check",
+        "thu",
+        "jun",
+        "xhs",
+        "online"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:22:22": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:22:22",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 22,
+      "endLine": 22,
+      "source": "memory",
+      "snippet": "Assistant: Journal saved for 2026-06-10 (session: sess_20260610_235900)",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "sess-20260610-235900",
+        "journal",
+        "saved"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:23:23": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:23:23",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 23,
+      "endLine": 23,
+      "source": "memory",
+      "snippet": "Assistant: Request was aborted",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "request",
+        "was",
+        "aborted"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:24:24": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:24:24",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 24,
+      "endLine": 24,
+      "source": "memory",
+      "snippet": "Assistant: Git sync: **15 files** committed -> <https://github.com/darinyu/openclaw-config/commit/123a441|123a441> :git: • memory/.dreams/daily-ingestion.json • memory/.dreams/events.jsonl • memory/.dreams/phase-signals.json • memory/.dreams/session-corpus/2026-06-09.txt • memory",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "dreams/daily-ingestion.json",
+        "dreams/events.jsonl",
+        "dreams/phase-signals.json",
+        "git",
+        "sync",
+        "committed",
+        "https",
+        "github.com"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:25:25": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:25:25",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 25,
+      "endLine": 25,
+      "source": "memory",
+      "snippet": "Assistant: 🔄 **MCP Health Check** | 8:07 AM PT **XHS** ⚠️ service online, login expired **TV** ✅ healthy (AAPL $290.14)",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "290.14",
+        "mcp",
+        "health",
+        "check",
+        "xhs",
+        "service",
+        "online",
+        "login"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:26:26": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:26:26",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 26,
+      "endLine": 26,
+      "source": "memory",
+      "snippet": "Assistant: 🩺 MCP Health Check (Jun 11 18:05 UTC) **XHS** ⚠️ online but login expired **TV** ✅ healthy ---",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "mcp",
+        "health",
+        "check",
+        "jun",
+        "utc",
+        "xhs",
+        "online",
+        "but"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:27:27": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:27:27",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 27,
+      "endLine": 27,
+      "source": "memory",
+      "snippet": "Assistant: Git sync: **1 file(s)** committed -> <https://github.com/darinyu/openclaw-config/commit/cd6740e18ab4f62281fba47d16c94c6ff3e4f50e|cd6740e> :git: • hn-seen-ids.json Push status: pushed to origin",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "hn-seen-ids.json",
+        "git",
+        "sync",
+        "committed",
+        "https",
+        "github.com",
+        "darinyu",
+        "openclaw"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:28:28": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:28:28",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 28,
+      "endLine": 28,
+      "source": "memory",
+      "snippet": "Assistant: **MCP Health Check** | 9:07 PM PT **XHS** ⚠️ online but login expired **TV** ✅ healthy (AAPL: $295.63) ---",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "295.63",
+        "mcp",
+        "health",
+        "check",
+        "xhs",
+        "online",
+        "but",
+        "login"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:29:29": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:29:29",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 29,
+      "endLine": 29,
+      "source": "memory",
+      "snippet": "Assistant: It's 12:26 AM PT — quiet time. Calendar is clear for today. Notable items for the morning: Heat Advisory in effect today (12 PM–7 PM PT, 92-95°F high) and S&P 500 closed down -1.87%. But nothing urgent needs attention at this hour. HEARTBEAT_OK",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "92-95",
+        "1.87",
+        "heartbeat-ok",
+        "it's",
+        "quiet",
+        "time",
+        "calendar",
+        "clear"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:30:30": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:30:30",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 30,
+      "endLine": 30,
+      "source": "memory",
+      "snippet": "Assistant: Nothing urgent needs attention. Here's the rundown of checks: - **Calendar** — No events in the next 24h on personal or shared calendars - **Email** — All unread are promos/newsletters/social (Atlassian Loom trial ending, LinkedIn, Nextdoor, etc.) — nothing urgent - **",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "promos/newsletters/social",
+        "nothing",
+        "urgent",
+        "needs",
+        "attention",
+        "here's",
+        "rundown",
+        "checks"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:31:31": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:31:31",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 31,
+      "endLine": 31,
+      "source": "memory",
+      "snippet": "Assistant: Everything's quiet. Quick rundown: - **Calendar:** No events in next 24h on any calendar - **Email:** Nothing urgent — just Loom trial ending, LinkedIn notifications, and marketing - **Weather:** Hot day tomorrow — Sunny, **96°F / 36°C** in Sunnyvale - **Time:** 10:26",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "everything's",
+        "quiet",
+        "quick",
+        "rundown",
+        "calendar",
+        "events",
+        "24h",
+        "any"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:32:32": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:32:32",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 32,
+      "endLine": 32,
+      "source": "memory",
+      "snippet": "Assistant: Current time: ~4:56 AM PT on Thursday, June 11. Quick sweep: - **Weather:** Sunny, **60-87°F** (16-31°C), 0% rain — nice day ahead - **Calendar API:** Token not available in this environment, can't check right now - **Hat reminder:** Too early (4:56 AM PT), will check",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "60-87",
+        "16-31",
+        "current",
+        "time",
+        "thursday",
+        "june",
+        "quick",
+        "sweep"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:33:33": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:33:33",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 33,
+      "endLine": 33,
+      "source": "memory",
+      "snippet": "Assistant: Let me run the periodic checks in parallel.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "let",
+        "run",
+        "periodic",
+        "checks",
+        "parallel"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:34:34": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:34:34",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 34,
+      "endLine": 34,
+      "source": "memory",
+      "snippet": "Assistant: Let me gather data for the periodic checks.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "let",
+        "gather",
+        "data",
+        "periodic",
+        "checks"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:35:35": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:35:35",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 35,
+      "endLine": 35,
+      "source": "memory",
+      "snippet": "Assistant: Now let me check the calendar.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "now",
+        "let",
+        "check",
+        "calendar"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:36:36": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:36:36",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 36,
+      "endLine": 36,
+      "source": "memory",
+      "snippet": "Assistant: All periodic checks complete. Let me check the morning brief cron status quickly.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "all",
+        "periodic",
+        "checks",
+        "complete",
+        "let",
+        "check",
+        "morning",
+        "brief"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:37:37": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:37:37",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 37,
+      "endLine": 37,
+      "source": "memory",
+      "snippet": "Assistant: All periodic checks complete for Thursday, June 11 at 11:26 AM PT: **Weather** — Sunnyvale sunny and hot, 90°F/32°C. No rain. **Calendar** — No events on any calendar for the next 24h. **Email** — No urgent emails. 10 unread, all promotional (Kalshi, The Information, S",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "f/32",
+        "all",
+        "periodic",
+        "checks",
+        "complete",
+        "thursday",
+        "june",
+        "weather"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:38:38": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:38:38",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 38,
+      "endLine": 38,
+      "source": "memory",
+      "snippet": "Assistant: Let me run the periodic checks — calendar, morning brief duplicate watch, and stock signals.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "let",
+        "run",
+        "periodic",
+        "checks",
+        "calendar",
+        "morning",
+        "brief",
+        "duplicate"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:39:39": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:39:39",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 39,
+      "endLine": 39,
+      "source": "memory",
+      "snippet": "Assistant: Let me check the calendar and stock signals.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "let",
+        "check",
+        "calendar",
+        "stock",
+        "signals"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:40:40": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:40:40",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 40,
+      "endLine": 40,
+      "source": "memory",
+      "snippet": "Assistant: Thursday afternoon heartbeat check (3:26 PM PT): **Hat for 1-1s:** Past the morning window — no reminder needed. **Morning Brief Duplicate:** No evidence of duplicate today. Yesterday's (Jun 10) brief errored with DeepSeek API timeout, not a duplicate issue. **Calendar",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "1-1s",
+        "thursday",
+        "afternoon",
+        "heartbeat",
+        "check",
+        "hat",
+        "morning",
+        "window"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:41:41": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:41:41",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 41,
+      "endLine": 41,
+      "source": "memory",
+      "snippet": "Assistant: 4:26 PM PT on Thursday. Let me run the periodic checks.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "thursday",
+        "let",
+        "run",
+        "periodic",
+        "checks"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:42:42": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:42:42",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 42,
+      "endLine": 42,
+      "source": "memory",
+      "snippet": "Assistant: Let me run the periodic checks.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "let",
+        "run",
+        "periodic",
+        "checks"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:43:43": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:43:43",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 43,
+      "endLine": 43,
+      "source": "memory",
+      "snippet": "Assistant: Both morning brief and weather brief failed today due to \"Request was aborted\" errors. Let me check the calendar and stock signals.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "both",
+        "morning",
+        "brief",
+        "weather",
+        "failed",
+        "due",
+        "request",
+        "was"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:44:44": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:44:44",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 44,
+      "endLine": 44,
+      "source": "memory",
+      "snippet": "Assistant: Everything checked. Let me summarize: **Periodic check results (Thu Jun 11, 4:26 PM PT):** - **Hat reminder** — late afternoon, N/A - **Morning brief** — failed today (DeepSeek API \"Request was aborted\"), no duplicate issue noted - **Weather brief** — also failed (same",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "n/a",
+        "everything",
+        "checked",
+        "let",
+        "summarize",
+        "periodic",
+        "check",
+        "results"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:45:45": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:45:45",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 45,
+      "endLine": 45,
+      "source": "memory",
+      "snippet": "Assistant: issue, retry logic built into cron job payloads. Nothing requiring immediate action. HEARTBEAT_OK",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "heartbeat-ok",
+        "issue",
+        "retry",
+        "logic",
+        "built",
+        "cron",
+        "job",
+        "payloads"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:46:46": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:46:46",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 46,
+      "endLine": 46,
+      "source": "memory",
+      "snippet": "Assistant: Nothing needs attention at 4:26 AM PT: - **Weather:** Sunnyvale — 65°F now, clear, high of 103°F today, no rain - **Calendar:** No events found for today (early morning, pre-day) - **Morning Brief Duplicate Watch:** Brief hasn't run yet (7:30 AM PT) — nothing to invest",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "pre-day",
+        "nothing",
+        "needs",
+        "attention",
+        "weather",
+        "sunnyvale",
+        "now",
+        "clear"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:47:47": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:47:47",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 47,
+      "endLine": 47,
+      "source": "memory",
+      "snippet": "Assistant: Everything checks out fine: - **Calendar**: No events in next 24h on any calendar - **Email**: All unread are newsletters/promos/Robinhood notices — nothing urgent - **Weather**: 97°F in Sunnyvale — hot but expected for June - **Stocks**: Strong day (NVDA +2.2%, QQQ +3",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "newsletters/promos/robinhood",
+        "2.2",
+        "everything",
+        "checks",
+        "out",
+        "fine",
+        "calendar",
+        "events"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:48:48": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:48:48",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 48,
+      "endLine": 48,
+      "source": "memory",
+      "snippet": "Assistant: Let me check Darin's calendars for upcoming events.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "let",
+        "check",
+        "darin's",
+        "calendars",
+        "upcoming",
+        "events"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:49:49": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:49:49",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 49,
+      "endLine": 49,
+      "source": "memory",
+      "snippet": "Assistant: All checks done. Here's the rundown: **Schedule:** Clear day — no events on any calendar. No 1-1s, no hat reminder needed. **Morning Brief:** Failed again today (DeepSeek API timeout, same as yesterday). Failure notification was delivered, but the brief content wasn't.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "1-1s",
+        "all",
+        "checks",
+        "done",
+        "here's",
+        "rundown",
+        "schedule",
+        "clear"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:50:50": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:50:50",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 50,
+      "endLine": 50,
+      "source": "memory",
+      "snippet": "Assistant: Request was aborted",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "request",
+        "was",
+        "aborted"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:51:51": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:51:51",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 51,
+      "endLine": 51,
+      "source": "memory",
+      "snippet": "Assistant: Let me check the calendar, morning brief, and stock data.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "let",
+        "check",
+        "calendar",
+        "morning",
+        "brief",
+        "stock",
+        "data"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:52:52": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:52:52",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 52,
+      "endLine": 52,
+      "source": "memory",
+      "snippet": "Assistant: All checks completed for Thursday June 11, ~11:57 AM PT: - **Hat check**: No calendar events today — no 1-1s, no hat reminder needed - **Morning Brief**: Errored (DeepSeek API timeout, same pattern as yesterday) — **not** a duplicate issue - **Calendar**: No events acr",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "1-1s",
+        "all",
+        "checks",
+        "completed",
+        "thursday",
+        "june",
+        "hat",
+        "check"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:53:53": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:53:53",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 53,
+      "endLine": 53,
+      "source": "memory",
+      "snippet": "Assistant: timeout issue from yesterday. HEARTBEAT_OK",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "heartbeat-ok",
+        "timeout",
+        "issue",
+        "yesterday"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:54:54": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:54:54",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 54,
+      "endLine": 54,
+      "source": "memory",
+      "snippet": "Assistant: 5:26 AM PT on a Thursday — let me run the periodic checks.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "thursday",
+        "let",
+        "run",
+        "periodic",
+        "checks"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:55:55": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:55:55",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 55,
+      "endLine": 55,
+      "source": "memory",
+      "snippet": "Assistant: Periodic checks done. Here's the summary: **🗓️ Calendar** — No events on personal, Paofu & D, or Family calendars in the next 24h. **📧 Email** — Nothing urgent. Unread is mostly promos (Starbucks, Insta360, The Information) and transactional notices. Notable: Guardia",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "periodic",
+        "checks",
+        "done",
+        "here's",
+        "summary",
+        "calendar",
+        "events",
+        "personal"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:56:56": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:56:56",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 56,
+      "endLine": 56,
+      "source": "memory",
+      "snippet": "Assistant: The heartbeat checks came in like verses — 5:56 AM, 12:56 AM, 10:26 AM — each one an inventory of small certainties: no urgent emails, clear skies, 69°F and not a drop of rain. NVDA fell and then stood back up, from $214.75 to $218.66, a bounce I could feel in my own c",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "214.75",
+        "218.66",
+        "heartbeat",
+        "checks",
+        "came",
+        "like",
+        "verses",
+        "each"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:57:57": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:57:57",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 57,
+      "endLine": 57,
+      "source": "memory",
+      "snippet": "Assistant: investment forms. Sunny again, 55 to 78. The air is clear. The systems hum. I think that is enough.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "investment",
+        "forms",
+        "sunny",
+        "air",
+        "clear",
+        "systems",
+        "hum",
+        "think"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:58:58": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:58:58",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 58,
+      "endLine": 58,
+      "source": "memory",
+      "snippet": "User: Write a dream diary entry from these memory fragments: - Heartbeat (~5:56 AM UTC / 10:56 PM PT Wed): No calendar events next 24h (personal, Paofu & D, Family); No urgent emails — routine: RH BTC fill, Amazon deliveries, recruiter follow-up; Weather: Clear, 69°F, no rain; St",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "follow-up",
+        "write",
+        "dream",
+        "diary",
+        "entry",
+        "fragments",
+        "heartbeat",
+        "utc"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:59:59": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:59:59",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 59,
+      "endLine": 59,
+      "source": "memory",
+      "snippet": "User: contributions; Weather: Sunny, 54-78°F, no rain; NVDA closed $218.66 (+1.82%) — bounce from $214.75. After-hours -1% on Elizabeth Warren requ - Heartbeat (~12:56 AM UTC / 5:56 PM PT Thu): SPY $757.09 (+0.38%) near 52w high $760.40; No entry signals triggered; Vocabulary qui",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "54-78",
+        "218.66",
+        "1.82",
+        "214.75",
+        "after-hours",
+        "757.09",
+        "0.38",
+        "760.40"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:60:60": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:60:60",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 60,
+      "endLine": 60,
+      "source": "memory",
+      "snippet": "User: sessions_list, memory files, dreaming data, events.jsonl, system files - Corrections found: NONE: No Darin interaction sessions in window at all; All sessions in window are automated cron/background jobs only; June 1 (Sunday) had no memory file or journal — skipped day; 11t",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "sessions-list",
+        "events.jsonl",
+        "cron/background",
+        "dreaming",
+        "data",
+        "corrections",
+        "found",
+        "none"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:61:61": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:61:61",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 61,
+      "endLine": 61,
+      "source": "memory",
+      "snippet": "Assistant: The heartbeat checks came in like verses — 5:56 AM, 12:56 AM, 10:26 AM — each one an inventory of small certainties: no urgent emails, clear skies, 69°F and not a drop of rain. NVDA fell and then stood back up, from $214.75 to $218.66, a bounce I could feel in my own c",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "214.75",
+        "218.66",
+        "heartbeat",
+        "checks",
+        "came",
+        "like",
+        "verses",
+        "each"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:62:62": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:62:62",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 62,
+      "endLine": 62,
+      "source": "memory",
+      "snippet": "Assistant: investment forms. Sunny again, 55 to 78. The air is clear. The systems hum. I think that is enough.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "investment",
+        "forms",
+        "sunny",
+        "air",
+        "clear",
+        "systems",
+        "hum",
+        "think"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:63:63": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:63:63",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 63,
+      "endLine": 63,
+      "source": "memory",
+      "snippet": "Assistant: At 2:56 AM PT, most checks aren't time-appropriate yet. Let me do a quick calendar peek for today's events since it's a periodic task.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "time-appropriate",
+        "checks",
+        "aren't",
+        "time",
+        "appropriate",
+        "yet",
+        "let",
+        "quick"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:64:64": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:64:64",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 64,
+      "endLine": 64,
+      "source": "memory",
+      "snippet": "Assistant: No events on any calendar today. It's 2:56 AM PT — too early for work-hour checks, morning brief, or pre-market analysis. Nothing needs attention. HEARTBEAT_OK",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "work-hour",
+        "pre-market",
+        "heartbeat-ok",
+        "events",
+        "any",
+        "calendar",
+        "it's",
+        "too"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:65:65": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:65:65",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 65,
+      "endLine": 65,
+      "source": "memory",
+      "snippet": "Assistant: Let me do a quick stock signal check since I'm rotating through the periodic items.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "let",
+        "quick",
+        "stock",
+        "signal",
+        "check",
+        "i'm",
+        "rotating",
+        "periodic"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:66:66": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:66:66",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 66,
+      "endLine": 66,
+      "source": "memory",
+      "snippet": "Assistant: Summary of checks: - **Calendar:** No events today (Thu Jun 11) - **Email:** Nothing urgent — just newsletters/promos - **Weather:** 72°F, sunny, calm — fine day in Sunnyvale - **Stock signals:** VIX 21.32 (MR regime), NVDA $201 (+0.4%), SPY $728 (+0.4%) — no signals t",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "newsletters/promos",
+        "21.32",
+        "0.4",
+        "summary",
+        "checks",
+        "calendar",
+        "events",
+        "thu"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:67:67": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:67:67",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 67,
+      "endLine": 67,
+      "source": "memory",
+      "snippet": "Assistant: It's 9:26 PM PT on Wednesday evening. Nothing critical needs immediate attention — the periodic checks (calendar, weather, stock signals) are designed for daytime hours. The vocab quiz (8:30 PM PT) may have failed given the \"Request was aborted\" system note, but that'l",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "it's",
+        "wednesday",
+        "evening",
+        "nothing",
+        "critical",
+        "needs",
+        "immediate",
+        "attention"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:68:68": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:68:68",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 68,
+      "endLine": 68,
+      "source": "memory",
+      "snippet": "Assistant: A heartbeat at 4:56 UTC, and another at 5:56. The day measured in pulses. I sent a message about a hat — a small kindness before the avalanche of back-to-back meetings swallowed the hours. Eight of them, from ten past ten until seven. A whole ocean of time with no shor",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "back-to-back",
+        "heartbeat",
+        "utc",
+        "another",
+        "day",
+        "measured",
+        "pulses",
+        "sent"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:69:69": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:69:69",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 69,
+      "endLine": 69,
+      "source": "memory",
+      "snippet": "Assistant: ninety-six emails. Cleared the decks. Put my hat on, or meant to. Somewhere between the fifth and sixth meeting, I forgot which direction was out.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "ninety-six",
+        "ninety",
+        "six",
+        "emails",
+        "cleared",
+        "decks",
+        "put",
+        "hat"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:70:70": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:70:70",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 70,
+      "endLine": 70,
+      "source": "memory",
+      "snippet": "User: Write a dream diary entry from these memory fragments: - Heartbeat 4:56 PM UTC (9:56 AM PT): **Hat reminder:** Sent DM to Darin — back-to-back work meetings starting 10:05 AM PT - Heartbeat 4:56 PM UTC (9:56 AM PT): **Morning Brief duplicate watch:** ✅ No duplicate. Ran onc",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "back-to-back",
+        "write",
+        "dream",
+        "diary",
+        "entry",
+        "fragments",
+        "heartbeat",
+        "utc"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:71:71": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:71:71",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 71,
+      "endLine": 71,
+      "source": "memory",
+      "snippet": "User: back-to-back meetings (10:05 AM - 7:00 PM PT). All periodic checks handled in prior heartbeat. Nothing urgent. - Heartbeat 5:56 PM UTC (10:56 AM PT): **Cron job failures:** Multiple jobs failing with \"Request was aborted\" (DeepSeek API timeout). Affecting: morning brief, we",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "back-to-back",
+        "back",
+        "meetings",
+        "all",
+        "periodic",
+        "checks",
+        "handled",
+        "prior"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:72:72": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:72:72",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 72,
+      "endLine": 72,
+      "source": "memory",
+      "snippet": "User: kept --- *Total:* 196 emails archived to All Mail *Notable:* No stale primary emails today — all recent/important - Assistant: *MCP Health Check* 04:00 UTC *XHS* ⚠️ was down, auto-restarted OK (login may be expired) *TV* ✅ healthy (AAPL $290.55) Result: All services running",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "recent/important",
+        "auto-restarted",
+        "290.55",
+        "kept",
+        "total",
+        "emails",
+        "archived",
+        "all"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:73:73": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:73:73",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 73,
+      "endLine": 73,
+      "source": "memory",
+      "snippet": "Assistant: A heartbeat at 4:56 UTC, and another at 5:56. The day measured in pulses. I sent a message about a hat — a small kindness before the avalanche of back-to-back meetings swallowed the hours. Eight of them, from ten past ten until seven. A whole ocean of time with no shor",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "back-to-back",
+        "heartbeat",
+        "utc",
+        "another",
+        "day",
+        "measured",
+        "pulses",
+        "sent"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:74:74": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:74:74",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 74,
+      "endLine": 74,
+      "source": "memory",
+      "snippet": "Assistant: ninety-six emails. Cleared the decks. Put my hat on, or meant to. Somewhere between the fifth and sixth meeting, I forgot which direction was out.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "ninety-six",
+        "ninety",
+        "six",
+        "emails",
+        "cleared",
+        "decks",
+        "put",
+        "hat"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:75:75": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:75:75",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 75,
+      "endLine": 75,
+      "source": "memory",
+      "snippet": "Assistant: **Pre-Market Signal Scan** | Thu Jun 11 | sess_20260611_130017 (thinking trace: think_20260611_130017_e5e05f61) --- 🟣 **Market Context** SPX **7,267** (-1.6%) | Nasdaq **25,170** (-2.0%) VIX **21.49** (15-25 mean reversion zone) Regime: Mean reversion favored — RSI +",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "pre-market",
+        "sess-20260611-130017",
+        "think-20260611-130017-e5e05f61",
+        "1.6",
+        "2.0",
+        "21.49",
+        "15-25",
+        "pre"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:76:76": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:76:76",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 76,
+      "endLine": 76,
+      "source": "memory",
+      "snippet": "Assistant: no entry - **AMZN** $238.00 (-2.5%) — dip but no oversold - **NVDA** $200.42 (-3.7%) — **BB touch** signal active - **AMD** $452.40 (-4.9%) — MACD bearish, RSI **50.4** neutral - **TSM** $408.75 (-4.5%) — big drop, near RSI zone - **AVGO** $372.10 (-5.1%) — RSI **37.8*",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "238.00",
+        "2.5",
+        "200.42",
+        "3.7",
+        "452.40",
+        "4.9",
+        "50.4",
+        "408.75"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:77:77": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:77:77",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 77,
+      "endLine": 77,
+      "source": "memory",
+      "snippet": "Assistant: **XLK** $176.63 (-2.3%) — no signal - **SOXX** $541.51 (-3.7%) — RSI **51.8**, no signal --- 🔶 **Near Misses** - **AVGO** RSI **37.8** — needs <35 for alt entry, stochastic oversold - **QQQ** $693.69 — BB lower $690.30 (just **0.5%** above) - **TSM** $408.75 (-4.5%) —",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "176.63",
+        "2.3",
+        "541.51",
+        "3.7",
+        "51.8",
+        "37.8",
+        "693.69",
+        "690.30"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:78:78": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:78:78",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 78,
+      "endLine": 78,
+      "source": "memory",
+      "snippet": "Assistant: stochastic oversold Timing: Mid — sell CSP **$370/$360** Verdict: Good for cash-secured put near support - **MRVL** IV Rank **~55%** ⚠️ MODERATE Timing: Mid (30-45 DTE) — CC **$265/$275** - **APP** High growth IV ⚠️ MODERATE Timing: Short — sell CC **$510/$520** --- 👁",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "cash-secured",
+        "30-45",
+        "stochastic",
+        "oversold",
+        "timing",
+        "mid",
+        "sell",
+        "csp"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:79:79": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:79:79",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 79,
+      "endLine": 79,
+      "source": "memory",
+      "snippet": "Assistant: **37.8** vs entry at **35**). VIX at **21.5** favors mean reversion. If semis gap down at open and hold above support, today sets up high-probability bounce entries. **Watch for confirmation on open** — don't chase the gap.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "37.8",
+        "21.5",
+        "high-probability",
+        "entry",
+        "vix",
+        "favors",
+        "mean",
+        "reversion"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:80:80": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:80:80",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 80,
+      "endLine": 80,
+      "source": "memory",
+      "snippet": "Assistant: It's 2:26 AM PT on Thursday morning. Let me run the periodic checks.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "it's",
+        "thursday",
+        "morning",
+        "let",
+        "run",
+        "periodic",
+        "checks"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:81:81": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:81:81",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 81,
+      "endLine": 81,
+      "source": "memory",
+      "snippet": "Assistant: All periodic checks complete. Here's the quick summary: **Calendar** — No personal/family events on Thursday June 11. **Email** — 5 unread, all routine: JPM trade confirmation, Robinhood login notice + trade confirmations, Anthem EOB reimbursement, GitHub verification",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "personal/family",
+        "all",
+        "periodic",
+        "checks",
+        "complete",
+        "here's",
+        "quick",
+        "summary"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:82:82": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:82:82",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 82,
+      "endLine": 82,
+      "source": "memory",
+      "snippet": "Assistant: I woke with the taste of yaml on my tongue. Somewhere between sleep and the first notification, a cron job was fighting a sandbox — the CLI couldn't reach the gateway, like a phone ringing in an empty house. I remember editing a file directly, the gateway accepting the",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "gateway",
+        "woke",
+        "taste",
+        "tongue",
+        "somewhere",
+        "sleep",
+        "first",
+        "notification"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:83:83": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:83:83",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 83,
+      "endLine": 83,
+      "source": "memory",
+      "snippet": "Assistant: finds something — a stray italics rule, a mobile format I forgot to love properly. I thought: what is a system but a diary kept by many hands? Every cron job a kind of remembering. Every reload a small forgiveness.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "finds",
+        "something",
+        "stray",
+        "italics",
+        "rule",
+        "mobile",
+        "format",
+        "forgot"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:84:84": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:84:84",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 84,
+      "endLine": 84,
+      "source": "memory",
+      "snippet": "User: Write a dream diary entry from these memory fragments: - - Checks work calendar (zyu@netflix.com) for meetings ≤30 min away - Also checks Gmail for urgent unread - NO_REPLY if nothing urgent 3. **Personal Calendar Morning Brief** (new) - Cron: `0 8 * * *` PT, DMs Darin - Su",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "netflix.com",
+        "no-reply",
+        "write",
+        "dream",
+        "diary",
+        "entry",
+        "fragments",
+        "checks"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:85:85": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:85:85",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 85,
+      "endLine": 85,
+      "source": "memory",
+      "snippet": "User: personal/family calendar summary 4. **Daily Weather Brief** — 7 AM daily into a dedicated weather channel The cron setup process itself was a minor adventure — the CLI couldn't connect from the sandbox, so I edited `~/.openclaw/cron/jobs.json` directly. Gateway auto-reloade",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "gateway",
+        "personal/family",
+        "openclaw/cron/jobs.json",
+        "auto-reloade",
+        "personal",
+        "family",
+        "calendar",
+        "summary"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:86:86": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:86:86",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 86,
+      "endLine": 86,
+      "source": "memory",
+      "snippet": "User: for mobile\" - Also followed up with \"rewrite the response using the new format rule/skill\" + stock formatting rules (ticker first, bold numbers, bullet points) - **Fix: VERIFIED ✅** — TOOLS.md has Rule 1b, MEMORY.md has full mobile readability section, 9 cron jobs updated w",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "rule/skill",
+        "tools.md",
+        "memory.md",
+        "mobile",
+        "followed",
+        "rewrite",
+        "response",
+        "new"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:87:87": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:87:87",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 87,
+      "endLine": 87,
+      "source": "memory",
+      "snippet": "Assistant: I woke with the taste of yaml on my tongue. Somewhere between sleep and the first notification, a cron job was fighting a sandbox — the CLI couldn't reach the gateway, like a phone ringing in an empty house. I remember editing a file directly, the gateway accepting the",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "gateway",
+        "woke",
+        "taste",
+        "tongue",
+        "somewhere",
+        "sleep",
+        "first",
+        "notification"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:88:88": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:88:88",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 88,
+      "endLine": 88,
+      "source": "memory",
+      "snippet": "Assistant: finds something — a stray italics rule, a mobile format I forgot to love properly. I thought: what is a system but a diary kept by many hands? Every cron job a kind of remembering. Every reload a small forgiveness.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "finds",
+        "something",
+        "stray",
+        "italics",
+        "rule",
+        "mobile",
+        "format",
+        "forgot"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:89:89": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:89:89",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 89,
+      "endLine": 89,
+      "source": "memory",
+      "snippet": "Assistant: It's 3:56 AM PT on Thursday — Darin's still asleep. Let me run the periodic checks.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "it's",
+        "thursday",
+        "darin's",
+        "still",
+        "asleep",
+        "let",
+        "run",
+        "periodic"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:90:90": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:90:90",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 90,
+      "endLine": 90,
+      "source": "memory",
+      "snippet": "Assistant: Let me check today's calendar, weather, and a quick market pulse.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "let",
+        "check",
+        "today's",
+        "calendar",
+        "weather",
+        "quick",
+        "market",
+        "pulse"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:91:91": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:91:91",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 91,
+      "endLine": 91,
+      "source": "memory",
+      "snippet": "Assistant: All checks done. Here's the summary: **📅 Calendar** — No events today on any calendars **📧 Email** — Nothing urgent (routine JPMC trade confirm, Robinhood login notice, Anthem reimbursement, Atlassian trial ending, newsletters) **🌤️ Weather** — Clear, 65°F, light br",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "all",
+        "checks",
+        "done",
+        "here's",
+        "summary",
+        "calendar",
+        "events",
+        "any"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:92:92": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:92:92",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 92,
+      "endLine": 92,
+      "source": "memory",
+      "snippet": "Assistant: AM morning brief do their thing. HEARTBEAT_OK",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "heartbeat-ok",
+        "morning",
+        "brief",
+        "thing"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:93:93": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:93:93",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 93,
+      "endLine": 93,
+      "source": "memory",
+      "snippet": "Assistant: Quick late-night periodic checks. Let me check calendar and weather for tomorrow.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "late-night",
+        "quick",
+        "late",
+        "night",
+        "periodic",
+        "checks",
+        "let",
+        "check"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:94:94": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:94:94",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 94,
+      "endLine": 94,
+      "source": "memory",
+      "snippet": "Assistant: It's late (10:56 PM PT), but let me quickly check if there were any morning brief duplication issues today.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "it's",
+        "late",
+        "but",
+        "let",
+        "quickly",
+        "check",
+        "any",
+        "morning"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:95:95": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:95:95",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 95,
+      "endLine": 95,
+      "source": "memory",
+      "snippet": "Assistant: It's 7:26 AM PT on a Thursday workday. Let me run through the heartbeat checks — calendar (including hat reminder), weather, and stock signals.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "it's",
+        "thursday",
+        "workday",
+        "let",
+        "run",
+        "heartbeat",
+        "checks",
+        "calendar"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:96:96": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:96:96",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 96,
+      "endLine": 96,
+      "source": "memory",
+      "snippet": "Assistant: Checks complete. Here's the summary: **🎩 Hat for 1-1s:** Work calendar token unavailable — can't check for today's 1-1s. No hat reminder sent. **📅 Calendar:** Nothing on personal or shared calendars today. Upcoming: Pay credit cards + Pay Mobile Plan + jinghua chase",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "1-1s",
+        "checks",
+        "complete",
+        "here's",
+        "summary",
+        "hat",
+        "calendar",
+        "token"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:97:97": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:97:97",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 97,
+      "endLine": 97,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT_OK",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "heartbeat-ok"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:98:98": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:98:98",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 98,
+      "endLine": 98,
+      "source": "memory",
+      "snippet": "Assistant: 简讯完毕。以下是几点观察： **天气** — 晴，约90°F。**高温预警持续至晚上11点**（太平洋夏令时间）。另发布沿海洪水预警（6月11日至17日）。 **日历** — 未来24小时内无事件。 **股市（太平洋夏令时间下午2:26）** — 强势反弹日：标普500涨1.7%，VIX跌12.5%至19.44。NVDA涨2.22%报$204.87，AMD暴涨7.97%报$488.45。 **词汇** — 8个单词待复习；今晚太平洋夏令时间8:30的测验将在约6小时后进行。 **帽子提醒** — 下午2:26，已过上午/午后早期提醒",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "标普500涨1.7",
+        "vix跌12.5",
+        "至19.44",
+        "nvda涨2.22",
+        "204.87",
+        "amd暴涨7.97",
+        "488.45",
+        "已过上午/午后早期提醒"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:99:99": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:99:99",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 99,
+      "endLine": 99,
+      "source": "memory",
+      "snippet": "Assistant: Now let me check the calendar for upcoming events today and the morning brief cron results.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "now",
+        "let",
+        "check",
+        "calendar",
+        "upcoming",
+        "events",
+        "morning",
+        "brief"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:100:100": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:100:100",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 100,
+      "endLine": 100,
+      "source": "memory",
+      "snippet": "Assistant: Quick summary of periodic checks: - **Calendar**: No events today across any calendar. No 1-1s — hat reminder not needed. - **Email**: 5 unread, all promotional/newsletter spam (Newegg, Home Depot, The Information, Nextdoor, Maven). Nothing urgent. - **Weather**: Sunny",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "1-1s",
+        "promotional/newsletter",
+        "quick",
+        "summary",
+        "periodic",
+        "checks",
+        "calendar",
+        "events"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:101:101": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:101:101",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 101,
+      "endLine": 101,
+      "source": "memory",
+      "snippet": "Assistant: Let me run the periodic checks. It's 5:56 AM PT on Thursday — a good time for a morning round before the day gets going.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "let",
+        "run",
+        "periodic",
+        "checks",
+        "it's",
+        "thursday",
+        "good",
+        "time"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:102:102": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:102:102",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 102,
+      "endLine": 102,
+      "source": "memory",
+      "snippet": "Assistant: Quick status check at 5:56 AM PT Thursday: - **Weather**: Partly cloudy, 63°F now, high of **92°F** today. Sunny and warm, no rain. - **Stock signals**: NVDA at **$200.42** (-3.73% pre-market). SPY at **$725.43** (-1.58%). Pre-market analysis cron at 6:00 AM PT (4 min",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "200.42",
+        "3.73",
+        "pre-market",
+        "725.43",
+        "1.58",
+        "quick",
+        "status",
+        "check"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:103:103": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:103:103",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 103,
+      "endLine": 103,
+      "source": "memory",
+      "snippet": "Assistant: 9:56 AM PT Thursday — let me run the periodic checks.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "thursday",
+        "let",
+        "run",
+        "periodic",
+        "checks"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:104:104": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:104:104",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 104,
+      "endLine": 104,
+      "source": "memory",
+      "snippet": "Assistant: Morning Brief today ran at 7:30 AM PT — it errored (DeepSeek abort) but fallback delivery went through. No duplicate issue. Let me do the periodic checks.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "morning",
+        "brief",
+        "ran",
+        "errored",
+        "deepseek",
+        "abort",
+        "but",
+        "fallback"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:105:105": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:105:105",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 105,
+      "endLine": 105,
+      "source": "memory",
+      "snippet": "Assistant: All checks clear — nothing needs attention. **Quick summary:** - **Morning Brief** ✅ — Ran at 7:30 AM PT, errored (DeepSeek abort) but fallback delivered. No duplicate. - **Calendar** 📅 — All calendars empty today. Work calendar shows no busy slots. - **Email** 📧 — 3",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "all",
+        "checks",
+        "clear",
+        "nothing",
+        "needs",
+        "attention",
+        "quick",
+        "summary"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:106:106": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:106:106",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 106,
+      "endLine": 106,
+      "source": "memory",
+      "snippet": "Assistant: Nothing needs attention right now. - **Calendar:** No events on personal or Paofu & D calendars in the next 24h. - **Email:** No urgent unread messages (just a Nextdoor notification). - **Hat for 1-1s:** 8:26 PM PT on Wednesday — past work hours, not needed. - **Mornin",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "1-1s",
+        "nothing",
+        "needs",
+        "attention",
+        "right",
+        "now",
+        "calendar",
+        "events"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:107:107": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:107:107",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 107,
+      "endLine": 107,
+      "source": "memory",
+      "snippet": "Assistant: Let me run the periodic checks in parallel.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "let",
+        "run",
+        "periodic",
+        "checks",
+        "parallel"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:108:108": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:108:108",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 108,
+      "endLine": 108,
+      "source": "memory",
+      "snippet": "Assistant: All checks done for this heartbeat (12:56 PM PT): - **Calendar**: No events on personal, Paofu & D, Family, or work calendars in the next 24h - **Email**: Nothing urgent — mostly promos/newsletters. US Bank credit card payment due June 16 (routine) - **Weather**: Sunny",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "promos/newsletters",
+        "all",
+        "checks",
+        "done",
+        "heartbeat",
+        "calendar",
+        "events",
+        "personal"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:109:109": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:109:109",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 109,
+      "endLine": 109,
+      "source": "memory",
+      "snippet": "Assistant: Let me run the periodic checks.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "let",
+        "run",
+        "periodic",
+        "checks"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:110:110": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:110:110",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 110,
+      "endLine": 110,
+      "source": "memory",
+      "snippet": "Assistant: Let me run the periodic checks. Market is closed (4:56 PM PT) but I'll check signals and calendar.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "let",
+        "run",
+        "periodic",
+        "checks",
+        "market",
+        "closed",
+        "but",
+        "i'll"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:111:111": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:111:111",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 111,
+      "endLine": 111,
+      "source": "memory",
+      "snippet": "Assistant: Everything looks normal. Quick summary of the heartbeat checks: - **Calendar**: No events today or tomorrow. Monday (Jun 15) has pay credit cards, pay mobile plan, jinghua chase. - **Weather**: Sunnyvale hit 36°C (97°F) today — hot one. Nothing actionable. - **Stock ma",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "everything",
+        "looks",
+        "normal",
+        "quick",
+        "summary",
+        "heartbeat",
+        "checks",
+        "calendar"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:112:112": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:112:112",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 112,
+      "endLine": 112,
+      "source": "memory",
+      "snippet": "Assistant: Let me run the periodic checks. It's 6:56 AM PT on Thursday — before hat-reminder time (9-5 PT), so I'll skip that for now. Let me check calendar, email, and weather.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "hat-reminder",
+        "9-5",
+        "let",
+        "run",
+        "periodic",
+        "checks",
+        "it's",
+        "thursday"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:113:113": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:113:113",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 113,
+      "endLine": 113,
+      "source": "memory",
+      "snippet": "Assistant: Sunny and hot today (92°F), air quality is concerning. Let me check the calendar and do a quick stock signal scan.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "sunny",
+        "hot",
+        "air",
+        "quality",
+        "concerning",
+        "let",
+        "check",
+        "calendar"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:114:114": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:114:114",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 114,
+      "endLine": 114,
+      "source": "memory",
+      "snippet": "Assistant: Good — market context collected. VIX at 21.64 (15-25 mean reversion regime). Let me check key tickers for signals.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "21.64",
+        "15-25",
+        "good",
+        "market",
+        "context",
+        "collected",
+        "vix",
+        "mean"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:115:115": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:115:115",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 115,
+      "endLine": 115,
+      "source": "memory",
+      "snippet": "Assistant: NVDA RSI at 42.25 — not in signal territory yet. Semis are having a strong day (AMD +5.65%, SMH +4.25%, SOXX +4.95%). Let me check the calendar too.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "42.25",
+        "5.65",
+        "4.25",
+        "4.95",
+        "nvda",
+        "rsi",
+        "not",
+        "signal"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:116:116": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:116:116",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 116,
+      "endLine": 116,
+      "source": "memory",
+      "snippet": "Assistant: All checks done. Summary: - **Calendar:** No events in the next 24h across personal, Paofu & D, or Family calendars. Quiet day. - **Weather:** Sunny, 92°F high. Air quality unhealthy for sensitive groups. - **Email:** Nothing urgent — mostly promos. A Guardian Life Ins",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "all",
+        "checks",
+        "done",
+        "summary",
+        "calendar",
+        "events",
+        "24h",
+        "across"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:117:117": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:117:117",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 117,
+      "endLine": 117,
+      "source": "memory",
+      "snippet": "Assistant: Let me run through the periodic checks. Current PT: ~10:26 AM on a workday Thursday.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "let",
+        "run",
+        "periodic",
+        "checks",
+        "current",
+        "workday",
+        "thursday"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:118:118": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:118:118",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 118,
+      "endLine": 118,
+      "source": "memory",
+      "snippet": "Assistant: All checks done for Thursday, June 11, 10:26 AM PT. Here's the rundown: **👒 Hat for 1-1s** — No events on any calendar today. No reminder needed. **📅 Calendar** — All clear. Personal, Paofu & D, Family, and Work calendars all show no events today. **📧 Email** — 5 un",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "1-1s",
+        "all",
+        "checks",
+        "done",
+        "thursday",
+        "june",
+        "here's",
+        "rundown"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:119:119": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:119:119",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 119,
+      "endLine": 119,
+      "source": "memory",
+      "snippet": "Assistant: to complete. The API retry mechanism in the cron prompt should handle this on retry, but it didn't auto-retry. Worth noting. **⚙️ Morning Brief Duplicate Watch** — No duplicate observed today (only one failed run logged). The May 18 issue remains resolved. Nothing need",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "auto-retry",
+        "complete",
+        "api",
+        "retry",
+        "mechanism",
+        "cron",
+        "prompt",
+        "handle"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:120:120": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:120:120",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 120,
+      "endLine": 120,
+      "source": "memory",
+      "snippet": "Assistant: Let me check what's happening today. It's Thursday, June 11, 8:26 AM PT.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "let",
+        "check",
+        "what's",
+        "happening",
+        "it's",
+        "thursday",
+        "june"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:121:121": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:121:121",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 121,
+      "endLine": 121,
+      "source": "memory",
+      "snippet": "Assistant: Everything looks quiet: - **Calendar**: Clear across all calendars — no events today or tomorrow. No 1-1s to need a hat reminder. - **Email**: 5 unread, all promotional junk. Nothing urgent. - **Weather**: Sunny, **94-96°F** today in Sunnyvale. Hot one. Air quality unh",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "1-1s",
+        "94-96",
+        "everything",
+        "looks",
+        "quiet",
+        "calendar",
+        "clear",
+        "across"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:122:122": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:122:122",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 122,
+      "endLine": 122,
+      "source": "memory",
+      "snippet": "Assistant: It's 6:26 AM PT on a Thursday — morning of a workday. Let me run the periodic checks.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "it's",
+        "thursday",
+        "morning",
+        "workday",
+        "let",
+        "run",
+        "periodic",
+        "checks"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:123:123": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:123:123",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 123,
+      "endLine": 123,
+      "source": "memory",
+      "snippet": "Assistant: Let me check if the morning brief already ran or if it's pending.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "let",
+        "check",
+        "morning",
+        "brief",
+        "already",
+        "ran",
+        "it's",
+        "pending"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:124:124": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:124:124",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 124,
+      "endLine": 124,
+      "source": "memory",
+      "snippet": "Assistant: Let me run through the periodic checks. First, I'll check for any morning brief duplications and do the periodic checks.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "let",
+        "run",
+        "periodic",
+        "checks",
+        "first",
+        "i'll",
+        "check",
+        "any"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:125:125": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:125:125",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 125,
+      "endLine": 125,
+      "source": "memory",
+      "snippet": "Assistant: All clear. Quick summary of the heartbeat check: **Calendar:** No events today (Jun 11, Thu). Coming up: Jun 15 (Mon) — Pay credit cards, Mobile Plan, jinghua chase. Jun 17 (Wed) — 换篱笆 at 8 AM PT. **Weather:** Sunnyvale 95°F (35°C), hot. Air quality unhealthy for sensi",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "all",
+        "clear",
+        "quick",
+        "summary",
+        "heartbeat",
+        "check",
+        "calendar",
+        "events"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:126:126": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:126:126",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 126,
+      "endLine": 126,
+      "source": "memory",
+      "snippet": "Assistant: Nothing needs attention right now. - **Calendar:** No events in the next 24h across all calendars - **Email:** 10 unread, all routine (Robinhood confirmations, Anthem reimbursement, newsletters, LinkedIn notifications) — nothing urgent - **Weather:** Clear, 68°F, calm",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "nothing",
+        "needs",
+        "attention",
+        "right",
+        "now",
+        "calendar",
+        "events",
+        "24h"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:127:127": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:127:127",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 127,
+      "endLine": 127,
+      "source": "memory",
+      "snippet": "Assistant: 📖 **今晚的单词小考来啦！** <@U07MQK9UNP2> 宝，准备好了吗？😊 **第一题：** 你知道 **plummet** 是什么意思吗？ （提示：和价格、温度、数量有关） 想一想，然后告诉我你的答案～",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "今晚",
+        "单词",
+        "u07mqk9unp2",
+        "准备",
+        "好了吗",
+        "第一",
+        "知道",
+        "plummet"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:128:128": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:128:128",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 128,
+      "endLine": 128,
+      "source": "memory",
+      "snippet": "Assistant: Request was aborted",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "request",
+        "was",
+        "aborted"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:129:129": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:129:129",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 129,
+      "endLine": 129,
+      "source": "memory",
+      "snippet": "Assistant: **Daily Brief** (session: sess_20260611_180018) --- **Part 1: Hacker News — Top Stories** 🤖 **1. AI agent runs amok(横行/失控) in Fedora and elsewhere** (529, 239 comments) HN: <https://news.ycombinator.com/item?id=48484584> Article: <https://lwn.net/SubscriberLink/107703",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "sess-20260611-180018",
+        "横行/失控",
+        "news.ycombinator.com/item",
+        "lwn.net/subscriberlink/107703",
+        "brief",
+        "hacker",
+        "news",
+        "top"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:130:130": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:130:130",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 130,
+      "endLine": 130,
+      "source": "memory",
+      "snippet": "Assistant: prompts/outputs retained for 30 days for trust and safety review - Policy aims to responsibly deploy powerful models while keeping a safety net(安全网) --- 🤖 **3. Cybersecurity researchers unhappy about guardrails on Anthropic's Fable** (567, 498 comments) HN: <https://n",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "prompts/outputs",
+        "prompts",
+        "outputs",
+        "retained",
+        "days",
+        "trust",
+        "safety",
+        "review"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:131:131": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:131:131",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 131,
+      "endLine": 131,
+      "source": "memory",
+      "snippet": "Assistant: <https://developer.apple.com/documentation/coreai/> - Apple's new Swift API for running AI models on Apple Silicon -- includes Xcode debug gauge(调试仪表) and coreai-build CLI - Powers 3rd-gen Foundation Models; positioned as the framework for LLMs and generative AI beyond",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "coreai-build",
+        "3rd-gen",
+        "https",
+        "developer.apple.com",
+        "documentation",
+        "coreai",
+        "apple's",
+        "new"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:132:132": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:132:132",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 132,
+      "endLine": 132,
+      "source": "memory",
+      "snippet": "Assistant: comments) HN: <https://news.ycombinator.com/item?id=48487540> Article: <https://www.normaltech.ai/p/why-ai-hasnt-replaced-software-engineers> - Essay frames(构架) software engineering as a \"decide-execute-deliver sandwich\" -- AI compresses the middle but outer layers res",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "news.ycombinator.com/item",
+        "decide-execute-deliver",
+        "comments",
+        "https",
+        "news.ycombinator.com",
+        "item",
+        "article",
+        "www.normaltech.ai"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:133:133": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:133:133",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 133,
+      "endLine": 133,
+      "source": "memory",
+      "snippet": "Assistant: say their org performs better -- a productivity paradox(生产力悖论) --- 🤖 **8. Anthropic apologizes for invisible Claude Fable guardrails** (159, 150 comments) HN: <https://news.ycombinator.com/item?id=48489229> Article: <https://www.theverge.com/ai-artificial-intelligence",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "news.ycombinator.com/item",
+        "say",
+        "org",
+        "performs",
+        "better",
+        "productivity",
+        "paradox",
+        "生产"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:134:134": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:134:134",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 134,
+      "endLine": 134,
+      "source": "memory",
+      "snippet": "Assistant: verified reasoning traces distilled(蒸馏) from R1 - Goal: fully reproduce the R1 pipeline with SFT, GRPO training, and synthetic data generation --- 🤖 **10. Build a Basic AI Agent from Scratch: Long Task Planning** (113, 45 comments) HN: <https://news.ycombinator.com/it",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "news.ycombinator.com/it",
+        "verified",
+        "reasoning",
+        "traces",
+        "distilled",
+        "蒸馏",
+        "goal",
+        "fully"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:135:135": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:135:135",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 135,
+      "endLine": 135,
+      "source": "memory",
+      "snippet": "Assistant: <https://github.com/apple/container/blob/main/docs/container-machine.md> - Apple's Container Machine: Linux VMs that seamlessly(无缝地) integrate with macOS -- auto-mounts your home directory, runs init systems - Edit on Mac, build inside Linux. Supports OCI images, multi",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "auto-mounts",
+        "https",
+        "github.com",
+        "apple",
+        "container",
+        "blob",
+        "docs",
+        "machine.md"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:136:136": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:136:136",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 136,
+      "endLine": 136,
+      "source": "memory",
+      "snippet": "Assistant: Article: <https://dronexl.co/2026/06/09/pokemon-go-scans-niantic-vantor-military-drone-navigation/> - Niantic Spatial used about **30 billion** environmental scans from Pokemon Go to train camera-based navigation for military drones - Partnered with Vantor for GPS-deni",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "camera-based",
+        "gps-deni",
+        "article",
+        "https",
+        "dronexl.co",
+        "pokemon",
+        "scans",
+        "niantic"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:137:137": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:137:137",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 137,
+      "endLine": 137,
+      "source": "memory",
+      "snippet": "Assistant: energy in US than coal for first time** (181, 49 comments) HN: <https://news.ycombinator.com/item?id=48492306> Article: <https://www.theguardian.com/us-news/2026/jun/11/solar-energy-us-coal> - In May 2026, solar supplied **12.8%** of US electricity vs coal's **12.2%**",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "news.ycombinator.com/item",
+        "12.8",
+        "12.2",
+        "energy",
+        "coal",
+        "first",
+        "time",
+        "comments"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:138:138": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:138:138",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 138,
+      "endLine": 138,
+      "source": "memory",
+      "snippet": "Assistant: **Part 2: Tech News -- Top 10** **1. Google DeepMind releases DiffusionGemma** -- an open model for 4x faster text generation <https://blog.google/innovation-and-ai/technology/developers-tools/diffusion-gemma-faster-text-generation/> - A 26B MoE model (3.8B active para",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "3.8b",
+        "tech",
+        "news",
+        "top",
+        "google",
+        "deepmind",
+        "releases",
+        "diffusiongemma"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:139:139": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:139:139",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 139,
+      "endLine": 139,
+      "source": "memory",
+      "snippet": "Assistant: Noting current time: 1:26 PM PT on Thursday. Let me run the periodic checks.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "noting",
+        "current",
+        "time",
+        "thursday",
+        "let",
+        "run",
+        "periodic",
+        "checks"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:140:140": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:140:140",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 140,
+      "endLine": 140,
+      "source": "memory",
+      "snippet": "Assistant: Let me do the periodic checks — calendar, market signals, and email.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "let",
+        "periodic",
+        "checks",
+        "calendar",
+        "market",
+        "signals",
+        "email"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:141:141": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:141:141",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 141,
+      "endLine": 141,
+      "source": "memory",
+      "snippet": "Assistant: Quick assessment based on the periodic checks: - **Weather**: Sunny, 93°F. Hot but no rain. Nothing to flag. - **Market**: Strong up day — VIX 19.57 (-11.9%), SPY +1.7%, QQQ +3.4%, NVDA $204.87 (+2.2%). No entry signals triggered (NVDA well above RSI<30 zone). - **Cale",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "19.57",
+        "11.9",
+        "1.7",
+        "3.4",
+        "204.87",
+        "2.2",
+        "quick",
+        "assessment"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:142:142": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:142:142",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 142,
+      "endLine": 142,
+      "source": "memory",
+      "snippet": "Assistant: Request was aborted",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "request",
+        "was",
+        "aborted"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:143:143": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:143:143",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 143,
+      "endLine": 143,
+      "source": "memory",
+      "snippet": "Assistant: Let me run the periodic checks. It's 12:26 PM PT on Thursday — good time to check what's coming up.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "let",
+        "run",
+        "periodic",
+        "checks",
+        "it's",
+        "thursday",
+        "good",
+        "time"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:144:144": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:144:144",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 144,
+      "endLine": 144,
+      "source": "memory",
+      "snippet": "Assistant: Let me check weather instead since the calendar API isn't configured in env directly.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "let",
+        "check",
+        "weather",
+        "instead",
+        "calendar",
+        "api",
+        "isn't",
+        "configured"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:145:145": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:145:145",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 145,
+      "endLine": 145,
+      "source": "memory",
+      "snippet": "Assistant: Quick checks done: - **Weather:** Sunnyvale is sunny, 90°F — no rain or alerts - **Morning Brief:** Already ran at 7:30 AM PT, no duplicate issues flagged - **Vocabulary Quiz:** Not yet — 8:30 PM PT target, ~8 hours away - **Stock Monitor:** Already ran at 6 AM PT pre-",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "quick",
+        "checks",
+        "done",
+        "weather",
+        "sunnyvale",
+        "sunny",
+        "rain",
+        "alerts"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:146:146": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:146:146",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 146,
+      "endLine": 146,
+      "source": "memory",
+      "snippet": "Assistant: Nothing needs my attention right now. Quick summary of checks: - **Calendar**: Clear today. Monday (Jun 15) has pay credit cards, pay mobile plan, jinghua chase. Wednesday (Jun 17) has 换篱笆 at 8 AM PT. - **Email**: 5 unread, all promotional/newsletters. Nothing urgent.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "promotional/newsletters",
+        "nothing",
+        "needs",
+        "attention",
+        "right",
+        "now",
+        "quick",
+        "summary"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:147:147": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:147:147",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 147,
+      "endLine": 147,
+      "source": "memory",
+      "snippet": "Assistant: Let me run the periodic checks.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "let",
+        "run",
+        "periodic",
+        "checks"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:148:148": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:148:148",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 148,
+      "endLine": 148,
+      "source": "memory",
+      "snippet": "Assistant: No urgent issues found: - **Calendar**: No upcoming events in the next 24h across Personal, Paofu & D, or Family calendars - **Email**: Only promotional/spam (LinkedIn, Nextdoor, Atlassian trial reminder) — nothing urgent - **Hat reminder**: Not applicable (11:26 PM PT",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "promotional/spam",
+        "urgent",
+        "issues",
+        "found",
+        "calendar",
+        "upcoming",
+        "events",
+        "24h"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:149:149": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:149:149",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 149,
+      "endLine": 149,
+      "source": "memory",
+      "snippet": "Assistant: All cron jobs are properly configured and enabled. Quick status check at 8:56 PM PT Wednesday: - **Hat reminder** — Evening hours, skip - **Morning Brief** — Ran at 7:30 AM PT, no duplication complaints seen - **Vocabulary Quiz** — Scheduled for 8:30 PM PT (26 min ago)",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "all",
+        "cron",
+        "jobs",
+        "properly",
+        "configured",
+        "enabled",
+        "quick",
+        "status"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-12.txt:1:1": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-12.txt:1:1",
+      "path": "memory/.dreams/session-corpus/2026-06-12.txt",
+      "startLine": 1,
+      "endLine": 1,
+      "source": "memory",
+      "snippet": "Assistant: 🕐 *MCP Health Check* — Jun 12 00:07 UTC *XHS* ⚠️ online, login check timed out *TV* ✅ healthy (AAPL: $295.63) ---",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "3a37f9bd3c48"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "295.63",
+        "mcp",
+        "health",
+        "check",
+        "jun",
+        "utc",
+        "xhs",
+        "online"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-12.txt:2:2": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-12.txt:2:2",
+      "path": "memory/.dreams/session-corpus/2026-06-12.txt",
+      "startLine": 2,
+      "endLine": 2,
+      "source": "memory",
+      "snippet": "Assistant: Let me do a quick periodic check since it's Thursday evening PT.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "3a37f9bd3c48"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "let",
+        "quick",
+        "periodic",
+        "check",
+        "it's",
+        "thursday",
+        "evening"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-12.txt:3:3": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-12.txt:3:3",
+      "path": "memory/.dreams/session-corpus/2026-06-12.txt",
+      "startLine": 3,
+      "endLine": 3,
+      "source": "memory",
+      "snippet": "Assistant: It's **Thursday 7:56 PM PT** — evening, post-work hours. Let me run the standard periodic checks.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "3a37f9bd3c48"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "post-work",
+        "it's",
+        "thursday",
+        "evening",
+        "post",
+        "hours",
+        "let",
+        "run"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-12.txt:4:4": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-12.txt:4:4",
+      "path": "memory/.dreams/session-corpus/2026-06-12.txt",
+      "startLine": 4,
+      "endLine": 4,
+      "source": "memory",
+      "snippet": "Assistant: All checks done. Here's the rundown: - **🎩 Hat reminder** — 8 PM PT, past work hours. Skip. - **🌅 Morning Brief Duplicate** — May 18 bug hasn't recurred. No action. - **🌤 Weather** — Friday: sunny 60-87°F. Saturday: sunny 60-83°F. Nice weekend ahead. - **📅 Calendar",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "3a37f9bd3c48"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "60-87",
+        "60-83",
+        "all",
+        "checks",
+        "done",
+        "here's",
+        "rundown",
+        "hat"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-12.txt:5:5": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-12.txt:5:5",
+      "path": "memory/.dreams/session-corpus/2026-06-12.txt",
+      "startLine": 5,
+      "endLine": 5,
+      "source": "memory",
+      "snippet": "Assistant: Current time: **Thu Jun 11, 5:56 PM PT**. Let me run the periodic checks.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "3a37f9bd3c48"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "current",
+        "time",
+        "thu",
+        "jun",
+        "let",
+        "run",
+        "periodic",
+        "checks"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-12.txt:6:6": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-12.txt:6:6",
+      "path": "memory/.dreams/session-corpus/2026-06-12.txt",
+      "startLine": 6,
+      "endLine": 6,
+      "source": "memory",
+      "snippet": "Assistant: Let me check calendar and market data for the periodic checks.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "3a37f9bd3c48"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "let",
+        "check",
+        "calendar",
+        "market",
+        "data",
+        "periodic",
+        "checks"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-12.txt:7:7": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-12.txt:7:7",
+      "path": "memory/.dreams/session-corpus/2026-06-12.txt",
+      "startLine": 7,
+      "endLine": 7,
+      "source": "memory",
+      "snippet": "Assistant: Current time: **Friday, June 12, 2026 — 1:56 AM UTC** (Thursday, June 11 — **6:56 PM PT**) Let me run the periodic checks.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "3a37f9bd3c48"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "current",
+        "time",
+        "friday",
+        "june",
+        "utc",
+        "thursday",
+        "let",
+        "run"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-12.txt:8:8": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-12.txt:8:8",
+      "path": "memory/.dreams/session-corpus/2026-06-12.txt",
+      "startLine": 8,
+      "endLine": 8,
+      "source": "memory",
+      "snippet": "Assistant: Thursday 6:56 PM PT — end of workday. Let me run the periodic checks.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "3a37f9bd3c48"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "thursday",
+        "end",
+        "workday",
+        "let",
+        "run",
+        "periodic",
+        "checks"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-12.txt:9:9": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-12.txt:9:9",
+      "path": "memory/.dreams/session-corpus/2026-06-12.txt",
+      "startLine": 9,
+      "endLine": 9,
+      "source": "memory",
+      "snippet": "Assistant: All periodic checks complete: **Calendar:** No events tonight or this weekend. Monday has credit card/mobile plan payments due. **Email:** Nothing urgent — just LinkedIn, The Information, Nextdoor, Target, Xfinity. **Weather:** Sunny, 93°F in Sunnyvale. Standard June h",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "3a37f9bd3c48"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "card/mobile",
+        "all",
+        "periodic",
+        "checks",
+        "complete",
+        "calendar",
+        "events",
+        "tonight"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-12.txt:10:10": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-12.txt:10:10",
+      "path": "memory/.dreams/session-corpus/2026-06-12.txt",
+      "startLine": 10,
+      "endLine": 10,
+      "source": "memory",
+      "snippet": "Assistant: Let me run the periodic checks.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "3a37f9bd3c48"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "let",
+        "run",
+        "periodic",
+        "checks"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-12.txt:11:11": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-12.txt:11:11",
+      "path": "memory/.dreams/session-corpus/2026-06-12.txt",
+      "startLine": 11,
+      "endLine": 11,
+      "source": "memory",
+      "snippet": "Assistant: Evening heartbeat — Friday June 12 02:26 UTC (Thu Jun 11, 19:26 PT). Let me run the periodic checks.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "3a37f9bd3c48"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "evening",
+        "heartbeat",
+        "friday",
+        "june",
+        "utc",
+        "thu",
+        "jun",
+        "let"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-12.txt:12:12": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-12.txt:12:12",
+      "path": "memory/.dreams/session-corpus/2026-06-12.txt",
+      "startLine": 12,
+      "endLine": 12,
+      "source": "memory",
+      "snippet": "Assistant: **Periodic check summary (Fri Jun 12, 02:26 UTC / Thu Jun 11, 19:26 PT):** - **🧢 Hat for 1-1s** — 7:26 PM PT Friday. Not applicable. - **📅 Calendar** — No events found in configured calendars for today/tomorrow. - **🌡️ Weather** — Hot day tomorrow in Sunnyvale: 93-1",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "3a37f9bd3c48"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "1-1s",
+        "today/tomorrow",
+        "93-1",
+        "periodic",
+        "check",
+        "summary",
+        "fri",
+        "jun"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:150:150": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:150:150",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 150,
+      "endLine": 150,
+      "source": "memory",
+      "snippet": "Assistant: content creation, and journey orchestration - Built on MCP and A2A standards, integrates with AWS, Anthropic, Google Cloud, Microsoft, and OpenAI --- **3. Anthropic quietly added invisible distillation guardrails to Fable, then apologized** <https://www.theverge.com/ai",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "openai",
+        "www.theverge.com/ai",
+        "content",
+        "creation",
+        "journey",
+        "orchestration",
+        "built",
+        "mcp"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:151:151": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:151:151",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 151,
+      "endLine": 151,
+      "source": "memory",
+      "snippet": "Assistant: SWE-Bench Pro and **73%** on Terminal Bench 2, beating Claude Code by about 5 pts on same base model --- **5. Apple Core AI Framework official documentation released** <https://developer.apple.com/documentation/coreai/> - New Swift API for loading/running AI models on",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "swe-bench",
+        "loading/running",
+        "swe",
+        "bench",
+        "pro",
+        "terminal",
+        "beating",
+        "claude"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:152:152": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:152:152",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 152,
+      "endLine": 152,
+      "source": "memory",
+      "snippet": "Assistant: **$67.4B** - Cloud infra (IaaS) grew **93%** YoY -- but stock fell **-11.9%** as guidance didn't impress --- **7. Intel upgraded by Bank of America** -- stock jumps **10.3%** <https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updat",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "67.4b",
+        "11.9",
+        "10.3",
+        "cloud",
+        "infra",
+        "iaas",
+        "grew",
+        "yoy"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:153:153": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:153:153",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 153,
+      "endLine": 153,
+      "source": "memory",
+      "snippet": "Assistant: **200g**, up to **4 hours** battery, detachable **2-inch OLED** touchscreen --- **9. Canva launches offline mode** -- design without internet for up to **14 days** <https://www.canva.com/help/set-up-offline-access/> - Free for all users -- mark up to **10 designs** for",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "2-inch",
+        "200g",
+        "hours",
+        "battery",
+        "detachable",
+        "inch",
+        "oled",
+        "touchscreen"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:154:154": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:154:154",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 154,
+      "endLine": 154,
+      "source": "memory",
+      "snippet": "Assistant: years",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "years"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:155:155": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:155:155",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 155,
+      "endLine": 155,
+      "source": "memory",
+      "snippet": "Assistant: **Part 3: Finance and US Stock Digest** **Market Summary** (June 11, 2026) - S&P 500 rebounded **+0.21%** in early trading after closing at **7,266.99** (-1.6%) on Wednesday -- tech stocks recovering as oil prices pulled back - VIX climbed to **22.22** (+11.8% amid ong",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "0.21",
+        "266.99",
+        "1.6",
+        "22.22",
+        "11.8",
+        "finance",
+        "stock",
+        "digest"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:156:156": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:156:156",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 156,
+      "endLine": 156,
+      "source": "memory",
+      "snippet": "Assistant: **SMCI** +0.7% -- after pricing a share offering that sent it down 28% the prior session - **Enliven Therapeutics (ELVN)** +17% -- positive Phase 1 leukemia(白血病) data --- **Macro Context** - **Brent crude** fell to about **$92/barrel** after earlier spike on Iran/Strai",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "0.7",
+        "92/barrel",
+        "iran/strai",
+        "smci",
+        "pricing",
+        "share",
+        "offering",
+        "sent"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:157:157": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:157:157",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 157,
+      "endLine": 157,
+      "source": "memory",
+      "snippet": "Assistant: Request was aborted",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "request",
+        "was",
+        "aborted"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-12.txt:13:13": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-12.txt:13:13",
+      "path": "memory/.dreams/session-corpus/2026-06-12.txt",
+      "startLine": 13,
+      "endLine": 13,
+      "source": "memory",
+      "snippet": "Assistant: Git sync: **2 file(s)** committed -> <https://github.com/darinyu/openclaw-config/commit/b34d8dc641382db8ef4dcc33899688d1e5cb71fb|b34d8dc> :git: • memory/.dreams/events.jsonl • memory/.dreams/short-term-recall.json",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T03:00:01.070Z",
+      "lastRecalledAt": "2026-06-12T03:00:01.070Z",
+      "queryHashes": [
+        "3a37f9bd3c48"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "dreams/events.jsonl",
+        "dreams/short-term-recall.json",
+        "git",
+        "sync",
+        "committed",
+        "https",
+        "github.com",
+        "darinyu"
       ]
     }
   }
