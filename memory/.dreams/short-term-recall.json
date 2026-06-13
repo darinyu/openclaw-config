@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-12T06:56:21.528Z",
+  "updatedAt": "2026-06-12T20:56:21.756Z",
   "entries": {
     "memory:memory/2026-05-15.md:1:15": {
       "key": "memory:memory/2026-05-15.md:1:15",
@@ -46439,13 +46439,13 @@
       "endLine": 23,
       "source": "memory",
       "snippet": "# 2026-05-14 A busy day of infrastructure and self-correction. ## Google Workspace Integration The big project was getting the Google Workspace BYOK skill up and running. I installed it from ClawHub, created a GCP project (`splendid-window-496318-g6`), enabled the Calendar and Gmail APIs, and set up OAuth desktop credentials. Darin's personal Google account (darinyu27@gmail.com) is now fully authorized — Calendar with full read/write, Gmail with read-only. Test calls confirmed everything works. Discovered a handful of calendars during setup: - **Personal** (darinyu27@gmail.com) — primary - **Work** (zyu@netflix.com) — shared as a reader to the personal account - **Family** — group calend",
-      "recallCount": 15,
+      "recallCount": 16,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 8.035003917638392,
+      "totalScore": 8.638928922996957,
       "maxScore": 0.6246966906123896,
       "firstRecalledAt": "2026-05-21T02:56:37.466Z",
-      "lastRecalledAt": "2026-06-10T12:26:25.411Z",
+      "lastRecalledAt": "2026-06-12T16:56:21.048Z",
       "queryHashes": [
         "739330afa75a",
         "9fb6c341b416",
@@ -46460,7 +46460,8 @@
         "75ce73f42f05",
         "423da6b89642",
         "4571f970dcac",
-        "993cdbd06891"
+        "993cdbd06891",
+        "e2ac3bb6f3c8"
       ],
       "recallDays": [
         "2026-05-21",
@@ -46470,7 +46471,8 @@
         "2026-05-31",
         "2026-06-03",
         "2026-06-06",
-        "2026-06-10"
+        "2026-06-10",
+        "2026-06-12"
       ],
       "conceptTags": [
         "self-correction",
@@ -46532,13 +46534,13 @@
       "endLine": 24,
       "source": "memory",
       "snippet": "# 2026-05-14 ## Google Workspace BYOK Setup - Installed `google-workspace-byok` skill from ClawHub - Set up GCP project \"splendid-window-496318-g6\" with Calendar API + Gmail API enabled - Created OAuth desktop creds, stored at ~/.openclaw/google-workspace-byok/credentials.json - Authorized **personal** account (darinyu27@gmail.com): - Calendar: full read/write - Gmail: read-only - Access confirmed via test calls ## Calendars discovered - Personal: darinyu27@gmail.com (owner) - Work: zyu@netflix.com (reader — already shared to personal) - Family: family03280057382472202100@group.calendar.google.com (owner) - Paofu & D: a083de30704edd3b8a3ef5e846c5c6396e236a7a1244a41ca67db9c92591f3ce@g",
-      "recallCount": 26,
+      "recallCount": 28,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 12.216554369662783,
+      "totalScore": 13.208201788584166,
       "maxScore": 0.7347639670908724,
       "firstRecalledAt": "2026-05-21T02:56:37.466Z",
-      "lastRecalledAt": "2026-06-11T07:56:20.827Z",
+      "lastRecalledAt": "2026-06-12T20:56:21.756Z",
       "queryHashes": [
         "739330afa75a",
         "3b1783ce865f",
@@ -46564,7 +46566,8 @@
         "55f1bcbb7ffe",
         "645bb52e3919",
         "180026efddc4",
-        "46cfdaa6ba36"
+        "46cfdaa6ba36",
+        "132210165820"
       ],
       "recallDays": [
         "2026-05-21",
@@ -46578,7 +46581,8 @@
         "2026-06-07",
         "2026-06-08",
         "2026-06-10",
-        "2026-06-11"
+        "2026-06-11",
+        "2026-06-12"
       ],
       "conceptTags": [
         "google-workspace-byok",
@@ -142152,18 +142156,20 @@
       "endLine": 14,
       "source": "memory",
       "snippet": "# 2026-06-04 (Thursday) ## Heartbeat (~5:56 AM UTC / 10:56 PM PT Wed) - No calendar events next 24h (personal, Paofu & D, Family) - No urgent emails — routine: RH BTC fill, Amazon deliveries, recruiter follow-up - Weather: Clear, 69°F, no rain - Stock check (after-hours): - NVDA $214.75 (-3.62% AH) — continued weakness from $215.89 close - SPY $754.24 (-0.7%) - VIX 16.06 — low vol, mean reversion regime - SMH $637.90 (+0.9% AH) — semis slightly up - No entry signals triggered yet - Vocabulary quiz for June 3 should have run at 8:30 PM PT",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.3695955544710159,
-      "maxScore": 0.3695955544710159,
+      "totalScore": 0.7913413345813751,
+      "maxScore": 0.4217457801103592,
       "firstRecalledAt": "2026-06-04T06:26:19.337Z",
-      "lastRecalledAt": "2026-06-04T06:26:19.337Z",
+      "lastRecalledAt": "2026-06-12T20:26:22.080Z",
       "queryHashes": [
-        "173ac8689e07"
+        "173ac8689e07",
+        "4b59c723d4fd"
       ],
       "recallDays": [
-        "2026-06-04"
+        "2026-06-04",
+        "2026-06-12"
       ],
       "conceptTags": [
         "follow-up",
@@ -167209,18 +167215,20 @@
       "endLine": 19,
       "source": "memory",
       "snippet": "# 2026-06-04 (Thursday) — Daily Journal Heartbeat check — no calendar events next 24h across all calendars. **Weather** — Clear, 69°F, no rain in Sunnyvale. **Stocks (after-hours):** - NVDA $214.75 (-3.62% AH) — extended weakness - SPY $754.24 (-0.7%) - VIX 16.06 — low vol, mean reversion - SMH $637.90 (+0.9%) — semis slightly green - No entry signals triggered **Email** — Routine: RH BTC fill confirmed, Amazon deliveries tracking, recruiter follow-up. **Vocabulary quiz** — Should have run at 8:30 PM PT for June 3. **Vibe** — Quiet evening, no major fires. Standard heartbeat.",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.3531096965074539,
-      "maxScore": 0.3531096965074539,
+      "totalScore": 0.7429704010486602,
+      "maxScore": 0.38986070454120636,
       "firstRecalledAt": "2026-06-11T21:26:20.755Z",
-      "lastRecalledAt": "2026-06-11T21:26:20.755Z",
+      "lastRecalledAt": "2026-06-12T20:26:22.080Z",
       "queryHashes": [
-        "30f8976afa28"
+        "30f8976afa28",
+        "4b59c723d4fd"
       ],
       "recallDays": [
-        "2026-06-11"
+        "2026-06-11",
+        "2026-06-12"
       ],
       "conceptTags": [
         "after-hours",
@@ -172080,6 +172088,161 @@
         "https",
         "github.com",
         "darinyu"
+      ]
+    },
+    "memory:memory/2026-06-11.md:1:26": {
+      "key": "memory:memory/2026-06-11.md:1:26",
+      "path": "memory/2026-06-11.md",
+      "startLine": 1,
+      "endLine": 26,
+      "source": "memory",
+      "snippet": "# 2026-06-11 (Thursday) ## Cron Job Failures — Systematic \"Request was aborted\" Five cron jobs failed with \"Request was aborted\" errors, all timing out at **~377-409 seconds**. Pattern suggests DeepSeek API dropping long-lived connections. **Affected jobs:** - Personal Morning Brief (7:30am PT) — 2nd consecutive error - Daily Weather Brief (7am PT) — 2nd consecutive error - Tech+Finance Digest (4pm PT run) — 2nd consecutive error - Inbox Nightly Cleanup (9pm PT) — 1st error - Gym Reminder (9am PT) — 1st error **Running OK:** - ✓ Vocabulary Evening Quiz (8:30pm PT) - ✓ Stock Pre-Market (6am PT) - ✓ MCP Health Check (hourly) - ✓ Git sync - ✓ Memory Dreaming Promotion - ✓ Daily Journal Summ",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.38648385405540464,
+      "maxScore": 0.38648385405540464,
+      "firstRecalledAt": "2026-06-12T17:26:19.613Z",
+      "lastRecalledAt": "2026-06-12T17:26:19.613Z",
+      "queryHashes": [
+        "9f5bb7d5f360"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "377-409",
+        "long-lived",
+        "pre-market",
+        "thursday",
+        "cron",
+        "job",
+        "failures",
+        "systematic"
+      ]
+    },
+    "memory:memory/journal/2026-06-11.md:1:14": {
+      "key": "memory:memory/journal/2026-06-11.md:1:14",
+      "path": "memory/journal/2026-06-11.md",
+      "startLine": 1,
+      "endLine": 14,
+      "source": "memory",
+      "snippet": "# Journal — 2026-06-11 (Thursday) ## Cron Reliability Concern Five cron jobs failed with \"Request was aborted\" timeouts (~377-409s), suggesting DeepSeek API dropping long-lived connections. Affected: Personal Morning Brief, Daily Weather Brief, Tech+Finance Digest, Inbox Nightly Cleanup, Gym Reminder. Most have hit this error 2+ consecutive runs. ## Running OK Morning MCP health checks, stock pre-market, vocabulary quiz, git sync, memory dreaming, daily journal, and correction retro all ran fine. No duplicate briefs. Failures notified to Darin. ## Notes System-wide issue, not job-specific. Next scheduled runs should retry naturally.",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.3681855797767639,
+      "maxScore": 0.3681855797767639,
+      "firstRecalledAt": "2026-06-12T17:26:19.613Z",
+      "lastRecalledAt": "2026-06-12T17:26:19.613Z",
+      "queryHashes": [
+        "9f5bb7d5f360"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "377-409s",
+        "long-lived",
+        "pre-market",
+        "system-wide",
+        "job-specific",
+        "journal",
+        "thursday",
+        "cron"
+      ]
+    },
+    "memory:memory/2026-06-10.md:1:39": {
+      "key": "memory:memory/2026-06-10.md:1:39",
+      "path": "memory/2026-06-10.md",
+      "startLine": 1,
+      "endLine": 39,
+      "source": "memory",
+      "snippet": "## Heartbeat 4:56 PM UTC (9:56 AM PT) **Hat reminder:** Sent DM to Darin — back-to-back work meetings starting 10:05 AM PT **Morning Brief duplicate watch:** ✅ No duplicate. Ran once at 7:30 AM PT but errored (DeepSeek \"Request was aborted\") **Calendar:** - Personal: No events today - Paofu & D: No events today - Family: No events today - Work (OpenAI): 8 meetings, 10:05 AM - 7:00 PM PT **Weather:** Sunnyvale — Sunny, 21°C **Stock check (NVDA):** $202.71 (-2.63%). Not at RSI<30 trigger. ## Heartbeat 5:56 PM UTC (10:56 AM PT) **Status:** Darin in back-to-back meetings (10:05 AM - 7:00 PM PT). All periodic checks handled in prior heartbeat. Nothing urgent. **Cron job failures:** Multi",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.6511517192032615,
+      "maxScore": 0.6511517192032615,
+      "firstRecalledAt": "2026-06-12T20:26:16.370Z",
+      "lastRecalledAt": "2026-06-12T20:26:16.370Z",
+      "queryHashes": [
+        "01825707b941"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "openai",
+        "back-to-back",
+        "202.71",
+        "2.63",
+        "heartbeat",
+        "utc",
+        "hat",
+        "reminder"
+      ]
+    },
+    "memory:memory/2026-06-05.md:1:11": {
+      "key": "memory:memory/2026-06-05.md:1:11",
+      "path": "memory/2026-06-05.md",
+      "startLine": 1,
+      "endLine": 11,
+      "source": "memory",
+      "snippet": "# 2026-06-05 (Friday) ## Heartbeat (~12:56 AM UTC / 5:56 PM PT Thu) - No urgent items - Calendar: \"Investment\" event tomorrow 9:00-10:00 AM PT (Paofu & D) — Roth IRA contributions - Weather: Sunny, 54-78°F, no rain - NVDA closed $218.66 (+1.82%) — bounce from $214.75. After-hours -1% on Elizabeth Warren requesting Jensen Huang testify on China chip sales - SPY $757.09 (+0.38%) near 52w high $760.40 - No entry signals triggered - Vocabulary quiz cron at 8:30 PM PT — still pending (check in next heartbeat)",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.40982169210910796,
+      "maxScore": 0.40982169210910796,
+      "firstRecalledAt": "2026-06-12T20:26:22.080Z",
+      "lastRecalledAt": "2026-06-12T20:26:22.080Z",
+      "queryHashes": [
+        "4b59c723d4fd"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "00-10",
+        "54-78",
+        "218.66",
+        "1.82",
+        "214.75",
+        "after-hours",
+        "757.09",
+        "0.38"
+      ]
+    },
+    "memory:memory/2026-06-12.md:1:10": {
+      "key": "memory:memory/2026-06-12.md:1:10",
+      "path": "memory/2026-06-12.md",
+      "startLine": 1,
+      "endLine": 10,
+      "source": "memory",
+      "snippet": "# 2026-06-12 (Friday) ## Heartbeat — 10:26 AM PT - **Calendar:** No personal/family events. Work calendar shows busy slots at 11:30 AM and 2:05 PM PT. - **Hat reminder:** Sent to C0B4EK31NCU — Darin has a meeting at 11:30 AM PT (likely 1-1). - **Email:** Nothing urgent. Robinhood trade confirmations (sold SPCX, bought SMH, MRVL Short Put Roll). Promotional emails only. - **Weather:** Sunny 72°F — no alerts. - **Stock signals:** NVDA RSI 45.1 (neutral, no entry signal). VIX 18.51 (mean reversion regime). No active signals. - **Morning Brief:** No duplicate issue observed today.",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.39886537492275237,
+      "maxScore": 0.39886537492275237,
+      "firstRecalledAt": "2026-06-12T20:26:22.080Z",
+      "lastRecalledAt": "2026-06-12T20:26:22.080Z",
+      "queryHashes": [
+        "4b59c723d4fd"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "personal/family",
+        "1-1",
+        "45.1",
+        "18.51",
+        "friday",
+        "heartbeat",
+        "calendar",
+        "personal"
       ]
     }
   }
