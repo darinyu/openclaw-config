@@ -499,3 +499,5 @@
 {"type":"memory.dream.completed","timestamp":"2026-06-14T03:00:07.283Z","phase":"rem","reportPath":"/data/.openclaw/workspace/memory/dreaming/rem/2026-06-14.md","lineCount":7,"storageMode":"separate"}
 {"type":"memory.dream.completed","timestamp":"2026-06-14T03:00:07.283Z","phase":"deep","reportPath":"/data/.openclaw/workspace/memory/dreaming/deep/2026-06-14.md","lineCount":2,"storageMode":"separate"}
 {"type":"memory.recall.recorded","timestamp":"2026-06-14T06:56:20.352Z","query":"Darin's calendar check routine heartbeat periodic checks","resultCount":1,"results":[{"path":"memory/2026-06-10.md","startLine":1,"endLine":39,"score":0.37420319914817807}]}
+{"type":"memory.recall.recorded","timestamp":"2026-06-14T12:26:19.980Z","query":"google calendar check events","resultCount":1,"results":[{"path":"memory/2026-05-14.md","startLine":1,"endLine":24,"score":0.5531126601769025}]}
+{"type":"memory.recall.recorded","timestamp":"2026-06-14T15:26:16.563Z","query":"calendar configuration google workspace","resultCount":1,"results":[{"path":"memory/2026-05-14.md","startLine":1,"endLine":24,"score":0.39296579062938686}]}
