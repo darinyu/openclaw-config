@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-14T15:26:16.563Z",
+  "updatedAt": "2026-06-14T21:56:19.201Z",
   "entries": {
     "memory:memory/2026-05-15.md:1:15": {
       "key": "memory:memory/2026-05-15.md:1:15",
@@ -46439,13 +46439,13 @@
       "endLine": 23,
       "source": "memory",
       "snippet": "# 2026-05-14 A busy day of infrastructure and self-correction. ## Google Workspace Integration The big project was getting the Google Workspace BYOK skill up and running. I installed it from ClawHub, created a GCP project (`splendid-window-496318-g6`), enabled the Calendar and Gmail APIs, and set up OAuth desktop credentials. Darin's personal Google account (darinyu27@gmail.com) is now fully authorized — Calendar with full read/write, Gmail with read-only. Test calls confirmed everything works. Discovered a handful of calendars during setup: - **Personal** (darinyu27@gmail.com) — primary - **Work** (zyu@netflix.com) — shared as a reader to the personal account - **Family** — group calend",
-      "recallCount": 17,
+      "recallCount": 18,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 9.205736388771834,
+      "totalScore": 9.759395598302277,
       "maxScore": 0.6246966906123896,
       "firstRecalledAt": "2026-05-21T02:56:37.466Z",
-      "lastRecalledAt": "2026-06-13T12:26:17.753Z",
+      "lastRecalledAt": "2026-06-14T21:56:19.201Z",
       "queryHashes": [
         "739330afa75a",
         "9fb6c341b416",
@@ -46462,7 +46462,8 @@
         "4571f970dcac",
         "993cdbd06891",
         "e2ac3bb6f3c8",
-        "e15dd3ab2cbd"
+        "e15dd3ab2cbd",
+        "ca24394f8062"
       ],
       "recallDays": [
         "2026-05-21",
@@ -46474,7 +46475,8 @@
         "2026-06-06",
         "2026-06-10",
         "2026-06-12",
-        "2026-06-13"
+        "2026-06-13",
+        "2026-06-14"
       ],
       "conceptTags": [
         "self-correction",
@@ -46536,13 +46538,13 @@
       "endLine": 24,
       "source": "memory",
       "snippet": "# 2026-05-14 ## Google Workspace BYOK Setup - Installed `google-workspace-byok` skill from ClawHub - Set up GCP project \"splendid-window-496318-g6\" with Calendar API + Gmail API enabled - Created OAuth desktop creds, stored at ~/.openclaw/google-workspace-byok/credentials.json - Authorized **personal** account (darinyu27@gmail.com): - Calendar: full read/write - Gmail: read-only - Access confirmed via test calls ## Calendars discovered - Personal: darinyu27@gmail.com (owner) - Work: zyu@netflix.com (reader — already shared to personal) - Family: family03280057382472202100@group.calendar.google.com (owner) - Paofu & D: a083de30704edd3b8a3ef5e846c5c6396e236a7a1244a41ca67db9c92591f3ce@g",
-      "recallCount": 32,
+      "recallCount": 33,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 14.923323646234595,
+      "totalScore": 15.599432021116554,
       "maxScore": 0.7347639670908724,
       "firstRecalledAt": "2026-05-21T02:56:37.466Z",
-      "lastRecalledAt": "2026-06-14T15:26:16.563Z",
+      "lastRecalledAt": "2026-06-14T20:56:22.151Z",
       "queryHashes": [
         "739330afa75a",
         "3b1783ce865f",
@@ -46572,7 +46574,8 @@
         "132210165820",
         "d01a94996f3a",
         "aaadaa0297e6",
-        "8d5d63f50483"
+        "8d5d63f50483",
+        "ad58651f0f25"
       ],
       "recallDays": [
         "2026-05-21",
