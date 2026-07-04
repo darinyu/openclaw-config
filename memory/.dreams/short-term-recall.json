@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-04T12:26:25.262Z",
+  "updatedAt": "2026-07-04T18:26:23.118Z",
   "entries": {
     "memory:memory/2026-05-15.md:1:15": {
       "key": "memory:memory/2026-05-15.md:1:15",
@@ -46439,13 +46439,13 @@
       "endLine": 23,
       "source": "memory",
       "snippet": "# 2026-05-14 A busy day of infrastructure and self-correction. ## Google Workspace Integration The big project was getting the Google Workspace BYOK skill up and running. I installed it from ClawHub, created a GCP project (`splendid-window-496318-g6`), enabled the Calendar and Gmail APIs, and set up OAuth desktop credentials. Darin's personal Google account (darinyu27@gmail.com) is now fully authorized — Calendar with full read/write, Gmail with read-only. Test calls confirmed everything works. Discovered a handful of calendars during setup: - **Personal** (darinyu27@gmail.com) — primary - **Work** (zyu@netflix.com) — shared as a reader to the personal account - **Family** — group calend",
-      "recallCount": 19,
+      "recallCount": 20,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 10.297596452505804,
+      "totalScore": 10.866102175947097,
       "maxScore": 0.6246966906123896,
       "firstRecalledAt": "2026-05-21T02:56:37.466Z",
-      "lastRecalledAt": "2026-06-15T04:56:22.457Z",
+      "lastRecalledAt": "2026-07-04T14:56:22.196Z",
       "queryHashes": [
         "739330afa75a",
         "9fb6c341b416",
@@ -46464,7 +46464,8 @@
         "e2ac3bb6f3c8",
         "e15dd3ab2cbd",
         "ca24394f8062",
-        "4c159dc85864"
+        "4c159dc85864",
+        "54bd9862ffcd"
       ],
       "recallDays": [
         "2026-05-21",
@@ -46478,7 +46479,8 @@
         "2026-06-12",
         "2026-06-13",
         "2026-06-14",
-        "2026-06-15"
+        "2026-06-15",
+        "2026-07-04"
       ],
       "conceptTags": [
         "self-correction",
@@ -172198,20 +172200,22 @@
       "endLine": 14,
       "source": "memory",
       "snippet": "# Journal — 2026-06-11 (Thursday) ## Cron Reliability Concern Five cron jobs failed with \"Request was aborted\" timeouts (~377-409s), suggesting DeepSeek API dropping long-lived connections. Affected: Personal Morning Brief, Daily Weather Brief, Tech+Finance Digest, Inbox Nightly Cleanup, Gym Reminder. Most have hit this error 2+ consecutive runs. ## Running OK Morning MCP health checks, stock pre-market, vocabulary quiz, git sync, memory dreaming, daily journal, and correction retro all ran fine. No duplicate briefs. Failures notified to Darin. ## Notes System-wide issue, not job-specific. Next scheduled runs should retry naturally.",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.7423349350690842,
-      "maxScore": 0.37414935529232024,
+      "totalScore": 1.330671054877611,
+      "maxScore": 0.588336119808527,
       "firstRecalledAt": "2026-06-12T17:26:19.613Z",
-      "lastRecalledAt": "2026-06-13T21:56:18.186Z",
+      "lastRecalledAt": "2026-07-04T18:26:23.118Z",
       "queryHashes": [
         "9f5bb7d5f360",
-        "056210a750e6"
+        "056210a750e6",
+        "e8c6edb0d8a0"
       ],
       "recallDays": [
         "2026-06-12",
-        "2026-06-13"
+        "2026-06-13",
+        "2026-07-04"
       ],
       "conceptTags": [
         "377-409s",
@@ -172231,22 +172235,24 @@
       "endLine": 39,
       "source": "memory",
       "snippet": "## Heartbeat 4:56 PM UTC (9:56 AM PT) **Hat reminder:** Sent DM to Darin — back-to-back work meetings starting 10:05 AM PT **Morning Brief duplicate watch:** ✅ No duplicate. Ran once at 7:30 AM PT but errored (DeepSeek \"Request was aborted\") **Calendar:** - Personal: No events today - Paofu & D: No events today - Family: No events today - Work (OpenAI): 8 meetings, 10:05 AM - 7:00 PM PT **Weather:** Sunnyvale — Sunny, 21°C **Stock check (NVDA):** $202.71 (-2.63%). Not at RSI<30 trigger. ## Heartbeat 5:56 PM UTC (10:56 AM PT) **Status:** Darin in back-to-back meetings (10:05 AM - 7:00 PM PT). All periodic checks handled in prior heartbeat. Nothing urgent. **Cron job failures:** Multi",
-      "recallCount": 3,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.6253333479691074,
+      "totalScore": 2.199803012514722,
       "maxScore": 0.6511517192032615,
       "firstRecalledAt": "2026-06-12T20:26:16.370Z",
-      "lastRecalledAt": "2026-06-15T05:56:23.088Z",
+      "lastRecalledAt": "2026-07-04T18:26:23.118Z",
       "queryHashes": [
         "01825707b941",
         "bf60cc5ef725",
-        "29be886fca53"
+        "29be886fca53",
+        "e8c6edb0d8a0"
       ],
       "recallDays": [
         "2026-06-12",
         "2026-06-14",
-        "2026-06-15"
+        "2026-06-15",
+        "2026-07-04"
       ],
       "conceptTags": [
         "openai",
