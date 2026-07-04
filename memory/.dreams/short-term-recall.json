@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-16T00:08:14.906Z",
+  "updatedAt": "2026-07-04T12:26:25.262Z",
   "entries": {
     "memory:memory/2026-05-15.md:1:15": {
       "key": "memory:memory/2026-05-15.md:1:15",
@@ -46540,15 +46540,14 @@
       "endLine": 24,
       "source": "memory",
       "snippet": "# 2026-05-14 ## Google Workspace BYOK Setup - Installed `google-workspace-byok` skill from ClawHub - Set up GCP project \"splendid-window-496318-g6\" with Calendar API + Gmail API enabled - Created OAuth desktop creds, stored at ~/.openclaw/google-workspace-byok/credentials.json - Authorized **personal** account (darinyu27@gmail.com): - Calendar: full read/write - Gmail: read-only - Access confirmed via test calls ## Calendars discovered - Personal: darinyu27@gmail.com (owner) - Work: zyu@netflix.com (reader — already shared to personal) - Family: family03280057382472202100@group.calendar.google.com (owner) - Paofu & D: a083de30704edd3b8a3ef5e846c5c6396e236a7a1244a41ca67db9c92591f3ce@g",
-      "recallCount": 40,
+      "recallCount": 41,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 19.1156645751719,
+      "totalScore": 19.540045074296426,
       "maxScore": 0.7347639670908724,
       "firstRecalledAt": "2026-05-21T02:56:37.466Z",
-      "lastRecalledAt": "2026-06-15T17:56:25.335Z",
+      "lastRecalledAt": "2026-07-04T12:26:25.262Z",
       "queryHashes": [
-        "f087811bcc0b",
         "62b034069a43",
         "49f7f3069066",
         "73771b2013e1",
@@ -46579,10 +46578,10 @@
         "1f8c7f791a40",
         "71b37f9f44c7",
         "973f1afa84c2",
-        "92b2ee924319"
+        "92b2ee924319",
+        "50697f62438e"
       ],
       "recallDays": [
-        "2026-05-21",
         "2026-05-25",
         "2026-05-28",
         "2026-05-29",
@@ -46597,7 +46596,8 @@
         "2026-06-12",
         "2026-06-13",
         "2026-06-14",
-        "2026-06-15"
+        "2026-06-15",
+        "2026-07-04"
       ],
       "conceptTags": [
         "google-workspace-byok",
