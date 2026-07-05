@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-05T09:26:21.840Z",
+  "updatedAt": "2026-07-05T15:57:13.849Z",
   "entries": {
     "memory:memory/2026-05-15.md:1:15": {
       "key": "memory:memory/2026-05-15.md:1:15",
@@ -46545,15 +46545,14 @@
       "endLine": 24,
       "source": "memory",
       "snippet": "# 2026-05-14 ## Google Workspace BYOK Setup - Installed `google-workspace-byok` skill from ClawHub - Set up GCP project \"splendid-window-496318-g6\" with Calendar API + Gmail API enabled - Created OAuth desktop creds, stored at ~/.openclaw/google-workspace-byok/credentials.json - Authorized **personal** account (darinyu27@gmail.com): - Calendar: full read/write - Gmail: read-only - Access confirmed via test calls ## Calendars discovered - Personal: darinyu27@gmail.com (owner) - Work: zyu@netflix.com (reader — already shared to personal) - Family: family03280057382472202100@group.calendar.google.com (owner) - Paofu & D: a083de30704edd3b8a3ef5e846c5c6396e236a7a1244a41ca67db9c92591f3ce@g",
-      "recallCount": 42,
+      "recallCount": 43,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 20.312042668397005,
+      "totalScore": 20.885432035902515,
       "maxScore": 0.7719975941005786,
       "firstRecalledAt": "2026-05-21T02:56:37.466Z",
-      "lastRecalledAt": "2026-07-05T00:26:51.776Z",
+      "lastRecalledAt": "2026-07-05T14:30:39.687Z",
       "queryHashes": [
-        "49f7f3069066",
         "73771b2013e1",
         "2688edb2534e",
         "c7121387369c",
@@ -46584,7 +46583,8 @@
         "973f1afa84c2",
         "92b2ee924319",
         "50697f62438e",
-        "5037c52f9d26"
+        "5037c52f9d26",
+        "f174f05a7779"
       ],
       "recallDays": [
         "2026-05-28",
@@ -142152,18 +142152,20 @@
       "endLine": 9,
       "source": "memory",
       "snippet": "# 2026-06-03 (Wednesday) ## Heartbeat (10:26 AM PT) - Sent hat reminder to #random for Darin's back-to-back meetings (10:05 AM - 7:30 PM PT) - Weather: Sunny, 55-78°F, no rain - Personal/family calendars: clear - Work calendar: meetings all day - NVDA -3.11% at $215.89, SPY -0.66% — market down day",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.3707794100046158,
+      "totalScore": 0.7413430899381637,
       "maxScore": 0.3707794100046158,
       "firstRecalledAt": "2026-06-04T06:26:19.337Z",
-      "lastRecalledAt": "2026-06-04T06:26:19.337Z",
+      "lastRecalledAt": "2026-07-05T15:57:13.849Z",
       "queryHashes": [
-        "173ac8689e07"
+        "173ac8689e07",
+        "17415a3c842b"
       ],
       "recallDays": [
-        "2026-06-04"
+        "2026-06-04",
+        "2026-07-05"
       ],
       "conceptTags": [
         "back-to-back",
@@ -172250,24 +172252,26 @@
       "endLine": 39,
       "source": "memory",
       "snippet": "## Heartbeat 4:56 PM UTC (9:56 AM PT) **Hat reminder:** Sent DM to Darin — back-to-back work meetings starting 10:05 AM PT **Morning Brief duplicate watch:** ✅ No duplicate. Ran once at 7:30 AM PT but errored (DeepSeek \"Request was aborted\") **Calendar:** - Personal: No events today - Paofu & D: No events today - Family: No events today - Work (OpenAI): 8 meetings, 10:05 AM - 7:00 PM PT **Weather:** Sunnyvale — Sunny, 21°C **Stock check (NVDA):** $202.71 (-2.63%). Not at RSI<30 trigger. ## Heartbeat 5:56 PM UTC (10:56 AM PT) **Status:** Darin in back-to-back meetings (10:05 AM - 7:00 PM PT). All periodic checks handled in prior heartbeat. Nothing urgent. **Cron job failures:** Multi",
-      "recallCount": 4,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2.199803012514722,
+      "totalScore": 2.5672437488085147,
       "maxScore": 0.6511517192032615,
       "firstRecalledAt": "2026-06-12T20:26:16.370Z",
-      "lastRecalledAt": "2026-07-04T18:26:23.118Z",
+      "lastRecalledAt": "2026-07-05T15:57:13.849Z",
       "queryHashes": [
         "01825707b941",
         "bf60cc5ef725",
         "29be886fca53",
-        "e8c6edb0d8a0"
+        "e8c6edb0d8a0",
+        "17415a3c842b"
       ],
       "recallDays": [
         "2026-06-12",
         "2026-06-14",
         "2026-06-15",
-        "2026-07-04"
+        "2026-07-04",
+        "2026-07-05"
       ],
       "conceptTags": [
         "openai",
