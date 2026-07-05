@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-04T18:26:23.118Z",
+  "updatedAt": "2026-07-05T00:26:51.776Z",
   "entries": {
     "memory:memory/2026-05-15.md:1:15": {
       "key": "memory:memory/2026-05-15.md:1:15",
@@ -46439,13 +46439,13 @@
       "endLine": 23,
       "source": "memory",
       "snippet": "# 2026-05-14 A busy day of infrastructure and self-correction. ## Google Workspace Integration The big project was getting the Google Workspace BYOK skill up and running. I installed it from ClawHub, created a GCP project (`splendid-window-496318-g6`), enabled the Calendar and Gmail APIs, and set up OAuth desktop credentials. Darin's personal Google account (darinyu27@gmail.com) is now fully authorized — Calendar with full read/write, Gmail with read-only. Test calls confirmed everything works. Discovered a handful of calendars during setup: - **Personal** (darinyu27@gmail.com) — primary - **Work** (zyu@netflix.com) — shared as a reader to the personal account - **Family** — group calend",
-      "recallCount": 20,
+      "recallCount": 21,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 10.866102175947097,
+      "totalScore": 11.473305064189711,
       "maxScore": 0.6246966906123896,
       "firstRecalledAt": "2026-05-21T02:56:37.466Z",
-      "lastRecalledAt": "2026-07-04T14:56:22.196Z",
+      "lastRecalledAt": "2026-07-05T00:26:51.776Z",
       "queryHashes": [
         "739330afa75a",
         "9fb6c341b416",
@@ -46465,7 +46465,8 @@
         "e15dd3ab2cbd",
         "ca24394f8062",
         "4c159dc85864",
-        "54bd9862ffcd"
+        "54bd9862ffcd",
+        "5037c52f9d26"
       ],
       "recallDays": [
         "2026-05-21",
@@ -46480,7 +46481,8 @@
         "2026-06-13",
         "2026-06-14",
         "2026-06-15",
-        "2026-07-04"
+        "2026-07-04",
+        "2026-07-05"
       ],
       "conceptTags": [
         "self-correction",
@@ -46542,15 +46544,14 @@
       "endLine": 24,
       "source": "memory",
       "snippet": "# 2026-05-14 ## Google Workspace BYOK Setup - Installed `google-workspace-byok` skill from ClawHub - Set up GCP project \"splendid-window-496318-g6\" with Calendar API + Gmail API enabled - Created OAuth desktop creds, stored at ~/.openclaw/google-workspace-byok/credentials.json - Authorized **personal** account (darinyu27@gmail.com): - Calendar: full read/write - Gmail: read-only - Access confirmed via test calls ## Calendars discovered - Personal: darinyu27@gmail.com (owner) - Work: zyu@netflix.com (reader — already shared to personal) - Family: family03280057382472202100@group.calendar.google.com (owner) - Paofu & D: a083de30704edd3b8a3ef5e846c5c6396e236a7a1244a41ca67db9c92591f3ce@g",
-      "recallCount": 41,
+      "recallCount": 42,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 19.540045074296426,
-      "maxScore": 0.7347639670908724,
+      "totalScore": 20.312042668397005,
+      "maxScore": 0.7719975941005786,
       "firstRecalledAt": "2026-05-21T02:56:37.466Z",
-      "lastRecalledAt": "2026-07-04T12:26:25.262Z",
+      "lastRecalledAt": "2026-07-05T00:26:51.776Z",
       "queryHashes": [
-        "62b034069a43",
         "49f7f3069066",
         "73771b2013e1",
         "2688edb2534e",
@@ -46581,10 +46582,10 @@
         "71b37f9f44c7",
         "973f1afa84c2",
         "92b2ee924319",
-        "50697f62438e"
+        "50697f62438e",
+        "5037c52f9d26"
       ],
       "recallDays": [
-        "2026-05-25",
         "2026-05-28",
         "2026-05-29",
         "2026-05-30",
@@ -46599,7 +46600,8 @@
         "2026-06-13",
         "2026-06-14",
         "2026-06-15",
-        "2026-07-04"
+        "2026-07-04",
+        "2026-07-05"
       ],
       "conceptTags": [
         "google-workspace-byok",
@@ -90676,28 +90678,30 @@
       "startLine": 27,
       "endLine": 64,
       "source": "memory",
-      "snippet": "- Checks work calendar (zyu@netflix.com) for meetings ≤30 min away - Also checks Gmail for urgent unread - NO_REPLY if nothing urgent 3. **Personal Calendar Morning Brief** (new) - Cron: `0 8 * * *` PT, DMs Darin - Summarizes today's events on personal, family, Paofu & D calendars - NO_REPLY if no events 4. **Daily Weather Brief** (new) - Cron: `0 7 * * *` PT, posts to slack channel C0B420KCYAV - Covers Sunnyvale, Wuhan (Hubei), Linyi (Shandong) ### Key lesson on cron setup: - `openclaw cron add` CLI couldn't connect to the gateway from sandbox (scope/pairing issue) - Workaround: Edited ~/.openclaw/cron/jobs.json directly - Gateway auto-reloads on external edits per docs ## Retro: Skipping Slack Replies (2026-05-15) Darin called me out 3x in one convo for not replying in Slack. Root cause analysis: ### Root cause **My default behavior loop is broken:** 1. Receive Slack message 2. Do tool work (edit files, create jobs) 3. Work done → I reply in current session (private) 4. Never call `message(action=send)` The system says explicitly \"Normal final replies are private and are not automatically sent to this group chat.\" But I keep treating my private final reply as sufficient. ### Pattern across this conversation 1. First cron proposal → replied only in WebChat 2. \"say something?\" → finally replied via message tool 3. \"start at 7:50am, every 30 mins\" → edited file silently, no Slack message 4. \"is it done?\" → replied privately, not to Slack 5. \"why dont you post here?\" → finally sent a Slack message 6. Eventually needs to do a retro",
-      "recallCount": 6,
+      "snippet": "- Checks work calendar (zyu@netflix.com) for meetings ≤30 min away - Also checks Gmail for urgent unread - NO_REPLY if nothing urgent 3. **Personal Calendar Morning Brief** (new) - Cron: `0 8 * * *` PT, DMs Darin - Summarizes today's events on personal, family, Paofu & D calendars - NO_REPLY if no events 4. **Daily Weather Brief** (new) - Cron: `0 7 * * *` PT, posts to slack channel C0B420KCYAV - Covers Sunnyvale, Wuhan (Hubei), Linyi (Shandong) ### Key lesson on cron setup: - `openclaw cron add` CLI couldn't connect to the gateway from sandbox (scope/pairing issue) - Workaround: Edited ~/.openclaw/cron/jobs.json directly - Gateway auto-reloads on external edits pe",
+      "recallCount": 7,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2.5757470135644285,
+      "totalScore": 2.929819745297751,
       "maxScore": 0.5809767025790618,
       "firstRecalledAt": "2026-05-24T04:00:35.030Z",
-      "lastRecalledAt": "2026-06-10T15:26:19.771Z",
+      "lastRecalledAt": "2026-07-04T20:56:19.215Z",
       "queryHashes": [
         "9252978fac57",
         "84b274d417d3",
         "ec80edd79150",
         "c23241b1fe8e",
         "721601984a14",
-        "32dbd48c4dbb"
+        "32dbd48c4dbb",
+        "b00c8a7a3dfc"
       ],
       "recallDays": [
         "2026-05-24",
         "2026-05-25",
         "2026-06-08",
         "2026-06-09",
-        "2026-06-10"
+        "2026-06-10",
+        "2026-07-04"
       ],
       "conceptTags": [
         "gateway",
@@ -113905,22 +113909,24 @@
       "endLine": 34,
       "source": "memory",
       "snippet": "# 2026-05-15 ## Slack Routing Bug Fix - Darin called me out: I was replying to Slack @-mentions in WebChat instead of sending the reply back to Slack via `message` tool - **Root cause:** I was relying on \"auto-routing\" behavior that doesn't exist for Slack → WebChat messages - **Fix:** TOOLS.md already had the correct Slack routing rules. I just wasn't following them. - **Action taken:** Replied to Darin's X trending question in the #random thread where it belonged - **Lesson learned:** Slack messages ALWAYS need explicit `message` tool replies. Never assume auto-routing. ## Setup Improvements (self-audit) - AGENTS.md file on disk is the standard template — no \"Messaging\" section to fix (t",
-      "recallCount": 4,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.4580760121345517,
+      "totalScore": 1.8108014374971386,
       "maxScore": 0.37760207951068875,
       "firstRecalledAt": "2026-05-29T05:37:23.628Z",
-      "lastRecalledAt": "2026-06-04T13:57:55.283Z",
+      "lastRecalledAt": "2026-07-04T20:56:19.215Z",
       "queryHashes": [
         "990896de71f2",
         "cfb1e65fd12b",
         "da2ece1a6d7b",
-        "f9ced93964e5"
+        "f9ced93964e5",
+        "b00c8a7a3dfc"
       ],
       "recallDays": [
         "2026-05-29",
-        "2026-06-04"
+        "2026-06-04",
+        "2026-07-04"
       ],
       "conceptTags": [
         "auto-routing",
