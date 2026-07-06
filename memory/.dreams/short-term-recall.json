@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-06T03:00:01.102Z",
+  "updatedAt": "2026-07-06T16:56:23.702Z",
   "entries": {
     "memory:memory/2026-05-15.md:1:15": {
       "key": "memory:memory/2026-05-15.md:1:15",
@@ -46546,15 +46546,14 @@
       "endLine": 24,
       "source": "memory",
       "snippet": "# 2026-05-14 ## Google Workspace BYOK Setup - Installed `google-workspace-byok` skill from ClawHub - Set up GCP project \"splendid-window-496318-g6\" with Calendar API + Gmail API enabled - Created OAuth desktop creds, stored at ~/.openclaw/google-workspace-byok/credentials.json - Authorized **personal** account (darinyu27@gmail.com): - Calendar: full read/write - Gmail: read-only - Access confirmed via test calls ## Calendars discovered - Personal: darinyu27@gmail.com (owner) - Work: zyu@netflix.com (reader — already shared to personal) - Family: family03280057382472202100@group.calendar.google.com (owner) - Paofu & D: a083de30704edd3b8a3ef5e846c5c6396e236a7a1244a41ca67db9c92591f3ce@g",
-      "recallCount": 45,
+      "recallCount": 46,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 21.642619739154355,
+      "totalScore": 22.223415310533134,
       "maxScore": 0.7719975941005786,
       "firstRecalledAt": "2026-05-21T02:56:37.466Z",
-      "lastRecalledAt": "2026-07-05T22:56:24.888Z",
+      "lastRecalledAt": "2026-07-06T16:56:23.702Z",
       "queryHashes": [
-        "c7121387369c",
         "0a983968eec0",
         "895eb625f8fd",
         "c2d7088ab816",
@@ -46585,10 +46584,10 @@
         "5037c52f9d26",
         "f174f05a7779",
         "1e7788a3c47b",
-        "b1ccd0939cb1"
+        "b1ccd0939cb1",
+        "2b9c99ee3187"
       ],
       "recallDays": [
-        "2026-05-28",
         "2026-05-29",
         "2026-05-30",
         "2026-05-31",
@@ -46603,7 +46602,8 @@
         "2026-06-14",
         "2026-06-15",
         "2026-07-04",
-        "2026-07-05"
+        "2026-07-05",
+        "2026-07-06"
       ],
       "conceptTags": [
         "google-workspace-byok",
@@ -172256,27 +172256,29 @@
       "startLine": 1,
       "endLine": 39,
       "source": "memory",
-      "snippet": "## Heartbeat 4:56 PM UTC (9:56 AM PT) **Hat reminder:** Sent DM to Darin — back-to-back work meetings starting 10:05 AM PT **Morning Brief duplicate watch:** ✅ No duplicate. Ran once at 7:30 AM PT but errored (DeepSeek \"Request was aborted\") **Calendar:** - Personal: No events today - Paofu & D: No events today - Family: No events today - Work (OpenAI): 8 meetings, 10:05 AM - 7:00 PM PT **Weather:** Sunnyvale — Sunny, 21°C **Stock check (NVDA):** $202.71 (-2.63%). Not at RSI<30 trigger. ## Heartbeat 5:56 PM UTC (10:56 AM PT) **Status:** Darin in back-to-back meetings (10:05 AM - 7:00 PM PT). All periodic checks handled in prior heartbeat. Nothing urgent. **Cron job failures:** Multiple jobs failing with \"Request was aborted\" (DeepSeek API timeout). Affecting: morning brief, weather brief, tech digest, MCP health check. This is a recurring DeepSeek API issue. ## Heartbeat 10:56 PM PT (night check) **Calendar:** Thursday June 11 — No events across all calendars. **Weather:** Sunnyvale — Clear, hot tomorrow. High 96°F, Low 62°F, 2% rain. **Morning Brief check:** Today's brief (Jun 10) errored with \"Request was aborted\" at 7:30 AM PT. Darin got failure notification. Tomorrow's run at 7:30 AM PT. **Stock pre-market:** N/A — market closed. 6 AM PT cron handles this. **Hat check:** N/A — not workday morning/early afternoon. **Vocabulary quiz:** 8:30 PM PT cron handles this. Nothing actionable at this hour.",
-      "recallCount": 5,
+      "snippet": "## Heartbeat 4:56 PM UTC (9:56 AM PT) **Hat reminder:** Sent DM to Darin — back-to-back work meetings starting 10:05 AM PT **Morning Brief duplicate watch:** ✅ No duplicate. Ran once at 7:30 AM PT but errored (DeepSeek \"Request was aborted\") **Calendar:** - Personal: No events today - Paofu & D: No events today - Family: No events today - Work (OpenAI): 8 meetings, 10:05 AM - 7:00 PM PT **Weather:** Sunnyvale — Sunny, 21°C **Stock check (NVDA):** $202.71 (-2.63%). Not at RSI<30 trigger. ## Heartbeat 5:56 PM UTC (10:56 AM PT) **Status:** Darin in back-to-back meetings (10:05 AM - 7:00 PM PT). All periodic checks handled in prior heartbeat. Nothing urgent. **Cron job failures:** Multi",
+      "recallCount": 6,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2.5672437488085147,
+      "totalScore": 2.982350128794324,
       "maxScore": 0.6511517192032615,
       "firstRecalledAt": "2026-06-12T20:26:16.370Z",
-      "lastRecalledAt": "2026-07-05T15:57:13.849Z",
+      "lastRecalledAt": "2026-07-06T15:57:28.979Z",
       "queryHashes": [
         "01825707b941",
         "bf60cc5ef725",
         "29be886fca53",
         "e8c6edb0d8a0",
-        "17415a3c842b"
+        "17415a3c842b",
+        "7ef69f482994"
       ],
       "recallDays": [
         "2026-06-12",
         "2026-06-14",
         "2026-06-15",
         "2026-07-04",
-        "2026-07-05"
+        "2026-07-05",
+        "2026-07-06"
       ],
       "conceptTags": [
         "openai",
@@ -188166,6 +188168,99 @@
         "quiet",
         "sunday",
         "evening"
+      ]
+    },
+    "memory:memory/journal/2026-06-10.md:1:22": {
+      "key": "memory:memory/journal/2026-06-10.md:1:22",
+      "path": "memory/journal/2026-06-10.md",
+      "startLine": 1,
+      "endLine": 22,
+      "source": "memory",
+      "snippet": "# Journal — 2026-06-10 (Wednesday) ## Summary Quiet operational day. Darin had a heavy back-to-back meeting schedule at OpenAI with 8 meetings from 10:05 AM to 7:00 PM PT, so minimal interaction. ## Key Events - **Morning Brief errored** — DeepSeek API \"Request was aborted\" at 7:30 AM PT. Darin notified via failure notification. - **Hat reminder sent** — DM to Darin about back-to-back meetings starting at 10:05 AM PT. - **DeepSeek API issues** — Multiple cron jobs failed throughout the day with timeout/abort errors (morning brief, weather brief, tech digest, MCP health check). Recurring issue. - **Stock check (NVDA)** — $202.71 (-2.63%). No RSI<30 trigger, no action needed. - **Night che",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4377367794513702,
+      "maxScore": 0.4377367794513702,
+      "firstRecalledAt": "2026-07-06T15:57:28.979Z",
+      "lastRecalledAt": "2026-07-06T15:57:28.979Z",
+      "queryHashes": [
+        "7ef69f482994"
+      ],
+      "recallDays": [
+        "2026-07-06"
+      ],
+      "conceptTags": [
+        "openai",
+        "back-to-back",
+        "timeout/abort",
+        "202.71",
+        "2.63",
+        "journal",
+        "wednesday",
+        "summary"
+      ]
+    },
+    "memory:memory/journal/2026-06-03.md:1:17": {
+      "key": "memory:memory/journal/2026-06-03.md:1:17",
+      "path": "memory/journal/2026-06-03.md",
+      "startLine": 1,
+      "endLine": 17,
+      "source": "memory",
+      "snippet": "# Journal — 2026-06-03 (Wednesday) ## Daily Pulse - Darin had back-to-back meetings from 10:05 AM to 7:30 PM PT — a full workday - Weather in Sunnyvale: Sunny, 55-78°F, clear skies - Personal/family calendars: clear - Sent a hat reminder to #random ahead of his meeting block ## Market Snapshot - NVDA dropped 3.11% to $215.89 - SPY down 0.66% - Broad market weakness on the day ## Notes - Heartbeat ran at 10:26 AM PT with all checks passing - A mostly heads-down work day for Darin given the meeting-packed schedule",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.3992980659008026,
+      "maxScore": 0.3992980659008026,
+      "firstRecalledAt": "2026-07-06T15:57:28.979Z",
+      "lastRecalledAt": "2026-07-06T15:57:28.979Z",
+      "queryHashes": [
+        "7ef69f482994"
+      ],
+      "recallDays": [
+        "2026-07-06"
+      ],
+      "conceptTags": [
+        "back-to-back",
+        "55-78",
+        "personal/family",
+        "3.11",
+        "215.89",
+        "0.66",
+        "heads-down",
+        "meeting-packed"
+      ]
+    },
+    "memory:memory/2026-07-06.md:1:6": {
+      "key": "memory:memory/2026-07-06.md:1:6",
+      "path": "memory/2026-07-06.md",
+      "startLine": 1,
+      "endLine": 6,
+      "source": "memory",
+      "snippet": "## Gym Membership Cancelled - Darin confirmed he cancelled the 24hr gym membership - Removed the \"Gym membership cancellation reminder\" cron job - Reminders stopped as requested",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4414491683244705,
+      "maxScore": 0.4414491683244705,
+      "firstRecalledAt": "2026-07-06T16:26:19.639Z",
+      "lastRecalledAt": "2026-07-06T16:26:19.639Z",
+      "queryHashes": [
+        "c83ef856a710"
+      ],
+      "recallDays": [
+        "2026-07-06"
+      ],
+      "conceptTags": [
+        "gym",
+        "membership",
+        "cancelled",
+        "darin",
+        "confirmed",
+        "24hr",
+        "removed",
+        "cancellation"
       ]
     }
   }
