@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-06T16:56:23.702Z",
+  "updatedAt": "2026-07-06T20:56:19.760Z",
   "entries": {
     "memory:memory/2026-05-15.md:1:15": {
       "key": "memory:memory/2026-05-15.md:1:15",
@@ -46546,15 +46546,14 @@
       "endLine": 24,
       "source": "memory",
       "snippet": "# 2026-05-14 ## Google Workspace BYOK Setup - Installed `google-workspace-byok` skill from ClawHub - Set up GCP project \"splendid-window-496318-g6\" with Calendar API + Gmail API enabled - Created OAuth desktop creds, stored at ~/.openclaw/google-workspace-byok/credentials.json - Authorized **personal** account (darinyu27@gmail.com): - Calendar: full read/write - Gmail: read-only - Access confirmed via test calls ## Calendars discovered - Personal: darinyu27@gmail.com (owner) - Work: zyu@netflix.com (reader — already shared to personal) - Family: family03280057382472202100@group.calendar.google.com (owner) - Paofu & D: a083de30704edd3b8a3ef5e846c5c6396e236a7a1244a41ca67db9c92591f3ce@g",
-      "recallCount": 46,
+      "recallCount": 47,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 22.223415310533134,
+      "totalScore": 22.621921740324584,
       "maxScore": 0.7719975941005786,
       "firstRecalledAt": "2026-05-21T02:56:37.466Z",
-      "lastRecalledAt": "2026-07-06T16:56:23.702Z",
+      "lastRecalledAt": "2026-07-06T20:56:19.760Z",
       "queryHashes": [
-        "0a983968eec0",
         "895eb625f8fd",
         "c2d7088ab816",
         "0638304542d1",
@@ -46585,7 +46584,8 @@
         "f174f05a7779",
         "1e7788a3c47b",
         "b1ccd0939cb1",
-        "2b9c99ee3187"
+        "2b9c99ee3187",
+        "7faf23cbdd8b"
       ],
       "recallDays": [
         "2026-05-29",
@@ -159208,22 +159208,24 @@
       "endLine": 50,
       "source": "memory",
       "snippet": "- Anthropic IPO targeting Oct 2026, Bristol-Myers Squibb Claude Enterprise deal - Google I/O 2026: Gemini 3.5 Flash, Omni Flash, Pics, Spark, smart glasses, Gemma 4 - GPT-5.5: 60% fewer hallucinations, GPT-5.5 Instant cuts 50% - Meta TRIBE v2: digital twin of human neural activity, 70x resolution - Anthropic patches Claude Code sandbox bypass, dreaming technique - DeepMind union talks, Contextual AI acquisition $80-90M - UPenn light-matter particles for energy-efficient AI computing **Finance:** - S&P +0.84%, Dow +1.07%, Nasdaq +1.29%, VIX 17.53 - Nvidia rallied ahead of Q1 FY2027 earnings (expect ~$79B rev) - Target -7.2% despite beat (cautious outlook punished) - TJX +5.7%, Red Robin +15.",
-      "recallCount": 3,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.3635156084085296,
+      "totalScore": 1.7360917259240936,
       "maxScore": 0.5723766524577927,
       "firstRecalledAt": "2026-06-09T03:16:21.299Z",
-      "lastRecalledAt": "2026-06-12T06:56:21.528Z",
+      "lastRecalledAt": "2026-07-06T19:56:27.296Z",
       "queryHashes": [
         "1d5357a21ba4",
         "81f21954caab",
-        "71954bd39be5"
+        "71954bd39be5",
+        "1ff8a6dd0121"
       ],
       "recallDays": [
         "2026-06-09",
         "2026-06-10",
-        "2026-06-12"
+        "2026-06-12",
+        "2026-07-06"
       ],
       "conceptTags": [
         "gpt",
@@ -167251,20 +167253,22 @@
       "endLine": 70,
       "source": "memory",
       "snippet": "- Script: `scripts/check_strategy_signals.sh` (signal conditions reference) - Cron job updated to load skill for weekday pre-market analysis at 6:00 AM PT - Key signals: NVDA RSI<30 (strongest + most robust WFA), ETFs BB touches, EMA/MACD crosses - Eligible moderate-risk strategies: RSI MR (R4), BB MR (R3), EMA Cross (R5), MACD Cross (R5), Covered Calls (R1-2), Cash Puts (R2-3) - Excluded for moderate: Supertrend (R7), Pair Trading (R7), 0DTE (R10), Earnings Straddles (R9) - HEARTBEAT.md updated with signal check reminder ## Pre-Market Deep Analysis (12:19 PM PT) — sess_20260520_121900 - VIX: 17.44 (15-25 regime, mean reversion favored) - Market: Strong green day, semis leading (AMD +8.3%,",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.7847035199403762,
+      "totalScore": 1.1849419236183165,
       "maxScore": 0.4041834622621536,
       "firstRecalledAt": "2026-06-11T09:26:19.471Z",
-      "lastRecalledAt": "2026-06-12T06:56:21.528Z",
+      "lastRecalledAt": "2026-07-06T19:56:27.296Z",
       "queryHashes": [
         "eade0cc28eb3",
-        "71954bd39be5"
+        "71954bd39be5",
+        "1ff8a6dd0121"
       ],
       "recallDays": [
         "2026-06-11",
-        "2026-06-12"
+        "2026-06-12",
+        "2026-07-06"
       ],
       "conceptTags": [
         "pre-market",
