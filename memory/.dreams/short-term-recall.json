@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-07T03:00:16.359Z",
+  "updatedAt": "2026-07-07T22:56:19.258Z",
   "entries": {
     "memory:memory/2026-05-15.md:1:15": {
       "key": "memory:memory/2026-05-15.md:1:15",
@@ -46546,15 +46546,14 @@
       "endLine": 24,
       "source": "memory",
       "snippet": "# 2026-05-14 ## Google Workspace BYOK Setup - Installed `google-workspace-byok` skill from ClawHub - Set up GCP project \"splendid-window-496318-g6\" with Calendar API + Gmail API enabled - Created OAuth desktop creds, stored at ~/.openclaw/google-workspace-byok/credentials.json - Authorized **personal** account (darinyu27@gmail.com): - Calendar: full read/write - Gmail: read-only - Access confirmed via test calls ## Calendars discovered - Personal: darinyu27@gmail.com (owner) - Work: zyu@netflix.com (reader — already shared to personal) - Family: family03280057382472202100@group.calendar.google.com (owner) - Paofu & D: a083de30704edd3b8a3ef5e846c5c6396e236a7a1244a41ca67db9c92591f3ce@g",
-      "recallCount": 47,
+      "recallCount": 48,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 22.621921740324584,
+      "totalScore": 23.302127944737038,
       "maxScore": 0.7719975941005786,
       "firstRecalledAt": "2026-05-21T02:56:37.466Z",
-      "lastRecalledAt": "2026-07-06T20:56:19.760Z",
+      "lastRecalledAt": "2026-07-07T22:56:19.258Z",
       "queryHashes": [
-        "895eb625f8fd",
         "c2d7088ab816",
         "0638304542d1",
         "1fe85d6ce513",
@@ -46585,10 +46584,10 @@
         "1e7788a3c47b",
         "b1ccd0939cb1",
         "2b9c99ee3187",
-        "7faf23cbdd8b"
+        "7faf23cbdd8b",
+        "7997dc044176"
       ],
       "recallDays": [
-        "2026-05-29",
         "2026-05-30",
         "2026-05-31",
         "2026-06-03",
@@ -46603,7 +46602,8 @@
         "2026-06-15",
         "2026-07-04",
         "2026-07-05",
-        "2026-07-06"
+        "2026-07-06",
+        "2026-07-07"
       ],
       "conceptTags": [
         "google-workspace-byok",
