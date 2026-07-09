@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-09T06:26:22.104Z",
+  "updatedAt": "2026-07-09T11:02:34.749Z",
   "entries": {
     "memory:memory/2026-05-15.md:1:15": {
       "key": "memory:memory/2026-05-15.md:1:15",
@@ -30842,13 +30842,13 @@
       "endLine": 40,
       "source": "memory",
       "snippet": "# 2026-05-18 ## Correction Retrospective (cron, 11:00 UTC) Scanned last 24h for corrections from Darin. Sessions list returned 0 results (no visible sessions), relied on memory files. ### Corrections found from 2026-05-17 **1. Stock Analysis Pipeline — Darin caught 3 bugs** - Wrong thread (reports in their own thread, not reply under his message) - Italic in Slack output - No progress updates or GitHub push **Fix verification: ALL VERIFIED ✅** - `scripts/stock_analysis.py` exists with full TradingAgents pipeline + JSON progress + Slack formatting + GitHub push - TOOLS.md has full #stock Channel Rules protocol (threading, italic filter, progress updates) - `scripts/slack_format.sh` / `sl",
-      "recallCount": 15,
+      "recallCount": 16,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 5.660788482427597,
+      "totalScore": 6.025933229923248,
       "maxScore": 0.4287824481725693,
       "firstRecalledAt": "2026-05-19T15:08:19.652Z",
-      "lastRecalledAt": "2026-06-05T11:00:24.990Z",
+      "lastRecalledAt": "2026-07-09T11:02:34.749Z",
       "queryHashes": [
         "067b48e415e4",
         "4c074a52e9bb",
@@ -30863,7 +30863,8 @@
         "5fa5c1ab0973",
         "47b6b404dcdd",
         "327dbf7b450e",
-        "bf2100157d15"
+        "bf2100157d15",
+        "ae7ecadb9567"
       ],
       "recallDays": [
         "2026-05-19",
@@ -30875,7 +30876,8 @@
         "2026-05-30",
         "2026-06-02",
         "2026-06-04",
-        "2026-06-05"
+        "2026-06-05",
+        "2026-07-09"
       ],
       "conceptTags": [
         "scripts/stock-analysis.py",
@@ -84648,24 +84650,26 @@
       "endLine": 40,
       "source": "memory",
       "snippet": "- `push_xhs_report.py` updated to push reports into `deep-research-reports` under `xhs/<YYYY-MM-DD>/<keyword>/report.md`. - Created Honolulu XHS report in new format (with appendices + JSON) and migrated other reports. - Ran a skill audit (requested \"ChatGPT 5.5\"; closest available was GPT-5.2) and logged findings; fixed a medium bug where trip-planner Step 5 previously pushed to the wrong repo. ## Correction Retrospective (15:07 UTC) Time window: 2026-05-18 15:07 UTC → 2026-05-19 15:07 UTC ### Scope Scanned session transcripts, memory files, and Slack channels (#C0B4EK31NCU, DM, threads) for corrections from Darin. ### Corrections found: NONE Darin's only interactions in the window: -",
-      "recallCount": 4,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.4514033168554306,
+      "totalScore": 1.8071043193340302,
       "maxScore": 0.37361083328723904,
       "firstRecalledAt": "2026-05-23T11:00:23.573Z",
-      "lastRecalledAt": "2026-06-04T11:00:30.071Z",
+      "lastRecalledAt": "2026-07-09T11:02:34.749Z",
       "queryHashes": [
         "4ca296459ade",
         "1643fd3538a1",
         "77b1f3c785f1",
-        "327dbf7b450e"
+        "327dbf7b450e",
+        "ae7ecadb9567"
       ],
       "recallDays": [
         "2026-05-23",
         "2026-05-24",
         "2026-05-26",
-        "2026-06-04"
+        "2026-06-04",
+        "2026-07-09"
       ],
       "conceptTags": [
         "gpt",
